@@ -1,0 +1,25 @@
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# But don't ignore example files
+!.env.*.example
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Next.js
+.next/
+out/
+
+# IDE
+.vscode/
+.idea/
+
+# Rest of your .gitignore stays the same...
