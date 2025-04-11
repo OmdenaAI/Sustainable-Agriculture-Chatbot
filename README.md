@@ -38,4 +38,3 @@ cp .env.development.example .env.development
 - Never commit your personal API keys to the repository
 - The Supabase service role key is NOT included and should never be shared
 
-[Rest of your README stays the same...]
