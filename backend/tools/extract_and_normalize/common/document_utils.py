@@ -118,25 +118,75 @@ class DocumentUtils:
         """
         Normalize and clean extracted PDF text for semantic processing,
         while preserving paragraph-level structure via double line breaks.
-        """
-        # Remove form feeds and null bytes
-        text = re.sub(r"[\f\x00]", "", text)
-
-        # Normalize lines that are only whitespace into single newlines
-        text = re.sub(r"[ \t]*\n", "\n", text)
-
-        # Convert runs of 3+ newlines into exactly 2
-        text = re.sub(r"\n{%d,}" % (max_newlines + 1), "\n" * max_newlines, text)
-
         
-        text = self._strip_control_chars(text)
+        Args:
+            text (str): Raw text extracted from PDF
+            max_newlines (int): Maximum number of consecutive newlines to preserve
+                                (default: 2 for paragraph separation)
+        
+        Returns:
+            str: Cleaned text with normalized whitespace and preserved paragraph structure
+        """
+        result = ""
 
-        # Ensure exactly one trailing newline between paragraphs and trim extra space
-        lines = text.splitlines()
-        normalized_lines = [line.strip() for line in lines if line.strip()]
-        paragraph_text = "\n\n".join(normalized_lines)
+        if text:
+            # Remove form feeds and null bytes
+            text = re.sub(r"[\f\x00]", "", text)
+            
+            # Strip control characters
+            text = self._strip_control_chars(text)
+            
+            # Convert all whitespace-only lines to newlines
+            text = re.sub(r"^\s+$", "\n", text, flags=re.MULTILINE)
+            
+            # Normalize spaces (collapse multiple spaces into one)
+            text = re.sub(r" +", " ", text)
+            
+            # Remove spaces at the beginning or end of lines
+            text = re.sub(r"^ +| +$", "", text, flags=re.MULTILINE)
+            
+            # Convert runs of 3+ newlines into exactly max_newlines (default: 2 for paragraphs)
+            text = re.sub(r"\n{%d,}" % (max_newlines + 1), "\n" * max_newlines, text)
+            
+            # Split into paragraphs (defined by double newlines)
+            paragraphs = text.split("\n\n")
+            
+            # Clean each paragraph: join lines that were artificially split by PDF extraction
+            # but preserve intentional line breaks for lists, addresses, etc.
+            cleaned_paragraphs = []
+            for paragraph in paragraphs:
+                # Join lines that are likely continuing the same paragraph
+                # (no period/colon/etc. at end of line and next line doesn't start with capital)
+                lines = paragraph.split("\n")
+                i = 0
+                while i < len(lines) - 1:
+                    current_line = lines[i].strip()
+                    next_line = lines[i + 1].strip()
+                    
+                    # Skip empty lines
+                    if not current_line:
+                        i += 1
+                        continue
+                        
+                    # If current line doesn't end with sentence-ending punctuation
+                    # and next line doesn't start with a capital letter or bullet point,
+                    # join them as they're likely part of the same paragraph
+                    if (not re.search(r'[.!?:;]$', current_line) and 
+                        not (next_line and (next_line[0].isupper() or next_line[0] in '-•*'))):
+                        lines[i] = current_line + " " + next_line
+                        lines.pop(i + 1)
+                    else:
+                        i += 1
+                
+                # Reassemble the paragraph with single newlines between actual line breaks
+                cleaned_paragraph = "\n".join(line for line in lines if line.strip())
+                if cleaned_paragraph:
+                    cleaned_paragraphs.append(cleaned_paragraph)
+            
+            # Rejoin paragraphs with double newlines
+            result= "\n\n".join(cleaned_paragraphs)
 
-        return paragraph_text.strip()
+        return result
 
 
 

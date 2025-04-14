@@ -136,42 +136,54 @@ class MetadataGenerator:
         return result
 
     def _build_prompt(self, text, chunk_size):
-        return f"""
-    You are an expert metadata classification assistant for sustainable agriculture documents.
+        prompt = f"""
+        You are an expert metadata classification assistant for sustainable agriculture documents.
 
-    Your task is to analyze the following document and extract structured metadata fields. Respond strictly with a VALID JSON object containing ONLY the fields listed below.
+        Your task is to analyze the following document and extract structured metadata fields. Respond strictly with a VALID JSON object containing ONLY the fields listed below.
 
-    ** DO NOT:
-    - Guess or fabricate values
-    - Include nulls, placeholders, or unknowns
-    - Include fields not explicitly listed
-    - Include UUIDs, URLs, source names, or chunk identifiers
+        DO NOT:
+        - Guess or fabricate values
+        - Include nulls, placeholders, or unknowns
+        - Include fields not explicitly listed
+        - Include UUIDs, URLs, source names, or chunk identifiers
 
-    ** DO:
-    - Be conservative and precise
-    - Only include fields if clearly and repeatedly supported by the text
+        DO:
+        - Be conservative and precise
+        - Only include fields if clearly and repeatedly supported by the text
 
-    ⚠️ Special instructions for `intended_audience` and `key_topics`:
-    - Include an item in either list **only if it is mentioned or implied multiple times**
-    - Do NOT include items based on one-off or tangential references
-    - Do NOT include values for `intended_audience` and `key_topics` that are not listed in there respective accepted value lists below.
-    - Leave the list empty or omit it if no items meet the above criteria
+        Special instructions for `intended_audience` and `key_topics`:
+        - Include an item in either list only if it is clearly stated or strongly implied in at least two distinct places in the document
+        - A single mention — even if prominent — is not sufficient
+        - Each item must appear in the accepted list below
+        - Do not include similar, inferred, or fabricated terms not in the list
+        - If no valid items meet the above criteria, omit the entire field — do not return an empty list
 
-    ### Target JSON Fields:
+        Target JSON Fields:
 
-    - title: string
-    - language: 2-letter ISO code (e.g., "en")
-    - region_or_country: country or region mentioned, if not mentioned or multiple countries or regions are mentioned, use "global"
-    - document_type: one of ["scientific", "policy", "ngo_report", "manual"]
-    - sustainability_dimensions: list of 1+ from ["environmental", "economic", "social"]
-    - key_topics: list of 1+ from ["financial access", "agricultural innovation", "long-term planning", "supply chain integration", "technology adoption", "data-driven farming", "agroforestry", "carbon markets", "local networks", "regenerative agriculture", "climate change mitigation", "biodiversity conservation", "soil health", "organic farming", "green CAP policy"]
-    - contains_harmful_practices: boolean
-    - intended_audience: list of 1+ from ["farmers", "policymakers", "researchers", "NGOs"]
-    - date_published: Use format "YYYY-MM-DD" ONLY if clearly stated in the text. If not present, omit the field.
+        - title: string
+        - language: 2-letter ISO code (e.g., "en")
+        - region_or_country: country or region mentioned; if not mentioned or multiple regions are mentioned, use "global"
+        - document_type: one of ["scientific", "policy", "ngo_report", "manual"]
+        - sustainability_dimensions: list of 1 or more from ["environmental", "economic", "social"]
+        - key_topics: list of 1 or more from [
+            "financial access", "agricultural innovation", "long-term planning",
+            "supply chain integration", "technology adoption", "data-driven farming",
+            "agroforestry", "carbon markets", "local networks", "regenerative agriculture",
+            "climate change mitigation", "biodiversity conservation", "sustainable agriculture",
+            "soil health", "organic farming", "green CAP policy"
+        ]
+        - contains_harmful_practices: boolean
+        - intended_audience: list of 1 or more from ["farmers", "policymakers", "researchers", "NGOs"]
+        - date_published: Use format "YYYY-MM-DD" ONLY if clearly stated in the text. If not present, omit the field.
 
-    ** Respond ONLY with the JSON object. Do not include any explanation or commentary.
+        The output must:
+        - Include only the above fields
+        - Use only accepted values
+        - Omit any list field if no valid repeated items are found
+        - Be valid JSON with no additional commentary or text
 
-    DOCUMENT STARTS HERE:
-    {text[:chunk_size]}
-    """
-
+        DOCUMENT STARTS HERE:
+        {text[:chunk_size]}
+        """
+    
+        return prompt
