@@ -6,21 +6,90 @@ from os.path import basename, splitext, join
 import logging
 import re
 import unicodedata
+import hashlib
 
 class DocumentUtils:
     """Utility class for document processing operations."""
     
-    def __init__(self, logger=None):
-        """Initialize with optional custom logger."""
-        self.logger = logger or logging.getLogger("ExtractAndNormalizePdf")
+    def __init__(self, logger):
+        self.logger = logger
     
     def get_base_filename_from_url(self, url):
-        """Extract filename without extension from URL path."""
+        """
+        Generate a unique, filesystem-friendly identifier from a URL.
+        
+        This method creates a unique identifier by combining the domain name,
+        path components, and original filename. It handles potential collisions
+        by including a hash of the full URL when necessary.
+        
+        Args:
+            url (str): The URL of the PDF document
+            
+        Returns:
+            str: A unique identifier suitable for filesystem use
+            
+        Raises:
+            Exception: If URL parsing fails
+        """
+        result = None
         try:
-            return splitext(basename(urlparse(url).path))[0]
+            parsed_url = urlparse(url)
+            
+            # Extract domain with TLD 
+            domain_parts = parsed_url.netloc.split('.')
+            
+            if len(domain_parts) >= 2:
+                # For domains like example.org, fao.org, etc.
+                domain_name = domain_parts[-2]  # e.g., 'fao' from 'fao.org'
+                tld = domain_parts[-1]         # e.g., 'org' from 'fao.org'
+                domain = f"{domain_name}_{tld}"  # e.g., 'fao_org'
+            else:
+                # Fallback for unusual domains
+                domain = parsed_url.netloc
+            
+            # Get original filename with and without extension for proper path filtering
+            original_filename_with_ext = basename(parsed_url.path)
+            original_filename = splitext(original_filename_with_ext)[0]
+            
+            # Clean the original filename (remove special chars, limit length)
+            clean_filename = re.sub(r'[^\w\-]', '_', original_filename)
+            clean_filename = clean_filename[:50] if len(clean_filename) > 50 else clean_filename
+            
+            # Extract path components, excluding the filename part
+            # Use both with and without extension to properly filter
+            path_parts = []
+            path_segments = parsed_url.path.split('/')
+            for p in path_segments:
+                if (p and p != original_filename_with_ext and 
+                      p != original_filename and 
+                      not p.endswith('.pdf')):
+                    # Only take meaningful path segments (exclude common patterns like /documents/ etc.)
+                    if not re.match(r'^(docs?|documents|publications|files|pdfs?|downloads?)$', p, re.IGNORECASE):
+                        path_parts.append(p)
+            
+            # Limit to last 2 meaningful segments
+            path_parts = path_parts[-2:] if len(path_parts) > 2 else path_parts
+            clean_path = '_'.join([re.sub(r'[^\w\-]', '_', p) for p in path_parts])
+            
+            # Create a base identifier combining domain, path, and filename
+            if clean_path:
+                base_id = f"{domain}_{clean_path}_{clean_filename}"
+            else:
+                base_id = f"{domain}_{clean_filename}"
+                
+            base_id = re.sub(r'_{2,}', '_', base_id)  # Replace multiple underscores with single
+            
+            # Add a short hash for additional uniqueness
+            url_hash = hashlib.md5(url.encode()).hexdigest()[:8]
+            unique_id = f"{base_id}_{url_hash}"
+            
+            result = unique_id
         except Exception as e:
-            self.logger.exception("Failed to extract base filename from URL")
-            raise
+            self.logger.exception(f"Failed to generate unique ID from URL: {url}")
+            # Fallback to a hash-only approach if parsing fails
+            result = f"doc_{hashlib.md5(url.encode()).hexdigest()[:16]}"
+
+        return result
 
     def prepare_output_directory(self, base_filename, output_dir):
         """Create output directory and clean previous files for same document."""
@@ -34,12 +103,12 @@ class DocumentUtils:
             self.logger.exception("Failed to prepare output directory")
             raise
 
-    def build_base_payload(self, metadata, pdf_url, inferred_title):
+    def build_base_payload(self, metadata, url, inferred_title):
         """Construct standardized metadata payload from extracted data."""
         try:
             return {
                 "title": metadata.get("title") or inferred_title,
-                "source_url": pdf_url,
+                "source_url": url,
                 "date_published": metadata.get("date_published"),
                 "language": metadata.get("language"),
                 "region_or_country": metadata.get("region_or_country"),
@@ -48,8 +117,8 @@ class DocumentUtils:
                 "key_topics": metadata.get("key_topics"),
                 "contains_harmful_practices": metadata.get("contains_harmful_practices"),
                 "intended_audience": [a.lower() for a in metadata.get("intended_audience", [])],
-                "source_name": self.infer_source_name_from_url(pdf_url),
-                "doc_id": str(uuid.uuid5(uuid.NAMESPACE_URL, pdf_url))
+                "source_name": self.infer_source_name_from_url(url),
+                "doc_id": str(uuid.uuid5(uuid.NAMESPACE_URL, url))
             }
         except Exception as e:
             self.logger.exception("Failed to build base payload")
@@ -99,7 +168,7 @@ class DocumentUtils:
                 formatted_content = f"--- {section_title} ---\n\n{section['text']}"
                 
                 # Save with page number in filename for consistent referencing
-                with open(join(output_dir, f"{base_filename}_{prefix}{identifier}.txt"), "w", encoding="utf-8") as f:
+                with open(join(output_dir, f"{base_filename}_{prefix}_{identifier}.txt"), "w", encoding="utf-8") as f:
                     f.write(formatted_content)
                                     
                     

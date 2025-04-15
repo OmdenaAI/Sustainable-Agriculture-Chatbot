@@ -90,7 +90,7 @@ class MetadataGenerator:
         # Use the function pointer set during initialization
         return self._llm_call_func(prompt)
 
-    def generate_metadata(self, pdf_url, text, chunk_size):
+    def generate_metadata(self, url, text, chunk_size):
         """Generate metadata from document text and validate against schema."""
         prompt = self._build_prompt(text, chunk_size)
         try:
@@ -99,8 +99,8 @@ class MetadataGenerator:
             metadata = json.loads(response_content)
             
             # Add source information
-            metadata["source_url"] = pdf_url
-            metadata['source_name'] = self.doc_utils.infer_source_name_from_url(pdf_url)
+            metadata["source_url"] = url
+            metadata['source_name'] = self.doc_utils.infer_source_name_from_url(url)
 
             # Add publication date if missing
             if not metadata.get("date_published"):
@@ -151,7 +151,7 @@ class MetadataGenerator:
         - Be conservative and precise
         - Only include fields if clearly and repeatedly supported by the text
 
-        Special instructions for `intended_audience` and `key_topics`:
+        Special instructions for `intended_audience`, `key_topics`, `sustainability_dimensions` and `document_type`:
         - Include an item in either list only if it is clearly stated or strongly implied in at least two distinct places in the document
         - A single mention — even if prominent — is not sufficient
         - Each item must appear in the accepted list below
