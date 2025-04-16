@@ -28,7 +28,6 @@ def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
 
     if chunker == "overlap":
         overlap_percentage = 20
-        # chunker = TokenChunks(chunk_size)
         chunker = OverlapChunks(chunk_size, overlap_percentage)
 
     for file in os.listdir(dir_path):
@@ -40,7 +39,7 @@ def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
 
 if __name__ == "__main__":
     files_dir = "../output"
-    chunk_size = models_to_chunk_size_mapping["text-embedding-3-small"]   #recommended chunk size for the model text-embedding-3-small
+    chunk_size = models_to_chunk_size_mapping["text-embedding-3-small"]
     chunker = "overlap"
     # chunker = "token"
     
