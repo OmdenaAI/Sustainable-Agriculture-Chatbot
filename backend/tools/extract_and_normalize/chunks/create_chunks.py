@@ -1,7 +1,6 @@
 import os
 import json
 from chunkers.overlap_chunker import OverlapChunks
-from chunkers.token_chunker import TokenChunks
 from settings import models_to_chunk_size_mapping
 
 def get_text(file_path):
