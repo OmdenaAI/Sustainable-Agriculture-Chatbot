@@ -36,14 +36,16 @@ def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
             chunks = chunker.generate_chunks(text, metadata)
             all_chunks.extend(chunks)
     return all_chunks
+def store_chunks(chunks):
+    """Storing chunks in a JSON file"""
+    with open("output_chunks/chunks.json", "w") as f:
+        json.dump([chunk.dict() for chunk in chunks], f, indent=2)
 
 if __name__ == "__main__":
     files_dir = "../output"
     chunk_size = models_to_chunk_size_mapping["text-embedding-3-small"]
     chunker = "overlap"
-    # chunker = "token"
     
     chunks = create_chunks_from_text_file(files_dir, chunker, chunk_size,)
-    import pdb; pdb.set_trace()
 
-    print(chunks)
+    store_chunks(chunks)
