@@ -18,16 +18,22 @@ def get_metadata(dir_path):
             return json.load(f)
     return None
 
-def create_chunks_from_text_file(dir_path, chunk_size, overlap_percentage=None, metadata=None,):
+def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
     all_chunks = []
+    
     metadata = get_metadata(dir_path)
-    # chunker = TokenChunks(chunk_size)
-    chunker = OverlapChunks(chunk_size, overlap_percentage)
+    metadata.update({
+        "chunker": chunker
+    })
+
+    if chunker == "overlap":
+        overlap_percentage = 20
+        # chunker = TokenChunks(chunk_size)
+        chunker = OverlapChunks(chunk_size, overlap_percentage)
 
     for file in os.listdir(dir_path):
         if file.endswith('txt'):
             text = get_text(f"{dir_path}/{file}")
-            
             chunks = chunker.generate_chunks(text, metadata)
             all_chunks.extend(chunks)
     return all_chunks
@@ -35,8 +41,10 @@ def create_chunks_from_text_file(dir_path, chunk_size, overlap_percentage=None, 
 if __name__ == "__main__":
     files_dir = "../output"
     chunk_size = models_to_chunk_size_mapping["text-embedding-3-small"]   #recommended chunk size for the model text-embedding-3-small
-    overlap_percentage = 20
-    chunks = create_chunks_from_text_file(files_dir, chunk_size)
+    chunker = "overlap"
+    # chunker = "token"
+    
+    chunks = create_chunks_from_text_file(files_dir, chunker, chunk_size,)
     import pdb; pdb.set_trace()
 
     print(chunks)
