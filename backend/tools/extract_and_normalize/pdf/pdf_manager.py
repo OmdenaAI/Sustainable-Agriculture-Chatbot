@@ -4,6 +4,9 @@ import os
 from common.metadata_generator import MetadataGenerator
 from nltk.tokenize import word_tokenize
 from common.document_utils import DocumentUtils
+from urllib.parse import urlparse
+import arxiv
+import tempfile
 
 LOW_VALUE_PHRASES = ["©", "photo by", "image", "figure", "page", "source:"]
 
@@ -14,69 +17,116 @@ class PdfManager:
         self.logger = logger
         self.doc_utils = DocumentUtils(self.logger)
 
-   # Method to download a PDF from a URL, read its content, and extract sections based on page content
+        # Get actual url if its an arxiv url
+        self.url = self._get_url(url)
+
+    def _get_url(self, url):
+        result = url
+        # Parse the URL
+        parsed_url = urlparse(url)
+
+        # Extract the domain name
+        domain = parsed_url.netloc  # This gives 'arxiv.org'
+        arxiv_result = 'arxiv.org' == domain
+
+        if arxiv_result:
+            # Extract the arXiv ID from the path
+            path = parsed_url.path
+            arxiv_id = path.split('/')[-1]
+
+            try:
+                search = arxiv.Search(id_list=[arxiv_id], max_results=1)
+                result_iter = next(search.results())
+                
+                # Make sure result_iter is not None
+                if result_iter is None:
+                    raise ValueError(f"ArXiv API returned None for ID: {arxiv_id}")
+                
+                # Check if it has pdf_url attribute
+                if hasattr(result_iter, 'pdf_url'):
+                    result = result_iter.pdf_url
+                    self.logger.info(f"Retrieved arXiv PDF URL: {result}")
+                else:
+                    raise AttributeError(f"ArXiv result does not have 'pdf_url' attribute for ID: {arxiv_id}")
+                    
+            except StopIteration:
+                self.logger.error(f"No results found for arXiv ID: {arxiv_id}")
+                raise ValueError(f"No results found in ArXiv API for ID: {arxiv_id}")
+            except Exception as e:
+                self.logger.error(f"Error fetching arXiv paper {arxiv_id}: {str(e)}")
+                raise
+
+        return result
+    
+    # Method to download a PDF from a URL, read its content, and extract sections based on page content
     # Uses the find_best_section_title function to determine section titles
     def extract_pdf_sections(self):
-        self.logger.info(f"Downloading PDF from URL: {self.url}")
-        response = requests.get(self.url)
-        if response.status_code != 200:
-            self.logger.error(f"Failed to download PDF: HTTP {response.status_code}")
-            raise ConnectionError("PDF download failed")
-
-        self.logger.info("Reading and chunking PDF content by page...")
-        with open("temp_downloaded.pdf", "wb") as f:
-            f.write(response.content)
-
         try:
-            doc = fitz.open("temp_downloaded.pdf")
-            metadata_title = doc.metadata.get("title") or "Untitled Document"
-            sections = []
-            seen_titles = set()
-            page_num = 1
+            self.logger.info(f"Downloading PDF from URL: {self.url}")
+            response = requests.get(self.url)
+            if response.status_code != 200:
+                self.logger.error(f"Failed to download PDF: HTTP {response.status_code}")
+                raise ConnectionError("PDF download failed")
 
-            for page in doc:
-                try:
-                    page_dict = page.get_text("dict")
-                    text = page.get_text("text")
+            self.logger.info("Reading and chunking PDF content by page...")
+            
+            # Use tempfile to create a temporary file that auto-deletes when closed
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=True) as temp_pdf:
+                # Write PDF content to the temporary file
+                temp_pdf.write(response.content)
+                temp_pdf.flush()  # Ensure all data is written
+                
+                # Open the PDF with fitz
+                doc = fitz.open(temp_pdf.name)
+                metadata_title = doc.metadata.get("title") or "Untitled Document"
+                sections = []
+                seen_titles = set()
+                page_num = 1
 
-                    if not text.strip():
-                        self.logger.info(f"Skipping empty page {page_num}")
-                        page_num += 1
-                        continue
+                for page in doc:
+                    try:
+                        page_dict = page.get_text("dict")
+                        text = page.get_text("text")
 
-                    cleaned_text = self.doc_utils.clean_text_block(text)
-                    word_count = len(word_tokenize(cleaned_text))
-
-                    # Filter based on token count and low-value phrase patterns to minimize near empty output pages
-                    if word_count < 30:
-                        lowered = cleaned_text.lower()
-                        if all(phrase in lowered for phrase in LOW_VALUE_PHRASES):
-                            self.logger.info(f"Skipping caption-only page {page_num} ({word_count} words)")
+                        if not text.strip():
+                            self.logger.info(f"Skipping empty page {page_num}")
                             page_num += 1
                             continue
-                        elif word_count < 10:
-                            self.logger.info(f"Skipping nearly empty page {page_num} ({word_count} words)")
-                            page_num += 1
-                            continue
 
-                    section_title = self.find_best_section_title(page_dict, seen_titles, self.config)
-                    section_title = section_title or f"Page {page_num}"
-                    seen_titles.add(section_title)
+                        cleaned_text = self.doc_utils.clean_text_block(text)
+                        word_count = len(word_tokenize(cleaned_text))
 
-                    sections.append({
-                        "page_number": page_num,
-                        "section_title": section_title[:128],
-                        "text": cleaned_text
-                    })
+                        # Filter based on token count and low-value phrase patterns to minimize near empty output pages
+                        if word_count < 30:
+                            lowered = cleaned_text.lower()
+                            if all(phrase in lowered for phrase in LOW_VALUE_PHRASES):
+                                self.logger.info(f"Skipping caption-only page {page_num} ({word_count} words)")
+                                page_num += 1
+                                continue
+                            elif word_count < 10:
+                                self.logger.info(f"Skipping nearly empty page {page_num} ({word_count} words)")
+                                page_num += 1
+                                continue
 
-                except Exception as e:
-                    self.logger.exception(f"Error processing page {page_num}: {str(e)}")
-                    raise
+                        section_title = self.find_best_section_title(page_dict, seen_titles, self.config)
+                        section_title = section_title or f"Page {page_num}"
+                        seen_titles.add(section_title)
 
-                page_num += 1
+                        sections.append({
+                            "page_number": page_num,
+                            "section_title": section_title[:128],
+                            "text": cleaned_text
+                        })
 
-            doc.close()
+                    except Exception as e:
+                        self.logger.exception(f"Error processing page {page_num}: {str(e)}")
+                        raise
 
+                    page_num += 1
+
+                doc.close()
+                # No need to manually delete the temp file - it will be automatically removed
+            
             if not sections:
                 self.logger.error("No valid sections extracted from PDF")
                 raise ValueError("PDF processing yielded no valid content")
@@ -86,12 +136,6 @@ class PdfManager:
         except Exception as e:
             self.logger.exception(f"Error processing PDF: {str(e)}")
             raise
-
-        finally:
-            try:
-                os.remove("temp_downloaded.pdf")
-            except Exception as e:
-                self.logger.warning(f"Could not remove temporary file: {str(e)}")
 
     # Function to find the best section title from a page's text dictionary
     # Considers font size, word count, capitalization, and ignores phrases specified in the config
