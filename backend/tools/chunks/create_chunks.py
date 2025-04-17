@@ -2,7 +2,7 @@ import os
 import json
 from chunkers.overlap_chunker import OverlapChunks
 from settings import models_to_chunk_size_mapping
-
+import copy
 def get_text(file_path):
     """read text from a .tex file """
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -18,11 +18,12 @@ def get_metadata(dir_path):
     return None
 
 def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
+    """Creating chunks from text files in a directory"""
     all_chunks = []
     
     metadata = get_metadata(dir_path)
     metadata.update({
-        "chunker": chunker
+        "chunker": chunker,
     })
 
     if chunker == "overlap":
@@ -30,21 +31,27 @@ def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
         chunker = OverlapChunks(chunk_size, overlap_percentage)
 
     for file in os.listdir(dir_path):
+        doc_source = file.split('.')[0]
+        file_metadata = metadata.copy()
+        file_metadata["doc_source"] = doc_source
+        # import pdb; pdb.set_trace()
         if file.endswith('txt'):
             text = get_text(f"{dir_path}/{file}")
-            chunks = chunker.generate_chunks(text, metadata)
+            chunks = chunker.generate_chunks(text, file_metadata)
             all_chunks.extend(chunks)
     return all_chunks
-def store_chunks(chunks):
+
+def store_chunks(chunks, file_path):
     """Storing chunks in a JSON file"""
-    with open("output_chunks/chunks.json", "w") as f:
+    with open(file_path, "w") as f:
         json.dump([chunk.dict() for chunk in chunks], f, indent=2)
 
 if __name__ == "__main__":
-    files_dir = "../output"
+    files_to_chunk_dir = "../extract_and_normalize/output"
+    chunk_store_file = "output_chunks/chunks.json"
     chunk_size = models_to_chunk_size_mapping["text-embedding-3-small"]
     chunker = "overlap"
     
-    chunks = create_chunks_from_text_file(files_dir, chunker, chunk_size,)
-
-    store_chunks(chunks)
+    chunks = create_chunks_from_text_file(files_to_chunk_dir, chunker, chunk_size,)
+    
+    store_chunks(chunks, chunk_store_file)
