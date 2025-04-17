@@ -1,6 +1,6 @@
 [
   {
-    "id": "98e3b021-f874-4119-bdac-389b4fd38956",
+    "chunk_id": "4f58c676-1937-429c-98f5-98f990f60080",
     "text": "--- the FAO Climate-Smart Agriculture (CSA) Sourcebook --- This booklet provides examples of climate-smart systems by showcasing some FAO success stories in various countries. The cases have been selected from the FAO Climate-Smart Agriculture (CSA) Sourcebook launched in 2013 to",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -26,11 +26,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page28",
+      "chunker_order": "a-i3817e_page28_chunk_0"
     }
   },
   {
-    "id": "031279b6-f595-4942-804d-a1dbff1aa8a0",
+    "chunk_id": "4481eab8-f3e3-40c3-b933-982c320236f2",
     "text": "Climate-Smart Agriculture (CSA) Sourcebook launched in 2013 to show the diversity of potential options across di\ufb00erent regions and agricultural systems also covering subjects such as biodiversity and gender. www.fao.org/climatechange/climatesmart climate-change@fao.org \u00a9FAO 2014 Cover photos: \u00a9 FAO / C.Dowsett, G. Napolitano",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -56,11 +58,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page28",
+      "chunker_order": "a-i3817e_page28_chunk_1"
     }
   },
   {
-    "id": "0562c8f6-3bdf-40e8-a15b-4e627afc1ce9",
+    "chunk_id": "e4d02a1f-d78f-43fd-a71a-39f0755cb6c5",
     "text": "Cover photos: \u00a9 FAO / C.Dowsett, G. Napolitano & I. Balderi I3817E/1/05.14",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -86,11 +90,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page28",
+      "chunker_order": "a-i3817e_page28_chunk_2"
     }
   },
   {
-    "id": "1711089b-d857-4dec-b17d-94fc3aea1a52",
+    "chunk_id": "ec1c1965-d78d-4498-8bad-d5c4eba43741",
     "text": "--- CSA ON THE GROUND --- 1 CSA SUCCESS STORIES UNDERSTANDING THE CHALLENGES OF CLIMATE CHANGE AND FOOD SECURITY FAO estimates that food production must increase by at least 60 percent to respond to the demand of the 9 billion",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -116,11 +122,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_0"
     }
   },
   {
-    "id": "7b00a06b-de28-4271-80dd-0e3ef75d1042",
+    "chunk_id": "f80138d9-bd98-4e08-8053-cec6ae424b97",
     "text": "respond to the demand of the 9 billion people that are expected to inhabit the planet by 2050. Given that one in eight people are currently food insecure, ensuring global food security over the next decades will be essential. In",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -146,11 +154,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_1"
     }
   },
   {
-    "id": "6a461d5a-84f0-451f-a2f6-a40913333cf2",
+    "chunk_id": "8642107f-004b-428a-abd2-19f78933083f",
     "text": "over the next decades will be essential. In meeting this challenge, there is an opportunity to create sustainable economic growth in rural areas of developing countries where food security and poverty are most prevalent. According to the Fifth Assessment Report",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -176,11 +186,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_2"
     }
   },
   {
-    "id": "11258e13-83bb-49cf-b7f9-49d071fb2753",
+    "chunk_id": "1a2a791a-f3f1-4686-8cd1-5c512645dd0a",
     "text": "most prevalent. According to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change (IPCC), rising temperatures and increased frequency of extreme events will have direct and negative impacts on crops, livestock, forestry, fisheries and aquaculture productivity. Climate change",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -206,11 +218,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_3"
     }
   },
   {
-    "id": "19c89e88-4e15-4c83-aea9-ee6dae5e4f00",
+    "chunk_id": "8f82d2df-8c53-4aeb-86c5-f555c6f11086",
     "text": "livestock, forestry, fisheries and aquaculture productivity. Climate change is a universal and critical challenge for global food security. Improving the way we manage agricultural systems and natural resources is fundamental for effectively achieving food security. We can no longer afford",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -236,11 +250,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_4"
     }
   },
   {
-    "id": "a2fe8851-ab8d-4a40-9a94-f11d202870b4",
+    "chunk_id": "becd1dd1-b729-4967-9e25-ba85eb4088b1",
     "text": "achieving food security. We can no longer afford to separate the future of food security from that of natural resources, the environment and climate change \u2013 they are inextricably intertwined and our response must be as well. Efforts to reduce",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -266,11 +282,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_5"
     }
   },
   {
-    "id": "2f0a8a1f-e902-4dc1-8707-31d5732c6266",
+    "chunk_id": "d211acf8-52aa-4061-8106-1f101c7cef73",
     "text": "response must be as well. Efforts to reduce food insecurity must include building the resilience of rural communities to shocks and strengthening their adaptive capacity to cope with increased variability and slow onset changes. The agricultural sectors (crops, livestock, forestry,",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -296,11 +314,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_6"
     }
   },
   {
-    "id": "525f4e9d-17e5-4cb5-863a-f119647a2bee",
+    "chunk_id": "381ff4bd-1524-417d-93c1-3efb6502c683",
     "text": "onset changes. The agricultural sectors (crops, livestock, forestry, fisheries) must therefore transform themselves in order to feed a growing global population and provide the basis for economic growth and poverty reduction. This transformation must be accomplished without hindering the natural",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -326,11 +346,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_7"
     }
   },
   {
-    "id": "2d0b78d2-a1d2-4521-b90a-65ec869e0696",
+    "chunk_id": "7f523947-a0f4-46a9-bdc0-86c9594fd6da",
     "text": "transformation must be accomplished without hindering the natural resource base. More productive and resilient agriculture requires a major shift in the way land, water, soil nutrients and genetic resources are managed to ensure that these resources are used more efficiently",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -356,11 +378,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_8"
     }
   },
   {
-    "id": "815ae023-a616-4157-9fae-348d0925d488",
+    "chunk_id": "44b884bc-921a-4428-9135-2fad7f5c07b6",
     "text": "ensure that these resources are used more efficiently and sustainably. Making this shift requires considerable changes in national and local governance, legislation, policies and financial mechanisms. This transformation will also involve improving producers\u2019 access to markets. FAO SUCCESS STORIES ON",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -386,11 +410,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_9"
     }
   },
   {
-    "id": "47915b84-9194-4531-8e44-31c456bbc9b6",
+    "chunk_id": "f9879f54-8b22-4f18-884c-aef310ba683a",
     "text": "producers\u2019 access to markets. FAO SUCCESS STORIES ON CLIMATE-SMART AGRICULTURE CSA ON THE GROUND",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -416,11 +442,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page3",
+      "chunker_order": "a-i3817e_page3_chunk_10"
     }
   },
   {
-    "id": "91595768-1629-456b-b51e-122ca372c40c",
+    "chunk_id": "a017beda-9821-42ef-b829-e42aeeaf1192",
     "text": "--- A panoramic view of Lake Burera, Rwanda --- A panoramic view of Lake Burera, Rwanda \u00a9FAO/G. Napolitano",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -446,11 +474,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page16",
+      "chunker_order": "a-i3817e_page16_chunk_0"
     }
   },
   {
-    "id": "9c2e3e8c-d445-4d9e-8a03-a95a32cc7b82",
+    "chunk_id": "48d2268e-85e6-4d1b-8e39-d8a814e6310e",
     "text": "--- GAINING TRACTION ON CLIMATE-SMART --- 2 CSA SUCCESS STORIES GAINING TRACTION ON CLIMATE-SMART AGRICULTURE FAO has recognized that for agriculture to feed the world in a way that can ensure sustainable rural development, it must become \u2018climate- smart\u2018. Climate-smart",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -476,11 +506,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page4",
+      "chunker_order": "a-i3817e_page4_chunk_0"
     }
   },
   {
-    "id": "87e786d9-1a82-4172-b071-822f22fc5687",
+    "chunk_id": "1d44f5eb-bedb-4f28-8618-f8b3e106cb02",
     "text": "rural development, it must become \u2018climate- smart\u2018. Climate-smart agriculture (CSA), as defined and presented by FAO at the Hague Conference on Agriculture, Food Security and Climate Change in 2010 is an approach to developing the technical, policy and investment conditions",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -506,11 +538,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page4",
+      "chunker_order": "a-i3817e_page4_chunk_1"
     }
   },
   {
-    "id": "eeeb95ff-f0ab-4faa-8dd5-68adb542be35",
+    "chunk_id": "0e75636e-27f7-4e8b-a405-2b38fef8e9b4",
     "text": "to developing the technical, policy and investment conditions to achieve sustainable agricultural development for food security under climate change. It contributes to the achievement of national food security and development goals with three objectives: The magnitude, immediacy and broad scope",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -536,11 +570,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page4",
+      "chunker_order": "a-i3817e_page4_chunk_2"
     }
   },
   {
-    "id": "9f920a36-1f14-473d-b7d8-8e7d213e3c9c",
+    "chunk_id": "75c1a8ef-8e1c-4b26-bf9c-d3089a02b823",
     "text": "three objectives: The magnitude, immediacy and broad scope of the effects of climate change on agricultural systems create a compelling need to ensure their comprehensive integration into national agricultural planning, investments and programs. The CSA approach is designed to identify",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -566,11 +602,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page4",
+      "chunker_order": "a-i3817e_page4_chunk_3"
     }
   },
   {
-    "id": "1959ff3d-2dc5-4c1d-88e9-cbe74677d2b7",
+    "chunk_id": "374ba537-37f8-47ff-ab5e-1ffcbb99dfe0",
     "text": "programs. The CSA approach is designed to identify and operationalize sustainable agricultural development explicitly integrating climate change as a major parameter. For CSA to become a reality an integrated approach responsive to specific local conditions is required. Integrated landscape approaches",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -596,11 +634,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page4",
+      "chunker_order": "a-i3817e_page4_chunk_4"
     }
   },
   {
-    "id": "6a6948bd-97b5-434f-945b-2918889724f2",
+    "chunk_id": "807877e4-8406-4d75-9518-79d91b875ae8",
     "text": "specific local conditions is required. Integrated landscape approaches and coordination across agricultural sectors is essential to capitalize on potential synergies, reduce trade-offs and optimize the use of natural resources and ecosystem services.",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -626,11 +666,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page4",
+      "chunker_order": "a-i3817e_page4_chunk_5"
     }
   },
   {
-    "id": "b95b6d22-753e-47f5-92eb-82504c29caf9",
+    "chunk_id": "0fb7513e-4130-4990-a214-7cba5372f539",
     "text": "--- LIVESTOCK WASTE MANAGEMENT --- 23 CSA SUCCESS STORIES LIVESTOCK WASTE MANAGEMENT IN EAST ASIA10 In China, Thailand & Vietnam 500 000 pig places were introduced To better manage livestock waste, improving livelihoods decreasing GHG emissions The population growth and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -656,11 +698,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_0"
     }
   },
   {
-    "id": "93267751-fa74-4e41-91a3-5d565ad358bf",
+    "chunk_id": "a22a5a44-e6f0-4a7f-ba91-00b9c83360b4",
     "text": "livelihoods decreasing GHG emissions The population growth and increasing wealth and urbanization taking place in East Asia are driving one of the world\u2019s fastest growing demands for animal products. The livestock sector is responding effectively to this demand surge, mostly",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -686,11 +730,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_1"
     }
   },
   {
-    "id": "8b90580f-8cd0-487d-be5d-faa5fbc7e513",
+    "chunk_id": "2cfcc42b-992c-4a9a-91f9-9da1f7446174",
     "text": "is responding effectively to this demand surge, mostly through the emergence of large-scale intensive pig and poultry production, but supply growth has been associated with serious environmental issues, mostly related to manure management. The FAO-led Livestock Waste Management in East",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -716,11 +762,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_2"
     }
   },
   {
-    "id": "a233d74f-103c-4ad4-94e2-4d41d3f2c662",
+    "chunk_id": "3d82ef62-f8a5-4636-98f2-698d4814b47b",
     "text": "management. The FAO-led Livestock Waste Management in East Asia Project supported by GEF/United Nations Environment Programme (UNEP) was designed to finance the costs of moving from the business-as-usual approach of ineffectively addressing environmental problems to a strategic framework for livestock",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -746,11 +794,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_3"
     }
   },
   {
-    "id": "cd020d56-81eb-4a0c-aa2a-9a2cc97c7c82",
+    "chunk_id": "ca617d3f-4b74-4e1d-b65d-82569d7447e3",
     "text": "environmental problems to a strategic framework for livestock production development which is not only economically but also environmentally sustainable. Its main objective was to reduce the major negative environmental and health impacts of rapidly increasing concentrated livestock production on water",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -776,11 +826,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_4"
     }
   },
   {
-    "id": "acdc45ae-f654-41af-8b77-8200cf3c1294",
+    "chunk_id": "1b2c8768-ee14-405a-a445-e36c34122e8d",
     "text": "of rapidly increasing concentrated livestock production on water bodies and thus on the people in three countries of the East Asia region: China, Thailand and Viet Nam. Overall achievements of the project are related to: 1) the introduction of a",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -806,11 +858,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_5"
     }
   },
   {
-    "id": "efc59854-3943-435f-a906-80eef1207451",
+    "chunk_id": "691b9812-28e6-4ba6-823b-ae60d8d5816c",
     "text": "are related to: 1) the introduction of a regional approach, that permitted comparison of results and experiences on waste management and policy elements, exchange and transfer of technology and approaches and environmental awareness-raising among farmers and government staff; 2) introduction",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -836,11 +890,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_6"
     }
   },
   {
-    "id": "eab3b797-dafc-445b-bd90-cfe6463b9232",
+    "chunk_id": "c3d034a8-4a4a-48c4-b209-bf9bf640898f",
     "text": "awareness-raising among farmers and government staff; 2) introduction of new technologies and development of new designs for large and medium farms, accounting for a total of approximately 500 000 pig places; 3) collaboration between government, private sector, financial institutions, academia,",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -866,11 +922,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_7"
     }
   },
   {
-    "id": "ea5a2bb0-7a8c-41c3-bfb6-4b5b93ade1c5",
+    "chunk_id": "dedec54a-8e16-4a12-b3bf-3515ed0f009b",
     "text": "collaboration between government, private sector, financial institutions, academia, research institutes and farmers; 4) incorporation of the greenhouse gas (GHG) emission mitigation objective and coupling with financing under the Clean Development Mechanism (CDM), one of the carbon finance mechanisms defined in",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -896,11 +954,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_8"
     }
   },
   {
-    "id": "c17fa8a9-f125-4095-90b4-6321eddbb15e",
+    "chunk_id": "3261e82b-560d-4ea4-a96a-bbe3c85f3b9d",
     "text": "one of the carbon finance mechanisms defined in the Kyoto Protocol; 5) positive effect on beneficiary incomes; 6) enhanced public participation and fewer complaints against farmers; and 7) improved long-term sustainability (social, economic, environmental) of the sector for farmers. At",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -926,11 +986,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_9"
     }
   },
   {
-    "id": "4e9210e2-8d17-45dc-b276-9a1efb5b1795",
+    "chunk_id": "1ccb0058-3b96-40e9-a7b0-8b4246300c52",
     "text": "economic, environmental) of the sector for farmers. At the national level, the project stressed the need for interagency cooperation to develop effective and realistic regulations on environmental protection and discharge standards and to undertake spatial planning for the location of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -956,11 +1018,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_10"
     }
   },
   {
-    "id": "f1098ef5-8fd9-4eca-85af-ae0d9f776226",
+    "chunk_id": "5aef9984-ad74-48bc-bda7-ea7235d6992e",
     "text": "to undertake spatial planning for the location of future livestock development to create the conditions for better recycling of effluents. As a key tool for shaping and implementing policy at the local level, LWMEAP provided detailed templates for three different",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -986,11 +1050,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_11"
     }
   },
   {
-    "id": "383a71c9-5803-4394-bc0f-a8eafdd1e63e",
+    "chunk_id": "5fe8f528-32a4-44d7-ad2d-5edb94e9a737",
     "text": "level, LWMEAP provided detailed templates for three different Codes of Conduct. Each of the proposed Codes has been tailored to address specific farming practices and environmental challenges that are representative of most pig production in the region. The aim of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1016,11 +1082,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_12"
     }
   },
   {
-    "id": "266d5e3e-c554-4d6c-8d70-45913bbc4138",
+    "chunk_id": "5fb6e27e-1c4d-4323-b6f3-b50eebc4a436",
     "text": "pig production in the region. The aim of the project\u2019s replication is the eventual integration of the project\u2019s successful demonstrations and policy work into each country\u2019s overall livestock waste management strategy and their scaling up. Through regional dissemination activities targeting",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1046,11 +1114,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_13"
     }
   },
   {
-    "id": "a6015488-1fef-478c-99c3-52637d2be0bf",
+    "chunk_id": "7a3c9379-8654-4ce6-bdd1-21b1a28863db",
     "text": "their scaling up. Through regional dissemination activities targeting primarily the three participating countries but eventually also other countries draining into the South China Sea, other countries in the region could benefit from the knowledge and experience gained under the project.",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1076,11 +1146,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_14"
     }
   },
   {
-    "id": "f586a20b-cdee-42ab-91d1-f55a57f9b6cc",
+    "chunk_id": "129644d6-c6bc-4fdf-a9b4-19035fa1903a",
     "text": "the knowledge and experience gained under the project. The project also provides valuable experiences beyond the East Asia region. www.fao.org/ag/againfo/home/en/news_archive/AGA_in_action/docs/LWMEA-Experience_Note.pdf",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1106,11 +1178,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page25",
+      "chunker_order": "a-i3817e_page25_chunk_15"
     }
   },
   {
-    "id": "05ee4e8a-7178-4928-a3aa-05fff3348b1b",
+    "chunk_id": "686a36d6-700a-4a81-bd27-51dd306a8e7e",
     "text": "--- CLIMATE-SMART AGRICULTURE FOR --- 9 CSA SUCCESS STORIES CLIMATE-SMART AGRICULTURE FOR SMALLHOLDER FARMERS IN KENYA AND TANZANIA Launched in 2010, the FAO Mitigation of Climate Change in Agriculture (MICCA) Programme is working to make agriculture more climate-smart. It is",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1136,11 +1210,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_0"
     }
   },
   {
-    "id": "5a8bc116-bedd-4acf-8945-391669b3e62c",
+    "chunk_id": "73883fe1-6372-47dc-b0f4-b1881e18fa68",
     "text": "working to make agriculture more climate-smart. It is building a knowledge base on what it will take to put climate-smart agriculture into practice. The project approach taken is to develop a selection of climate-smart agricultural practices for smallholder farmers based",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1166,11 +1242,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_1"
     }
   },
   {
-    "id": "d23b3268-00ce-4631-a0a0-4c4bd801ba9e",
+    "chunk_id": "197814f8-ed63-453e-bf8c-e35fe47cdcd5",
     "text": "of climate-smart agricultural practices for smallholder farmers based on participatory assessments and consultative processes at multiple levels within its two pilot projects in Tanzania and Kenya. The development of the \u201cmenus of practices\u201d involves site-specific assessments of the adaptation, mitigation",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1196,11 +1274,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_2"
     }
   },
   {
-    "id": "e535f0ea-af66-440e-a628-fd299f5a7fbf",
+    "chunk_id": "05e484c1-aea5-44e1-aeff-7af132b1a77f",
     "text": "practices\u201d involves site-specific assessments of the adaptation, mitigation and food security benefits of a range of agricultural practices. Given the location specific nature of climate-smart agriculture, practices are identified based on the given agro-ecological and socio-economic situation of each pilot",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1226,11 +1306,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_3"
     }
   },
   {
-    "id": "6efd5add-29a3-4578-ac86-ee6a4d3d2d18",
+    "chunk_id": "c50e6520-9aea-4ace-be7b-a2ec2b61183c",
     "text": "given agro-ecological and socio-economic situation of each pilot project. Farmers from each pilot project participated in several consultations in the field to identify existing agricultural practices and their possible impacts. This allowed farmers to compose a menu of potentially suitable",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1256,11 +1338,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_4"
     }
   },
   {
-    "id": "7c2335ef-ae9d-4bb9-9622-950f1df9bb47",
+    "chunk_id": "13d802e6-331a-4d36-8149-90bbf5091494",
     "text": "farmers to compose a menu of potentially suitable climate- smart practices that can be readily integrated into their current farming systems. The identification of these practices by farmers is followed by a set of trainings to facilitate the adoption and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1286,11 +1370,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_5"
     }
   },
   {
-    "id": "5c686619-0a44-4f83-b0d3-a07f07eec661",
+    "chunk_id": "bf8d6187-1a87-4e6f-a16c-9cd07812d63d",
     "text": "set of trainings to facilitate the adoption and scaling-up. In addition, capacity development of CSA practices is strongly connected to an extension approach and incentive mechanisms (dairy farmer groups in Kenya and Farmer Field Schools in Tanzania) to promote the",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1316,11 +1402,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_6"
     }
   },
   {
-    "id": "57854686-1c17-4105-9cc5-8e597660e1c7",
+    "chunk_id": "bef8c5bc-1438-498f-8a15-a743cc444868",
     "text": "Farmer Field Schools in Tanzania) to promote the up-take of the different practices. Some 2500 farmers in Tanzania and Kenya \u2013 46% of which were women, received training on climate-smart agricultural resulting in: \u2022 300 energy-efficient cooking stoves to reduce",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1346,11 +1434,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_7"
     }
   },
   {
-    "id": "e84295f8-c039-480e-9870-f95669d02f76",
+    "chunk_id": "3910e590-8ff5-416d-8765-ee2df8cd1dbd",
     "text": "in: \u2022 300 energy-efficient cooking stoves to reduce deforestation \u2022 44 tree nurseries \u2022 134 381 seedlings in stock and more than 33 500 tree seedlings planted \u2022 235 terraces established to conserve soil and water \u2022 2 biogas digesters",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1376,11 +1466,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_8"
     }
   },
   {
-    "id": "bfe01e68-2065-402a-a30d-2f604481d231",
+    "chunk_id": "a8cee7b8-6ff0-4226-a93d-3d81d939be5b",
     "text": "conserve soil and water \u2022 2 biogas digesters to produce renewable energy from cow manure The relevance of the different CSA practices for individual farmers is shaped by institutions and socio-economic factors, including availability of and access to labour and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1406,11 +1498,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_9"
     }
   },
   {
-    "id": "a15f9f9a-907d-4f1a-8da7-3cf374bafde4",
+    "chunk_id": "777e3979-06e3-45d0-8a86-674db5b2cd39",
     "text": "including availability of and access to labour and land, as well as up-front investment costs, climatic risks, gender roles, and physical conditions such as soil fertility and health and access to water. In order to better understand the dynamics of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1436,11 +1530,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_10"
     }
   },
   {
-    "id": "381c8686-8a1b-4011-8445-d5adfde639b6",
+    "chunk_id": "3f9cb9df-f384-4759-8d1c-18b96b0220b6",
     "text": "In order to better understand the dynamics of adoption of the CSA practices and further inform agricultural policies and extension, MICCA will also analyse the constraints and factors driving adoption of CSA practices using the two pilot project sites as",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1466,11 +1562,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_11"
     }
   },
   {
-    "id": "3e6eab96-067e-4cb2-bb9e-bb6334677d8e",
+    "chunk_id": "20bfca89-43b0-496a-af93-e882db1b6055",
     "text": "practices using the two pilot project sites as concrete cases. As the ground work on practices moves forward, national workshops, specifically targeted to policy makers, will be conducted to help review the results of past and on-going CSA work and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1496,11 +1594,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_12"
     }
   },
   {
-    "id": "2c8a959d-c2be-4147-94b5-e34d01ab9e1e",
+    "chunk_id": "eae56589-b864-46da-99b9-f68eff6bc920",
     "text": "results of past and on-going CSA work and test decisions related to their priorities with decision makers at different scales. These meetings will be a good opportunity to review the use of CSA practices in Nationally Appropriate Mitigation Actions, National",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1526,11 +1626,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_13"
     }
   },
   {
-    "id": "06f70abe-87cd-42ad-8ad7-7fb47b1bbdda",
+    "chunk_id": "6062f4d4-7703-4d2a-a6be-d604da376416",
     "text": "CSA practices in Nationally Appropriate Mitigation Actions, National Adaptation Plans, and other mechanisms. The FAO MICCA Programme is a multidisciplinary initiative that builds on FAO\u2019s long-standing work carried out by its different technical departments and collaborates with international and national",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1556,11 +1658,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_14"
     }
   },
   {
-    "id": "85ea8ad9-f4f2-4e4c-bada-4b157939409e",
+    "chunk_id": "6fc3a182-90d6-4e89-805d-b474f911c12f",
     "text": "technical departments and collaborates with international and national organizations. MICCA complements other FAO and United Nations efforts to address climate change and collaborates with the UN-REDD Programme. www.fao.org/climatechange/micca/79677/en/#approach 3",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1586,11 +1690,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page11",
+      "chunker_order": "a-i3817e_page11_chunk_15"
     }
   },
   {
-    "id": "a14be529-fe9a-4838-83b9-55056361cba1",
+    "chunk_id": "6fd5825e-176b-4f30-a2ac-084a2cc6fd52",
     "text": "--- Page 12 --- Varieties of potato for sale at the local market, Peru \u00a9FAO/S. Cespoli",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1616,11 +1722,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page12",
+      "chunker_order": "a-i3817e_page12_chunk_0"
     }
   },
   {
-    "id": "a7a5acca-e56b-48b5-ac7c-c0450446588e",
+    "chunk_id": "c00b5b64-1332-43d5-aee3-48135409a184",
     "text": "--- Page 27 --- Co\ufb00ee shrubs and banana trees in the Kihamba layered vegetation, Tanzania \u00a9FAO/D.Boerma",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1646,11 +1754,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page27",
+      "chunker_order": "a-i3817e_page27_chunk_0"
     }
   },
   {
-    "id": "d48474cd-b5eb-4f7e-9138-3eaa739715b4",
+    "chunk_id": "bd29b89a-1dc7-4c8f-b411-1417b330fc5a",
     "text": "--- A LANDSCAPE APPROACH FOR POLICY --- 15 CSA SUCCESS STORIES A LANDSCAPE APPROACH FOR POLICY MAKING, PLANNING, AND MONITORING IN THE KAGERA RIVER BASIN A farmer in UGANDA with Sustainably manages his land 10 heads of cattle 20 beehives",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1676,11 +1786,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_0"
     }
   },
   {
-    "id": "120eba7e-419c-4a6e-a69d-d7feffe62c4d",
+    "chunk_id": "f7288f59-f796-46f9-8167-b1eb47efb7b7",
     "text": "his land 10 heads of cattle 20 beehives 1 acre fruit trees 1 acre pastures The goal of the Transboundary Agro-ecosystem Management Project for the Kagera River Basin (Kagera TAMP), funded by the Global Environment Facility (GEF) and implemented by",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1706,11 +1818,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_1"
     }
   },
   {
-    "id": "bcf8b3c8-f357-4dba-ab1a-8a378a221b31",
+    "chunk_id": "d27b536f-da2d-47e8-a8eb-f82adbc2da97",
     "text": "the Global Environment Facility (GEF) and implemented by FAO, is to adopt an integrated ecosystem approach for the management of land resources in the Kagera River Basin. The Basin is shared by Burundi, Rwanda, Uganda and the United Republic of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1736,11 +1850,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_2"
     }
   },
   {
-    "id": "5eb5740b-1bac-4269-8293-fb07fcf99576",
+    "chunk_id": "811c9022-c4e9-47e9-891e-e83ce28aa7be",
     "text": "Burundi, Rwanda, Uganda and the United Republic of Tanzania. Through a landscape approach the project helps restore degraded lands, sequester carbon, adapt to climate change and use agricultural biodiversity in a sustainable way while improving agricultural production, rural livelihoods and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1766,11 +1882,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_3"
     }
   },
   {
-    "id": "ace9ec15-053d-43bb-9005-fccb25952d74",
+    "chunk_id": "c213a63b-5e73-4463-ba84-31828014d39b",
     "text": "way while improving agricultural production, rural livelihoods and food security. One of the farmers living in Kiruhura District, Uganda was inspired to take on the new way of herd management to improve his income after being introduced to better farming",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1796,11 +1914,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_4"
     }
   },
   {
-    "id": "ad6b538d-2d08-4316-a091-ed0651525313",
+    "chunk_id": "d773ddb8-ac3f-44e7-9ad6-59cd79653161",
     "text": "his income after being introduced to better farming methods that enabled him to keep a small, high productivity herd while combining this activity with agricultural cultivations. He sold 150 heads of cattle to keep only 10 animals and managed to",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1826,11 +1946,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_5"
     }
   },
   {
-    "id": "f0afde01-add6-4248-882b-ebf05e52b870",
+    "chunk_id": "31ab747a-20c4-4023-a1a1-5939776d4adf",
     "text": "to keep only 10 animals and managed to increase his income from milk while planting about 10 000 trees, one acre of fruit trees, pastures and leguminous fodders whose seeds he supplies to other farmers. In addition, his family benefits",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1856,11 +1978,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_6"
     }
   },
   {
-    "id": "81f3bf27-48bb-4dfa-b8d1-79aaa2f676f6",
+    "chunk_id": "290db3f1-a224-4839-af3f-12629362d5b9",
     "text": "to other farmers. In addition, his family benefits from gardens of maize, cauliflower and carrots in addition to 20 bee hives. He attributes the quick adoption of the new land management ways to Farmer Field School activities that promote farmer-to-",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1886,11 +2010,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_7"
     }
   },
   {
-    "id": "8a155ccf-efdf-4510-8b56-71a3b1415448",
+    "chunk_id": "37b13091-eac3-4789-939c-29fb3a523b72",
     "text": "to Farmer Field School activities that promote farmer-to- farmer learning. Other farmers have benefited of the introduction of fruit trees by improving their nutrition and diversifying their income generating opportunities. Additional activities include communal tree nurseries which have enabled farmers",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1916,11 +2042,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_8"
     }
   },
   {
-    "id": "cf07995a-de01-48a0-96f4-e2157fcd5eff",
+    "chunk_id": "b4140ded-8c15-4f37-9a63-d91b5beaf74a",
     "text": "include communal tree nurseries which have enabled farmers to plant on bare hills over 150 000 trees in the area, both for timber and fruits. A participatory multisector process to asses and map land degradation and sustainable land management (SLM)",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1946,11 +2074,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_9"
     }
   },
   {
-    "id": "1ce9c568-b7b8-42f8-9874-7cf469a68dd1",
+    "chunk_id": "55ed6ca9-c008-485c-b610-2add44bf6322",
     "text": "map land degradation and sustainable land management (SLM) was carried out for the entire basin based on a method jointly developed by the LADA project (www. fao.org/nr/lada/) and executed by FAO with the support of the GEF/United Nations Environment Programme",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -1976,11 +2106,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_10"
     }
   },
   {
-    "id": "b8f300ec-1d94-4455-aeda-2e6da1a37dcf",
+    "chunk_id": "06c9cccc-8963-4f1d-8c0b-c249b603bd06",
     "text": "the support of the GEF/United Nations Environment Programme (UNEP) in collaboration with the World Overview of Conservation Approaches and Technologies Secretariat. The assessment provided the baseline information and a harmonized territorial estimation of the tangible elements of the ecosystem\u2019s good",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2006,11 +2138,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_11"
     }
   },
   {
-    "id": "a19c3e66-4980-4999-8f7a-e40535232725",
+    "chunk_id": "a58350e8-8a1f-460b-8cfa-d595d35fcf30",
     "text": "of the tangible elements of the ecosystem\u2019s good and services such as the impacts of land use and management practices on soil, water, biomass and biodiversity as well as its social and economic implications. Decision makers in the four countries",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2036,11 +2170,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_12"
     }
   },
   {
-    "id": "ab6cc0f2-5ff5-47f5-8bb9-76c8335d36fe",
+    "chunk_id": "a47d6fc7-765f-4297-b31b-fa05103ab8c9",
     "text": "economic implications. Decision makers in the four countries are assisted in analysing what type of land degradation processes are occurring, including those exacerbated by climate change, where they are happening, what are the trends and why and what are the",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2066,11 +2202,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_13"
     }
   },
   {
-    "id": "6d9333b2-16da-4ddb-97c5-f458344a3e1d",
+    "chunk_id": "b36421ca-9c07-4517-9593-e8409ab3a6c3",
     "text": "the trends and why and what are the expected ecological and socio-economic impacts. The data and maps are used to devise the best project intervention strategy, identify best SLM practices for scaling up and guide effective and responsive interventions at",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2096,11 +2234,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_14"
     }
   },
   {
-    "id": "002cc686-de0b-4f86-98ce-11abb0a164cd",
+    "chunk_id": "eea2c28c-a826-43ac-85b4-fffdb70d7d59",
     "text": "up and guide effective and responsive interventions at various scales. This process also informs policy making, planning and budgetary allocations by technical sectors at the district and transboundary levels and will establish a baseline for more integrated landscape management approaches.",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2126,11 +2266,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_15"
     }
   },
   {
-    "id": "14365ac3-dee0-4467-b4ce-8e3be4e259c9",
+    "chunk_id": "cb7c30e5-9dba-469c-9a78-7f0eb3edcd26",
     "text": "a baseline for more integrated landscape management approaches. A comparison of maps showing degradation and SLM effectiveness allows decision makers to identify areas requiring interventions, select good practices that can be scaled up, and choose additional SLM measures that are",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2156,11 +2298,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_16"
     }
   },
   {
-    "id": "44f5e0ef-20c2-44a6-b90f-bc27c73092b1",
+    "chunk_id": "1633a4c1-110e-4e99-9dd9-cedc14695037",
     "text": "up, and choose additional SLM measures that are needed to address specific degradation problems. Information gathered allows for landscape and territorial management among sectors and contributes to achieving multiple objectives, including sustainable productivity, enhanced resilience to climate variability and change,",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2186,11 +2330,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_17"
     }
   },
   {
-    "id": "7b6e9980-c314-47ce-882e-a107e3c7e125",
+    "chunk_id": "6b7049b7-dd2a-416d-a00e-81e450d87c88",
     "text": "productivity, enhanced resilience to climate variability and change, and climate change mitigation. This for more effective synergies among sectoral interventions and helps identify trade-offs that need to be addressed by all stakeholders. www.fao.org/nr/kagera 6",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2216,11 +2362,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_18"
     }
   },
   {
-    "id": "ba00b0cd-e8c9-4d85-bbb2-2a20eefe1d20",
+    "chunk_id": "d79d08e7-512e-40f5-96fe-4e6c1259b55f",
     "text": "www.fao.org/nr/kagera 6",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2246,11 +2394,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page17",
+      "chunker_order": "a-i3817e_page17_chunk_19"
     }
   },
   {
-    "id": "266deb81-de45-4922-8b80-a73345109252",
+    "chunk_id": "99f3c9da-a9f0-4cc9-9da4-fc6825b4d83d",
     "text": "--- Page 22 --- Women working in a communal garden in Burundi \u00a9FAO/G. Napolitano",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2276,11 +2426,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page22",
+      "chunker_order": "a-i3817e_page22_chunk_0"
     }
   },
   {
-    "id": "31c29289-76f2-43b2-b9b6-2244296caa30",
+    "chunk_id": "f30360b2-f33c-454f-9b4e-9ae5fca198e6",
     "text": "--- Climate-Smart Agriculture (CSA) Sourcebook launched in --- CLIMATE-SMART AGRICULTURE GROUND ON THE This booklet provides examples of climate-smart systems by showcasing some FAO success stories in various countries. The cases have been selected from the FAO Climate-Smart Agriculture (CSA)",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2306,11 +2458,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page2",
+      "chunker_order": "a-i3817e_page2_chunk_0"
     }
   },
   {
-    "id": "704829a7-aae6-4170-9ad5-a64e363b7568",
+    "chunk_id": "37c5dbe7-8819-4504-b33b-6a5f0da6d2f0",
     "text": "been selected from the FAO Climate-Smart Agriculture (CSA) Sourcebook launched in 2013 to show the diversity of potential options across di\ufb00erent regions and agricultural systems also covering subjects such as biodiversity and gender.",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2336,11 +2490,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page2",
+      "chunker_order": "a-i3817e_page2_chunk_1"
     }
   },
   {
-    "id": "02780207-458f-4d8c-8243-d47df42e71b4",
+    "chunk_id": "0b119ae5-8e4d-43f0-8501-9245262768e1",
     "text": "gender.",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2366,11 +2522,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page2",
+      "chunker_order": "a-i3817e_page2_chunk_2"
     }
   },
   {
-    "id": "b1aa5312-8271-4032-8328-d6a3cf775040",
+    "chunk_id": "1f9b2d57-af46-4321-b721-84a83c28c6d5",
     "text": "--- SUSTAINABLE GRAZING FOR --- 7 CSA SUCCESS STORIES SUSTAINABLE GRAZING FOR BETTER LIVELIHOODS IN CHINA The restoration of degraded grasslands through sustainable grassland management includes reductions in grazing pressure on overstocked areas, the sowing of improved pastures and better",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2396,11 +2554,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_0"
     }
   },
   {
-    "id": "eb521107-c336-456b-b483-3938d1b04ef8",
+    "chunk_id": "beabde3e-b92e-412a-9615-19b24c442d2c",
     "text": "areas, the sowing of improved pastures and better pasture management. It can lock more carbon in soils and biomass, increase the water-holding capacity of the soil and enhance grassland biodiversity. The Three Rivers Sustainable Grazing Project is a pilot project",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2426,11 +2586,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_1"
     }
   },
   {
-    "id": "a24ce8fe-fa57-489e-9e3e-ba67d82b1670",
+    "chunk_id": "51ffe367-0b30-43b1-8b98-f8293aef4ab0",
     "text": "Rivers Sustainable Grazing Project is a pilot project in the Qinghai province of China that aims to address these challenges. The research and planning phases of the project have been completed with joint contributions from FAO, ICRAF and Chinese institutes",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2456,11 +2618,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_2"
     }
   },
   {
-    "id": "2fe9b027-e835-403b-b241-d3efa8e5e2b3",
+    "chunk_id": "96faf006-f374-4829-b792-01844e255cd3",
     "text": "joint contributions from FAO, ICRAF and Chinese institutes including the Institute of Environment and Sustainable Development in Agriculture (CAAS) and the Northwest Institute of Plateau Biology. Investors and the Qinghai Government are currently discussing co-investment opportunities for implementation of the",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2486,11 +2650,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_3"
     }
   },
   {
-    "id": "4bfe81c8-4a07-4744-86c9-1cd83a229cb6",
+    "chunk_id": "7420689b-9f5f-4a81-8266-e632e2384212",
     "text": "currently discussing co-investment opportunities for implementation of the project. In the project yak- and sheep-herding households will select a combination of management options related to grazing intensity, grass cultivation and animal husbandry. The project\u2019s goal is to restore degraded grazing",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2516,11 +2682,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_4"
     }
   },
   {
-    "id": "6de55698-41a9-4892-8ae5-e51fd0faff6c",
+    "chunk_id": "3a081afd-37c7-4f1c-96fe-fe5b2862bf1a",
     "text": "The project\u2019s goal is to restore degraded grazing land and sequester soil carbon, and at the same time increase productivity, build resilience and improve livelihoods in smallholder herder communities. The average annual mitigation potential in the first 10 years of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2546,11 +2714,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_5"
     }
   },
   {
-    "id": "ca6a1c84-5825-4ada-b02a-faa802f378ec",
+    "chunk_id": "3a73b059-c682-4b2f-846a-662e700420e9",
     "text": "mitigation potential in the first 10 years of the project were estimated at 63 000 tonnes of CO2 eqv. per year. The primary selection criteria for this project was its high carbon sequestration potential, which was linked to the prevalence",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2576,11 +2746,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_6"
     }
   },
   {
-    "id": "813de29e-1063-4f0a-ac3a-0749840e182f",
+    "chunk_id": "fa34b15f-6262-4cc1-86d1-3606495784ea",
     "text": "sequestration potential, which was linked to the prevalence of heavily degraded grazing land (38 percent of the project area), and the availability of simple and cost-effective restoration measures. Also, by improving soil moisture and nutrient retention in soils, grassland restoration",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2606,11 +2778,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_7"
     }
   },
   {
-    "id": "4eeebbf8-3818-41ee-ba5f-da74aa2124f8",
+    "chunk_id": "62be8bd8-a540-44a0-b823-6de5e2aab4a5",
     "text": "moisture and nutrient retention in soils, grassland restoration plays an important role in building resilience to climate change. Assessments revealed that restoration of degraded grazing lands would also significantly enhance the productive potential of the project site. Economic returns to",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2636,11 +2810,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_8"
     }
   },
   {
-    "id": "defa5b69-0072-4bd0-a043-e58b45f653e1",
+    "chunk_id": "5ffad55b-2b1a-4de7-975e-07d0780936a4",
     "text": "potential of the project site. Economic returns to herders will be enhanced by including a package of complementary measures, such as the introduction of improved feeding, winter housing, post-farm processing and marketing activities. The project\u2019s capacity to deliver economic returns",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2666,11 +2842,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_9"
     }
   },
   {
-    "id": "cda8938b-9568-460a-bcf0-d40c781a878a",
+    "chunk_id": "3e19e328-c318-4c8a-a0a0-84f7ee1dbb2a",
     "text": "activities. The project\u2019s capacity to deliver economic returns is crucial, as it greatly increases the likelihood of voluntary herder enrolment, and improves the synergy between climate change mitigation and rural development objectives. The project aims to finance its investment costs",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2696,11 +2874,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_10"
     }
   },
   {
-    "id": "5791331a-49e8-473e-9336-42db2f5908ae",
+    "chunk_id": "9fef2e22-c8ea-4fea-83aa-a3143fc5ea5b",
     "text": "The project aims to finance its investment costs (e.g. for grass planting, fencing and animal housing) and cover income forgone due to temporary destocking, with funds mobilized from the voluntary carbon market. A key constraint to accessing carbon market finance",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2726,11 +2906,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_11"
     }
   },
   {
-    "id": "43d9f623-65e0-4411-a059-df5683feb48c",
+    "chunk_id": "93ba34db-5e17-4772-b3d8-f0e05403f288",
     "text": "A key constraint to accessing carbon market finance is the absence of carbon accounting methodology that is cost effective for herders, but also sufficiently accurate for investors. To address this constraint, FAO has developed a carbon accounting methodology, based on",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2756,11 +2938,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_12"
     }
   },
   {
-    "id": "fbd858e3-9747-45a8-935c-13af496a8e88",
+    "chunk_id": "d9ce6532-2f87-477f-a4de-f83ee8393470",
     "text": "has developed a carbon accounting methodology, based on the sustainable grassland management practices described above, that has been validated under the Verified Carbon Standard. Instead of relying solely on direct measurement, which is often prohibitively costly, this methodology permits the",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2786,11 +2970,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_13"
     }
   },
   {
-    "id": "d09be278-5997-42a2-addd-0fe55637b533",
+    "chunk_id": "34249075-f7fa-4d03-b976-4a6968dad2b9",
     "text": "is often prohibitively costly, this methodology permits the use of carefully calibrated biogeochemical models in combination with the monitoring of management activities to estimate soil carbon pool changes. This important innovation significantly reduces the costs associated with measurement and verification",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2816,11 +3002,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_14"
     }
   },
   {
-    "id": "4de081ec-e85b-4893-ae8d-9d34332debbe",
+    "chunk_id": "0c4b6192-d8c4-48f8-be16-14d246051801",
     "text": "reduces the costs associated with measurement and verification and greatly facilitates access to carbon markets. While developed as part of the Three Rivers project, the grassland carbon accounting methodology will be applicable to sustainable grazing projects throughout the world. www.v-c-s.org/methodologies/methodology-sustainable-grassland-management-sgm",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2846,11 +3034,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_15"
     }
   },
   {
-    "id": "e4996c0b-a322-4c04-9dfb-ce887f4c523a",
+    "chunk_id": "5ba0cb51-5243-4a2e-8ccc-03337f16a760",
     "text": "to sustainable grazing projects throughout the world. www.v-c-s.org/methodologies/methodology-sustainable-grassland-management-sgm 2",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2876,11 +3066,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page9",
+      "chunker_order": "a-i3817e_page9_chunk_16"
     }
   },
   {
-    "id": "70325b60-4268-47c0-a36b-04642ccab2bf",
+    "chunk_id": "416b8ad6-ee4f-4e9e-938e-64c3d51616ad",
     "text": "--- PROMOTING THE DEVELOPMENT OF UREA --- 19 CSA SUCCESS STORIES PROMOTING THE DEVELOPMENT OF UREA DEEP PLACEMENT IN NIGERIA THROUGH SOUTH/SOUTH COOPERATION The Urea Deep Placement (UDP) technique, developed by the International Rice Research Institute (IRRI) and International Fertilizer",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2906,11 +3098,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_0"
     }
   },
   {
-    "id": "61f8466e-076b-46f3-9aa8-ed92accf052a",
+    "chunk_id": "ca2222bf-1ec1-4298-8b95-dc4bed2e6aa6",
     "text": "International Rice Research Institute (IRRI) and International Fertilizer Development Center (IFDC), is a good example of a climate-smart solution for rice systems. The usual technique for applying urea, the main nitrogen fertilizer for rice, is through a broad-cast application. This",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2936,11 +3130,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_1"
     }
   },
   {
-    "id": "1c8acbc3-7982-4455-b505-9c7c618d5d1b",
+    "chunk_id": "35b08d2c-e873-47fe-a7e9-3f37eccf8b95",
     "text": "for rice, is through a broad-cast application. This is a very inefficient practice, with 60 to 70 percent of the nitrogen applied being lost, and contributes to GHG emissions and water pollution. In the UDP technique, urea is made into",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2966,11 +3162,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_2"
     }
   },
   {
-    "id": "a616168e-4f1d-4316-b54b-577759a216e2",
+    "chunk_id": "db98e3b8-be4c-4a3d-879f-85422c06bcc6",
     "text": "In the UDP technique, urea is made into \u201cbriquettes\u201d of 1 to 3 grams that are placed at 7 to 10 cm soil depth after the paddy is transplanted. This technique decreases nitrogen losses by 40 percent and increases urea",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -2996,11 +3194,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_3"
     }
   },
   {
-    "id": "3aa20c38-9bf9-4cb7-9baa-d161a85eccf1",
+    "chunk_id": "7be165f2-40b5-4068-b947-7ce57014f6a4",
     "text": "nitrogen losses by 40 percent and increases urea efficiency to 50 percent. It increases yield by 25 percent with an average 25 percent decrease in urea use. UDP has been actively promoted by the Bangladesh Department of Agricultural Extension with",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3026,11 +3226,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_4"
     }
   },
   {
-    "id": "69f20f09-28d1-46b3-a95b-865063e4c327",
+    "chunk_id": "04e8c30d-571e-46b3-af24-6f6e53c62102",
     "text": "by the Bangladesh Department of Agricultural Extension with IFDC assistance. In 2009, UDP was used on half a million hectares by a million farmers and there are plans to expand its use to 2.9 million more families on 1.5 million",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3056,11 +3258,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_5"
     }
   },
   {
-    "id": "c2f88013-4f07-4855-958f-02fae4e090e5",
+    "chunk_id": "8e065db6-0d19-403e-b547-ed2ac16a2064",
     "text": "to 2.9 million more families on 1.5 million hectares. The widespread adoption of the UDP technique in Bangladesh had important impacts: farmers\u2019 incomes have increased thanks to both increased yields and reduced fertilizers\u2019 costs. Jobs have been created locally in",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3086,11 +3290,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_6"
     }
   },
   {
-    "id": "a0977898-b070-4227-923f-90036b8e67ee",
+    "chunk_id": "5cdc62c8-1803-4400-bede-b6aa8f66c473",
     "text": "fertilizers\u2019 costs. Jobs have been created locally in small enterprises, often owned by women, to make the briquettes. There are now 2 500 briquette making machines in Bangladesh. On-farm jobs have also been created as the briquettes are placed by",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3116,11 +3322,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_7"
     }
   },
   {
-    "id": "72fe4bb0-0997-4d41-9b2d-e19a840d94d7",
+    "chunk_id": "333ed0a2-757d-47cd-8e71-28efdc149086",
     "text": "been created as the briquettes are placed by hand, which requires 6 to 8 days labour per hectare. Higher yields and savings on fertilizer expenditures more than compensate for the additional field labour expenses. At the national level, imports of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3146,11 +3354,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_8"
     }
   },
   {
-    "id": "a9763c71-69e3-4be9-b891-20d0c1b23afb",
+    "chunk_id": "25b21bde-3a21-484f-b96f-9b0c317fbc01",
     "text": "labour expenses. At the national level, imports of urea have been reduced, with savings in import costs estimated by IFDC at USD 22 million and in government subsidies of USD 14 million (2008), for an increase of production of 268",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3176,11 +3386,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_9"
     }
   },
   {
-    "id": "033dd629-21d3-428b-ae8b-e03904b3e457",
+    "chunk_id": "0b6dc666-1d53-48aa-adab-abde2982da09",
     "text": "(2008), for an increase of production of 268 000 metric tons. At a global level UDP has reduced GHG emissions caused by the production and management of fertilizers. It also increases the agricultural system\u2019s resilience. As fertilizers prices are linked",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3206,11 +3418,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_10"
     }
   },
   {
-    "id": "32fadc62-a1df-4de9-a68e-7463add6f25a",
+    "chunk_id": "918a76a3-7cb9-4fb3-ba37-f2a3da6fd855",
     "text": "agricultural system\u2019s resilience. As fertilizers prices are linked to energy prices, and consequently very volatile, reducing fertilizer use also increases farm and country\u2019s resilience to economic shocks. With the efficacy of the technique now well proven, UDP is being up",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3236,11 +3450,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_11"
     }
   },
   {
-    "id": "14cd66e6-4ca9-4016-a81c-699ea3192120",
+    "chunk_id": "27e49ec9-83cd-49eb-b8ce-0f7747995074",
     "text": "technique now well proven, UDP is being up scaled, partly through South/South cooperation promoted by FAO. For instance, the National Programme for Food Security of Nigeria (NPFS) is supported by South/South cooperation with China. This support includes the promotion and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3266,11 +3482,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_12"
     }
   },
   {
-    "id": "fd7adccd-32ec-4398-9a17-2b2b731d47cd",
+    "chunk_id": "76e29a70-24f1-461b-b028-c5ef2ca90ed3",
     "text": "with China. This support includes the promotion and development of the UDP technique in several Nigerian states. 8",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3296,11 +3514,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page21",
+      "chunker_order": "a-i3817e_page21_chunk_13"
     }
   },
   {
-    "id": "c3fd24eb-0de1-483a-bf18-24be990c0374",
+    "chunk_id": "a666e45d-10a2-4e9d-abaf-12931eed4eb7",
     "text": "--- Page 20 --- Rice farmer examines his crop in Kiroka, Tanzania \u00a9FAO/D. Hayduk",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3326,11 +3546,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page20",
+      "chunker_order": "a-i3817e_page20_chunk_0"
     }
   },
   {
-    "id": "654ff984-b4b3-4fd5-b4b6-64a93e2188f1",
+    "chunk_id": "79454743-936a-449b-8297-b2b97bcb455f",
     "text": "--- Page 24 --- Pig place in smallholder family farm in Vietnam \u00a9FAO/M. Guardia",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3356,11 +3578,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page24",
+      "chunker_order": "a-i3817e_page24_chunk_0"
     }
   },
   {
-    "id": "5446629c-07c1-4290-8e2f-97dd7a477206",
+    "chunk_id": "13efd832-a925-4a19-ad19-d26e6b7ef099",
     "text": "--- A READINESS PROJECT IN --- 13 CSA SUCCESS STORIES CLIMATE-SMART AGRICULTURE: A READINESS PROJECT IN MALAWI, VIETNAM AND ZAMBIA Guiding Investments Managing Climate Risk Assessing the situation Identify barriers & enabling factors De\ufb01ning coherent policies The builidng blocks for",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3386,11 +3610,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_0"
     }
   },
   {
-    "id": "b94111f0-1e10-498f-8ae4-6e0939a95a11",
+    "chunk_id": "87b54572-6b6e-4d3f-8a96-458d1cca25c7",
     "text": "factors De\ufb01ning coherent policies The builidng blocks for CSA policy implementation at country level FAO is implementing with partner countries the project \u201cClimate Smart Agriculture: capturing the synergies among mitigation, adaptation and food security\u201c. It aims to strengthen technical, policy",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3416,11 +3642,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_1"
     }
   },
   {
-    "id": "df50bf49-cbf0-4554-84c7-a7946529323a",
+    "chunk_id": "22d90f19-8d39-4880-9bbd-9e3e148058d8",
     "text": "food security\u201c. It aims to strengthen technical, policy and investment capacities of its three partner countries \u2013 Malawi, Vietnam and Zambia - to enable sustainable increases in agricultural productivity and incomes, resilience of agricultural and food systems to adapt to",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3446,11 +3674,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_2"
     }
   },
   {
-    "id": "a50467fa-e0d1-408c-a79a-8294ecdd340e",
+    "chunk_id": "2b4680d7-4814-4175-a32f-37e5c1c75173",
     "text": "of agricultural and food systems to adapt to climate change and opportunities to reduce and remove GHGs in order to meet their national food security and development goals. The project was developed and is being technically supported by the EPIC",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3476,11 +3706,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_3"
     }
   },
   {
-    "id": "0928b0f1-d0f9-4a4e-a671-2890679c4664",
+    "chunk_id": "91dc84fa-46e7-4dc4-970e-ca7812b9c244",
     "text": "and is being technically supported by the EPIC Programme (Economics and Policy Innovations for Climate-smart agriculture) thanks to the support from the European Commission. The project has developed a methodology for combining different types of data to build an evidence",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3506,11 +3738,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_4"
     }
   },
   {
-    "id": "a33f3afa-6148-419a-8437-e665c1778d70",
+    "chunk_id": "67b6c49d-e61e-4ad3-a0ab-0c1a1fd30cb6",
     "text": "different types of data to build an evidence base on CSA practices, including incentives/barriers to adoption, mitigation-adaptation-food security synergies and trade-offs of different practice options (based on identification of food security and adaptation benefits, climate change indicators, mitigation potential and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3536,11 +3770,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_5"
     }
   },
   {
-    "id": "602aafde-fcb7-4b1f-b667-ce7822103250",
+    "chunk_id": "b55d98e2-e8fd-44b1-9905-d1ea836bd573",
     "text": "adaptation benefits, climate change indicators, mitigation potential and least-cost-investment options). In Zambia, this combined data has shown that some farmers face difficulties in adopting conservation agriculture (CA) practices, which potentially have productivity, adaptation and mitigation benefits. In some holdings, crop",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3566,11 +3802,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_6"
     }
   },
   {
-    "id": "8dcf22d9-f1ba-468e-8533-68c79d8a283b",
+    "chunk_id": "03252d45-bf0c-4306-93aa-8047d6af138f",
     "text": "adaptation and mitigation benefits. In some holdings, crop residues are needed for animal feed instead of soil cover and some households are too poor to wait several seasons for the benefits to materialize. However, CA appears to be used as",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3596,11 +3834,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_7"
     }
   },
   {
-    "id": "8ec967c7-12d9-4782-89aa-3fdbcf6953cf",
+    "chunk_id": "e9098614-552e-44bd-be72-404924b5cf8a",
     "text": "materialize. However, CA appears to be used as an adaptation response in areas of pronounced climate variability. The findings also indicate entry points for agricultural policies to increase food security under climate change and for extension services. The mapping of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3626,11 +3866,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_8"
     }
   },
   {
-    "id": "13b8fe33-237f-4c19-898d-0a65a5e49377",
+    "chunk_id": "42aeac54-44e3-412b-a65a-338bfc56e273",
     "text": "change and for extension services. The mapping of agricultural and climate change policy instruments, stakeholders/institutions and policy formulation and implementation processes is also being carried out with a view to enable greater policy alignment and more coordinated institutional arrangements. It",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3656,11 +3898,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_9"
     }
   },
   {
-    "id": "adae3e9d-e649-4ebb-8901-8d3f6c148ed7",
+    "chunk_id": "07ea12cc-2900-4b94-ae0f-8db4a6bd2d55",
     "text": "policy alignment and more coordinated institutional arrangements. It also facilitates policy dialogues between Ministries in charge of agriculture and the environment to harmonize draft national agricultural and climate change policies, which have already resulted in adjustment of draft policies. In",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3686,11 +3930,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_10"
     }
   },
   {
-    "id": "170cb872-209d-4343-b3a3-8d3f55062bff",
+    "chunk_id": "405d1c23-99ff-452a-a3ba-9750945ba6fa",
     "text": "already resulted in adjustment of draft policies. In addition, the project has coordinated participatory scenario building workshops among a broad group of stakeholders to explore future uncertainties, contextual challenges, institutional vulnerabilities, policy and networking options. The partner countries have benefited",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3716,11 +3962,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_11"
     }
   },
   {
-    "id": "e026a7f0-720a-4a48-ad73-6665126ef6d7",
+    "chunk_id": "eb93244b-1c56-4b33-abc3-346bc48572da",
     "text": "and networking options. The partner countries have benefited from capacity building activities that include: \u2022 Support to MS and PhD students at leading universities to strengthen linkages between research and policy decision-making. \u2022 A CSA training manual for training of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3746,11 +3994,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_12"
     }
   },
   {
-    "id": "22191112-7d34-4a16-9775-679b4b7b1f69",
+    "chunk_id": "199dfcbd-7470-4061-8bc5-96608e706dd8",
     "text": "\u2022 A CSA training manual for training of extension workers. \u2022 Support to the attendance by Ministry of Agriculture staff at UNFCCC negotiations to increase awareness of climate change issues within Agriculture Ministries, while strengthening the size and competencies of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3776,11 +4026,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_13"
     }
   },
   {
-    "id": "b3db1bfb-7610-4307-930d-c3efd7cde7fe",
+    "chunk_id": "7f8c1aa9-8686-4ce5-b846-ab49a6c1f9be",
     "text": "Ministries, while strengthening the size and competencies of national delegations to UNFCCC sessions. The evidence base and policy work developed by the project will be used in formulating investment proposals to support CSA implementation for which climate finance will be",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3806,11 +4058,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_14"
     }
   },
   {
-    "id": "932797e2-90c3-4b1f-ab8f-b796c561d388",
+    "chunk_id": "f02ccd69-9b8d-4c22-aa2a-204d6e805a49",
     "text": "CSA implementation for which climate finance will be mobilized. In Africa, such proposals will be embedded in Comprehensive AADP Investment Plans. Funding is being sought for a second phase of the project, which would involve implementation and its up-scaling in",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3836,11 +4090,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_15"
     }
   },
   {
-    "id": "77ca0932-46a7-4a72-946e-ea30b0929851",
+    "chunk_id": "0314c26e-4b2e-4304-9854-0f81c5e65603",
     "text": "which would involve implementation and its up-scaling in the three existing partner countries, expansion of readiness to other countries and development of a new screening tool. www.fao.org/climatechange/epic/home 5",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3866,11 +4122,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page15",
+      "chunker_order": "a-i3817e_page15_chunk_16"
     }
   },
   {
-    "id": "184814d6-9267-47d0-bbc6-ce98b0c03ead",
+    "chunk_id": "c2fe2ff5-4814-421b-81a3-35c7f7e490d3",
     "text": "--- Climate-Smart Agriculture in Kiroka, Tanzania --- 3 CSA SUCCESS STORIES Climate-Smart Agriculture in Kiroka, Tanzania \u00a9FAO/D. Hayduk",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3896,11 +4154,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page5",
+      "chunker_order": "a-i3817e_page5_chunk_0"
     }
   },
   {
-    "id": "c4859173-c758-4e51-9022-e8a2d23fa6b5",
+    "chunk_id": "30c8c2bb-36a1-4321-8c72-0a07ddf0fb39",
     "text": "--- THE IMPORTANCE OF GENETIC DIVERSITY --- 11 CSA SUCCESS STORIES ANDEAN AGRICULTURE: THE IMPORTANCE OF GENETIC DIVERSITY 3500 families In PERU in 18 rural communities help conserve 177 varieties of potatoes The Central Andes are a primary centre of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3926,11 +4186,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_0"
     }
   },
   {
-    "id": "6f89a9ac-2c19-4173-81e0-09077632c9a0",
+    "chunk_id": "d1c729a9-6bde-4af8-b1b6-c8955dc1e61b",
     "text": "The Central Andes are a primary centre of origin of potatoes. Up to 177 varieties have been domesticated for centuries in the valleys of Cusco and Puno, not far from the famous Macchu Pichu. One of the most amazing features",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3956,11 +4218,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_1"
     }
   },
   {
-    "id": "bbe2cb18-d101-4a1a-861a-7ed29a97d09c",
+    "chunk_id": "7c1abdb9-f750-4f81-a52e-c17650a7ec95",
     "text": "Macchu Pichu. One of the most amazing features of this heritage is the terracing system used to control land degradation. Terraces allow cultivation in steep slopes and different altitudes in the high plateau, around Lake Titicaca. The system also helps",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -3986,11 +4250,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_2"
     }
   },
   {
-    "id": "d77ca7e3-b1b0-43ca-bcf3-4e640e233b8b",
+    "chunk_id": "0674bb90-e994-4a55-b171-7b827ae93013",
     "text": "plateau, around Lake Titicaca. The system also helps maintain soil fertility. In the canals, silt, sediment, algae, and plant and animal residues decay into a nutrient-rich muck which can be dug out seasonally and added to the raised beds. Nowadays",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4016,11 +4282,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_3"
     }
   },
   {
-    "id": "e653b463-7c7a-4605-be6a-bb9a9d7db747",
+    "chunk_id": "2a864b06-8679-4e9d-8fd9-d47eb8047f27",
     "text": "seasonally and added to the raised beds. Nowadays farmers still cultivate the colourful traditional potatoes and quinoa varieties, each for a special climate and altitude condition. Genetic resources for food and agriculture will continue to represent key resources for building",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4046,11 +4314,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_4"
     }
   },
   {
-    "id": "79216cce-a0bb-4787-9e24-ec1efe0bae76",
+    "chunk_id": "89e45d29-595e-483c-96c1-baf14595c64f",
     "text": "will continue to represent key resources for building the resilience of this agro-ecosystem and providing suitable varieties and breeding stocks needed to adapt production to changing climatic conditions. Thus, their conservation and sustainable use are a prerequisite to cope with",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4076,11 +4346,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_5"
     }
   },
   {
-    "id": "28baf22d-70fc-4f60-a770-856e94152c00",
+    "chunk_id": "438d71b3-8edc-4139-ac2f-de9cc34bce48",
     "text": "sustainable use are a prerequisite to cope with climate change. The GEF funded, FAO-led Global Partnership Initiative on conservation and adaptive management of \u201cGlobally Important Agricultural Heritage Systems\u201d (GIAHS), in coordination with the Ministry of Environment, other local institutions and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4106,11 +4378,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_6"
     }
   },
   {
-    "id": "a75f3b9a-441e-4017-8288-74b1a5493501",
+    "chunk_id": "421075cf-fbc2-468c-9b43-2064a5c9a3c9",
     "text": "the Ministry of Environment, other local institutions and the participation of local communities, is helping value these ingenious agricultural technologies to guarantee their conservation, while providing sustainable development conditions for present and future generations of Andean peoples. The GIAHS Initiative",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4136,11 +4410,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_7"
     }
   },
   {
-    "id": "a6bd6797-c8e5-4785-a052-132a7e9d36b5",
+    "chunk_id": "3f6dcf10-45a8-4345-a520-a3a6fa73b606",
     "text": "future generations of Andean peoples. The GIAHS Initiative promotes public understanding, awareness, national and international recognition of Agricultural Heritage systems. Aiming to safeguard the social, cultural, economic and environmental goods and services these systems provide to family farmers, smallholders, indigenous",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4166,11 +4442,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_8"
     }
   },
   {
-    "id": "3dc12bdd-c1ec-4417-be08-9212b2340cfd",
+    "chunk_id": "95088878-fc86-486d-8243-72c2ba9ebc7c",
     "text": "these systems provide to family farmers, smallholders, indigenous peoples and local communities, the initiative fosters an integrated approach combining sustainable agriculture and rural development. This initiative has counted on the participation of 3500 families organized in 18 rural communities. In",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4196,11 +4474,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_9"
     }
   },
   {
-    "id": "ce6fda9c-fa1a-4a34-97d5-f2956bb17c92",
+    "chunk_id": "410b7dd4-9a07-4ea3-9afc-6bde3ed3ef4c",
     "text": "3500 families organized in 18 rural communities. In collaboration with national universities and research institutes as well as Puno Regional Government, FAO has promoted the conservation of agro-biodiversity of quinoa and potato cultivations. With these actions, FAO aims at developing",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4226,11 +4506,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_10"
     }
   },
   {
-    "id": "af28c356-e131-4c81-a0c9-984c1dc9b3ad",
+    "chunk_id": "ab4b5643-f4d1-4e06-86a4-e61a446d0431",
     "text": "cultivations. With these actions, FAO aims at developing appropriate technologies and measures to address the impact of climate change while strengthening the food and nutrition security of local families for current and future generations. The FAO Commission on Genetic Resources",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4256,11 +4538,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_11"
     }
   },
   {
-    "id": "7c980c0a-1f2a-4edc-8889-f05565f6428f",
+    "chunk_id": "ce1dc8cb-a8f5-4897-9647-324182124947",
     "text": "future generations. The FAO Commission on Genetic Resources for Food and Agriculture adopted a \u201cProgramme of Work on Climate Change and Genetic Resources for Food and Agriculture\u201d to promote the understanding of the roles and importance of genetic resources for",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4286,11 +4570,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_12"
     }
   },
   {
-    "id": "8ce293c6-a451-4a2b-825e-d3737a983c4f",
+    "chunk_id": "81208f92-4204-4175-a5dc-13f52fed0998",
     "text": "the roles and importance of genetic resources for food and agriculture in food security and nutrition and in ecosystem function and system resilience in light of climate change. www.fao.org/giahs/giahs-sites/central-and-south-america/andean-agriculture-peru 4",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4316,11 +4602,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page13",
+      "chunker_order": "a-i3817e_page13_chunk_13"
     }
   },
   {
-    "id": "9779b6c4-656c-4088-9a54-c08014e86a02",
+    "chunk_id": "145027ab-b0c6-49be-86f2-8611aa350efe",
     "text": "--- ECOSYSTEM APPROACH TO FISHERIES --- 17 CSA SUCCESS STORIES ECOSYSTEM APPROACH TO FISHERIES AND AQUACULTURE FOR FOOD SECURITY IN NICARAGUA the ecosystem approach to fisheries & aquaculture increases food & income from fish products In the Estero Real, Nicaragua",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4346,11 +4634,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_0"
     }
   },
   {
-    "id": "f2817353-994d-477c-95db-a78c9e41ba3b",
+    "chunk_id": "9aedea36-15c3-46f5-b1ae-b3cf6e43afc6",
     "text": "from fish products In the Estero Real, Nicaragua while preserving ecosystem services & increasing resilience to climate change The tropical mangrove estuary Estero Real is located along the north Pacific coast of Nicaragua. The estuary was declared a protected site",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4376,11 +4666,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_1"
     }
   },
   {
-    "id": "cd5e1c77-025e-4009-ba37-6e5c6b10b12a",
+    "chunk_id": "feaf4fbe-3bfc-4346-a6b0-9d4157db6c50",
     "text": "Nicaragua. The estuary was declared a protected site in 1983 while in 2003 it was recognized by the Ramsar Convention as an area of international interest. It is at high risk of degradation partly due to shrimp fisheries and aquaculture",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4406,11 +4698,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_2"
     }
   },
   {
-    "id": "ac416416-1006-4988-b242-a11764145321",
+    "chunk_id": "ef2466a7-3fa3-4790-b2ac-00221b6962c4",
     "text": "degradation partly due to shrimp fisheries and aquaculture as well as agricultural practices, urban waste, mining and deforestation in the higher parts of the basin. Heavy sedimentation from poor watershed management, the increased use of pesticides and the loss of",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4436,11 +4730,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_3"
     }
   },
   {
-    "id": "77b8acd4-82b9-4323-b6c9-a7c13be5e199",
+    "chunk_id": "cfc33be6-ef89-4e72-aa56-c2b6ee375427",
     "text": "increased use of pesticides and the loss of mangrove forests are also threatening coastal aquaculture, fisheries and biodiversity in the mangrove ecosystem. Climate variability and climate change are putting additional pressures on the estuary. To protect this area national and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4466,11 +4762,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_4"
     }
   },
   {
-    "id": "fd35b354-12f7-4532-a75a-421bd37aa2ad",
+    "chunk_id": "da1f80b6-ca8e-4ba7-937a-ce788080d664",
     "text": "the estuary. To protect this area national and local fisheries and aquaculture institutions in Nicaragua have led the implementation of the ecosystem approach to fisheries and aquaculture (EAFA) in Estero Real. FAO has supported this initiative through participatory planning and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4496,11 +4794,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_5"
     }
   },
   {
-    "id": "089ff4d9-4d92-4d78-9b8f-e53ad0a2bb2c",
+    "chunk_id": "f0b19769-8178-4fa2-81e4-48545afa8c11",
     "text": "has supported this initiative through participatory planning and development of management plans. This approach allows fishers and fish farmers to maintain and increase food and income from fish products in the Estero Real, while preserving ecosystem services and increasing community",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4526,11 +4826,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_6"
     }
   },
   {
-    "id": "4a14fa66-7b0f-4373-aa13-21ff40ef6b8b",
+    "chunk_id": "8f3da55c-ced7-4892-ad65-b5ea16dffe0f",
     "text": "Real, while preserving ecosystem services and increasing community resilience to climate change and other factors. Thanks to this project, coastal fishery and aquaculture communities have become better informed and more resilient to the impacts of climate change and other threats.",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4556,11 +4858,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_7"
     }
   },
   {
-    "id": "73baf132-dd99-4f67-9638-90b70c16f818",
+    "chunk_id": "cc439d03-1abf-4870-9745-80789afef6e8",
     "text": "the impacts of climate change and other threats. Following extensive information gathering and support activities, stakeholders agreed on a management plan currently in place made up of four main components: \u2022 Improvement of environmental management of aquaculture and increased preparedness",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4586,11 +4890,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_8"
     }
   },
   {
-    "id": "3344fd3e-f244-442f-8074-1dfa7c5ed7a1",
+    "chunk_id": "53920d21-c1ea-4cfe-89e5-f1241199e46f",
     "text": "of environmental management of aquaculture and increased preparedness to climatic related stress by the development and implementation of a monitoring system of the aquatic environment. \u2022 Generation of alternative livelihood opportunities for small scale fishermen, mostly in aquaculture, to avoid",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4616,11 +4922,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_9"
     }
   },
   {
-    "id": "79ee1e73-8d84-4aba-b86d-01dd6f295065",
+    "chunk_id": "185f91cd-3cfc-4a58-af0a-b14967aacad0",
     "text": "small scale fishermen, mostly in aquaculture, to avoid negative fishing practices that might threaten biodiversity, ecosystem resilience and their own livelihoods. \u2022 Improvement of national/local governance and strengthening collaboration of different institutions that are involved in the management of the",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4646,11 +4954,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_10"
     }
   },
   {
-    "id": "525c4ea0-c123-43d0-9216-f4b043e156e5",
+    "chunk_id": "c80a9cf7-8a7f-43f4-970a-39b05b93975d",
     "text": "that are involved in the management of the area including private sector. \u2022 Dissemination and communication of the management plan, to foster local involvement, create ownership and improve follow-up. This approach has helped increase understanding of the need to improve",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4676,11 +4986,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_11"
     }
   },
   {
-    "id": "d62c381f-b7a0-4e32-92d8-f9e5868ed1f6",
+    "chunk_id": "23327fe0-d200-431c-b88c-3563c454ee1b",
     "text": "helped increase understanding of the need to improve linkages with other sectors such as agriculture and future steps will be taken to address this need. The process has facilitated and improved livelihoods for small scale fishermen and women that are",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4706,11 +5018,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_12"
     }
   },
   {
-    "id": "69edcf1a-d41a-4190-a698-0d538af175f8",
+    "chunk_id": "3df9e8fc-43e9-4e16-9718-7895de29d071",
     "text": "for small scale fishermen and women that are now involved in two very successful shrimp farming cooperatives that are working in partnership with the national fisheries institution and larger scale shrimp farming cooperatives. The EAFA management has helped local stakeholders",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4736,11 +5050,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_13"
     }
   },
   {
-    "id": "7bfe5c5c-52b8-4554-9f63-d43604498272",
+    "chunk_id": "adccc1bf-83d8-4367-bd9b-bd5af38e357e",
     "text": "cooperatives. The EAFA management has helped local stakeholders become more aware of the impacts of climate change and other external threats and understand better the need to improve management of natural resources to increase their own resilience. www.fao.org/fishery/topic/16919 7",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4766,11 +5082,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_14"
     }
   },
   {
-    "id": "99eb9413-0849-43fe-83ff-597234176622",
+    "chunk_id": "a70b9d25-83d5-4017-bebd-dac095a6c709",
     "text": "to increase their own resilience. www.fao.org/fishery/topic/16919 7",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4796,11 +5114,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page19",
+      "chunker_order": "a-i3817e_page19_chunk_15"
     }
   },
   {
-    "id": "3d86d3ff-3c75-4440-a476-8f27f8d4b292",
+    "chunk_id": "93f3978a-8e35-4bcf-bdb2-f6af5490c24a",
     "text": "--- in Nhan My, Viet Nam --- Farmer harvesting longane fruits in Nhan My, Viet Nam \u00a9FAO/H. Dinh Nam",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4826,11 +5146,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page14",
+      "chunker_order": "a-i3817e_page14_chunk_0"
     }
   },
   {
-    "id": "2b512aa2-ef50-499d-a18c-85eba083a5bc",
+    "chunk_id": "5251f6ba-548d-46b2-b39d-c4ace81b9154",
     "text": "--- DEVELOPING CAPACITY TO UNDERSTAND & --- 21 CSA SUCCESS STORIES DEVELOPING CAPACITY TO UNDERSTAND & ADDRESS THE GENDER DIMENSIONS OF CLIMATE CHANGE AND AGRICULTURE IN INDIA Men and women are affected differently by the impacts of climate change and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4856,11 +5178,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_0"
     }
   },
   {
-    "id": "93fd33f5-2493-4cfd-aa48-0e55af227124",
+    "chunk_id": "047d3eea-98a5-4fb4-a63e-88cb26284c3a",
     "text": "differently by the impacts of climate change and their responses also differ, especially when it comes to safeguarding their food security and livelihoods. Although women are important food producers and providers, they have limited access to and control of resources,",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4886,11 +5210,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_1"
     }
   },
   {
-    "id": "e564604b-2604-4229-bf1e-ec4502681899",
+    "chunk_id": "1aedf3ca-a627-4a61-babf-6bba63ea0ba1",
     "text": "have limited access to and control of resources, on the one hand. On the other hand, because of their central role in agriculture, women are great agents of social change. Therefore, responses to climate change in agriculture must be gender-specific.",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4916,11 +5242,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_2"
     }
   },
   {
-    "id": "f9b73bd2-0c59-4f85-8746-4b69c9ac73c8",
+    "chunk_id": "4301c236-d5ea-49c8-bd6c-16a000821601",
     "text": "to climate change in agriculture must be gender-specific. Initiatives need to ensure that women are included in climate change adaptation and mitigation activities and strategies designed to enhance food security and livelihoods. To date, however, there has been little focus",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4946,11 +5274,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_3"
     }
   },
   {
-    "id": "2f8793bc-73f8-4d71-90dc-a30a6d001400",
+    "chunk_id": "dba8d8e8-400a-4666-945a-547fe2c6c415",
     "text": "To date, however, there has been little focus on how men and women mitigate risks and adapt to challenges brought about by climate change. FAO\u2019s work on gender and climate change in Andhra Pradesh, India, identified the need to improve",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -4976,11 +5306,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_4"
     }
   },
   {
-    "id": "488840eb-8b16-43be-8223-163d8e8b9482",
+    "chunk_id": "ccfc3f19-bb4a-45bf-97e4-4989eb6eadcb",
     "text": "Andhra Pradesh, India, identified the need to improve research tools to better address gender and climate change research gaps. This research inspired a collaborative effort between FAO and CCAFS on an initiative aimed at better understanding and applying gender issues",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5006,11 +5338,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_5"
     }
   },
   {
-    "id": "5b917ce0-d7d0-48c9-b7f3-34e815fa9e13",
+    "chunk_id": "933f0786-4f36-4dc6-908f-98ffeddf6215",
     "text": "aimed at better understanding and applying gender issues in their programmes. This joint effort embodies FAO and CCAFS\u2019s shared vision of contributing to knowledge that informs new climate-smart agriculture actions. The FAO-CCAFS initiative is aimed at identifying the tools most",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5036,11 +5370,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_6"
     }
   },
   {
-    "id": "d75c2b07-9e94-4214-a833-c4c4899343a9",
+    "chunk_id": "0f1c0dc6-b586-4a31-8ac8-4c2a6e3cad1e",
     "text": "initiative is aimed at identifying the tools most useful for gaining a better understanding of current adaptation and mitigation strategies pursued by smallholders. It looks at what kinds of institutional arrangements and action research approaches can help ensure more equitable",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5066,11 +5402,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_7"
     }
   },
   {
-    "id": "125764d9-694a-4a16-b78d-64e010195f2e",
+    "chunk_id": "fc73ec37-f140-4cf8-8dbe-8ac62cfa0187",
     "text": "action research approaches can help ensure more equitable access to benefits of interventions aimed at enhancing resilience in the face of a changing climate. The FAO-CCAFS collaboration is developing training materials that address new approaches and issues, which have been",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5096,11 +5434,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_8"
     }
   },
   {
-    "id": "5ea64840-a999-4a99-ab43-cf7e5c17893b",
+    "chunk_id": "911491b2-c05f-45f3-bb3d-640cc3887da3",
     "text": "address new approaches and issues, which have been identified in consultation with local CCAFS partners. The training materials cover three main research priorities: \u2022 Facilitating farmer exchange visits and other approaches for sharing adaptation strategies in \u2018climate analogue\u2019 areas -",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5126,11 +5466,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_9"
     }
   },
   {
-    "id": "ccd0c49f-8720-421a-8182-5098120d1690",
+    "chunk_id": "ae2d7efa-024b-4e87-9da1-3f1e32d368d6",
     "text": "sharing adaptation strategies in \u2018climate analogue\u2019 areas - places where farmers today can learn about the climatic conditions they can expect to be dealing with in the future. \u2022 Assessing how to facilitate the use of daily and seasonal weather",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5156,11 +5498,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_10"
     }
   },
   {
-    "id": "67ac9271-1550-4d32-a36b-53fc5ddf2d6d",
+    "chunk_id": "afc56dc3-6110-44f9-9e45-d15b3f89510b",
     "text": "facilitate the use of daily and seasonal weather forecasts for farmers and how to make access to forecasts more equitable. \u2022 Understanding and catalysing gender-sensitive, climate-smart agricultural practices. www.fao.org/climatechange/micca/gender 9",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5186,11 +5530,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page23",
+      "chunker_order": "a-i3817e_page23_chunk_11"
     }
   },
   {
-    "id": "55bac204-c6a4-4a91-9e74-2bdaf1b8e89f",
+    "chunk_id": "ff7bb921-7c28-4d9b-8d83-8a3d62cab6e5",
     "text": "--- PRESERVING THE AGRO-FORESTRY SYSTEM --- 5 CSA SUCCESS STORIES In3 years In the slopes of Kilimanjaro, Tanzania 120 000ha of agroforestry 25% Include co\ufb00ee cash crops that will INCREASE income by PRESERVING THE AGRO-FORESTRY SYSTEM ON MOUNT KILIMANJARO The",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5216,11 +5562,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_0"
     }
   },
   {
-    "id": "25c2915e-8212-4262-b144-4486744c64c6",
+    "chunk_id": "6752b3d8-af58-403d-8360-99d3a3780949",
     "text": "PRESERVING THE AGRO-FORESTRY SYSTEM ON MOUNT KILIMANJARO The \u201cKihamba\u201d agroforestry system covers 120 000 hectares of Mount Kilimanjaro\u2019s southern slopes. The 800 year-old system stands out among agroforestry systems as one of the most sustainable forms of upland farming. Without",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5246,11 +5594,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_1"
     }
   },
   {
-    "id": "ddf5534c-d4e2-44d2-b8ae-e9bdba6a1733",
+    "chunk_id": "1e977c91-307a-4f11-8705-de07c712aa05",
     "text": "the most sustainable forms of upland farming. Without undermining sustainability, it has been able to support one of the highest rural population densities in Africa, providing livelihoods for an estimated one million people. This agroforestry system has a multilayered vegetation",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5276,11 +5626,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_2"
     }
   },
   {
-    "id": "ad3066b1-b962-43cc-a86a-3b2a417e4fe5",
+    "chunk_id": "22afdf9f-9806-46d1-a949-b8fe0233da22",
     "text": "people. This agroforestry system has a multilayered vegetation structure similar to a tropical mountain forest which maximizes the use of limited land, provides a large variety of foods all year round and provides substantive environmental services beyond the areas where",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5306,11 +5658,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_3"
     }
   },
   {
-    "id": "371c5e46-2b12-43c2-ba87-72144da1a14e",
+    "chunk_id": "a98d84d6-f705-482d-9479-9bb49969df11",
     "text": "provides substantive environmental services beyond the areas where it is practiced. Because of the high quantities of biomass it produces and its capacity to recycle organic matter on farms, the agroforestry system contributes significantly to carbon storage. The trees and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5336,11 +5690,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_4"
     }
   },
   {
-    "id": "e391ea50-36a2-4bf7-a951-bc3e524b911a",
+    "chunk_id": "e9be4265-902e-453f-9705-49f70d30b300",
     "text": "contributes significantly to carbon storage. The trees and dense vegetation help considerably to ensure that Mount Kilimanjaro can remain the \u2018water tower\u2019 for the region. As an ecologically compatible cash crop, coffee allowed the agroforestry system to adapt successfully to",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5366,11 +5722,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_5"
     }
   },
   {
-    "id": "058700b0-07cd-4a7a-9924-ed53b4ecf506",
+    "chunk_id": "850460dc-c70c-4eb0-880c-94d0f4e91ac5",
     "text": "allowed the agroforestry system to adapt successfully to the emerging cash economy. However, in the 1990\u2019s, coffee prices on the world market plummeted at the same time as pests and diseases were increasing. Additionally, many coffee shrubs had reached an",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5396,11 +5754,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_6"
     }
   },
   {
-    "id": "2158ff12-dfa3-4d94-a892-0c43f50732ec",
+    "chunk_id": "0c7251d4-9801-4280-b209-1bf5d21efec5",
     "text": "increasing. Additionally, many coffee shrubs had reached an age (over 50 years) when they produce less beans. These factors led to a sharp decline in productivity and profitability. It is estimated that 20 percent of coffee cultivations in the area",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5426,11 +5786,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_7"
     }
   },
   {
-    "id": "c9add661-7c69-4537-b266-6faeb2476d42",
+    "chunk_id": "02ea276e-82be-4f6e-89c3-f317e347e307",
     "text": "20 percent of coffee cultivations in the area have been abandoned. If this continues, it will have massive environmental and socio-economic implications in the landscape around Mount Kilimanjaro especially on food security, carbon storage, water catchment and soil erosion. Under",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5456,11 +5818,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_8"
     }
   },
   {
-    "id": "3faf9b61-5eea-4253-b6f0-2c796473df26",
+    "chunk_id": "f9e04345-8fc6-4169-884e-e6f56ca78150",
     "text": "carbon storage, water catchment and soil erosion. Under FAO\u2019s Globally Important Agricultural Heritage Systems Initiative (GIAHS), activities were piloted in 660 households to enhance farmers\u2019 cash income while preserving the ecological and social integrity of the Kihamba system. The project",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5486,11 +5850,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_9"
     }
   },
   {
-    "id": "16f4c78f-fbfa-4f1b-8f0f-03313103c276",
+    "chunk_id": "6b35d647-2157-4aa5-b41e-8b8714ea5771",
     "text": "social integrity of the Kihamba system. The project implemented an action plan, formulated together with the community, with the following key activities: \u2022 Rethinking sources of cash income. Three interventions were agreed on: a) conversion to certified organic coffee farming;",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5516,11 +5882,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_10"
     }
   },
   {
-    "id": "73aad58e-563d-40de-806e-fed6afb6b86e",
+    "chunk_id": "8d7f11f9-ad43-4c85-8bfc-850a8f707294",
     "text": "on: a) conversion to certified organic coffee farming; b) introduction of vanilla as a high value additional cash crop; and c) introduction of trout aquaculture along the canals of the irrigation system. \u2022 Rehabilitation of the irrigation system to reduce",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5546,11 +5914,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_11"
     }
   },
   {
-    "id": "8300a72a-5939-492d-94fb-5dc6eeb356ce",
+    "chunk_id": "37edc01a-ecf8-4d1f-a7e7-d62f34619328",
     "text": "\u2022 Rehabilitation of the irrigation system to reduce water loss and expansion of the capacity of storage ponds to cope with longer dry seasons due to climate change. \u2022 Training in sustainable land management. \u2022 The interventions in coffee management",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5576,11 +5946,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_12"
     }
   },
   {
-    "id": "7d87e0d6-fa46-4cf4-9363-d90af44d0252",
+    "chunk_id": "980d5da9-1dda-4e7c-9331-a34972453d6c",
     "text": "land management. \u2022 The interventions in coffee management alone are expected to increase farm cash income by 25 percent in three years. In addition, the project organized a Free, Prior and Informed Consent (FPIC) process to facilitate an informed and",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5606,11 +5978,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_13"
     }
   },
   {
-    "id": "868ea58a-c8c7-4ecd-b37d-33fac2d29d7e",
+    "chunk_id": "bb8bb3cf-20a5-4e6f-b485-cd09cc7d63c5",
     "text": "Consent (FPIC) process to facilitate an informed and independent decision-making process by the community,. Preparatory consultations were held with local government officials, traditional elders, and women\u2019s representatives, where the pros and cons of different development options were discussed. A crucial",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5636,11 +6010,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_14"
     }
   },
   {
-    "id": "c5ac9577-d88f-40cd-abe1-fbc4c17bccef",
+    "chunk_id": "8ee21882-a0b2-4026-8247-595be9db82dc",
     "text": "of different development options were discussed. A crucial step to build support in the government was to engage focal points in a Project Facilitating Committee (PFC) and to work across sectors and levels, with agents with different expertise and government",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5666,11 +6042,13 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_15"
     }
   },
   {
-    "id": "6efd635f-68d9-45f8-8400-75d0a6b65e15",
+    "chunk_id": "73a4fec4-d850-4f18-9e24-b2aa38d1b0f3",
     "text": "levels, with agents with different expertise and government mandates. www.fao.org/giahs/giahs-sites/africa/shimbwe-juu-kihamba-agro-forestry-heritage-site-tanzania 1",
     "metadata": {
       "title": "CLIMATE-SMART AGRICULTURE GROUND ON THE",
@@ -5696,7 +6074,9 @@
       ],
       "source_name": "fao.org",
       "doc_id": "f3a29caf-98cf-5d2e-89a1-bd082755c39e",
-      "chunker": "overlap"
+      "chunker": "overlap",
+      "doc_source": "a-i3817e_page7",
+      "chunker_order": "a-i3817e_page7_chunk_16"
     }
   }
 ]
