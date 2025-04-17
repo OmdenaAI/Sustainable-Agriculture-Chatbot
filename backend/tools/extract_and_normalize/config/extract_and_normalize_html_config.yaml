@@ -1,7 +1,6 @@
 env_path:  "~/src/python/.env"
 llm_document_chunk_size: 4192
 
-output_directory: "output"
 schema_path: "schemas/base_payload.schema.json"
 llm_document_chunk_size: 4096
 

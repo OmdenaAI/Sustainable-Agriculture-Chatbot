@@ -217,6 +217,7 @@ def load_config_and_env(config_path="config/config.yaml", logger=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate sustainable agriculture metadata from a HTML URL")
     parser.add_argument("--url", required=True, help="URL to the HTML document")
+    parser.add_argument("--output", default="output", help="Output directory")
     parser.add_argument("--config", default="config/config.yaml", help="Path to config YAML")
 
     args = parser.parse_args()
@@ -224,6 +225,9 @@ if __name__ == "__main__":
     try:
         # Load configuration and environment variables
         config = load_config_and_env(args.config)
+
+        # Set the output directory
+        config["output_directory"] = args.output
 
         html_manager = HtmlTextManager(args.url, config, logger)
         html_manager.build_payload()
