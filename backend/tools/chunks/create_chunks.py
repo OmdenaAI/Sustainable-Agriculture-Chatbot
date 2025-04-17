@@ -2,7 +2,6 @@ import os
 import json
 from chunkers.overlap_chunker import OverlapChunks
 from settings import models_to_chunk_size_mapping
-import copy
 def get_text(file_path):
     """read text from a .tex file """
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -34,7 +33,6 @@ def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
         doc_source = file.split('.')[0]
         file_metadata = metadata.copy()
         file_metadata["doc_source"] = doc_source
-        # import pdb; pdb.set_trace()
         if file.endswith('txt'):
             text = get_text(f"{dir_path}/{file}")
             chunks = chunker.generate_chunks(text, file_metadata)

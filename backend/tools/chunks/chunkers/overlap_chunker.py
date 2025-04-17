@@ -21,7 +21,6 @@ class OverlapChunks(AbstractChunker):
         for index, start in enumerate(range(0, len(words), step)):
             chunk_text = ' '.join(words[start:start + self.chunk_size])
             chunk_metadata = copy.deepcopy(metadata) if metadata else {}
-            # import pdb; pdb.set_trace()
             chunk_metadata["chunk_order"] = f"{chunk_metadata["doc_source"]}_chunk_{index}"
 
             chunk = Chunk(
