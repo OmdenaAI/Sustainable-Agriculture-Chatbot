@@ -1,3 +1,6 @@
 .env
 cookies.txt
+*.env
+.env.*.example
+
 
