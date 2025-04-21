@@ -147,14 +147,19 @@ class DocumentUtils:
     def save_base_payload(self, output_dir, base_filename, base_payload):
         """Save metadata payload as formatted JSON file."""
         try:
-            with open(join(output_dir, f"{base_filename}_base_payload.json"), "w", encoding="utf-8") as f:
+            payload_output = join(output_dir, f"{base_filename}_base_payload.json")
+            with open(payload_output, "w", encoding="utf-8") as f:
                 json.dump(base_payload, f, indent=2, ensure_ascii=False)
+
+            return payload_output
+            
         except Exception as e:
             self.logger.exception("Failed to save base payload JSON")
             raise
 
     def save_text_chunks(self, output_dir, base_filename, sections, prefix="page"):
         """Save each document section as separate text file."""
+        chunks_output = join(output_dir, f"{base_filename}_page_")
         try:
             for i, section in enumerate(sections):
                 if not section["text"]:
@@ -171,7 +176,7 @@ class DocumentUtils:
                 with open(join(output_dir, f"{base_filename}_{prefix}_{identifier}.txt"), "w", encoding="utf-8") as f:
                     f.write(formatted_content)
                                     
-                    
+            return chunks_output
         except Exception as e:
             self.logger.exception("Failed to save one or more text chunks")
             raise

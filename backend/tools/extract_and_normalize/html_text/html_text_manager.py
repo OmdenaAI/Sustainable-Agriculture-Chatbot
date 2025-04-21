@@ -49,5 +49,7 @@ class HtmlTextManager:
         base_payload = self.doc_utils.build_base_payload(metadata, self.url, inferred_title)
 
         # Save the base payload as JSON and page chunks
-        self.doc_utils.save_base_payload(output_dir, base_filename, base_payload)
-        self.doc_utils.save_text_chunks(output_dir, base_filename, sections, prefix="page")
+        payload_output = self.doc_utils.save_base_payload(output_dir, base_filename, base_payload)
+        chunks_output = self.doc_utils.save_text_chunks(output_dir, base_filename, sections, prefix="page")
+
+        return base_filename, chunks_output, payload_output

@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 from pdf import PdfManager
+from common.results_manager import write_results
 
 # Configure logging to display messages with timestamps and severity levels
 logging.basicConfig(
@@ -45,6 +46,7 @@ if __name__ == "__main__":
     parser.add_argument("--url", required=True, help="URL to the PDF document")
     parser.add_argument("--output", default="output", help="Output directory")
     parser.add_argument("--config", default="config/config.yaml", help="Path to config YAML")
+    parser.add_argument("--result-file", default=None, help="Path to write results JSON for Prefect integration")
 
     args = parser.parse_args()
 
@@ -56,7 +58,17 @@ if __name__ == "__main__":
         config["output_directory"] = args.output
         
         pdf_manager = PdfManager(args.url, config, logger)
-        pdf_manager.build_payload()
+        base_filename, chunks_output, payload_output = pdf_manager.build_payload()
+        
+        # Write results to JSON file for Prefect integration
+        if args.result_file:
+            write_results(args.result_file, args.url, args.output, base_filename, chunks_output, payload_output, logger)
+
     except Exception as e:
         logger.error(f"Failed to generate metadata: {e}")
+        
+        # Write error results if result-file is provided
+        if args.result_file:
+            write_results(args.result_file, args.url, args.output, None, None, None, logger, is_success=False, error=e)
+                
         exit(1)
