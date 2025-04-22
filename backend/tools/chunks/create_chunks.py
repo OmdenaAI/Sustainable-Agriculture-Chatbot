@@ -1,12 +1,15 @@
 import os
 import json
+import re
 from chunkers.overlap_chunker import OverlapChunks
 from settings import models_to_chunk_size_mapping
+
 def get_text(file_path):
     """read text from a .tex file """
     with open(file_path, 'r', encoding='utf-8') as file:
         text = file.read()
     return text
+
 
 def get_metadata(dir_path):
     """read metadata from a .json file """
@@ -16,33 +19,51 @@ def get_metadata(dir_path):
             return json.load(f)
     return None
 
+
 def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
     """Creating chunks from text files in a directory"""
+    
+
+    for file in os.listdir(dir_path):
+        if file.endswith('json'):
+            file_prefix = re.match(r'(.+?)_base_payload.json', file).group(1)
+            break
+    
+   
     all_chunks = []
     
     metadata = get_metadata(dir_path)
-    metadata.update({
-        "chunker": chunker,
-    })
+
+    final_text_to_overlap = ""
 
     if chunker == "overlap":
         overlap_percentage = 20
         chunker = OverlapChunks(chunk_size, overlap_percentage)
 
-    for file in os.listdir(dir_path):
-        doc_source = file.split('.')[0]
+    sorted_pages = sorted([int(re.search('_page(\d+)\.txt', file).group(1)) for file in os.listdir(dir_path) if file .startswith(file_prefix) and file.endswith('txt')])
+    
+    
+    for index in sorted_pages:
+        file = f"{file_prefix}_page{index}.txt"
+
         file_metadata = metadata.copy()
-        file_metadata["doc_source"] = doc_source
-        if file.endswith('txt'):
-            text = get_text(f"{dir_path}/{file}")
-            chunks = chunker.generate_chunks(text, file_metadata)
-            all_chunks.extend(chunks)
+        
+        page_text = get_text(f"{dir_path}/{file}")
+        """extrat the first line of the text file as title"""
+        file_metadata["section_title"] = page_text.split('\n')[0].strip('- ')
+        
+        text = final_text_to_overlap + page_text
+        
+        text_without_first_line = re.sub(r'^[^\n]*\n', '', text)
+        chunks, final_text_to_overlap = chunker.generate_chunks(text_without_first_line, file_metadata)
+        all_chunks.extend(chunks)
+
     return all_chunks
 
 def store_chunks(chunks, file_path):
     """Storing chunks in a JSON file"""
     with open(file_path, "w") as f:
-        json.dump([chunk.dict() for chunk in chunks], f, indent=2)
+        json.dump([chunk for chunk in chunks], f, indent=2)
 
 if __name__ == "__main__":
     files_to_chunk_dir = "../extract_and_normalize/output"
@@ -51,5 +72,4 @@ if __name__ == "__main__":
     chunker = "overlap"
     
     chunks = create_chunks_from_text_file(files_to_chunk_dir, chunker, chunk_size,)
-    
     store_chunks(chunks, chunk_store_file)
