@@ -1,20 +1,5 @@
-# FastAPI and server dependencies
-fastapi==0.109.2
-uvicorn==0.27.1
-python-dotenv==1.0.0
-
-# HTTP client for API calls
-httpx==0.26.0
-
-# Supabase
-supabase==2.3.1
-
-# Data validation
-pydantic==2.6.1
-
-# CORS middleware
-python-multipart==0.0.9
-
-# Optional: for development
-pytest==8.0.0
-black==24.1.1
+langchain
+langchain-community
+langchain_google_genai
+langchain-groq
+python-dotenv
