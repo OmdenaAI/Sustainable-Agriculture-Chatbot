@@ -31,6 +31,8 @@ html_parameters:
       - ".content"
       - "#content"
       - ".main-content"
+      - "[class*='content']"
+      - "[class*='body']" 
 
     subtopics_selector: "h2, h3"  # Common subtopic headers
     subtopic_title_selector: ""  # Will use the selector itself if empty
@@ -58,6 +60,7 @@ html_parameters:
     wait_time: 5000  # Default wait time in ms
     scroll: true  # Whether to scroll the page to load lazy content
     js_patterns:
+      - tracextech\.com
       - wix\.com
       - squarespace\.com
       - webflow\.com
