@@ -1,12 +1,12 @@
-# PDF Metadata Extraction and Qdrant Payload Generator
+# Document Processing and Metadata Extraction for Sustainable Agriculture
 
-A robust Python application that extracts text and metadata from PDF documents and generates standardized payloads for Qdrant vector database indexing. Focused on sustainable agriculture documents, it combines PDF text extraction, LLM-powered metadata generation, and consistent output formatting.
+A robust Python application that extracts text and metadata from both PDF documents and HTML webpages, generating standardized payloads for Qdrant vector database indexing. Focused on sustainable agriculture documents, it combines text extraction, LLM-powered metadata generation, and consistent output formatting.
 
 ## Overview
 
-This application processes PDF documents from URLs through the following pipeline:
+This application processes documents from URLs through the following pipeline:
 
-1. **PDF Download & Text Extraction**: Downloads PDFs and extracts text content by page
+1. **Document Download & Text Extraction**: Downloads PDFs or scrapes HTML content
 2. **Section Identification**: Intelligently identifies logical sections and titles within the document
 3. **Text Cleaning & Normalization**: Standardizes text formatting for better processing
 4. **Metadata Generation**: Uses LLMs to extract document metadata (topics, audience, etc.)
@@ -17,14 +17,31 @@ This application processes PDF documents from URLs through the following pipelin
 
 ### Core Modules
 
-- **extract_and_normalize_pdf.py**: Main processing pipeline and CLI entrypoint
+- **extract_and_normalize_pdf.py**: Processing pipeline for PDF documents
+- **extract_and_normalize_html.py**: Processing pipeline for HTML webpages
 - **config/config.yaml**: Configuration for LLM integration, output paths, and extraction parameters
+- **orchestrator.py**: Coordinates the pipeline for integration with Prefect workflows
+
+### Document Processing (`pdf/` and `html_text/`)
+
+- **PDF Processing Modules**
+  - PDF downloading and content extraction
+  - Section and title detection
+  - PDF-specific text normalization
+  - Support for different sources (arXiv, ResearchGate, direct URLs)
+
+- **HTML Processing Modules**
+  - Web page scraping with JavaScript support
+  - Content extraction from complex HTML structures
+  - Section and title detection from HTML elements
+  - Deduplication and cleaning of HTML content
+  - Enhanced handling for academic and research sites
 
 ### Common Utilities (`common/`)
 
 - **DocumentUtils**: Core document processing functionality
-  - PDF text extraction and cleaning
-  - Page section identification
+  - Text extraction and cleaning
+  - Section identification
   - File and directory management
   - Metadata payload construction
   - Organization name inference from URLs
@@ -35,15 +52,27 @@ This application processes PDF documents from URLs through the following pipelin
   - Fallback mechanisms for missing information
   - Retry logic for API resilience
 
+- **ResultsManager**: Standardized result handling
+  - Centralized output file generation
+  - Consistent error reporting
+  - Support for integration with workflow engines
+
 ## Inputs
 
-- **PDF URL**: The application takes a URL to a PDF document as its primary input
+- **Document URL**: The application takes a URL to a PDF document or HTML webpage as its primary input
 - **Configuration**: Optional path to a custom configuration file
+- **Result File**: Optional path for writing structured results for workflow integration
 
 ### Command-line Usage
 
+For PDF documents:
 ```bash
-python extract_and_normalize_pdf.py --url https://example.org/path/to/document.pdf --config config/config.yaml
+python extract_and_normalize_pdf.py --url https://example.org/path/to/document.pdf --config config/config.yaml --result-file results/output.json
+```
+
+For HTML webpages:
+```bash
+python extract_and_normalize_html.py --url https://example.org/path/to/webpage --config config/config.yaml --result-file results/output.json
 ```
 
 ### Configuration Options
@@ -66,8 +95,8 @@ Required environment variable: `OPENAI_API_KEY`
 ```yaml
 llm:
   provider: "groq"
-  model: "llama3-8b-8192"  # Alternative: "mixtral-8x7b-32768"
-  temperature: 0.3
+  model: "llama3-70b-8192"  # Alternatives: "llama3-8b-8192", "mixtral-8x7b-32768"
+  temperature: 0.2  # Lower temperature for more consistent metadata extraction
 ```
 
 Required environment variable: `GROQ_API_KEY`
@@ -96,11 +125,34 @@ llm_document_chunk_size: 4096  # Maximum text size for LLM processing
 output_directory: "output"     # Directory for output files
 schema_path: "schemas/base_payload.schema.json"  # Schema for validation
 
+# PDF-specific configuration
 section_title_filter:          # Filtering options for section titles
   ignore_if_contains:
     - "table of contents"
     - "page"
     - "framework"
+    - "figure"
+    - "reference"
+
+# HTML-specific configuration
+html_parameters:
+  topic_page:
+    title_selector: "h1, .article-title, .title, header h1"
+    content_selectors: 
+      - "article, .content, .article-content, main"
+    subtopics_selector: "h2, h3"
+    block_elements: ["p", "div", "section", "article", "blockquote"]
+    list_elements: ["ul", "ol"]
+  rendering:
+    wait_time: 3000
+    scroll: true
+    js_patterns: [".gov", "javascript", "dynamic"]
+  rate_limit:
+    enabled: true
+    requests_per_second: 1
+    delay: 2
+  headers:
+    User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 ```
 
 ## Outputs
@@ -109,9 +161,13 @@ The application generates several outputs in the configured output directory:
 
 ### Text Files
 
-- **Page-level text files**: `{base_filename}_page{page_number}.txt`
+- **Page-level text files (PDF)**: `{base_filename}_page{page_number}.txt`
   - Contains the cleaned text content of each page
   - Includes the section title as a header
+
+- **Content text files (HTML)**: `{base_filename}_page1.txt`
+  - Contains the cleaned text content from the webpage
+  - Includes the page title as a header
 
 ### Metadata
 
@@ -126,18 +182,38 @@ The application generates several outputs in the configured output directory:
     - Source organization
     - Document identifier (stable UUID derived from URL)
 
+### Results File (for Workflow Integration)
+
+- **JSON results file**: Path specified by `--result-file` parameter
+  - Status of processing (success/failure)
+  - Source URL
+  - Output paths for generated files
+  - Error information if processing failed
+
 ## Architecture Details
+
+### Academic Document Sources
+
+The application supports multiple academic document sources:
+- **arXiv**: Direct PDF retrieval using the arXiv API
+- **ResearchGate**: Intelligent extraction of PDFs from publication pages
+- **General PDFs**: Direct download from any accessible URL
 
 ### Error Handling
 
 The application implements robust error handling throughout:
-- PDF processing errors are caught per page, allowing processing to continue
+- Document processing errors are caught, allowing processing to continue
 - LLM API calls include retry logic with exponential backoff
+- HTML scraping includes fallbacks for JavaScript-rendered content
 - All operations are wrapped in try/except blocks with detailed logging
+- Standardized error reporting through the ResultsManager
 
 ### Metadata Schema Validation
 
-All generated metadata is validated against a JSON schema to ensure consistency and completeness.
+All generated metadata is validated against a JSON schema to ensure consistency and completeness. The metadata generator includes:
+- Structured prompt templates optimized for different LLM providers
+- Explicit field validation and sanitization
+- Temperature optimization for precise metadata extraction
 
 ### Text Processing
 
@@ -146,12 +222,18 @@ The text cleaning process:
 2. Normalizes whitespace and newlines
 3. Preserves paragraph structure with double line breaks
 4. Handles Unicode and special characters appropriately
+5. For HTML, provides deduplication of content to handle repeated elements
 
-### Page Numbering
+### HTML Processing Features
 
-Pages are consistently numbered starting from 1, matching typical document conventions:
-- Manual page counter ensures consistent 1-based numbering
-- Fallback mechanisms in case page numbers can't be determined
+The HTML processor includes:
+- Support for JavaScript-rendered websites using Playwright
+- Intelligent content extraction with configurable selectors
+- Enhanced academic site handling with specialized configurations
+- Cookie consent dialog handling for improved access
+- Handling of dynamic content loaded through scrolling
+- Clean extraction of structured content (lists, headers, paragraphs)
+- Rate limiting and polite scraping practices
 
 ### LLM Provider Abstraction
 
@@ -163,12 +245,13 @@ The application supports multiple LLM providers through a provider-agnostic inte
 
 ## Dependencies
 
-- **PyMuPDF (fitz)**: PDF processing
-- **OpenAI**: OpenAI API client for GPT models
-- **Groq**: Groq API client for Llama and Mixtral models
-- **jsonschema**: Metadata validation
-- **tenacity**: Retry logic for API resilience
-- **requests**: HTTP client for downloading PDFs
+- **PDF Processing**: PyMuPDF (fitz), arxiv
+- **HTML Processing**: BeautifulSoup4, Playwright
+- **LLM Integration**: OpenAI and Groq API clients
+- **Data Validation**: jsonschema
+- **Resilience**: tenacity for retry logic
+- **HTTP Operations**: requests
+- **Configuration**: PyYAML, python-dotenv
 
 ## Environment Setup
 
@@ -183,11 +266,18 @@ conda env create -f environment.yaml
 conda activate extract-and-normalize
 ```
 
+4. If processing HTML with JavaScript, initialize Playwright browsers:
+
+```bash
+playwright install chromium
+```
+
 This will install all required dependencies including:
 - Python 3.10
 - Core packages: requests, urllib3, PyYAML, nltk
+- HTML parsing: BeautifulSoup4, Playwright
 - LLM clients: openai, groq
-- Support libraries: python-dotenv, PyMuPDF, jsonschema, tenacity
+- Support libraries: python-dotenv, PyMuPDF, jsonschema, tenacity, arxiv
 
 ## Extending the Application
 
@@ -204,4 +294,19 @@ To adapt the application for different document types:
 1. Modify the schema in `schemas/` directory
 2. Update the prompt template in `MetadataGenerator._build_prompt()`
 3. Adjust the document processing parameters in `config.yaml`
+
+### Adding Academic Document Sources
+
+To add support for new academic sources:
+1. Add a source-specific method in the `PdfManager` class
+2. Update the `_get_url` method to detect and route to the new source handler
+3. Implement appropriate authentication and download logic
+
+### Adding New HTML Selectors
+
+To improve HTML content extraction for specific websites:
+1. Update the `content_selectors` list in the configuration
+2. Add specific selectors for different website structures
+3. Add site-specific configurations if needed for academic or complex websites
+4. Test with a variety of target websites to ensure robust extraction
 

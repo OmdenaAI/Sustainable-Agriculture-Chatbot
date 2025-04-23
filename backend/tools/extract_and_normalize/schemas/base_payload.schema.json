@@ -91,7 +91,7 @@
       "uniqueItems": true,
       "items": {
         "type": "string",
-        "enum": ["farmers", "policymakers", "researchers", "NGOs"]
+        "enum": ["farmers", "policymakers", "researchers", "NGOs", "other"]
       },
       "description": "Intended audience for the material"
     },

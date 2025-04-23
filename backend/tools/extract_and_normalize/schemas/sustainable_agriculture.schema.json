@@ -17,6 +17,7 @@
     "source_name",
     "doc_id",
     "chunk_id",
+    "chunk_index",
     "section_title",
     "text"
   ],
@@ -110,6 +111,10 @@
     "chunk_id": {
       "type": "string",
       "description": "Unique identifier per chunk within the document"
+    },
+    "chunk_index": {
+      "type": "integer",
+      "description": "Numeric position of the chunk within the document"
     },
     "section_title": {
       "type": "string",

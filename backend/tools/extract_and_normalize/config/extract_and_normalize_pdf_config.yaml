@@ -1,7 +1,6 @@
 env_path:  "~/src/python/.env"
 llm_document_chunk_size: 4192
 
-output_directory: "output"
 schema_path: "schemas/base_payload.schema.json"
 llm_document_chunk_size: 4096
 
@@ -10,7 +9,7 @@ llm:
   provider: groq
   #model: gpt-3.5-turbo
   model: llama3-70b-8192
-  temperature: 0.9
+  temperature: 0.1
 
 section_title_filter:
   ignore_if_contains:

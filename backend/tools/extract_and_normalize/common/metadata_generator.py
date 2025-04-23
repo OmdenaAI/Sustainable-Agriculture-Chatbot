@@ -7,6 +7,16 @@ import groq
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 from datetime import datetime, timezone
 
+SCHEMA_DEFAULTS = {
+    "document_type": "manual",
+    "sustainability_dimensions": ["environmental"],
+    "key_topics": ["sustainable agriculture"],
+    "contains_harmful_practices": False,
+    "intended_audience": ["other"],
+    "region_or_country": "global",
+    "language": "en",
+}
+
 class MetadataGenerator:
     """Extracts metadata from documents using LLM processing."""
     
@@ -90,7 +100,54 @@ class MetadataGenerator:
         # Use the function pointer set during initialization
         return self._llm_call_func(prompt)
 
-    def generate_metadata(self, pdf_url, text, chunk_size):
+    def _enforce_schema_and_apply_defaults(self, metadata):
+        """
+        Ensures LLM metadata conforms to schema:
+        - Removes invalid enum values
+        - Applies defaults where necessary
+        - Logs all corrections
+        """
+        cleaned = metadata.copy()
+
+        for field, rules in self.schema.get("properties", {}).items():
+            # Handle scalar enum fields
+            if rules.get("type") == "string" and "enum" in rules:
+                val = cleaned.get(field)
+                if val is not None and val not in rules["enum"]:
+                    self.logger.warning(f"Invalid value for '{field}': '{val}' — replacing with default: {SCHEMA_DEFAULTS.get(field)}")
+                    cleaned[field] = SCHEMA_DEFAULTS.get(field)
+                elif val is None and field in SCHEMA_DEFAULTS:
+                    self.logger.info(f"Missing '{field}' — using default: {SCHEMA_DEFAULTS[field]}")
+                    cleaned[field] = SCHEMA_DEFAULTS[field]
+
+            # Handle list-of-enum fields
+            elif rules.get("type") == "array" and "enum" in rules.get("items", {}):
+                val = cleaned.get(field, [])
+                allowed = set(rules["items"]["enum"])
+                filtered = [v for v in val if v in allowed]
+
+                if not filtered and field in SCHEMA_DEFAULTS:
+                    self.logger.warning(f"No valid values for list field '{field}' — using default: {SCHEMA_DEFAULTS[field]}")
+                    cleaned[field] = SCHEMA_DEFAULTS[field]
+                else:
+                    if set(val) != set(filtered):
+                        self.logger.warning(f"Removed invalid values from '{field}': {set(val) - allowed}")
+                    cleaned[field] = filtered
+
+            # Handle booleans
+            elif rules.get("type") == "boolean":
+                if field not in cleaned and field in SCHEMA_DEFAULTS:
+                    self.logger.info(f"Missing boolean '{field}' — using default: {SCHEMA_DEFAULTS[field]}")
+                    cleaned[field] = SCHEMA_DEFAULTS[field]
+
+            # Fallback: fill any known default if missing
+            if field not in cleaned and field in SCHEMA_DEFAULTS:
+                self.logger.info(f"Missing field '{field}' — using default: {SCHEMA_DEFAULTS[field]}")
+                cleaned[field] = SCHEMA_DEFAULTS[field]
+
+        return cleaned
+
+    def generate_metadata(self, url, text, chunk_size):
         """Generate metadata from document text and validate against schema."""
         prompt = self._build_prompt(text, chunk_size)
         try:
@@ -99,12 +156,15 @@ class MetadataGenerator:
             metadata = json.loads(response_content)
             
             # Add source information
-            metadata["source_url"] = pdf_url
-            metadata['source_name'] = self.doc_utils.infer_source_name_from_url(pdf_url)
+            metadata["source_url"] = url
+            metadata['source_name'] = self.doc_utils.infer_source_name_from_url(url)
 
             # Add publication date if missing
             if not metadata.get("date_published"):
                 metadata["date_published"] = self._infer_date(text)
+
+            # Enforce schema and apply defaults because sometimes the LLM hallucinates
+            metadata = self._enforce_schema_and_apply_defaults(metadata)
 
             # Validate against schema
             jsonschema.validate(instance=metadata, schema=self.schema)
@@ -151,7 +211,7 @@ class MetadataGenerator:
         - Be conservative and precise
         - Only include fields if clearly and repeatedly supported by the text
 
-        Special instructions for `intended_audience` and `key_topics`:
+        Special instructions for `intended_audience`, `key_topics`, `sustainability_dimensions` and `document_type`:
         - Include an item in either list only if it is clearly stated or strongly implied in at least two distinct places in the document
         - A single mention — even if prominent — is not sufficient
         - Each item must appear in the accepted list below

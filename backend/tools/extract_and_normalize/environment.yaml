@@ -6,6 +6,7 @@ dependencies:
   - python=3.10
   - pip
   - requests
+  - beautifulsoup4>=4.11.0
   - urllib3  # for faster HTML parsing
   - pyyaml
   - nltk
@@ -16,3 +17,5 @@ dependencies:
       - PyMuPDF
       - jsonschema
       - tenacity
+      - playwright>=1.30.0
+      - arxiv  # Python wrapper for the arXiv API
