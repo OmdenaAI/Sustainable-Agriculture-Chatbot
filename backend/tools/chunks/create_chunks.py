@@ -1,7 +1,7 @@
 import os
 import json
 import re
-from chunkers.overlap_chunker import OverlapChunks
+from chunkers.overlap_paragraph_chunker import OverlapChunks
 from settings import models_to_chunk_size_mapping
 
 def get_text(file_path):
@@ -40,22 +40,22 @@ def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
         overlap_percentage = 20
         chunker = OverlapChunks(chunk_size, overlap_percentage)
 
-    sorted_pages = sorted([int(re.search('_page(\d+)\.txt', file).group(1)) for file in os.listdir(dir_path) if file .startswith(file_prefix) and file.endswith('txt')])
-    
+    sorted_pages = sorted([int(re.search(r'_page_(\d+)\.txt', file).group(1)) for file in os.listdir(dir_path) if file .startswith(file_prefix) and file.endswith('txt')])
     
     for index in sorted_pages:
-        file = f"{file_prefix}_page{index}.txt"
+        
+        file = f"{file_prefix}_page_{index}.txt"
 
         file_metadata = metadata.copy()
         
         page_text = get_text(f"{dir_path}/{file}")
         """extrat the first line of the text file as title"""
         file_metadata["section_title"] = page_text.split('\n')[0].strip('- ')
+        text_without_first_line = re.sub(r'^[^\n]*\n', '', page_text)
+        text = final_text_to_overlap + text_without_first_line
         
-        text = final_text_to_overlap + page_text
-        
-        text_without_first_line = re.sub(r'^[^\n]*\n', '', text)
-        chunks, final_text_to_overlap = chunker.generate_chunks(text_without_first_line, file_metadata)
+        chunks, final_text_to_overlap = chunker.generate_chunks(text, file_metadata)
+        final_text_to_overlap = final_text_to_overlap.replace('\n', ' ')
         all_chunks.extend(chunks)
 
     return all_chunks
