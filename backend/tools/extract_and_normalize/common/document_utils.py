@@ -3,7 +3,6 @@ import os
 import uuid
 from urllib.parse import urlparse
 from os.path import basename, splitext, join
-import logging
 import re
 import unicodedata
 import hashlib
@@ -171,7 +170,7 @@ class DocumentUtils:
                 
                 # Include section title as header in the content
                 formatted_content = f"--- {section_title} ---\n\n{section['text']}"
-                
+
                 # Save with page number in filename for consistent referencing
                 with open(join(output_dir, f"{base_filename}_{prefix}_{identifier}.txt"), "w", encoding="utf-8") as f:
                     f.write(formatted_content)
@@ -188,6 +187,60 @@ class DocumentUtils:
                 if unicodedata.category(c)[0] != "C" or c == "\n"
             )
     
+    # Reconstruct paragraphs
+    def _reconstruct_paragraphs(self, text):
+        """
+        Intelligently reconstructs paragraph structure from text that may have been broken
+        during PDF extraction or processing.
+        
+        Args:
+            text (str): Text with potentially broken paragraph structure
+            
+        Returns:
+            str: Text with properly formatted paragraphs separated by double newlines
+        """
+        # First check if text already has well-defined paragraphs (separated by double newlines)
+        paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+        if len(paragraphs) > 1:
+            # Text already has multiple paragraphs - preserve existing structure
+            return "\n\n".join(paragraphs)
+
+        # For text without clear paragraph breaks, we need to infer paragraph structure
+        lines = text.splitlines()
+        reconstructed = []  # Will hold our reconstructed paragraphs
+        buffer = ""         # Temporary buffer to accumulate lines into a paragraph
+
+        for i, line in enumerate(lines):
+            stripped = line.strip()
+            if not stripped:
+                # Empty line encountered - treat as paragraph break if buffer has content
+                if buffer:
+                    reconstructed.append(buffer.strip())
+                    buffer = ""
+                continue
+
+            # Check if this line might end a paragraph by examining punctuation and next line
+            next_line = lines[i + 1].strip() if i + 1 < len(lines) else ""
+            ends_with_punct = re.search(r"[.?!:]$", stripped)  # Line ends with sentence-ending punctuation
+            starts_upper = next_line[:1].isupper()             # Next line starts with uppercase letter
+            
+            # Add current line to paragraph buffer with space separator
+            # (leading space will be stripped later)
+            buffer += " " + stripped
+
+            # Heuristic: If line ends with punctuation and next line starts with uppercase,
+            # it's likely a paragraph break
+            if ends_with_punct and starts_upper:
+                reconstructed.append(buffer.strip())
+                buffer = ""
+
+        # Add any remaining text in buffer to the reconstructed paragraphs
+        if buffer:
+            reconstructed.append(buffer.strip())
+
+        # Join paragraphs with double newlines for clear paragraph separation
+        return "\n\n".join(reconstructed) 
+       
     def clean_text_block(self, text, max_newlines=2):
         """
         Normalize and clean extracted PDF text for semantic processing,
@@ -222,43 +275,8 @@ class DocumentUtils:
             # Convert runs of 3+ newlines into exactly max_newlines (default: 2 for paragraphs)
             text = re.sub(r"\n{%d,}" % (max_newlines + 1), "\n" * max_newlines, text)
             
-            # Split into paragraphs (defined by double newlines)
-            paragraphs = text.split("\n\n")
-            
-            # Clean each paragraph: join lines that were artificially split by PDF extraction
-            # but preserve intentional line breaks for lists, addresses, etc.
-            cleaned_paragraphs = []
-            for paragraph in paragraphs:
-                # Join lines that are likely continuing the same paragraph
-                # (no period/colon/etc. at end of line and next line doesn't start with capital)
-                lines = paragraph.split("\n")
-                i = 0
-                while i < len(lines) - 1:
-                    current_line = lines[i].strip()
-                    next_line = lines[i + 1].strip()
-                    
-                    # Skip empty lines
-                    if not current_line:
-                        i += 1
-                        continue
-                        
-                    # If current line doesn't end with sentence-ending punctuation
-                    # and next line doesn't start with a capital letter or bullet point,
-                    # join them as they're likely part of the same paragraph
-                    if (not re.search(r'[.!?:;]$', current_line) and 
-                        not (next_line and (next_line[0].isupper() or next_line[0] in '-•*'))):
-                        lines[i] = current_line + " " + next_line
-                        lines.pop(i + 1)
-                    else:
-                        i += 1
-                
-                # Reassemble the paragraph with single newlines between actual line breaks
-                cleaned_paragraph = "\n".join(line for line in lines if line.strip())
-                if cleaned_paragraph:
-                    cleaned_paragraphs.append(cleaned_paragraph)
-            
-            # Rejoin paragraphs with double newlines
-            result= "\n\n".join(cleaned_paragraphs)
+            # Reconstruct paragraphs
+            result = self._reconstruct_paragraphs(text)
 
         return result
 
