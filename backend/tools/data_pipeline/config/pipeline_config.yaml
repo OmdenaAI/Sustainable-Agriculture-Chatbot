@@ -1,0 +1,33 @@
+# ETL Pipeline Configuration
+
+tools:
+  extractor:
+    enabled: true
+    docker:
+      image: "extract-normalize:latest"
+      input_volume: "/Users/timhazed/tmp/input:/app/input"
+      output_volume: "/Users/timhazed/tmp/output:/app/output"
+      env_file: "~/src/python/.env_mini"
+      config_path: "/app/config/config.yaml"
+  
+  chunker:
+    enabled: false
+    docker:
+      image: "document-chunker:latest"
+      input_volume: "./output:/app/input"
+      output_volume: "./output:/app/output"
+      env_file: ".env.chunking"
+  
+  insert_db:
+    enabled: false
+    docker:
+      image: "db-inserter:latest"
+      input_volume: "./output:/app/input"
+      output_volume: "./output:/app/output"
+      env_file: ".env.db"
+
+# Runtime configuration
+timeouts:
+  extraction: 600  # 10 minutes
+  chunking: 300    # 5 minutes
+  db_insertion: 600  # 10 minutes 

@@ -18,4 +18,5 @@ dependencies:
       - jsonschema
       - tenacity
       - playwright>=1.30.0
-      - arxiv  # Python wrapper for the arXiv API
+      - arxiv
+      - validators # Python wrapper for the arXiv API

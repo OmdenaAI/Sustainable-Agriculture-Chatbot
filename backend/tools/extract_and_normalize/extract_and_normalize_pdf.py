@@ -16,24 +16,26 @@ logger = logging.getLogger("ExtractAndNormalizePdf")
 
 # Function to load configuration from a YAML file and environment variables
 # Raises an error if the .env file is not found
-def load_config_and_env(config_path="config/config.yaml"):
+def load_config_and_env(config_path="config/config.yaml", load_env=True):
     logger.info("Loading configuration from YAML...")
     try:
         # Open and parse the YAML configuration file
         with open(config_path, "r") as file:
             config = yaml.safe_load(file)
-        # Expand user home directory if present in the env_path
-        env_path = Path(config.get("env_path")).expanduser()
 
-        # Validate that the .env file exists
-        if not env_path or not os.path.isfile(env_path):
-            logger.error(f".env file not found at {env_path}")
-            raise FileNotFoundError(".env path is invalid or not found in config.yaml")
+        if load_env:
+            # Expand user home directory if present in the env_path
+            env_path = Path(config.get("env_path")).expanduser()
 
-        logger.info(f"Loading environment variables from: {env_path}")
-        
-        # Load environment variables from the .env file
-        load_dotenv(env_path)
+            # Validate that the .env file exists
+            if not env_path or not os.path.isfile(env_path):
+                logger.error(f".env file not found at {env_path}")
+                raise FileNotFoundError(".env path is invalid or not found in config.yaml")
+
+            logger.info(f"Loading environment variables from: {env_path}")
+            
+            # Load environment variables from the .env file
+            load_dotenv(env_path)
 
         return config
     except Exception as e:
@@ -41,18 +43,10 @@ def load_config_and_env(config_path="config/config.yaml"):
         raise
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate sustainable agriculture metadata from a PDF URL")
-    parser.add_argument("--url", required=True, help="URL to the PDF document")
-    parser.add_argument("--output", default="output", help="Output directory")
-    parser.add_argument("--config", default="config/config.yaml", help="Path to config YAML")
-    parser.add_argument("--result-file", default=None, help="Path to write results JSON for Prefect integration")
-
-    args = parser.parse_args()
-
+def run_pdf_extraction(args):
     try:
         # Load configuration and environment variables
-        config = load_config_and_env(args.config)
+        config = load_config_and_env(args.config, args.load_env)
 
         # Set the output directory
         config["output_directory"] = args.output

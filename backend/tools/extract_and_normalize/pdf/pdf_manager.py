@@ -7,6 +7,8 @@ from common.document_utils import DocumentUtils
 from urllib.parse import urlparse
 import arxiv
 import tempfile
+from pathlib import Path
+from playwright.sync_api import sync_playwright
 
 LOW_VALUE_PHRASES = ["©", "photo by", "image", "figure", "page", "source:"]
 
@@ -19,6 +21,7 @@ class PdfManager:
 
         # Get actual url if its an arxiv url
         self.url = self._get_url(url)
+        self.headless_domains = self.config.get("pdf_extractor", {}).get("headless_domains", [])
 
     def _get_url(self, url):
         result = url
@@ -117,26 +120,65 @@ class PdfManager:
 
         return metadata_title, sections
 
+    def _infer_referer(self, pdf_url):
+        """Strip /pdf suffix to get the article page as referer."""
+        result = pdf_url
+        parsed = urlparse(self.url)
+        if parsed.path.endswith("/pdf"):
+            referer_path = parsed.path[:-4]
+            result = pdf_url.replace(parsed.path, referer_path)
+
+        return result
+
+
+    def download_headless_pdf(self):
+        """Download a PDF from a URL requiring a headless browser (Playwright)."""
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(accept_downloads=True)
+            page = context.new_page()
+
+            referer_url = self._infer_referer(self.url)
+            print(f"[INFO] Visiting article page: {referer_url}")
+            page.goto(referer_url)
+
+            # Wait and click the PDF link
+            with page.expect_download() as download_info:
+                page.click("a[href$='/pdf']")  # Clicks the download link
+            download = download_info.value
+
+            # Save to temp file
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=True) as temp_pdf:
+                # Write PDF content to the temporary file 
+                download.save_as(temp_pdf.name)
+                metadata_title, sections = self.extract_pdf(temp_pdf.name)
+
+            return metadata_title, sections
+        
     # Method to download a PDF from a URL, read its content, and extract sections based on page content
     # Uses the find_best_section_title function to determine section titles
     def extract_pdf_sections(self):
         try:
             # Is this a url or a local file?    
             if self.is_url():
-                self.logger.info(f"Downloading PDF from URL: {self.url}")
-                response = requests.get(self.url)
-                if response.status_code != 200:
-                    self.logger.error(f"Failed to download PDF: HTTP {response.status_code}")
-                    raise ConnectionError("PDF download failed")
-            
-                # Use tempfile to create a temporary file that auto-deletes when closed
-                with tempfile.NamedTemporaryFile(suffix='.pdf', delete=True) as temp_pdf:
-                    # Write PDF content to the temporary file
-                    temp_pdf.write(response.content)
-                    temp_pdf.flush()  # Ensure all data is written
-                    
-                    # Open the PDF with fitz
-                    metadata_title, sections = self.extract_pdf(temp_pdf.name)
+                # Does the url require a headless browser?
+                if self.url in self.headless_domains and self.url.endswith("/pdf"):
+                    self.logger.info(f"Downloading PDF using a headless browserfrom URL: {self.url}")
+                    metadata_title, sections = self.download_mdpi_pdf()
+                else:
+                    self.logger.info(f"Downloading PDF from URL: {self.url}")
+                    response = requests.get(self.url)
+                    if response.status_code != 200:
+                        self.logger.error(f"Failed to download PDF: HTTP {response.status_code}")
+                        raise ConnectionError("PDF download failed")
+                
+                    # Use tempfile to create a temporary file that auto-deletes when closed
+                    with tempfile.NamedTemporaryFile(suffix='.pdf', delete=True) as temp_pdf:
+                        # Write PDF content to the temporary file
+                        temp_pdf.write(response.content)
+                        temp_pdf.flush()  # Ensure all data is written
+                        
+                        metadata_title, sections = self.extract_pdf(temp_pdf.name)
             else:
                 metadata_title, sections = self.extract_pdf(self.url)
              

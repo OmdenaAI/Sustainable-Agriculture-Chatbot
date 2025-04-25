@@ -255,7 +255,11 @@ The application supports multiple LLM providers through a provider-agnostic inte
 
 ## Environment Setup
 
-The project uses a Conda environment defined in `environment.yaml` for dependency management. To set up the environment:
+The project supports both Conda and pip for dependency management:
+
+### Option 1: Using Conda
+
+The project includes an `environment.yaml` file for Conda-based setup:
 
 1. Ensure you have [Conda](https://docs.conda.io/en/latest/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed
 2. Clone this repository
@@ -266,18 +270,107 @@ conda env create -f environment.yaml
 conda activate extract-and-normalize
 ```
 
-4. If processing HTML with JavaScript, initialize Playwright browsers:
+### Option 2: Using pip
+
+Alternatively, you can use pip with the provided `requirements.txt` file:
+
+1. Create a virtual environment (optional but recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### Additional Setup
+
+If processing HTML with JavaScript, initialize Playwright browsers:
 
 ```bash
 playwright install chromium
 ```
 
-This will install all required dependencies including:
-- Python 3.10
+These methods will install all required dependencies including:
+- Python 3.10 (required version)
 - Core packages: requests, urllib3, PyYAML, nltk
 - HTML parsing: BeautifulSoup4, Playwright
 - LLM clients: openai, groq
-- Support libraries: python-dotenv, PyMuPDF, jsonschema, tenacity, arxiv
+- Support libraries: python-dotenv, PyMuPDF, jsonschema, tenacity, arxiv, validators
+
+## Docker Usage
+
+The application can be containerized using Docker, providing a consistent and isolated runtime environment without the need for local dependency management.
+
+### Building the Docker Container
+
+To build the Docker container:
+
+```bash
+# Normal build
+docker build -t extract-normalize .
+
+# Build without using cache (for troubleshooting)
+docker build --no-cache -t extract-normalize .
+```
+
+The Dockerfile includes:
+- Python 3.10 base image
+- All required dependencies from requirements.txt
+- NLTK data packages (punkt, stopwords, etc.)
+- Playwright with Chromium for HTML processing
+- Volume configuration for input/output directories
+
+### Running the Application with Docker
+
+You can run the application using Docker, mounting host directories for input/output and providing environment variables for API keys:
+
+```bash
+# Processing a PDF from a URL
+docker run \
+  --env-file ~/path/to/.env \
+  -v /path/to/host/output:/app/output \
+  -e PYTHONUNBUFFERED=1 \
+  extract-normalize \
+  --url "https://example.org/document.pdf" \
+  --output "/app/output" \
+  --config "config/config.yaml"
+
+# Processing a local PDF file
+docker run \
+  --env-file ~/path/to/.env \
+  -v /path/to/host/input:/app/input \
+  -v /path/to/host/output:/app/output \
+  -e PYTHONUNBUFFERED=1 \
+  extract-normalize \
+  --url "/app/input/document.pdf" \
+  --output "/app/output" \
+  --config "config/config.yaml"
+```
+
+### Docker Command Explanation
+
+- `--env-file`: Path to your .env file containing API keys
+- `-v /path/to/host/input:/app/input`: Mount a local directory with input files
+- `-v /path/to/host/output:/app/output`: Mount a local directory for output files
+- `-e PYTHONUNBUFFERED=1`: Ensure Python doesn't buffer stdout/stderr (shows logs in real-time)
+- `extract-normalize`: The Docker image name
+- `--url`, `--output`, `--config`: Standard application parameters
+
+### Environment Variables
+
+When running with Docker, you need to provide environment variables for API keys. You can either:
+
+1. Use an environment file with `--env-file`
+2. Pass individual variables with `-e KEY=VALUE`
+
+Example .env file content:
+```
+OPENAI_API_KEY=sk-...your-key-here...
+GROQ_API_KEY=gsk_...your-key-here...
+```
 
 ## Extending the Application
 

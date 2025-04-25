@@ -162,7 +162,7 @@ def validate_config(config, logger):
     logger.info("Configuration validation successful")
     return config
 
-def load_config_and_env(config_path="config/config.yaml", logger=None):
+def load_config_and_env(config_path="config/config.yaml", load_env=True):
     """
     Load and validate configuration from YAML file
     
@@ -173,9 +173,6 @@ def load_config_and_env(config_path="config/config.yaml", logger=None):
     Returns:
         dict: The validated configuration dictionary
     """
-    if logger is None:
-        logger = logging.getLogger("KnowledgeCrawler")
-    
     logger.info(f"Loading configuration from {config_path}")
     
     try:
@@ -187,18 +184,19 @@ def load_config_and_env(config_path="config/config.yaml", logger=None):
         validated_config = validate_config(config, logger)
         logger.info("Configuration loaded and validated successfully")
 
-        # Expand user home directory if present in the env_path
-        env_path = Path(config.get("env_path")).expanduser()
+        if load_env:
+            # Expand user home directory if present in the env_path
+            env_path = Path(config.get("env_path")).expanduser()
 
-        # Validate that the .env file exists
-        if not env_path or not os.path.isfile(env_path):
-            logger.error(f".env file not found at {env_path}")
-            raise FileNotFoundError(".env path is invalid or not found in config.yaml")
+            # Validate that the .env file exists
+            if not env_path or not os.path.isfile(env_path):
+                logger.error(f".env file not found at {env_path}")
+                raise FileNotFoundError(".env path is invalid or not found in config.yaml")
 
-        logger.info(f"Loading environment variables from: {env_path}")
-        
-        # Load environment variables from the .env file
-        load_dotenv(env_path)
+            logger.info(f"Loading environment variables from: {env_path}")
+            
+            # Load environment variables from the .env file
+            load_dotenv(env_path)
 
         return validated_config
     
@@ -215,18 +213,10 @@ def load_config_and_env(config_path="config/config.yaml", logger=None):
         logger.critical(f"Error loading configuration: {e}", exc_info=True)
         sys.exit(1)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate sustainable agriculture metadata from a HTML URL")
-    parser.add_argument("--url", required=True, help="URL to the HTML document")
-    parser.add_argument("--output", default="output", help="Output directory")
-    parser.add_argument("--config", default="config/config.yaml", help="Path to config YAML")
-    parser.add_argument("--result-file", default=None, help="Path to write results JSON for Prefect integration")
-
-    args = parser.parse_args()
-
+def run_html_extraction(args):
     try:
         # Load configuration and environment variables
-        config = load_config_and_env(args.config)
+        config = load_config_and_env(args.config, args.load_env)
 
         # Set the output directory
         config["output_directory"] = args.output
