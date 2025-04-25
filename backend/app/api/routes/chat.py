@@ -17,11 +17,14 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-# Initialize services
-rag_service = RAGService()
-rag_service.initialize() 
-ai_service = AIService(rag_service=rag_service)
+async def initialize_services() -> tuple[RAGService, AIService]:
+    rag_service = RAGService()
+    await rag_service.initialize()
+    ai_service = AIService(rag_service=rag_service)
+    return rag_service, ai_service
+
 chat_history_repo = ChatHistoryRepository()
+
 
 @router.post("", response_model=ChatResponse)
 async def chat(
@@ -32,6 +35,7 @@ async def chat(
     """
     Process a chat message using RAG and return a response
     """
+    rag_service, ai_service = await initialize_services()
     request_id = getattr(request.state, "request_id", str(uuid.uuid4()))
     start_time = time.time()
     
