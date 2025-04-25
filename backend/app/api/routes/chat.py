@@ -18,8 +18,9 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 # Initialize services
-ai_service = AIService()
 rag_service = RAGService()
+rag_service.initialize() 
+ai_service = AIService(rag_service=rag_service)
 chat_history_repo = ChatHistoryRepository()
 
 @router.post("", response_model=ChatResponse)

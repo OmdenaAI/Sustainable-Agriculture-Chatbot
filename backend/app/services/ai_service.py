@@ -1,52 +1,84 @@
 import logging
-from typing import List, Dict, Any, Optional
+from typing import List, Dict
 import httpx
 
 from app.core.config import settings
 from app.core.exceptions import AIServiceError
+from app.services.rag import RAGService
+import os
 
 # Setup logging
 logger = logging.getLogger(__name__)
 
+GROQ_MODEL = "llama3-70b-8192" 
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+K_RETRIEVED = 10
+TEMPERATURE = 0.7
+MAX_TOKENS = 1024
+TIMEOUT = 30.0
+
 class AIService:
     """
-    Service for interacting with AI models
+    Service for interacting with AI models, integrated with RAGService for context retrieval
     """
-    def __init__(self):
+    def __init__(self, rag_service: RAGService = None):
         self.api_key = settings.GROQ_API_KEY
-        self.api_url = "https://api.groq.com/openai/v1/chat/completions"
-        self.model = "llama3-70b-8192"  # Groq's LLaMA 3 model
+        self.api_url = GROQ_URL
+        self.model = GROQ_MODEL  
+
+        # Initialize RAGService
+        if rag_service is None:
+            self.rag_service = RAGService()
+        else:
+            self.rag_service = rag_service
+
+    async def initialize(self):
+        """
+        Initialize the AI service and its dependencies asynchronously.
+        """
+        # Ensure the RAGService is initialized
+        await self.rag_service.initialize()
+
+
+    def load_system_prompt(self) -> str:
+        """
+        Load the system message prompt from a text file.
+        """
+        prompt_file_path = os.path.join("app/prompts", "basic_prompt.txt")
+        
+        try:
+            with open(prompt_file_path, "r") as file:
+                return file.read()
+        except FileNotFoundError:
+            logger.error(f"Prompt file {prompt_file_path} not found.")
+            raise AIServiceError(f"Prompt file {prompt_file_path} not found.")
+        except Exception as e:
+            logger.error(f"Error loading prompt: {str(e)}")
+            raise AIServiceError(f"Error loading prompt: {str(e)}")
     
+
     async def generate_response(
         self,
         message: str,
-        context: List[Dict[str, Any]],
         history: List[Dict[str, str]],
-        user_id: str
+        user_id: str,
+        limit: int = K_RETRIEVED
     ) -> str:
         """
-        Generate a response using the AI model
+        Generate a response using the AI model, first retrieving context from RAGService
         """
         try:
-            # Format context for the prompt
-            context_text = ""
-            if context:
-                context_text = "\n\n".join([doc["text"] for doc in context])
-            
+            # Retrieve context from RAG service
+            rag_result = await self.rag_service.retrieve(query=message, limit=limit)
+            context = rag_result.get("answer", "")
+
             # Create system message with agriculture focus and context
+            system_prompt = self.load_system_prompt() 
+
             system_message = {
                 "role": "system",
-                "content": f"""You are an agriculture expert assistant. 
-Your goal is to provide helpful, accurate information about farming, crops, livestock, and agricultural practices.
-Always base your answers on the provided context when available.
-
-When you don't know the answer or don't have enough context, admit it and suggest what information might help.
-Keep responses concise, practical, and focused on helping farmers and agricultural professionals.
-
-Context information:
-{context_text}"""
+                "content": system_prompt.format(context=context) 
             }
-            
             # Format conversation history
             messages = [system_message]
             
@@ -69,10 +101,10 @@ Context information:
                     json={
                         "model": self.model,
                         "messages": messages,
-                        "temperature": 0.7,
-                        "max_tokens": 1024
+                        "temperature": TEMPERATURE,
+                        "max_tokens": MAX_TOKENS
                     },
-                    timeout=30.0
+                    timeout=TIMEOUT
                 )
                 
                 response.raise_for_status()
