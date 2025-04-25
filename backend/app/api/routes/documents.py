@@ -5,7 +5,6 @@ import uuid
 import json
 import time
 from datetime import datetime
-
 from app.models.schemas import User, DocumentIngestionRequest, DocumentIngestionResponse, DocumentResponse
 from app.api.routes.auth import get_current_user
 from app.services.rag import RAGService
@@ -19,6 +18,37 @@ router = APIRouter()
 
 # Initialize services
 rag_service = RAGService()
+
+def prepare_document(text, metadata=None, chunk_size=1000, chunk_overlap=200):
+    """
+    Prepare a document for ingestion by chunking it into smaller pieces
+    """
+    if metadata is None:
+        metadata = {}
+    
+    # Simple chunking by splitting on newlines and then combining
+    paragraphs = text.split('\n\n')
+    chunks = []
+    current_chunk = ""
+    
+    for paragraph in paragraphs:
+        if len(current_chunk) + len(paragraph) <= chunk_size:
+            current_chunk += paragraph + "\n\n"
+        else:
+            if current_chunk:
+                chunks.append({
+                    "content": current_chunk.strip(),
+                    "metadata": metadata
+                })
+            current_chunk = paragraph + "\n\n"
+    
+    if current_chunk:
+        chunks.append({
+            "content": current_chunk.strip(),
+            "metadata": metadata
+        })
+    
+    return chunks
 
 @router.post("/ingest", response_model=DocumentIngestionResponse)
 async def ingest_document(
