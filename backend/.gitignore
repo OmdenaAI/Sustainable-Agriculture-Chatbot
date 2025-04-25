@@ -1,1 +1,9 @@
 .env*
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# But don't ignore example files
+!.env.*.example
