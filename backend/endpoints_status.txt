@@ -1,0 +1,38 @@
+# API Endpoints Status
+
+## Authentication Endpoints
+- [✅/] POST /api/auth/signup - Create new user account
+- [✅] POST /api/auth/login - Authenticate user and get token ((removed manually email confirmay))
+- [✅/] POST /api/auth/logout - Log out user 
+- [✅] GET /api/auth/check - Check authentication status
+- [✅] GET /api/auth/check-env - Information about your Supabase URL
+- [✅] GET /api/auth/test - Test endpoint
+- [✅] GET /api/auth/test-supabase-url
+
+## Chat Endpoints
+- [✅] POST /api/chat - Send message and get response
+- [✅] GET /api/chat/sessions - Get user's chat sessions
+- [✅] GET /api/chat/sessions/{session_id} - Get messages for a session
+- [✅] POST /api/chat/sessions - Create new chat session
+- [✅] PATCH /api/chat/sessions/{session_id} - Update session details
+- [✅] DELETE /api/chat/sessions/{session_id} - Delete a session
+
+## Document Endpoints
+- [✅] POST /api/documents/ingest - Ingest text documents
+- [✅/] POST /api/documents/ingest-file - Ingest documents from files(tested text file)
+- [✅] POST /api/documents/bulk-ingest - Bulk Ingest documents
+- [✅] POST /api/documents/search - Search documents
+
+## Diagnostic Endpoints
+- [✅] GET /api/auth/test-supabase-detailed - Test Supabase connection
+- [✅] GET /api/auth/check-env - Check environment variables
+- [✅] GET /api/auth/test-supabase-operations - Test Supabase operations
+- [✅] GET /api/auth/test-supabase-url - Test Supabase URL configuration
+
+
+**All services initialized**:
+
+- RAG service initialized successfully
+- Supabase client initialized successfully with your Supabase URL
+- Application startup is complete
+
