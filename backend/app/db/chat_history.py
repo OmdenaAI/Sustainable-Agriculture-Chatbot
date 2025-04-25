@@ -4,7 +4,7 @@ import uuid
 from datetime import datetime
 import json
 
-from app.db.supabase import get_supabase_client
+from app.db.supabase import get_supabase_admin_client
 from app.core.config import settings
 from app.core.exceptions import DatabaseError, ResourceNotFoundError
 
@@ -22,7 +22,7 @@ class ChatHistoryRepository:
         """
         Initialize the Supabase client
         """
-        self.client = get_supabase_client()
+        self.client = get_supabase_admin_client()
         if not self.client:
             logger.warning("Supabase client not initialized")
     

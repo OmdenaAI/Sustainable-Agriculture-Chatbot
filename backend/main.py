@@ -6,9 +6,10 @@ import logging
 import time
 import uuid
 import uvicorn
+import asyncio
 
 from app.api.routes import documents
-
+from app.api.docs import custom_openapi
 from app.api.routes import auth, chat
 from app.core.config import settings
 from app.services.rag import RAGService
@@ -16,22 +17,31 @@ from app.db.chat_history import ChatHistoryRepository
 
 # Configure logging
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.StreamHandler()]
 )
+
 logger = logging.getLogger("agriculture-chatbot")
 
 # Initialize services
 rag_service = RAGService()
 chat_history_repo = ChatHistoryRepository()
 
-# Setup lifespan context
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Initialize services on startup
     logger.info("Starting Agriculture Chatbot API")
     try:
-        await rag_service.initialize()
+        # Check if initialize methods exist before calling them
+        if hasattr(rag_service, 'initialize'):
+            if asyncio.iscoroutinefunction(rag_service.initialize):
+                await rag_service.initialize()
+            else:
+                rag_service.initialize()
+        else:
+            logger.info("RAGService does not have an initialize method, skipping initialization")
+        
         await chat_history_repo.initialize()
         logger.info("Services initialized successfully")
     except Exception as e:
@@ -42,6 +52,7 @@ async def lifespan(app: FastAPI):
     # Cleanup on shutdown
     logger.info("Shutting down Agriculture Chatbot API")
 
+
 # Create FastAPI app
 app = FastAPI(
     title="Agriculture Chatbot API",
@@ -49,6 +60,9 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
+
+# Apply the custom OpenAPI schema AFTER creating the app
+app.openapi = lambda: custom_openapi(app)
 
 # Configure CORS
 app.add_middleware(
@@ -131,4 +145,8 @@ async def health_check(request: Request):
     }
 
 if __name__ == "__main__":
-    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run(
+        "app.main:app",
+        host="0.0.0.0",
+        port=8000
+    )

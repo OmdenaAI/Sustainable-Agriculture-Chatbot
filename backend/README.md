@@ -127,7 +127,7 @@ The API includes Swagger documentation that allows you to test endpoints directl
 3. Click on an endpoint to expand it
 4. Click the "Try it out" button
 5. Fill in the required parameters
-6. Click "Execute" to send the request 
+. Click "Execute" to send the request 
 
 ### Using Postman or Insomnia
 
