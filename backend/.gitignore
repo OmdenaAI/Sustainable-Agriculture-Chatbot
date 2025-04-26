@@ -1,7 +1,13 @@
 .env
 *.env
-.env.*.example
 cookies.txt
 
+.env*
+# Environment files
+.env.local
+.env.development
+.env.production
 
+# But don't ignore example files
+!.env.*.example
 
