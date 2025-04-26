@@ -1,11 +1,11 @@
 import json
-import logging
 import re
 from openai import OpenAI
 import groq
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 from datetime import datetime, timezone
 from common.schema_prompt_builder import SchemaPromptBuilder
+from common.rate_limiter import RateLimiter
 
 class MetadataGenerator:
     """Extracts metadata from documents using LLM processing."""
@@ -30,6 +30,12 @@ class MetadataGenerator:
         self.llm_provider = llm_config.get("provider", "openai")
         self.llm_model = llm_config.get("model", "gpt-3.5-turbo")
         self.temperature = llm_config.get("temperature", 0.3)
+        
+        # Rate limiting configuration
+        rate_limit_config = llm_config.get("rate_limit", {})
+        calls_per_minute = rate_limit_config.get("calls_per_minute", 0)  # 0 = no request rate limit
+        tokens_per_minute = rate_limit_config.get("tokens_per_minute", 0)  # 0 = no token rate limit
+        self.rate_limiter = RateLimiter(calls_per_minute, tokens_per_minute)
         
         # Initialize appropriate LLM client and set provider-specific call method
         self.client = self._initialize_llm_client()
@@ -91,11 +97,28 @@ class MetadataGenerator:
         retry=retry_if_exception_type(Exception)
     )
     def _call_llm(self, prompt):
-        """Call LLM with retry logic for resilience."""
+        """Call LLM with retry logic and rate limiting for resilience."""
         self.logger.info(f"Calling {self.llm_provider} LLM model '{self.llm_model}'...")
         
-        # Use the function pointer set during initialization
-        return self._llm_call_func(prompt)
+        # Apply rate limiting if configured
+        rate_limit_info = []
+        if self.rate_limiter.calls_per_minute:
+            rate_limit_info.append(f"{self.rate_limiter.calls_per_minute} calls/minute")
+        if self.rate_limiter.tokens_per_minute:
+            rate_limit_info.append(f"{self.rate_limiter.tokens_per_minute} tokens/minute")
+            
+        if rate_limit_info:
+            self.logger.debug(f"Applying rate limits: {', '.join(rate_limit_info)}")
+            estimated_tokens = self.rate_limiter.wait(prompt)
+            if estimated_tokens > 0:
+                self.logger.debug(f"Estimated prompt tokens: {estimated_tokens}")
+        
+        try:
+            # Use the function pointer set during initialization
+            return self._llm_call_func(prompt)
+        except Exception as e:
+            self.logger.warning(f"LLM API call failed: {str(e)}. Retrying...")
+            raise
 
     def generate_metadata(self, url, text, chunk_size):
         """Generate metadata from document text and validate against schema."""

@@ -2,7 +2,6 @@ env_path:  "~/src/python/.env"
 llm_document_chunk_size: 4192
 
 schema_path: "schemas/base_payload.schema.json"
-llm_document_chunk_size: 4096
 
 llm:
   #provider: openai
@@ -10,6 +9,10 @@ llm:
   #model: gpt-3.5-turbo
   model: llama3-70b-8192
   temperature: 0.1
+  # Rate limiting for LLM API calls
+  rate_limit:
+    calls_per_minute: 60      # Maximum API calls per minute (0 = no limit)
+    tokens_per_minute: 100000 # Maximum tokens per minute (0 = no limit)
 
 section_title_filter:
   ignore_if_contains:
@@ -36,7 +39,7 @@ html_parameters:
       - "#content"
       - ".main-content"
       - "[class*='content']"
-      - "[class*='body']" 
+      - "[class*='body']"
 
     subtopics_selector: "h2, h3"  # Common subtopic headers
     subtopic_title_selector: ""  # Will use the selector itself if empty
@@ -65,6 +68,7 @@ html_parameters:
     scroll: true  # Whether to scroll the page to load lazy content
     js_patterns:
       - tracextech\.com
+      - dmnews\.com
       - wix\.com
       - squarespace\.com
       - webflow\.com

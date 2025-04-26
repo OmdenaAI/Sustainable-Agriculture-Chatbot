@@ -51,6 +51,12 @@ This application processes documents from URLs through the following pipeline:
   - Structured metadata generation with schema validation
   - Fallback mechanisms for missing information
   - Retry logic for API resilience
+  - Configurable rate limiting to prevent API throttling
+
+- **RateLimiter**: API call rate limiting
+  - Thread-safe implementation for concurrent processing
+  - Configurable calls-per-minute threshold
+  - Token-based rate limiting to manage usage
 
 - **ResultsManager**: Standardized result handling
   - Centralized output file generation
@@ -96,7 +102,10 @@ Required environment variable: `OPENAI_API_KEY`
 llm:
   provider: "groq"
   model: "llama3-70b-8192"  # Alternatives: "llama3-8b-8192", "mixtral-8x7b-32768"
-  temperature: 0.2  # Lower temperature for more consistent metadata extraction
+  temperature: 0.1  # Lower temperature for more consistent metadata extraction
+  rate_limit:
+    calls_per_minute: 60      # Maximum API calls per minute (0 = no limit)
+    tokens_per_minute: 100000 # Maximum tokens per minute (0 = no limit)
 ```
 
 Required environment variable: `GROQ_API_KEY`
@@ -109,6 +118,7 @@ API keys must be configured as environment variables for security. These can be 
 # Example .env file
 OPENAI_API_KEY=sk-...your-key-here...
 GROQ_API_KEY=gsk_...your-key-here...
+ELSEVIER_API_KEY=...your-key-here...
 ```
 
 The path to this `.env` file is configured with:
@@ -117,22 +127,51 @@ The path to this `.env` file is configured with:
 env_path: "~/src/python/.env"
 ```
 
-#### General Configuration
+#### Obtaining an Elsevier API Key
+
+To use the Elsevier/ScienceDirect integration, you need to obtain an API key:
+
+1. Visit the [Elsevier Developer Portal](https://dev.elsevier.com/apikey/manage)
+2. Request an API key (select "I want an API Key")
+3. Complete the registration form with your institutional information
+
+Eligibility:
+- **Non-Commercial Users**: Researchers in academic institutions, public sector, and non-profit organizations can access most APIs for free for non-commercial use
+- **Commercial Users**: Researchers in private sector or commercial institutions need an API license and subscription
+
+Once obtained, add the API key to your environment variables as `ELSEVIER_API_KEY`.
+
+Note that full API access is only granted to researchers affiliated with organizations that have subscriptions to the corresponding Elsevier products.
+
+#### Current Configuration (config.yaml)
+
+The current configuration uses:
 
 ```yaml
-env_path: "~/src/python/.env"  # Path to environment variables file
-llm_document_chunk_size: 4096  # Maximum text size for LLM processing
-output_directory: "output"     # Directory for output files
-schema_path: "schemas/base_payload.schema.json"  # Schema for validation
+env_path:  "~/src/datascience/omdena/.env"
+llm_document_chunk_size: 4096
 
-# PDF-specific configuration
-section_title_filter:          # Filtering options for section titles
+schema_path: "schemas/base_payload.schema.json"
+
+llm:
+  provider: groq
+  model: llama3-70b-8192
+  temperature: 0.1
+  rate_limit:
+    calls_per_minute: 60      # Maximum API calls per minute (0 = no limit)
+    tokens_per_minute: 100000 # Maximum tokens per minute (0 = no limit)
+
+section_title_filter:
   ignore_if_contains:
     - "table of contents"
     - "page"
     - "framework"
     - "figure"
     - "reference"
+
+pdf_extractor:
+  headless_domains:
+    - "mdpi.com"
 
 # HTML-specific configuration
 html_parameters:
@@ -153,7 +192,27 @@ html_parameters:
     delay: 2
   headers:
     User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+  scraping_rate_limit:
+    requests_per_second: 1 # Maximum requests per second
+    delay: 1.0            # Minimum seconds between requests
 ```
+
+Additionally, detailed HTML parameters are configured for improved web page processing.
+
+#### Elsevier API Integration
+
+The application now supports downloading PDFs from Elsevier's ScienceDirect using their official API:
+
+```yaml
+# No specific config.yaml settings needed, just environment variable
+```
+
+Required environment variable: `ELSEVIER_API_KEY`
+
+This integration:
+- Automatically extracts PIIs from ScienceDirect URLs
+- Uses the Elsevier Content API to fetch article PDFs
+- Handles authentication via API key
 
 ## Outputs
 
@@ -197,7 +256,18 @@ The application generates several outputs in the configured output directory:
 The application supports multiple academic document sources:
 - **arXiv**: Direct PDF retrieval using the arXiv API
 - **ResearchGate**: Intelligent extraction of PDFs from publication pages
+- **ScienceDirect/Elsevier**: Direct PDF retrieval using the Elsevier Content API
+- **MDPI**: Headless browser extraction for MDPI journal articles
 - **General PDFs**: Direct download from any accessible URL
+
+### Direct PDF URL Handling
+
+The application includes special handling for direct PDF URLs:
+- **Auto-detection**: Automatically identifies direct PDF links (URLs ending with .pdf)
+- **Smart referer**: Infers and uses appropriate referer headers to bypass access restrictions
+- **Content-type validation**: Verifies downloaded content is actually a PDF
+- **Local file support**: Processes local PDF files with the same pipeline as remote URLs
+- **Temporary file management**: Securely handles downloaded PDFs in temporary storage
 
 ### Error Handling
 
@@ -241,7 +311,11 @@ The application supports multiple LLM providers through a provider-agnostic inte
 - Provider-specific client initialization
 - Consistent prompt templates across providers
 - Unified error handling and retry logic
+- **Rate limiting** to prevent API throttling and reduce costs
 - Configuration-driven provider selection
+- Currently supported providers:
+  - OpenAI (GPT models)
+  - Groq (Llama and Mixtral models)
 
 ## Dependencies
 
@@ -370,6 +444,7 @@ Example .env file content:
 ```
 OPENAI_API_KEY=sk-...your-key-here...
 GROQ_API_KEY=gsk_...your-key-here...
+ELSEVIER_API_KEY=...your-key-here...
 ```
 
 ## Extending the Application
@@ -402,4 +477,31 @@ To improve HTML content extraction for specific websites:
 2. Add specific selectors for different website structures
 3. Add site-specific configurations if needed for academic or complex websites
 4. Test with a variety of target websites to ensure robust extraction
+
+### Rate Limiting
+
+The application implements two separate rate limiting systems:
+
+1. **LLM API Rate Limiting**:
+   - Prevents excessive calls to language model APIs
+   - Controls both request frequency and token usage
+   - Configured in the `llm.rate_limit` section:
+     ```yaml
+     rate_limit:
+       calls_per_minute: 60      # Request-based limit (0 = no limit)
+       tokens_per_minute: 100000 # Token-based limit (0 = no limit)
+     ```
+
+2. **Web Scraping Rate Limiting**:
+   - Prevents blocking by websites when scraping content
+   - Implements polite crawling practices
+   - Configured in the `html_parameters.rate_limit` section:
+     ```yaml
+     rate_limit:
+       enabled: true
+       requests_per_second: 1 # Maximum requests per second
+       delay: 1.0             # Minimum seconds between requests
+     ```
+
+Both systems use thread-safe implementations to ensure consistent behavior in concurrent processing environments.
 

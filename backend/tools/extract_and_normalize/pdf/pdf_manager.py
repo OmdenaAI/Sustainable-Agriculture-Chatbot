@@ -20,9 +20,12 @@ class PdfManager:
         self.logger = logger
         self.doc_utils = DocumentUtils(self.logger)
 
+        self.elsevier = False
+
         # Get actual url if its an arxiv url
         self.url = self._get_url(url)
         self.headless_domains = self.config.get("pdf_extractor", {}).get("headless_domains", [])
+        
 
     def _get_url(self, url):
         result = url
@@ -32,6 +35,7 @@ class PdfManager:
         # Extract the domain name
         domain = parsed_url.netloc  # This gives 'arxiv.org'
         arxiv_result = 'arxiv.org' == domain
+        self.elsevier = 'linkinghub.elsevier.com' == domain
 
         if arxiv_result:
             # Extract the arXiv ID from the path
@@ -131,6 +135,57 @@ class PdfManager:
 
         return result
 
+    def _download_elsevier_pdf(self):
+        """
+        Download a PDF from ScienceDirect using the official Elsevier API and extract its sections.
+        Requires ELSEVIER_API_KEY in the environment.
+        """
+        try:
+            # Extract PII from the ScienceDirect URL
+            parsed_url = urlparse(self.url)
+            path_parts = parsed_url.path.split("/")
+            if "pii" not in path_parts:
+                raise ValueError("URL does not contain a PII. Cannot download PDF.")
+            
+            pii_index = path_parts.index("pii") + 1
+            if pii_index >= len(path_parts):
+                raise ValueError("Invalid PII in URL.")
+            
+            pii = path_parts[pii_index]
+
+            # Retrieve API key from environment variable
+            api_key = os.getenv("ELSEVIER_API_KEY")
+            if not api_key:
+                raise EnvironmentError("Missing ELSEVIER_API_KEY in environment variables.")
+
+            # Build API URL with apiKey as a query parameter
+            api_url = f"https://api.elsevier.com/content/article/pii/{pii}?apiKey={api_key}"
+
+            self.logger.info(f"Downloading Elsevier PDF for PII: {pii}")
+
+            headers = {
+                "Accept": "application/pdf",
+                "X-ELS-APIKey": api_key,  # Still send header as good practice
+            }
+
+            response = requests.get(api_url, headers=headers, stream=True)
+            if response.status_code != 200:
+                self.logger.error(f"Failed to download Elsevier PDF: HTTP {response.status_code}")
+                raise ConnectionError(f"PDF download failed with status code {response.status_code}")
+
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=True) as temp_pdf:
+                temp_pdf.write(response.content)
+                temp_pdf.flush()
+
+                metadata_title, sections = self.extract_pdf(temp_pdf.name)
+
+            self.logger.info(f"Successfully downloaded and extracted Elsevier PDF with {len(sections)} sections.")
+            return metadata_title, sections
+
+        except Exception as e:
+            self.logger.exception(f"Error downloading Elsevier PDF: {str(e)}")
+            raise
+
 
     def download_headless_pdf(self):
         """Download a PDF from a URL requiring a headless browser (Playwright)."""
@@ -164,8 +219,11 @@ class PdfManager:
             if self.is_url():
                 # Does the url require a headless browser?
                 if self.url in self.headless_domains and self.url.endswith("/pdf"):
-                    self.logger.info(f"Downloading PDF using a headless browserfrom URL: {self.url}")
+                    self.logger.info(f"Downloading PDF using a headless browser from URL: {self.url}")
                     metadata_title, sections = self.download_mdpi_pdf()
+                elif self.elsevier:
+                    self.logger.info(f"Downloading PDF from elsevier URL: {self.url}")
+                    metadata_title, sections = self._download_elsevier_pdf()
                 else:
                     self.logger.info(f"Downloading PDF from URL: {self.url}")
                     response = requests.get(self.url)

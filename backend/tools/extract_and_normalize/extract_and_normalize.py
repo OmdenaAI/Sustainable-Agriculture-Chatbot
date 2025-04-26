@@ -27,7 +27,7 @@ if __name__ == "__main__":
         domain = urlparse(url_lower).netloc
         # arxiv has a special way of handling pdfs, mdpi is just odd where some urls do not end in pdf but could be:
         # https://www.mdpi.com/2073-4395/14/10/2423/pdf?version=1729328266
-        use_pdf_extractor = url_lower.endswith("pdf") or domain in ["arxiv.org", "www.mdpi.com", "mdpi.com"]
+        use_pdf_extractor = url_lower.endswith("pdf") or domain in ["arxiv.org", "www.mdpi.com", "mdpi.com", "openknowledge.fao.org", "linkinghub.elsevier.com"]
 
     # Run appropriate extractor
     if use_pdf_extractor:
