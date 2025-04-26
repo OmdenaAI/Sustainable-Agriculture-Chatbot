@@ -38,7 +38,7 @@ class InsertDB:
         return self.config_manager.is_tool_enabled("insert_db")
     
     @task(name="insert-to-database")
-    def process(self, input_dir: Optional[Path]) -> Optional[Dict[str, Any]]:
+    def process(self, input_dir: Path) -> Optional[Dict[str, Any]]:
         """
         Process chunked content by inserting it into the database.
         

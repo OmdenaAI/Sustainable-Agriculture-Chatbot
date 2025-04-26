@@ -39,7 +39,7 @@ class Chunker:
         return self.config_manager.is_tool_enabled("chunker")
     
     @task(name="chunk-document")
-    def process(self, input_dir: Optional[Path]) -> Optional[Path]:
+    def process(self, input_dir: Path) -> Optional[Path]:
         """
         Process extracted content by chunking it into smaller pieces.
         

@@ -3,6 +3,11 @@
 tools:
   extractor:
     enabled: true
+    # For test if enabled is false, the tool wont run but you can provide extracted_paths for chunker to process
+    # extracted_paths:
+    #   - /Users/timhazed/tmp/output/extracted/doc_0001
+    #   - /Users/timhazed/tmp/output/extracted/doc_0002
+
     docker:
       image: "extract-normalize:latest"
       input_volume: "/Users/timhazed/tmp/input:/app/input"
@@ -12,6 +17,10 @@ tools:
   
   chunker:
     enabled: false
+    # For test if enabled is false, the tool wont run but you can provide chunked_paths for insert_db to process
+    # chunked_paths:
+    #   - /Users/timhazed/tmp/output/chunked/doc_0001
+    #   - /Users/timhazed/tmp/output/chunked/doc_0002
     docker:
       image: "document-chunker:latest"
       input_volume: "./output:/app/input"
@@ -31,3 +40,5 @@ timeouts:
   extraction: 600  # 10 minutes
   chunking: 300    # 5 minutes
   db_insertion: 600  # 10 minutes 
+
+log_dir: "./logs"

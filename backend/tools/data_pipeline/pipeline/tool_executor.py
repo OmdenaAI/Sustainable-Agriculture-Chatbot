@@ -3,18 +3,21 @@ import subprocess
 import time
 from typing import Dict, Any, List, Optional
 from prefect import task
+from pipeline.config_manager import ConfigManager
+
 class ToolExecutor:
     """
     Executes tools as Docker containers.
     """
     
-    def __init__(self, logger):
+    def __init__(self, config_manager: ConfigManager, logger):
         """
         Initialize the tool executor.
         
         Args:
             logger: Logger instance to use throughout the class
         """
+        self.config_manager = config_manager
         self.logger = logger
     
     @task(
@@ -54,7 +57,7 @@ class ToolExecutor:
             Execution results dictionary
         """
         # Create log directory
-        log_dir = Path("logs") / tool_name
+        log_dir = Path(self.config_manager.get_log_dir()) / tool_name
         log_dir.mkdir(parents=True, exist_ok=True)
         
         # Format timestamp in a human-readable format

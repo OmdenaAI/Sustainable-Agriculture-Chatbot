@@ -36,8 +36,8 @@ def main_pipeline(csv_path: str, config_path: str):
     
     # Initialize managers
     config_file = Path(config_path)
-    config_manager = ConfigManager(config_file)
-    tool_executor = ToolExecutor(logger)
+    config_manager = ConfigManager(config_file, logger)
+    tool_executor = ToolExecutor(config_manager, logger)
     
     # Initialize extractors and processors
     extractor = Extractor(config_manager, tool_executor, logger)
@@ -71,16 +71,22 @@ def main_pipeline(csv_path: str, config_path: str):
                 extracted_paths.append(None)
     else:
         logger.info("Skipping extraction phase (disabled in config).")
+
+        # For debugging, you can provide extracted_paths for chunker to process 
+        extracted_paths = config_manager.get_extracted_paths()
     
     chunked_paths = []
     if chunker_enabled and extracted_paths:
         logger.info("Starting chunking phase...")
         for extracted_path in extracted_paths:
-            chunked_path = chunker.process(extracted_path)
+            chunked_path = chunker.process(Path(extracted_path))
             chunked_paths.append(chunked_path)
     else:
         if not chunker_enabled:
             logger.info("Skipping chunking phase (disabled in config).")
+
+            # For debugging, you can provide chunked_paths for insert_db to process 
+            chunked_paths = config_manager.get_chunked_paths()
         elif not extracted_paths:
             logger.warning("No extracted content to chunk. Skipping chunking phase.")
     
@@ -88,7 +94,7 @@ def main_pipeline(csv_path: str, config_path: str):
     if insert_db_enabled and chunked_paths:
         logger.info("Starting database insertion phase...")
         for chunked_path in chunked_paths:
-            result = insert_db.process(chunked_path)
+            result = insert_db.process(Path(chunked_path))
             db_results.append(result)
     else:
         if not insert_db_enabled:

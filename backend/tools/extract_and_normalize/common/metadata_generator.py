@@ -1,31 +1,29 @@
 import json
 import logging
-import jsonschema
 import re
 from openai import OpenAI
 import groq
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 from datetime import datetime, timezone
-
-SCHEMA_DEFAULTS = {
-    "document_type": "manual",
-    "sustainability_dimensions": ["environmental"],
-    "key_topics": ["sustainable agriculture"],
-    "contains_harmful_practices": False,
-    "intended_audience": ["other"],
-    "region_or_country": "global",
-    "language": "en",
-}
+from common.schema_prompt_builder import SchemaPromptBuilder
 
 class MetadataGenerator:
     """Extracts metadata from documents using LLM processing."""
     
-    def __init__(self, config, doc_utils, logger=None):
-        """Initialize with configuration, document utilities, and optional custom logger."""
+    def __init__(self, config, doc_utils, logger, prompt_builder):
+        """
+        Initialize with configuration, document utilities, logger and prompt builder.
+        
+        Args:
+            config (dict): Configuration settings
+            doc_utils (DocumentUtils): Document utilities instance
+            logger (Logger): Logger instance
+            prompt_builder (SchemaPromptBuilder): Schema prompt builder instance
+        """
         self.config = config
-        self.logger = logger or logging.getLogger(__name__)
-        self.schema_path = config.get("schema_path", "schemas/sustainable_agriculture.schema.json")
-        self.schema = self._load_schema()
+        self.logger = logger
+        # Use prompt_builder for schema access and validation
+        self.prompt_builder = prompt_builder
         
         # LLM configuration
         llm_config = config.get("llm", {})
@@ -40,11 +38,10 @@ class MetadataGenerator:
         self._llm_call_func = self._get_provider_call_function()
         
         self.doc_utils = doc_utils
-
-    def _load_schema(self):
-        """Load JSON schema for metadata validation."""
-        with open(self.schema_path) as f:
-            return json.load(f)
+        
+        # Extract field descriptions from the prompt builder
+        self.fields_section, self.array_fields = prompt_builder.get_field_descriptions()
+        self.special_fields = ', '.join([f'`{field}`' for field in self.array_fields])
 
     def _initialize_llm_client(self):
         """Initialize the LLM client based on provider configuration."""
@@ -100,53 +97,6 @@ class MetadataGenerator:
         # Use the function pointer set during initialization
         return self._llm_call_func(prompt)
 
-    def _enforce_schema_and_apply_defaults(self, metadata):
-        """
-        Ensures LLM metadata conforms to schema:
-        - Removes invalid enum values
-        - Applies defaults where necessary
-        - Logs all corrections
-        """
-        cleaned = metadata.copy()
-
-        for field, rules in self.schema.get("properties", {}).items():
-            # Handle scalar enum fields
-            if rules.get("type") == "string" and "enum" in rules:
-                val = cleaned.get(field)
-                if val is not None and val not in rules["enum"]:
-                    self.logger.warning(f"Invalid value for '{field}': '{val}' — replacing with default: {SCHEMA_DEFAULTS.get(field)}")
-                    cleaned[field] = SCHEMA_DEFAULTS.get(field)
-                elif val is None and field in SCHEMA_DEFAULTS:
-                    self.logger.info(f"Missing '{field}' — using default: {SCHEMA_DEFAULTS[field]}")
-                    cleaned[field] = SCHEMA_DEFAULTS[field]
-
-            # Handle list-of-enum fields
-            elif rules.get("type") == "array" and "enum" in rules.get("items", {}):
-                val = cleaned.get(field, [])
-                allowed = set(rules["items"]["enum"])
-                filtered = [v for v in val if v in allowed]
-
-                if not filtered and field in SCHEMA_DEFAULTS:
-                    self.logger.warning(f"No valid values for list field '{field}' — using default: {SCHEMA_DEFAULTS[field]}")
-                    cleaned[field] = SCHEMA_DEFAULTS[field]
-                else:
-                    if set(val) != set(filtered):
-                        self.logger.warning(f"Removed invalid values from '{field}': {set(val) - allowed}")
-                    cleaned[field] = filtered
-
-            # Handle booleans
-            elif rules.get("type") == "boolean":
-                if field not in cleaned and field in SCHEMA_DEFAULTS:
-                    self.logger.info(f"Missing boolean '{field}' — using default: {SCHEMA_DEFAULTS[field]}")
-                    cleaned[field] = SCHEMA_DEFAULTS[field]
-
-            # Fallback: fill any known default if missing
-            if field not in cleaned and field in SCHEMA_DEFAULTS:
-                self.logger.info(f"Missing field '{field}' — using default: {SCHEMA_DEFAULTS[field]}")
-                cleaned[field] = SCHEMA_DEFAULTS[field]
-
-        return cleaned
-
     def generate_metadata(self, url, text, chunk_size):
         """Generate metadata from document text and validate against schema."""
         prompt = self._build_prompt(text, chunk_size)
@@ -163,18 +113,15 @@ class MetadataGenerator:
             if not metadata.get("date_published"):
                 metadata["date_published"] = self._infer_date(text)
 
-            # Enforce schema and apply defaults because sometimes the LLM hallucinates
-            metadata = self._enforce_schema_and_apply_defaults(metadata)
+            # Use prompt_builder to enforce schema and apply defaults
+            metadata = self.prompt_builder.enforce_schema_and_apply_defaults(metadata)
 
             # Validate against schema
-            jsonschema.validate(instance=metadata, schema=self.schema)
+            self.prompt_builder.validate_metadata(metadata)
+            
             return metadata
-        except jsonschema.ValidationError as ve:
-            self.logger.error("Metadata validation failed.")
-            self.logger.error(ve.message)
-            raise
         except Exception as e:
-            self.logger.exception("LLM metadata generation failed.")
+            self.logger.exception("Metadata generation failed.")
             raise
 
     def _infer_date(self, text):
@@ -194,8 +141,9 @@ class MetadataGenerator:
             self.logger.warning(f"No date_published found in metadata. Defaulting to today: {today_str}")
 
         return result
-
+        
     def _build_prompt(self, text, chunk_size):
+        """Build prompt using field descriptions from the schema."""
         prompt = f"""
         You are an expert metadata classification assistant for sustainable agriculture documents.
 
@@ -211,7 +159,7 @@ class MetadataGenerator:
         - Be conservative and precise
         - Only include fields if clearly and repeatedly supported by the text
 
-        Special instructions for `intended_audience`, `key_topics`, `sustainability_dimensions` and `document_type`:
+        Special instructions for {self.special_fields}:
         - Include an item in either list only if it is clearly stated or strongly implied in at least two distinct places in the document
         - A single mention — even if prominent — is not sufficient
         - Each item must appear in the accepted list below
@@ -220,21 +168,7 @@ class MetadataGenerator:
 
         Target JSON Fields:
 
-        - title: string
-        - language: 2-letter ISO code (e.g., "en")
-        - region_or_country: country or region mentioned; if not mentioned or multiple regions are mentioned, use "global"
-        - document_type: one of ["scientific", "policy", "ngo_report", "manual"]
-        - sustainability_dimensions: list of 1 or more from ["environmental", "economic", "social"]
-        - key_topics: list of 1 or more from [
-            "financial access", "agricultural innovation", "long-term planning",
-            "supply chain integration", "technology adoption", "data-driven farming",
-            "agroforestry", "carbon markets", "local networks", "regenerative agriculture",
-            "climate change mitigation", "biodiversity conservation", "sustainable agriculture",
-            "soil health", "organic farming", "green CAP policy"
-        ]
-        - contains_harmful_practices: boolean
-        - intended_audience: list of 1 or more from ["farmers", "policymakers", "researchers", "NGOs"]
-        - date_published: Use format "YYYY-MM-DD" ONLY if clearly stated in the text. If not present, omit the field.
+        {self.fields_section}
 
         The output must:
         - Include only the above fields

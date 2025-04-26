@@ -25,7 +25,9 @@ if __name__ == "__main__":
     elif validators.url(args.url):
         url_lower = args.url.lower()
         domain = urlparse(url_lower).netloc
-        use_pdf_extractor = url_lower.endswith("pdf") or "arxiv.org" in domain
+        # arxiv has a special way of handling pdfs, mdpi is just odd where some urls do not end in pdf but could be:
+        # https://www.mdpi.com/2073-4395/14/10/2423/pdf?version=1729328266
+        use_pdf_extractor = url_lower.endswith("pdf") or domain in ["arxiv.org", "www.mdpi.com", "mdpi.com"]
 
     # Run appropriate extractor
     if use_pdf_extractor:

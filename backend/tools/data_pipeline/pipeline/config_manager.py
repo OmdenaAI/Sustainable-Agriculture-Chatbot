@@ -1,7 +1,6 @@
 import re
 from pathlib import Path
 import yaml
-import logging
 from typing import Dict, Any, Optional, List
 import os
 
@@ -14,15 +13,15 @@ class ConfigManager:
     Manages configuration for data pipeline and tools.
     """
     
-    def __init__(self, config_file: Path):
+    def __init__(self, config_file: Path, logger):
         """
         Initialize the config manager.
         
         Args:
             config_file: Path to the main configuration file
         """
-        self.logger = logging.getLogger(__name__)
         self.config_file = config_file
+        self.logger = logger
         self.config = self._load_config(config_file)
     
     def _load_config(self, config_file: Path) -> Dict[str, Any]:
@@ -84,8 +83,6 @@ class ConfigManager:
         Returns:
             True if the tool is enabled, False otherwise.
         """
-        is_enabled = False
-        
         tool_config = self.get_tool_config(tool_name)
         # Default to True if not specified - this means tools are enabled by default
         is_enabled = tool_config.get("enabled", True)
@@ -261,3 +258,32 @@ class ConfigManager:
         """
         docker_config = self.get_docker_config(tool_name)
         return docker_config.get('config_path') 
+    
+    def get_log_dir(self) -> str:
+        """
+        Get log directory from configuration.
+        
+        Returns:
+            Log directory path
+        """
+        return self.config.get('log_dir', './logs')
+    
+    def get_extracted_paths(self) -> List[str]:
+        """
+        Get extracted_paths from configuration.
+                   
+        Returns:
+            List of extracted paths of []
+        """
+        tool_config = self.get_tool_config("extractor")
+        return tool_config.get("extracted_paths", [])
+    
+    def get_chunked_paths(self) -> List[str]:
+        """
+        Get extracted_paths from configuration.
+                   
+        Returns:
+            List of extracted paths of []
+        """
+        tool_config = self.get_tool_config("chunker")
+        return tool_config.get("chunked_paths", [])
