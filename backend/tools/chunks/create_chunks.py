@@ -1,8 +1,8 @@
 import os
 import json
 import re
-from chunkers.overlap_paragraph_chunker import OverlapChunks
-from settings import models_to_chunk_size_mapping
+from chunkers.overlap_paragraph_chunker import OverlapParagraphChunks
+import argparse
 
 def get_text(file_path):
     """read text from a .tex file """
@@ -20,7 +20,7 @@ def get_metadata(dir_path):
     return None
 
 
-def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
+def create_chunks_from_text_file(dir_path, chunker, metadata=None):
     """Creating chunks from text files in a directory"""
     
 
@@ -35,11 +35,7 @@ def create_chunks_from_text_file(dir_path, chunker, chunk_size, metadata=None,):
     metadata = get_metadata(dir_path)
 
     final_text_to_overlap = ""
-
-    if chunker == "overlap":
-        overlap_percentage = 20
-        chunker = OverlapChunks(chunk_size, overlap_percentage)
-
+    chunker = chunker
     sorted_pages = sorted([int(re.search(r'_page_(\d+)\.txt', file).group(1)) for file in os.listdir(dir_path) if file .startswith(file_prefix) and file.endswith('txt')])
     
     for index in sorted_pages:
@@ -66,10 +62,25 @@ def store_chunks(chunks, file_path):
         json.dump([chunk for chunk in chunks], f, indent=2)
 
 if __name__ == "__main__":
-    files_to_chunk_dir = "../extract_and_normalize/output"
-    chunk_store_file = "output_chunks/chunks.json"
-    chunk_size = models_to_chunk_size_mapping["text-embedding-3-small"]
-    chunker = "overlap"
+    parser = argparse.ArgumentParser(description="Generate chunks from text files and ingest metadata from a JSON file")
+    parser.add_argument("--chunk_size", required=True, help="number of words for a given embedding model")
+    parser.add_argument("--chunker_technique", default="overlap", help="chunker technique to use")
+    parser.add_argument("--overlap_percentage", default=20, type=int, help="overlap percentage for the chunker")
+    parser.add_argument("--input", required=True, help="input file")
+    parser.add_argument("--output", required=True, help="output file")
     
-    chunks = create_chunks_from_text_file(files_to_chunk_dir, chunker, chunk_size,)
+    args = parser.parse_args()
+    
+    files_to_chunk_dir = args.input
+    chunk_store_file = args.output + "/chunks.json"
+    
+    chunk_size = int(args.chunk_size)
+
+    # include as many case as chunk techniques are defined (script in the chunkers folder) 
+    if args.chunker_technique == "overlap":
+        chunker = OverlapParagraphChunks(chunk_size, args.overlap_percentage)
+    else:
+        raise ValueError(f"Unknown chunker technique: {args.chunker_technique}")
+    
+    chunks = create_chunks_from_text_file(files_to_chunk_dir, chunker)
     store_chunks(chunks, chunk_store_file)

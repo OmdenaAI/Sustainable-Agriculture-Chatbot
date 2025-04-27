@@ -6,12 +6,12 @@ import jsonschema
 from jsonschema import validate
 from pathlib import Path
 
-class OverlapChunks(AbstractChunker):
+class OverlapParagraphChunks(AbstractChunker):
     def __init__(self, chunk_size: int = 1024, overlap_percentage: int = 20):
         self.chunk_size = chunk_size
         self.overlap_percentage = overlap_percentage
         self.overlap_words = int(chunk_size * self.overlap_percentage / 100)
-        self.schema = self._load_schema(Path("../extract_and_normalize/schemas/sustainable_agriculture.schema.json"))
+        self.schema = self._load_schema(Path("schemas/sustainable_agriculture.schema.json"))
 
     def _load_schema(self, schema_path: Path):
         with open(schema_path, 'r') as f:
@@ -34,7 +34,7 @@ class OverlapChunks(AbstractChunker):
             for index, start in enumerate(range(0, len(words), step)):
                 chunk_text = ' '.join(words[start:start + self.chunk_size])
                 chunk_schema = copy.deepcopy(metadata) if metadata else {}
-                chunk_schema["chunk_id"] = f"{chunk_schema["doc_id"]}_{index}"
+                chunk_schema["chunk_id"] = f"{chunk_schema['doc_id']}_{index}"
             
 
                 chunk = {
@@ -51,6 +51,7 @@ class OverlapChunks(AbstractChunker):
                     "source_name": chunk_schema.get("source_name", "Unknown"),
                     "doc_id": chunk_schema.get("doc_id", ""),
                     "chunk_id": chunk_schema["chunk_id"],
+                    "chunk_index": index, #TODO: create an index for the chunk in the document
                     "section_title": chunk_schema.get("section_title", "Unknown Section"),
                     "text": chunk_text,
                 }

@@ -1,0 +1,3 @@
+chunk_size: 256
+chunk_overlap: 20
+chunker_technique: "overlap"
