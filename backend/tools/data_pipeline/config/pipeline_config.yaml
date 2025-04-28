@@ -5,17 +5,8 @@ tools:
     enabled: false
     # For test if enabled is false, the tool wont run but you can provide extracted_paths for chunker to process
     # extracted_paths:
-    #   - /Users/timhazed/tmp/output/extracted/doc_0001
-    #   - /Users/timhazed/tmp/output/extracted/doc_0002
-    extracted_paths:
-        - /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/doc_0001
-        - /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/doc_0002
-        - /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/doc_0003
-        - /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/doc_0004
-        - /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/doc_0005
-        - /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/doc_0006
-        - /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/doc_0007  
-        - /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/doc_0008
+    #   - /Users/timhazed/tmp/output/chunked/doc_0001
+    #   - /Users/timhazed/tmp/output/chunked/doc_0002
 
     docker:
       image: "extract-normalize:latest"
@@ -30,13 +21,13 @@ tools:
     # chunked_paths:
     #   - /Users/timhazed/tmp/output/chunked/doc_0001
     #   - /Users/timhazed/tmp/output/chunked/doc_0002
-    chunk_size: 256
-    chunk_overlap: 20
+    chunk_size: 1024
+    overlap_percentage: 20
     chunker_technique: "overlap"
     docker:
       image: "document-chunker:latest"
-      input_volume: "/home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/data_pipeline/output/extracted/:/app/input/"
-      output_volume: "/home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/chunks/output:/app/output"
+      input_volume: "/home/balam/sust_agri/input/:/app/input/"
+      output_volume: "/home/balam/sust_agri/output:/app/output"
       # env_file: ".env.chunking"
   
   insert_db:

@@ -4,6 +4,15 @@ import re
 from chunkers.overlap_paragraph_chunker import OverlapParagraphChunks
 import argparse
 
+def validating_file(dir_path):
+    if not os.path.isdir(dir_path):
+        raise ValueError(f"Invalid directory path: {dir_path}")
+    if not any(file.endswith('.json') for file in os.listdir(dir_path)):
+        raise ValueError(f"No JSON files found in the directory: {dir_path}")
+    if not any(file.endswith('.txt') for file in os.listdir(dir_path)):
+        raise ValueError(f"No text files found in the directory: {dir_path}")
+    return True
+
 def get_text(file_path):
     """read text from a .tex file """
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -22,22 +31,19 @@ def get_metadata(dir_path):
 
 def create_chunks_from_text_file(dir_path, chunker, metadata=None):
     """Creating chunks from text files in a directory"""
-    
 
-    for file in os.listdir(dir_path):
-        if file.endswith('json'):
-            file_prefix = re.match(r'(.+?)_base_payload.json', file).group(1)
-            break
-    
-   
+    file = next((f for f in os.listdir(dir_path) if f.endswith('.json')), None)
+    file_prefix = re.match(r'(.+?)_base_payload.json', file).group(1)
+
     all_chunks = []
     
     metadata = get_metadata(dir_path)
 
     final_text_to_overlap = ""
+
     chunker = chunker
     sorted_pages = sorted([int(re.search(r'_page_(\d+)\.txt', file).group(1)) for file in os.listdir(dir_path) if file .startswith(file_prefix) and file.endswith('txt')])
-    
+    chunk_index = 0
     for index in sorted_pages:
         
         file = f"{file_prefix}_page_{index}.txt"
@@ -52,6 +58,10 @@ def create_chunks_from_text_file(dir_path, chunker, metadata=None):
         
         chunks, final_text_to_overlap = chunker.generate_chunks(text, file_metadata)
         final_text_to_overlap = final_text_to_overlap.replace('\n', ' ')
+        for chunk in chunks:
+            chunk["chunk_index"] = chunk_index
+            chunk_index += 1 
+
         all_chunks.extend(chunks)
 
     return all_chunks
@@ -82,5 +92,7 @@ if __name__ == "__main__":
     else:
         raise ValueError(f"Unknown chunker technique: {args.chunker_technique}")
     
+    file_validation = validating_file(files_to_chunk_dir)
+
     chunks = create_chunks_from_text_file(files_to_chunk_dir, chunker)
     store_chunks(chunks, chunk_store_file)

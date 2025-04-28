@@ -50,6 +50,10 @@ The `create_chunks.py` script implements the main logic for chunking extracted c
 
 #### Usage:
 The `create_chunks.py` script and the Dockerfile are typically invoked by the orchestrator as part of the pipeline. However, they can also be run independently for testing purposes. For testing it is necessary to setup a directory path with preextracted text and one JSON file containing the schema. Those files should be part of one original document source.
+Example to run the Python script: 
+`bash:
+python create_chunks.py --chunk_size 256 --chunker_technique overlap --overlap_percentage 20 --input [absolute_path_to_input_dir] --output [absolute_path_to_output_dir]
+`
 
 
 ## Workflow
