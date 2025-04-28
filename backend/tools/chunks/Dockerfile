@@ -22,4 +22,4 @@ CMD ["--chunk_size", "256", "--chunker_technique", "overlap"]
 
 # Usage:
 # docker build -t document-chunker .
-# docker run --rm -v /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/extract_and_normalize/output:/app/input -v /home/balam/Desktop/workspace/volunteers/omdena/sustainable_agriculture_chatbot/official/Sustainable-Agriculture-Chatbot/backend/tools/chunks/output_chunks:/app/output document-chunker
+# docker run --rm -v /[absolute_path_to]/input:/app/input -v /[absolute_path_to]/output:/app/output document-chunker

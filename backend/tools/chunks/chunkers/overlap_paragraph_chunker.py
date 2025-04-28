@@ -51,7 +51,7 @@ class OverlapParagraphChunks(AbstractChunker):
                     "source_name": chunk_schema.get("source_name", "Unknown"),
                     "doc_id": chunk_schema.get("doc_id", ""),
                     "chunk_id": chunk_schema["chunk_id"],
-                    "chunk_index": index, #TODO: create an index for the chunk in the document
+                    "chunk_index": index, # saving key to be updated in the main function
                     "section_title": chunk_schema.get("section_title", "Unknown Section"),
                     "text": chunk_text,
                 }
