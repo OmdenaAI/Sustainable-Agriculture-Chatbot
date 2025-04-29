@@ -5,8 +5,9 @@ tools:
     enabled: false
     # For test if enabled is false, the tool wont run but you can provide extracted_paths for chunker to process
     # extracted_paths:
-    #   - /Users/timhazed/tmp/output/chunked/doc_0001
-    #   - /Users/timhazed/tmp/output/chunked/doc_0002
+    # extracted_paths:
+    #   - /Users/timhazed/tmp/output/extracted/doc_0001
+    #   - /Users/timhazed/tmp/output/extracted/doc_0002
 
     docker:
       image: "extract-normalize:latest"
