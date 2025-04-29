@@ -88,18 +88,19 @@ class Chunker:
                 
                 # Add chunk size if specified
                 chunk_size = self.config.get("chunk_size")
+                print(f"chunk_size: {chunk_size}")
                 if chunk_size:
-                    args.extend(["--chunk-size", str(chunk_size)])
+                    args.extend(["--chunk_size", str(chunk_size)])
                     
                 # Add chunk overlap if specified
-                chunk_overlap = self.config.get("chunk_overlap")
-                if chunk_overlap:
-                    args.extend(["--chunk-overlap", str(chunk_overlap)])
+                overlap_percentage = self.config.get("overlap_percentage")
+                if overlap_percentage:
+                    args.extend(["--overlap_percentage", str(overlap_percentage)])
                 
-                # Add config if specified
-                config_path = self.config_manager.get_config_path("chunker")
-                if config_path:
-                    args.extend(["--config", config_path])
+                # Add chunker technique if specified
+                chunker_technique = self.config.get("chunker_technique")
+                if chunker_technique:
+                    args.extend(["--chunker_technique", str(chunker_technique)])
                 
                 # Execute the chunker
                 result = self.tool_executor.execute_tool(
