@@ -19,7 +19,9 @@
     "chunk_id",
     "chunk_index",
     "section_title",
-    "text"
+    "text",
+    "paragraph_id",
+    "paragraph_index"
   ],
   "properties": {
     "title": {
@@ -96,7 +98,7 @@
       "uniqueItems": true,
       "items": {
         "type": "string",
-        "enum": ["farmers", "policymakers", "researchers", "NGOs", "other"]
+        "enum": ["farmers", "policymakers", "researchers", "ngos", "other"]
       },
       "description": "Intended reader or audience for the material"
     },
@@ -123,6 +125,14 @@
     "text": {
       "type": "string",
       "description": "Full raw text content of the chunk"
+    },
+    "paragraph_id": {
+      "type": "string",
+      "description": "Unique identifier for the paragraph containing this chunk"
+    },
+    "paragraph_index": {
+      "type": "integer",
+      "description": "Numeric position of the paragraph within the document"
     }
   }
 }

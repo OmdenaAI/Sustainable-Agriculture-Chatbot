@@ -21,6 +21,7 @@ class MetadataGenerator:
             prompt_builder (SchemaPromptBuilder): Schema prompt builder instance
         """
         self.config = config
+        self.doc_utils = doc_utils
         self.logger = logger
         # Use prompt_builder for schema access and validation
         self.prompt_builder = prompt_builder
@@ -35,15 +36,13 @@ class MetadataGenerator:
         rate_limit_config = llm_config.get("rate_limit", {})
         calls_per_minute = rate_limit_config.get("calls_per_minute", 0)  # 0 = no request rate limit
         tokens_per_minute = rate_limit_config.get("tokens_per_minute", 0)  # 0 = no token rate limit
-        self.rate_limiter = RateLimiter(calls_per_minute, tokens_per_minute)
+        self.rate_limiter = RateLimiter(logger, calls_per_minute, tokens_per_minute, self.llm_model)
         
         # Initialize appropriate LLM client and set provider-specific call method
         self.client = self._initialize_llm_client()
         
         # Set the appropriate call function based on provider
         self._llm_call_func = self._get_provider_call_function()
-        
-        self.doc_utils = doc_utils
         
         # Extract field descriptions from the prompt builder
         self.fields_section, self.array_fields = prompt_builder.get_field_descriptions()
@@ -144,7 +143,7 @@ class MetadataGenerator:
             
             return metadata
         except Exception as e:
-            self.logger.exception("Metadata generation failed.")
+            self.logger.exception(f"Metadata generation failed. Error: {e}")
             raise
 
     def _infer_date(self, text):
@@ -168,19 +167,26 @@ class MetadataGenerator:
     def _build_prompt(self, text, chunk_size):
         """Build prompt using field descriptions from the schema."""
         prompt = f"""
-        You are an expert metadata classification assistant for sustainable agriculture documents.
+        You are an expert assistant for metadata classification of sustainable agriculture documents.
 
-        Your task is to analyze the following document and extract structured metadata fields. Respond strictly with a VALID JSON object containing ONLY the fields listed below.
+        Your task is to extract structured metadata from the document below. Respond with a single, valid JSON object using only the fields listed. No explanations or extra text — just valid JSON.
 
         DO NOT:
-        - Guess or fabricate values
+        - Guess, infer, or fabricate values
         - Include nulls, placeholders, or unknowns
-        - Include fields not explicitly listed
-        - Include UUIDs, URLs, source names, or chunk identifiers
+        - Include any fields not listed
 
         DO:
         - Be conservative and precise
-        - Only include fields if clearly and repeatedly supported by the text
+        - Use only accepted values exactly as provided
+        - Omit list fields if no valid repeated items are found (do not include empty lists)
+
+        ### JSON FORMAT RULES
+        - All keys and strings must be in double quotes
+        - All lists must start with `[` and end with `]`, with no trailing commas or extra brackets
+        - Boolean values must be `true` or `false`
+        - JSON must start with `{{` and end with `}}` — no text before or after
+        - The output will be parsed with `json.loads()` — invalid JSON fails
 
         Special instructions for {self.special_fields}:
         - Include an item in either list only if it is clearly stated or strongly implied in at least two distinct places in the document

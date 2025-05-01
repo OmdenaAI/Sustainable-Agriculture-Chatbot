@@ -7,12 +7,13 @@ llm:
   #provider: openai
   provider: groq
   #model: gpt-3.5-turbo
-  model: llama3-70b-8192
+  #model: llama3-70b-8192
+  model: llama-3.3-70b-versatile
   temperature: 0.1
   # Rate limiting for LLM API calls
   rate_limit:
-    calls_per_minute: 60      # Maximum API calls per minute (0 = no limit)
-    tokens_per_minute: 100000 # Maximum tokens per minute (0 = no limit)
+    calls_per_minute: 6     # Maximum API calls per minute (0 = no limit)
+    tokens_per_minute: 20000  # Maximum tokens per minute (0 = no limit)
 
 section_title_filter:
   ignore_if_contains:

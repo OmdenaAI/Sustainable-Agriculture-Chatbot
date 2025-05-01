@@ -2,42 +2,42 @@
 
 tools:
   extractor:
-    enabled: false
+    enabled: true
     # For test if enabled is false, the tool wont run but you can provide extracted_paths for chunker to process
     # extracted_paths:
-    # extracted_paths:
-    #   - /Users/timhazed/tmp/output/extracted/doc_0001
+    #   - /Users/timhazed/tmp/output/extracted_mini/doc_0002
     #   - /Users/timhazed/tmp/output/extracted/doc_0002
 
     docker:
       image: "extract-normalize:latest"
       input_volume: "/Users/timhazed/tmp/input:/app/input"
-      output_volume: "/Users/timhazed/tmp/output:/app/output"
+      output_volume: "/Users/timhazed/tmp/output_test:/app/output"
       env_file: "~/src/python/.env_mini"
       config_path: "/app/config/config.yaml"
   
   chunker:
     enabled: true
     # For test if enabled is false, the tool wont run but you can provide chunked_paths for insert_db to process
-    # chunked_paths:
-    #   - /Users/timhazed/tmp/output/chunked/doc_0001
+    #chunked_paths:
+    #   - /Users/timhazed/tmp/output/chunked_new/doc_0002
     #   - /Users/timhazed/tmp/output/chunked/doc_0002
     chunk_size: 1024
     overlap_percentage: 20
     chunker_technique: "overlap"
     docker:
-      image: "document-chunker:latest"
-      input_volume: "/home/balam/sust_agri/input/:/app/input/"
-      output_volume: "/home/balam/sust_agri/output:/app/output"
-      # env_file: ".env.chunking"
+      image: "chunker:latest"
+      input_volume: "/Users/timhazed/tmp/output_test/extracted:/app/input/"
+      output_volume: "/Users/timhazed/tmp/output_test:/app/output"
+      env_file: "~/src/python/.env_mini"
   
   insert_db:
-    enabled: false
+    enabled: true
     docker:
-      image: "db-inserter:latest"
-      input_volume: "./output:/app/input"
-      output_volume: "./output:/app/output"
-      env_file: ".env.db"
+      image: "insert-db:latest"
+      input_volume: "/Users/timhazed/tmp/output_test/chunked:/app/input"
+      # Not neccessary
+      #output_volume: "./output:/app/output"
+      env_file: "~/src/python/.env_mini"
 
 # Runtime configuration
 timeouts:
@@ -45,4 +45,4 @@ timeouts:
   chunking: 300    # 5 minutes
   db_insertion: 600  # 10 minutes 
 
-log_dir: "./logs"
+log_dir: "/Users/timhazed/tmp/logs"

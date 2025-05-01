@@ -86,7 +86,9 @@ class ToolExecutor:
         
         # Add volume mounts
         cmd.extend(["-v", input_volume])
-        cmd.extend(["-v", output_volume])
+
+        if output_volume:
+            cmd.extend(["-v", output_volume])
         
         if extra_volumes:
             for volume in extra_volumes:

@@ -3,13 +3,25 @@ import json
 import re
 from chunkers.overlap_paragraph_chunker import OverlapParagraphChunks
 import argparse
+from pathlib import Path
+import logging
+
+# Configure logging to display messages with timestamps and severity levels
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger("CreateChunks")
 
 def validating_file(dir_path):
     if not os.path.isdir(dir_path):
-        raise ValueError(f"Invalid directory path: {dir_path}")
+        logger.error(f"Invalid directory path: {dir_path}")
+        raise ValueError(f"Invalid directory path: {dir_path}") 
     if not any(file.endswith('.json') for file in os.listdir(dir_path)):
+        logger.error(f"No JSON files found in the directory: {dir_path}")
         raise ValueError(f"No JSON files found in the directory: {dir_path}")
     if not any(file.endswith('.txt') for file in os.listdir(dir_path)):
+        logger.error(f"No text files found in the directory: {dir_path}")
         raise ValueError(f"No text files found in the directory: {dir_path}")
     return True
 
@@ -67,7 +79,12 @@ def create_chunks_from_text_file(dir_path, chunker, metadata=None):
     return all_chunks
 
 def store_chunks(chunks, file_path):
-    """Storing chunks in a JSON file"""
+    """Storing chunks in a JSON file, creating directory if it doesn't exist"""
+    # Convert file_path to Path object and get its parent directory
+    path = Path(file_path)
+    # Create parent directories if they don't exist
+    path.parent.mkdir(parents=True, exist_ok=True)
+    
     with open(file_path, "w") as f:
         json.dump([chunk for chunk in chunks], f, indent=2)
 
@@ -78,21 +95,29 @@ if __name__ == "__main__":
     parser.add_argument("--overlap_percentage", default=20, type=int, help="overlap percentage for the chunker")
     parser.add_argument("--input", required=True, help="input file")
     parser.add_argument("--output", required=True, help="output file")
+    parser.add_argument("--config", default="config/config.yaml", help="Path to config YAML")
     
-    args = parser.parse_args()
-    
-    files_to_chunk_dir = args.input
-    chunk_store_file = args.output + "/chunks.json"
-    
-    chunk_size = int(args.chunk_size)
+    try:
+        args = parser.parse_args()
+        
+        files_to_chunk_dir = args.input
+        chunk_store_file = args.output + "/chunks.json"
+        
+        chunk_size = int(args.chunk_size)
 
-    # include as many case as chunk techniques are defined (script in the chunkers folder) 
-    if args.chunker_technique == "overlap":
-        chunker = OverlapParagraphChunks(chunk_size, args.overlap_percentage)
-    else:
-        raise ValueError(f"Unknown chunker technique: {args.chunker_technique}")
-    
-    file_validation = validating_file(files_to_chunk_dir)
+        # include as many case as chunk techniques are defined (script in the chunkers folder) 
+        if args.chunker_technique == "overlap":
+            chunker = OverlapParagraphChunks(logger, chunk_size, args.overlap_percentage)
+        else:
+            logger.error(f"Unknown chunker technique: {args.chunker_technique}")
+            raise ValueError(f"Unknown chunker technique: {args.chunker_technique}")
+        
+        file_validation = validating_file(files_to_chunk_dir)
 
-    chunks = create_chunks_from_text_file(files_to_chunk_dir, chunker)
-    store_chunks(chunks, chunk_store_file)
+        chunks = create_chunks_from_text_file(files_to_chunk_dir, chunker)
+        store_chunks(chunks, chunk_store_file)
+
+    except Exception as e:
+        logger.error(f"Chunker failed to generate chunks: {e}")
+            
+        exit(1)

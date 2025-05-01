@@ -71,7 +71,6 @@ class InsertDB:
             # Prepare arguments
             args = [
                 "--input", container_input_path,
-                "--doc-id", doc_id
             ]
             
             # Add database connection parameters if specified

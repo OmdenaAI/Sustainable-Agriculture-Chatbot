@@ -12,3 +12,4 @@ tenacity
 playwright>=1.30.0
 arxiv
 validators
+tiktoken>=0.5.1
