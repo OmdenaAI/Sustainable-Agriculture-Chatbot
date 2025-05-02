@@ -51,35 +51,16 @@ def connect_to_qdrant(config: dict):
     return client
 
 
-def clear_collection(client: QdrantClient, collection_name: str) -> None:
-    """
-    Clear all points from a Qdrant collection.
-    
-    Args:
-        client: QdrantClient instance
-        collection_name: Name of the collection to clear
-    """
-    try:
-        # First check if collection exists
-        collections = client.get_collections().collections
-        collection_names = [collection.name for collection in collections]
-        
-        if collection_name not in collection_names:
-            logger.warning(f"Collection {collection_name} does not exist")
-            return
-            
-        # Clear all points
-        client.clear_payload(
-            collection_name=collection_name,
-            points_selector=models.Filter(
-                must=[]  # Empty filter matches all points
-            )
-        )
-        logger.info(f"Cleared all points from collection {collection_name}")
-            
-    except Exception as e:
-        logger.error(f"Error clearing collection {collection_name}: {str(e)}")
-        raise
+from qdrant_client import QdrantClient
+from qdrant_client.http.models import Filter
+
+def delete_all_points(client: QdrantClient, collection_name: str):
+    client.delete(
+        collection_name=collection_name,
+        points_selector=Filter(must=[])  # Empty filter matches all points
+    )
+    logger.info(f"✅ All points deleted from collection '{collection_name}'")
+
 
 def main():
     parser = argparse.ArgumentParser(description="Delete Qdrant collection")
@@ -96,7 +77,7 @@ def main():
         client = connect_to_qdrant(qdrant_config)
 
         # Uncomment for debugging to clear collection
-        clear_collection(client, args.collection)   
+        delete_all_points(client, args.collection)   
 
     except Exception as e:
         logger.error(f"Error during query: {str(e)}")
