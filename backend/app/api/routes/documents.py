@@ -7,7 +7,8 @@ import time
 from datetime import datetime
 
 from app.models.schemas import User, DocumentIngestionRequest, DocumentIngestionResponse, DocumentResponse
-from app.api.routes.auth import get_current_user
+#from app.api.routes.auth import get_current_user
+from app.api.utils import get_current_user
 from app.services.rag import RAGService
 #
 from app.core.exceptions import DatabaseError, ResourceNotFoundError

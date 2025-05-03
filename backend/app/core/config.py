@@ -19,9 +19,14 @@ class Settings(BaseSettings):
     
     # Supabase settings
     SUPABASE_URL: str = os.getenv("SUPABASE_URL", "")
-    SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", os.getenv("SUPABASE_ANON_KEY", ""))
+    SUPABASE_ANON_KEY: str = os.getenv("SUPABASE_ANON_KEY", os.getenv("SUPABASE_ANON_KEY", ""))
     SUPABASE_SERVICE_ROLE_KEY: str = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
     
+    # If your code is looking for SUPABASE_KEY, add this:
+    @property
+    def SUPABASE_KEY(self):
+        return self.SUPABASE_ANON_KEY
+
     # AI settings
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")

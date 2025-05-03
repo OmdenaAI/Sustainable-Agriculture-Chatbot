@@ -4,6 +4,7 @@ import logging
 import uuid
 import time
 from datetime import datetime
+import os
 
 from app.models.schemas import User, ChatRequest, ChatResponse, ChatSessionResponse, ChatMessageResponse
 from app.api.routes.auth import get_current_user
@@ -33,7 +34,23 @@ async def chat(
     """
     request_id = getattr(request.state, "request_id", str(uuid.uuid4()))
     start_time = time.time()
-    
+        
+    if os.environ.get("BYPASS_DB", "false").lower() == "true":
+        logger.debug("Database bypass enabled - returning mock response")
+        mock_session_id = str(uuid.uuid4())
+
+        # Log the bypass for debugging
+        logger.info(f"Bypassed chat processing for user: {current_user.id}", extra={
+            "request_id": request_id,
+            "user_id": current_user.id,
+            "bypass": True
+        })
+
+        return ChatResponse(
+            response="This is a mock response from the bypassed chat endpoint.",
+            session_id=mock_session_id
+        )
+
     try:
         logger.info(f"Chat request from user: {current_user.id}", extra={
             "request_id": request_id,
@@ -43,6 +60,20 @@ async def chat(
         
         # Get or create a session
         session_id = chat_request.session_id
+           
+          # Add this validation block
+        
+    #         # Add this validation block
+        if session_id:
+            try:
+                    # Validate that session_id is a valid UUID
+                uuid_obj = uuid.UUID(session_id)
+                session_id = str(uuid_obj)  # Normalize the UUID format
+            except ValueError:
+                logger.warning(f"Invalid session_id format: {session_id}. Creating new session.", 
+                            extra={"request_id": request_id})
+                session_id = None  # Force creation of a new session
+
         if not session_id:
             # Create a new session
             session = await chat_history_repo.create_session(current_user.id)
@@ -166,7 +197,10 @@ async def chat(
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="An unexpected error occurred while processing your request"
-        )
+     )
+
+
+
 
 @router.get("/sessions", response_model=List[ChatSessionResponse])
 async def get_chat_sessions(
@@ -622,3 +656,5 @@ async def archive_chat_session(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="An unexpected error occurred while archiving chat session"
         )
+    
+print(uuid.uuid4())    

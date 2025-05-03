@@ -18,13 +18,13 @@ def get_supabase_client() -> Optional[Client]:
     
     if _supabase_client is None:
         try:
-            if not settings.SUPABASE_URL or not settings.SUPABASE_KEY:
+            if not settings.SUPABASE_URL or not settings.SUPABASE_ANON_KEY:
                 logger.warning("Supabase URL or key not set")
                 return None
                 
             _supabase_client = create_client(
                 settings.SUPABASE_URL,
-                settings.SUPABASE_KEY
+                settings.SUPABASE_ANON_KEY
             )
             logger.info("Supabase client initialized successfully")
         except Exception as e:

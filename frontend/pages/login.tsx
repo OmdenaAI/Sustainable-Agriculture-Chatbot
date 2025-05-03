@@ -19,6 +19,8 @@ export default function Login() {
   const [message, setMessage] = useState<string | null>(null)
   const router = useRouter()
 
+
+
   // Add authentication state tracking
   useEffect(() => {
     const checkSession = async () => {
@@ -252,4 +254,5 @@ export default function Login() {
     </div>
   )
 }
+
 
