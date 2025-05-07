@@ -23,7 +23,6 @@ class ToolExecutor:
     @task(
         retries=2,
         retry_delay_seconds=10,
-        timeout_seconds=600,  # 10 minute timeout
     )
     def execute_tool(
         self,

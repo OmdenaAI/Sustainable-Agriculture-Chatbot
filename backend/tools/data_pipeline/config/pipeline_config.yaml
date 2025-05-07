@@ -11,7 +11,7 @@ tools:
     docker:
       image: "extract-normalize:latest"
       input_volume: "/Users/timhazed/tmp/input:/app/input"
-      output_volume: "/Users/timhazed/tmp/output_test:/app/output"
+      output_volume: "/Users/timhazed/tmp/output_20250507:/app/output"
       env_file: "~/src/python/.env_mini"
       config_path: "/app/config/config.yaml"
   
@@ -26,15 +26,15 @@ tools:
     chunker_technique: "overlap"
     docker:
       image: "chunker:latest"
-      input_volume: "/Users/timhazed/tmp/output_test/extracted:/app/input/"
-      output_volume: "/Users/timhazed/tmp/output_test:/app/output"
+      input_volume: "/Users/timhazed/tmp/output_20250507/extracted:/app/input/"
+      output_volume: "/Users/timhazed/tmp/output_20250507:/app/output"
       env_file: "~/src/python/.env_mini"
   
   insert_db:
     enabled: true
     docker:
       image: "insert-db:latest"
-      input_volume: "/Users/timhazed/tmp/output_test/chunked:/app/input"
+      input_volume: "/Users/timhazed/tmp/output_20250507/chunked:/app/input"
       # Not neccessary
       #output_volume: "./output:/app/output"
       env_file: "~/src/python/.env_mini"
@@ -43,6 +43,6 @@ tools:
 timeouts:
   extraction: 600  # 10 minutes
   chunking: 300    # 5 minutes
-  db_insertion: 600  # 10 minutes 
+  db_insertion: 1200  # 20 minutes 
 
 log_dir: "/Users/timhazed/tmp/logs"
