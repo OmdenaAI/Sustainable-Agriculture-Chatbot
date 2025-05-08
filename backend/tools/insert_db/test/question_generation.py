@@ -8,7 +8,7 @@ load_dotenv()
 
 
 GROQ_API_KEY="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"
-output_path = "tools/evaluate_retrieval/datasets/generated_questions_farmer_persona.jsonl"
+output_path = "tools/insert_db/data/generated_questions_farmer_persona.jsonl"
 os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
 
@@ -17,9 +17,7 @@ client = OpenAI(
     base_url="https://api.groq.com/openai/v1"  # Groq-compatible endpoint
 )
 
-# Path to the root folder
 root_dir = "tools/chunks/output/chunked"
-#qa_results = []
 
 def generate_question_and_answer(text):
     prompt = (
@@ -88,8 +86,6 @@ for folder_name in os.listdir(root_dir):
         except Exception as e:
             print(f"Failed to generate QA for chunk {chunk.get('chunk_id')}: {e}")
 
-#with open("tools/evaluate_retrieval/datasets/generated_questions.json", "w") as out_file:
-#    json.dump(qa_results, out_file, indent=2)
 
 
 
