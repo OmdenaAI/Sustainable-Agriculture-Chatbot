@@ -1,0 +1,35 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Adelia Khasanova",email = "wedance.wesing@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4"
+dependencies = [
+    "datasets (>=3.6.0,<4.0.0)",
+    "ragas (>=0.2.15,<0.3.0)",
+    "fastapi (<1)",
+    "uvicorn (<1)",
+    "python-dotenv (<2)",
+    "httpx (<1)",
+    "supabase (<3)",
+    "pydantic (<3)",
+    "python-multipart (<1)",
+    "pytest (<9)",
+    "black (<25)",
+    "langchain (>=0.3.25,<0.4.0)",
+    "langchain-community (>=0.3.23,<0.4.0)",
+    "langchain-openai (>=0.3.16,<0.4.0)",
+    "jsonlines (>=4.0.0,<5.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "qdrant-client (>=1.14.2,<2.0.0)",
+]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

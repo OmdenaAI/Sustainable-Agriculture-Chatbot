@@ -4,11 +4,13 @@ from openai import OpenAI
 from tqdm import tqdm
 from dotenv import load_dotenv
 
+print("hey")
+
 load_dotenv()
 
 
-GROQ_API_KEY="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"
-output_path = "tools/insert_db/data/generated_questions_farmer_persona.jsonl"
+GROQ_API_KEY="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"
+output_path = "tools/insert_db/data/generated_questions_farmer_persona_chunk_ids_fixed.jsonl"
 os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
 
@@ -17,7 +19,7 @@ client = OpenAI(
     base_url="https://api.groq.com/openai/v1"  # Groq-compatible endpoint
 )
 
-root_dir = "tools/chunks/output/chunked"
+root_dir = "tools/evaluate_retrieval/output_20250502/chunked"
 
 def generate_question_and_answer(text):
     prompt = (
@@ -64,8 +66,8 @@ for folder_name in os.listdir(root_dir):
             continue
 
     for i, chunk in enumerate(tqdm(chunks)):
-        if i % 10 != 0:
-            continue
+        #if i % 10 != 0:
+        #    continue
         text = chunk.get("text", "").strip()
         if not text:
             continue
@@ -75,6 +77,8 @@ for folder_name in os.listdir(root_dir):
             if question and answer:
                 entry = {
                                 "chunk_id": chunk.get("chunk_id"),
+                                "doc_id": chunk.get("doc_id"),
+                                "source": chunk.get("source_url"),
                                 "question": question,
                                 "answer": answer,
                                 "context": text

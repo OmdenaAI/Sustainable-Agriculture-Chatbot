@@ -5,11 +5,14 @@ from dotenv import load_dotenv
 import logging
 from qdrant_client import QdrantClient
 from qdrant_client.http import models
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import SentenceTransformer, util
 import jsonlines
 from typing import List, Dict, Any
 import os
 from bert_score import BERTScorer
+from sklearn.metrics import ndcg_score
+import json
+from tqdm import tqdm
 
 # Configure logging
 logging.basicConfig(
@@ -18,7 +21,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("QdrantQuery")
 
-def load_config(config_path="config/config.yaml"):
+def load_config(config_path="tools/insert_db/config/config.yaml"):
     """Load configuration from YAML file"""
     try:
         with open(config_path, "r") as file:
@@ -68,15 +71,17 @@ def connect_to_qdrant(config: dict):
             api_key=api_key)
     return client
 
-def evaluate_results_with_context(enhanced_results: List[Dict[str, Any]], ground_truth: str) -> Dict[str, Any]:
+def evaluate_results_with_context(enhanced_results: List[Dict[str, Any]], ground_truth: str, ground_truth_chunk_id: str) -> Dict[str, Any]:
     """Evaluate search results with context against ground truth using BERTScore"""
     try:
         # Initialize BERTScorer
         scorer = BERTScorer(lang="en")
+        #embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
         
         # Prepare lists for BERTScore while preserving metadata
         candidates = []
         metadata = []
+        retrieved_chunk_ids = []
         
         for enhanced_hit in enhanced_results:
             hit = enhanced_hit["main"]
@@ -84,6 +89,9 @@ def evaluate_results_with_context(enhanced_results: List[Dict[str, Any]], ground
             
             # Extract metadata from the main hit
             hit_metadata = hit.payload.get("metadata", {})
+            chunk_id = hit_metadata.get("chunk_id")  
+            retrieved_chunk_ids.append(chunk_id)
+
             metadata.append({
                 "doc_id": hit_metadata.get("doc_id"),
                 "section_title": hit_metadata.get("section_title"),
@@ -110,9 +118,35 @@ def evaluate_results_with_context(enhanced_results: List[Dict[str, Any]], ground
         best_match_score = F1[best_match_idx].item()
         best_match_content = candidates[best_match_idx]
         best_match_metadata = metadata[best_match_idx]
+
+        # === nDCG Calculation ===
+
+        # Create binary relevance vector: 1 if chunk_id matches, else 0
+        y_true = [[1 if cid == ground_truth_chunk_id else 0 for cid in retrieved_chunk_ids]]
+        y_score = [list(reversed(range(1, len(retrieved_chunk_ids) + 1)))]  # ideal rank order
+
+        try:
+            ndcg = ndcg_score(y_true, y_score)
+        except ValueError as e:
+            ndcg = 0.0
+            logger.warning(f"nDCG calculation failed: {e}")
+
+
+        # === MRR Calculation ===
+        try:
+            if ground_truth_chunk_id in retrieved_chunk_ids:
+                rank = retrieved_chunk_ids.index(ground_truth_chunk_id) + 1  # 1-based index
+                mrr = 1.0 / rank
+            else:
+                mrr = 0.0
+        except Exception as e:
+            mrr = 0.0
+            logger.warning(f"MRR calculation failed: {e}")
         
         return {
             "total_chunks": len(enhanced_results),
+            "ndcg": ndcg,
+            "mrr": mrr,
             "best_match_score": best_match_score,
             "best_match_content": best_match_content[:200] + "..." if len(best_match_content) > 200 else best_match_content,
             "best_match_metadata": best_match_metadata,
@@ -166,10 +200,12 @@ def clear_collection(client: QdrantClient, collection_name: str) -> None:
 def main():
     parser = argparse.ArgumentParser(description="Query Qdrant and evaluate against ground truth")
     parser.add_argument("--collection", default="ws1-test", help="Qdrant collection name")
-    parser.add_argument("--input", default="data/qa_pairs.jsonl", help="Path to JSONL file with question-answer pairs")
+    #parser.add_argument("--input", default="tools/insert_db/data/qa_pairs.jsonl", help="Path to JSONL file with question-answer pairs")
+    parser.add_argument("--input", default="tools/insert_db/data/generated_questions_farmer_persona.jsonl", help="Path to JSONL file with question-answer pairs")
     parser.add_argument("--limit", type=int, default=5, help="Number of results to return per query")
     parser.add_argument("--context_window", type=int, default=1, help="Number of adjacent paragraphs to include before and after")
-    parser.add_argument("--config", default="config/config.yaml", help="Path to config file")
+    parser.add_argument("--config", default="tools/insert_db/config/config.yaml", help="Path to config file")
+    parser.add_argument("--output_eval", default="tools/insert_db/data/eval.jsonl", help="ouput dir for evaluation data")
     args = parser.parse_args()
 
     try:
@@ -194,9 +230,12 @@ def main():
         # Initialize embedding model
         model = SentenceTransformer(qdrant_config["embedding_model"])
 
-        for i, qa_pair in enumerate(qa_pairs, 1):
+        for i, qa_pair in tqdm(enumerate(qa_pairs, 1)):
             question = qa_pair["question"]
             answer = qa_pair["answer"]
+            ground_truth_chunk_id = qa_pair["chunk_id"]
+            doc_id = qa_pair["doc_id"]
+            larger_context = qa_pair["context"]
 
             print(f"\nProcessing question {i}/{len(qa_pairs)}")
             print(f"Question: {question}")
@@ -270,45 +309,37 @@ def main():
                         enhanced_results.append({"main": hit, "adjacent": []})
 
             # Evaluate results with context
-            evaluation = evaluate_results_with_context(enhanced_results, answer)
+            evaluation = evaluate_results_with_context(enhanced_results, answer, ground_truth_chunk_id)
+            candidates = [hit["main"].payload.get("content", "") for hit in enhanced_results]
+            ndcg_score_value = evaluation.get("ndcg")
+            mrr_score_value = evaluation.get("mrr")
+            best_match_score = evaluation.get('best_match_score')
+            average_f1 = evaluation.get('average_f1')
+            average_precision = evaluation.get('average_precision')
+            average_recall = evaluation.get('average_recall')
 
-            # Print results
-            print(f"\nFound {len(search_result)} results")
-            print("\nBERTScore Evaluation:")
-            print(f"Best Match Score (F1): {evaluation['best_match_score']:.4f}")
-            print(f"Average F1: {evaluation['average_f1']:.4f}")
-            print(f"Average Precision: {evaluation['average_precision']:.4f}")
-            print(f"Average Recall: {evaluation['average_recall']:.4f}")
-            
-            print("\nDetailed Results:")
-            for j, (enhanced_hit, f1_score) in enumerate(zip(enhanced_results, evaluation['all_scores']['f1']), 1):
-                hit = enhanced_hit["main"]
-                adjacent = enhanced_hit["adjacent"]
-                
-                print(f"\nResult {j}:")
-                print(f"Qdrant Score: {hit.score:.4f}")
-                print(f"BERTScore F1: {f1_score:.4f}")
-                
-                # Print main content with context
-                print("\nMain Content:")
-                print(f"{hit.payload.get('content', '')[:200]}...")
-                
-                if adjacent:
-                    print("\nAdjacent Context:")
-                    for adj_hit in adjacent:
-                        print(f"Adjacent Paragraph: {adj_hit.payload.get('content', '')[:200]}...")
-                
-                # Print metadata
-                metadata = hit.payload.get('metadata', {})
-                print("\nMetadata:")
-                print(f"Title: {metadata.get('title', 'N/A')}")
-                print(f"Source URL: {metadata.get('source_url', 'N/A')}")
-                print(f"Document ID: {metadata.get('doc_id', 'N/A')}")
-                print(f"Chunk ID: {metadata.get('chunk_id', 'N/A')}")
-                print(f"Section Title: {metadata.get('section_title', 'N/A')}")
-                print(f"Paragraph Id: {metadata.get('paragraph_id', 'N/A')}")
-                print(f"Paragraph Index: {metadata.get('paragraph_index', 'N/A')}")
-                print("-" * 80)
+            row = {
+                "question": question,
+                "answer": answer,
+                "larger_context": larger_context,
+                "ground_truth_chunk_id": ground_truth_chunk_id,
+                "doc_id": doc_id,
+                "ncdg": ndcg_score_value,
+                "mrr": mrr_score_value,
+                "best_match_score": best_match_score,
+                "average_f1": average_f1,
+                "average_precision": average_precision,
+                "average_recall": average_recall,
+                "candidates":candidates,
+            }
+
+            file_exists = os.path.isfile(args.output_eval)
+            # Write as JSONL
+            with open(args.output_eval, "a", encoding="utf-8") as f:
+                if file_exists:
+                    f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
 
     except Exception as e:
         logger.error(f"Error during query: {str(e)}")

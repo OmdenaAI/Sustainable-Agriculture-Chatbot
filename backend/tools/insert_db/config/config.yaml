@@ -1,4 +1,4 @@
-env_path:  "~/src/python/.env_mini"
+env_path:  ".env"
 
 # Qdrant settings
 qdrant:
