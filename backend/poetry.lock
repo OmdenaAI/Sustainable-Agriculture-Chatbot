@@ -352,42 +352,43 @@ files = [
 
 [[package]]
 name = "httpcore"
-version = "0.18.0"
+version = "1.0.8"
 description = "A minimal low-level HTTP client."
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "httpcore-0.18.0-py3-none-any.whl", hash = "sha256:adc5398ee0a476567bf87467063ee63584a8bce86078bf748e48754f60202ced"},
-    {file = "httpcore-0.18.0.tar.gz", hash = "sha256:13b5e5cd1dca1a6636a6aaea212b19f4f85cd88c366a2b82304181b769aab3c9"},
+    {file = "httpcore-1.0.8-py3-none-any.whl", hash = "sha256:5254cf149bcb5f75e9d1b2b9f729ea4a4b883d1ad7379fc632b727cec23674be"},
+    {file = "httpcore-1.0.8.tar.gz", hash = "sha256:86e94505ed24ea06514883fd44d2bc02d90e77e7979c8eb71b90f41d364a1bad"},
 ]
 
 [package.dependencies]
-anyio = ">=3.0,<5.0"
 certifi = "*"
 h11 = ">=0.13,<0.15"
-sniffio = "==1.*"
 
 [package.extras]
+asyncio = ["anyio (>=4.0,<5.0)"]
 http2 = ["h2 (>=3,<5)"]
 socks = ["socksio (==1.*)"]
+trio = ["trio (>=0.22.0,<1.0)"]
 
 [[package]]
 name = "httpx"
-version = "0.25.0"
+version = "0.26.0"
 description = "The next generation HTTP client."
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "httpx-0.25.0-py3-none-any.whl", hash = "sha256:181ea7f8ba3a82578be86ef4171554dd45fec26a02556a744db029a0a27b7100"},
-    {file = "httpx-0.25.0.tar.gz", hash = "sha256:47ecda285389cb32bb2691cc6e069e3ab0205956f681c5b2ad2325719751d875"},
+    {file = "httpx-0.26.0-py3-none-any.whl", hash = "sha256:8915f5a3627c4d47b73e8202457cb28f1266982d1159bd5779d86a80c0eab1cd"},
+    {file = "httpx-0.26.0.tar.gz", hash = "sha256:451b55c30d5185ea6b23c2c793abf9bb237d2a7dfb901ced6ff69ad37ec1dfaf"},
 ]
 
 [package.dependencies]
+anyio = "*"
 certifi = "*"
 h2 = {version = ">=3,<5", optional = true, markers = "extra == \"http2\""}
-httpcore = ">=0.18.0,<0.19.0"
+httpcore = "==1.*"
 idna = "*"
 sniffio = "*"
 
@@ -528,19 +529,19 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "postgrest"
-version = "0.13.2"
+version = "0.16.11"
 description = "PostgREST client for Python. This library provides an ORM interface to PostgREST."
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = "<4.0,>=3.8"
 groups = ["main"]
 files = [
-    {file = "postgrest-0.13.2-py3-none-any.whl", hash = "sha256:a1a120ca982617d90c8906b85e2731fac4a3a3a5c7a3ca1095fe1cebd0bc02be"},
-    {file = "postgrest-0.13.2.tar.gz", hash = "sha256:aaaec0fd7e4745dc02c77e1b310689fcdfb669e43b4cb36d462221dc1d19a1bf"},
+    {file = "postgrest-0.16.11-py3-none-any.whl", hash = "sha256:22fb6b817ace1f68aa648fd4ce0f56d2786c9260fa4ed2cb9046191231a682b8"},
+    {file = "postgrest-0.16.11.tar.gz", hash = "sha256:10af51b4c39e288ad7df2db92d6a61fb3c4683131b40561f473e3de116e83fa5"},
 ]
 
 [package.dependencies]
 deprecation = ">=2.1.0,<3.0.0"
-httpx = ">=0.24,<0.26"
+httpx = {version = ">=0.24,<0.28", extras = ["http2"]}
 pydantic = ">=1.9,<3.0"
 strenum = ">=0.4.9,<0.5.0"
 
@@ -916,38 +917,38 @@ test = ["pylint", "pytest", "pytest-black", "pytest-cov", "pytest-pylint"]
 
 [[package]]
 name = "supabase"
-version = "2.3.1"
+version = "2.4.6"
 description = "Supabase client for Python."
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = "<4.0,>=3.8"
 groups = ["main"]
 files = [
-    {file = "supabase-2.3.1-py3-none-any.whl", hash = "sha256:ea2fee6c9fccdb323faa42e33db38290b842a474e6f6358722b8ce906f8ef8e3"},
-    {file = "supabase-2.3.1.tar.gz", hash = "sha256:c1700e5b1b78ac84d6adb2fe444e6f3bac9f716d3dc1c1d32d0d678849299266"},
+    {file = "supabase-2.4.6-py3-none-any.whl", hash = "sha256:0bfd6bb33c0e6d6891b55caaf689140f47588b01436fecc336d1d75090c70e8b"},
+    {file = "supabase-2.4.6.tar.gz", hash = "sha256:442be0729f5fd9258326ba89859f60bfd8d9218283ed7fd8a62ae81e2f310474"},
 ]
 
 [package.dependencies]
 gotrue = ">=1.3,<3.0"
-httpx = ">=0.24,<0.26"
-postgrest = ">=0.10.8,<0.14.0"
+httpx = ">=0.24,<0.28"
+postgrest = ">=0.14,<0.17.0"
 realtime = ">=1.0.0,<2.0.0"
 storage3 = ">=0.5.3,<0.8.0"
-supafunc = ">=0.3.1,<0.4.0"
+supafunc = ">=0.3.1,<0.5.0"
 
 [[package]]
 name = "supafunc"
-version = "0.3.3"
+version = "0.4.7"
 description = "Library for Supabase Functions"
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = "<4.0,>=3.8"
 groups = ["main"]
 files = [
-    {file = "supafunc-0.3.3-py3-none-any.whl", hash = "sha256:8260b4742335932f9cab64c8f66fb6998681b7e8ca7a46b559a4eb640cc0af80"},
-    {file = "supafunc-0.3.3.tar.gz", hash = "sha256:c35897a2f40465b40d7a08ae11f872f08eb8d1390c3ebc72c80e27d33ba91b99"},
+    {file = "supafunc-0.4.7-py3-none-any.whl", hash = "sha256:0b63133ff14e3b311fc881c9ff2538d70985df9b700b443efb86940588672905"},
+    {file = "supafunc-0.4.7.tar.gz", hash = "sha256:cd7b79d03d0c66aedfe3e8b2296cafcd0770fea5fc7505c863ae42c667309d27"},
 ]
 
 [package.dependencies]
-httpx = ">=0.24,<0.26"
+httpx = {version = ">=0.24,<0.28", extras = ["http2"]}
 
 [[package]]
 name = "tomli"
@@ -1125,4 +1126,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "29216db70075e512caa42d77d0c1c7ac9c7acdfcc0de2b76c48ea2bb98fd48c4"
+content-hash = "d3951bfc53f9656dbc20efdf87bf4de4c89036a5c4008348131e82120a080d9f"
