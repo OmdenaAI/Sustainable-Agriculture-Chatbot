@@ -94,6 +94,7 @@ export default function Chat() {
         // No session_id sent - let backend handle it
       })
       console.log('Chat auth bypass:', bypassChatAuth)
+    
       
       // Make the request with the correct endpoint and format
       const response = await fetch(`${backendUrl}/api/chat`, {
