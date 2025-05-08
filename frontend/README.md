@@ -59,3 +59,14 @@ To test with Supabase auth (if enabled):
 - [Supabase Documentation](https://supabase.com/docs)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+### set up on the backend file .env
+
+# Logging settings
+LOG_LEVEL=INFO
+
+ENVIRONMENT=development
+SECURE_COOKIES=false
+
+# Authentication bypass
+BYPASS_AUTH=true
