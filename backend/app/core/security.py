@@ -166,20 +166,39 @@ from app.db.supabase import get_supabase_client, get_supabase_admin_client
 #         raise credentials_exception      
 
 
+# async def get_current_user(
+#     token: str = Depends(get_token)
+# ) -> User:
+#     """
+#     Get the current user from the token
+#     """
+#     # Bypass authentication in development
+#     if os.environ.get("BYPASS_AUTH", "false").lower() == "true":
+#         logger.debug("Authentication bypass enabled - returning test user")
+#         return User(
+#             id="53042bb0-b1ff-4455-993a-253f9cf8c99d",
+#             email="test3@example.com",
+#             name="Test User"
+#         )
+
+# Set the only allowed email here
+ALLOWED_USER_EMAIL = "test3@example.com"
+
 async def get_current_user(
     token: str = Depends(get_token)
 ) -> User:
     """
-    Get the current user from the token
+    Get the current user from the token and restrict to a specific email address.
     """
     # Bypass authentication in development
     if os.environ.get("BYPASS_AUTH", "false").lower() == "true":
         logger.debug("Authentication bypass enabled - returning test user")
         return User(
             id="53042bb0-b1ff-4455-993a-253f9cf8c99d",
-            email="test3@example.com",
+            email=ALLOWED_USER_EMAIL,
             name="Test User"
         )
+
     
     logger.debug(f"Token present in get_current_user: {token is not None}")
     
@@ -229,6 +248,14 @@ async def get_current_user(
         
         user_data = matching_users[0]
         logger.debug(f"Found user: {user_data.email}")
+
+         # Restrict access to only the allowed email
+        if user_data.email.lower() != ALLOWED_USER_EMAIL.lower():
+            logger.debug(f"User {user_data.email} is not allowed to access the system")
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="User not allowed to access this service"
+            )
         
         # Extract name from user metadata
         name = user_data.user_metadata.get("name", "Unknown") if user_data.user_metadata else "Unknown"

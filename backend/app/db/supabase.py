@@ -1,7 +1,6 @@
 from supabase import create_client, Client
 from typing import Dict, Any, Optional
 import logging
-
 from app.core.config import settings
 
 # Setup logging
@@ -51,6 +50,7 @@ def get_supabase_admin_client() -> Optional[Client]:
     except Exception as e:
         logger.error(f"Error initializing Supabase admin client: {str(e)}")
         return None
+
 
 class SupabaseRepository:
     """
