@@ -34,8 +34,11 @@ class Settings(BaseSettings):
     # Qdrant settings
     QDRANT_URL: str = os.getenv("QDRANT_URL", "http://localhost:6333")
     QDRANT_API_KEY: str = os.getenv("QDRANT_API_KEY", "")
-    QDRANT_COLLECTION: str = os.getenv("QDRANT_COLLECTION", "agriculture_docs")
-    EMBEDDING_DIMENSION: int = 1536  # OpenAI ada-002 embedding dimension
+    QDRANT_COLLECTION: str = os.getenv("QDRANT_COLLECTION", "ws1-test")
+    EMBEDDING_DIMENSION: int = 1024
+    EMBEDDING_MODEL: str = 'BAAI/bge-large-zh-v1.5' 
+    
+    # OpenAI ada-002 embedding dimension
     
     # Cookie settings
     SECURE_COOKIES: bool = os.getenv("SECURE_COOKIES", "false").lower() == "true"

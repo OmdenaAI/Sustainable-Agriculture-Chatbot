@@ -5,6 +5,7 @@ import uuid
 import time
 from datetime import datetime
 import os
+import json
 
 from app.models.schemas import User, ChatRequest, ChatResponse, ChatSessionResponse, ChatMessageResponse
 from app.api.routes.auth import get_current_user
@@ -101,6 +102,10 @@ async def chat(
             "request_id": request_id,
             "retrieval_time": retrieval_time,
             "doc_count": len(relevant_docs)
+        })
+
+        logger.debug("Retrieved documents:\n" + json.dumps(relevant_docs, indent=2), extra={
+        "request_id": request_id
         })
         
         # Get chat history if not provided
