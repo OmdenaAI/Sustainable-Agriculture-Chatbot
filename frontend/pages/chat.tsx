@@ -15,6 +15,7 @@ export default function Chat() {
   const [user, setUser] = useState<User | null>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
+  const [sessionId, setSessionId] = useState<string | null>(null)
 
   const router = useRouter()
 
@@ -42,45 +43,63 @@ export default function Chat() {
   const handlePrompt = async () => {
     if (!prompt.trim()) return
 
-    const userMessage: ChatMessage = { role: 'user', content: prompt }
-    setMessages(prev => [...prev, userMessage])
-    setPrompt('')
-    setLoading(true)
-
+    // Add user message immediately
+    const userMessage: ChatMessage = { role: 'user', content: prompt };
+    setMessages(prev => [...prev, userMessage]);
+    
+    // Store prompt before clearing input
+    const currentPrompt = prompt;
+    setPrompt('');
+    
     try {
-      const { data: { session } } = await supabase.auth.getSession()
-      if (!session) throw new Error('No session found')
-
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/chat/`, {
+      setLoading(true);
+      
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${session.access_token}`
+          'Authorization': 'Bearer dummy-token' 
         },
-        body: JSON.stringify({ prompt: prompt.trim() })
-      })
-
+        body: JSON.stringify({ 
+          message: currentPrompt,
+          session_id: sessionId
+        })
+      });
+      
       if (!response.ok) {
-        throw new Error('Failed to get response')
+        const errorText = await response.text();
+        console.error('Error response:', errorText);
+        throw new Error(`Failed to get response`);
       }
-
-      const data = await response.json()
+      
+      const data = await response.json();
+      console.log('Response data:', data);
+      
+      // Store the session ID if this is the first message
+      if (!sessionId && data.session_id) {
+        setSessionId(data.session_id);
+      }
+      
+      // Add assistant's response to messages
       const assistantMessage: ChatMessage = {
         role: 'assistant',
-        content: data.choices[0].message.content
-      }
-      setMessages(prev => [...prev, assistantMessage])
+        content: data.response || 'I received your message but couldn\'t generate a response.'
+      };
+      setMessages(prev => [...prev, assistantMessage]);
+      
     } catch (error) {
-      console.error('Chat error:', error)
+      console.error('Chat error:', error);
+      
+      // Add error message to chat
       const errorMessage: ChatMessage = {
         role: 'assistant',
         content: 'Sorry, I encountered an error. Please try again.'
-      }
-      setMessages(prev => [...prev, errorMessage])
+      };
+      setMessages(prev => [...prev, errorMessage]);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   const handleKeyDown = (e: KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === 'Enter' && !e.shiftKey) {

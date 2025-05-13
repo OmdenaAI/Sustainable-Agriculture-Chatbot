@@ -1,24 +1,37 @@
 import logging
-from fastapi import Depends, HTTPException, status, Cookie
-from fastapi.security import OAuth2PasswordBearer
+import os
+from fastapi import Depends, HTTPException, status, Cookie, Header, Request, Security
+from fastapi.security import OAuth2PasswordBearer, HTTPBearer, HTTPAuthorizationCredentials
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from typing import Optional
-from fastapi import Request
 
 from app.core.config import settings
 
 from app.models.schemas import TokenData, User
-from app.db.supabase import get_supabase_client, get_supabase_admin_client
 
+# Setup logging
 logger = logging.getLogger(__name__)
+
+# Define security scheme
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login", auto_error=False)
+http_bearer = HTTPBearer(auto_error=False)
+
+# Check if authentication is bypassed
+BYPASS_AUTH = os.getenv("BYPASS_AUTH", "false").lower() == "true"
+if BYPASS_AUTH:
+    logger.warning("Authentication bypass is enabled. This should not be used in production!")
+
+# Mock user for development
+TEST_USER = User(
+    id="53042bb0-b1ff-4455-993a-253f9cf8c99d",
+    name="Test User",
+    email="test@example.com"
+)
 
 # Password hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
-# OAuth2 scheme
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/auth/login")
 
 def verify_password(plain_password, hashed_password):
     """
@@ -66,7 +79,6 @@ async def get_token_from_cookie(access_token: Optional[str] = Cookie(None)):
     logger.debug(f"Returning token from cookie, first 10 chars: {access_token[:10] if access_token else 'None'}")
     return access_token
 
-
 # Add this function
 async def get_token(request: Request, access_token: Optional[str] = Cookie(None)):
     """
@@ -95,76 +107,80 @@ async def get_token(request: Request, access_token: Optional[str] = Cookie(None)
     logger.debug(f"Final token present: {token is not None}")
     return token
 
- 
-from app.db.supabase import get_supabase_client, get_supabase_admin_client
-
-async def get_current_user(
-    token: str = Depends(get_token)
-) -> User:
+async def get_current_user(request: Request = None, token: str = Depends(oauth2_scheme), credentials: HTTPAuthorizationCredentials = Security(http_bearer)):
     """
-    Get the current user from the token
+    Get the current user from the JWT token
     """
-    logger.debug(f"Token present in get_current_user: {token is not None}")
+    # If authentication is bypassed, return a test user
+    if BYPASS_AUTH:
+        logger.debug("Authentication bypass enabled - returning test user")
+        return TEST_USER
     
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
+    # Get token from various sources
+    if request and not token and not credentials:
+        token = get_token_from_request(request)
+    elif credentials and not token:
+        token = credentials.credentials
     
     if not token:
-        logger.debug("No token provided, raising credentials exception")
-        raise credentials_exception
+        logger.error("No authentication token provided")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Not authenticated",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
     
     try:
-        logger.debug(f"Attempting to decode token, first 10 chars: {token[:10] if len(token) > 10 else token}")
+        # Decode the JWT token
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
         user_id: str = payload.get("sub")
-        
         if user_id is None:
-            logger.debug("No sub claim in token payload")
-            raise credentials_exception
-        
-        logger.debug(f"Token contains user_id: {user_id}")
+            logger.error("Invalid token payload (missing sub)")
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid authentication credentials",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
         token_data = TokenData(user_id=user_id)
     except JWTError as e:
-        logger.debug(f"JWT decode error: {str(e)}")
-        raise credentials_exception
-    except Exception as e:
-        logger.debug(f"Unexpected error decoding token: {str(e)}")
-        raise credentials_exception
-    
-    # Get user from Supabase admin API
-    try:
-        logger.debug(f"Looking up user with ID: {token_data.user_id}")
-        supabase_admin = get_supabase_admin_client()
-        
-        # Get all users and find the one with matching ID
-        user_response = supabase_admin.auth.admin.list_users()
-        
-        # Find the user with the matching ID
-        matching_users = [u for u in user_response if u.id == token_data.user_id]
-        
-        if not matching_users:
-            logger.debug(f"No user found with ID: {token_data.user_id}")
-            raise credentials_exception
-        
-        user_data = matching_users[0]
-        logger.debug(f"Found user: {user_data.email}")
-        
-        # Extract name from user metadata
-        name = user_data.user_metadata.get("name", "Unknown") if user_data.user_metadata else "Unknown"
-        
-        return User(
-            id=user_data.id,
-            email=user_data.email,
-            name=name
+        logger.error(f"JWT verification failed: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid authentication credentials",
+            headers={"WWW-Authenticate": "Bearer"},
         )
-    except Exception as e:
-        logger.debug(f"Error retrieving user from Supabase admin API: {str(e)}")
-        raise credentials_exception      
+    
+    # For testing, just return the test user
+    # In a real app, you would query the database for the user
+    return TEST_USER
 
+def get_token_from_request(request: Request) -> str:
+    """
+    Extract token from request (various methods)
+    """
+    # Try to get from Authorization header
+    auth_header = request.headers.get("Authorization")
+    if auth_header and auth_header.startswith("Bearer "):
+        return auth_header.replace("Bearer ", "")
+    
+    # Try to get from cookie
+    token = request.cookies.get("access_token")
+    if token:
+        return token
+    
+    return None
 
+def get_password_hash(password: str) -> str:
+    """
+    Mock password hashing - in a real app, use a proper hashing function
+    """
+    return f"hashed_{password}"
+
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    """
+    Mock password verification - in a real app, use a proper verification function
+    """
+    return hashed_password == f"hashed_{plain_password}"
 
    
     

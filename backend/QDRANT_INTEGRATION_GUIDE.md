@@ -227,3 +227,12 @@ class RAGService:
         except Exception as e:
             logger.error(f"Error retrieving documents from Qdrant: {str(e)}")
             raise
+
+    if not self.use_mock:
+        try:
+            await self.qdrant_repo.initialize()
+            logger.info("Qdrant repository initialized")
+        except Exception as e:
+            logger.error(f"Failed to initialize Qdrant repository: {str(e)}")
+            logger.warning("Falling back to mock RAG implementation")
+            self.use_mock = True
