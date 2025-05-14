@@ -1,0 +1,39 @@
+Phase 1:
+
+I ran evaluation of our Qdrant index using a QA dataset that I generated using every chunks.json files. To check out my branch -> https://github.com/OmdenaAI/Sustainable-Agriculture-Chatbot/tree/feature/ws2-retrieval-evaluation
+Here are the key metrics and some takeaways:
+nDCG: 0.2376
+MRR:  0.2175
+Best Match Score: 0.8595
+Average F1:       0.8392
+Precision:        0.8229
+Recall:           0.8569
+Interpretation:
+:white_tick: High semantic quality:
+The retrieved contexts are semantically well-aligned with the ground truth (see high BERT-based scores like Best Match, F1, Precision, Recall).
+This means we're generally retrieving good content.
+:warning: Ranking needs improvement:
+Low nDCG and MRR suggest that the most relevant passages are not consistently ranked near the top.
+So while the info is there, the model isn’t surfacing it effectively upfront => on average, the best answer is ranked fifth from the top.
+At the same time, nDCG and MRR@5 is pretty strict, so the fact that the best answer appears at all is a good signal.
+Conclusion:
+For a lot of questions, unless they're super specific, ground truth is more flexible than just exact paragraph used for the question generation. I would not sweat too much trying to improve ranking because semantic similarity shows that what we retrieve is already relevant.
+
+Phase 2:
+I experimented with keyword extraction via KeyBert and spacy's stop words to see whether we can refine Qdrant search by only using the most important words in the query. 
+E.g. "How can I reduce waste and minimize my environmental impact while still getting a good yield?" -> "reduce waste minimize environmental impact yield"
+
+Expectations: better hits.
+Reality:
+Averaged over 801 entries:
+ncdg: 0.1809
+mrr: 0.1605
+best_match_score: 0.8546
+average_f1: 0.8326
+average_precision: 0.8177
+average_recall: 0.8491
+
+Keyword filtering weakened the embeddings by removing useful structure and context. 
+This misaligned the vector representation of the query, leading to worse ranking.
+
+Phase 3:
