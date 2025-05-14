@@ -67,7 +67,7 @@ export default function Chat() {
     setError(null)
 
     try {
-      // Check if backend URL is configured
+      // Always use the backend URL from environment for Docker compatibility
       const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:8000'
       
       // Get session
@@ -77,7 +77,10 @@ export default function Chat() {
       }
       
       // Only include auth header if not bypassing chat auth
-      const authHeader = bypassChatAuth ? {} : { 'Authorization': `Bearer ${session.access_token}` }
+      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (!bypassChatAuth && session.access_token) {
+        headers['Authorization'] = `Bearer ${session.access_token}`;
+      }
       
       // Format messages for the API
       const messageHistory = messages.map(msg => ({
@@ -98,16 +101,12 @@ export default function Chat() {
       // Make the request with the correct endpoint and format
       const response = await fetch(`${backendUrl}/api/chat`, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            ...authHeader
-        },
+        headers,
         body: JSON.stringify({
             message: userInput,
             history: messageHistory
         })
-    });
-    
+      });
 
       console.log('Response status:', response.status)
 
@@ -187,6 +186,7 @@ export default function Chat() {
       setLoading(true)
       setError(null)
       
+      // Always use the backend URL from environment for Docker compatibility
       const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:8000'
       
       // Get session
@@ -196,19 +196,18 @@ export default function Chat() {
       }
       
       // Only include auth header if not bypassing chat auth
-      const authHeader = bypassChatAuth ? {} : { 'Authorization': `Bearer ${session.access_token}` }
+      const testHeaders: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (!bypassChatAuth && session.access_token) {
+        testHeaders['Authorization'] = `Bearer ${session.access_token}`;
+      }
       
       // Test with a simple message
       const response = await fetch(`${backendUrl}/api/chat`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          ...authHeader
-        },
+        headers: testHeaders,
         body: JSON.stringify({
           message: 'Hello, this is a test message',
           history: []
-          // No session_id field - removed completely
         })
       })
       
