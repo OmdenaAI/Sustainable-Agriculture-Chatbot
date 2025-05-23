@@ -1,0 +1,13 @@
+--- is the basis for the Sustainability Solution Space. It: (i) ---
+
+The system module is the basis for the Sustainability Solution Space. It: (i) describes and defines the system with its characteristics and its main problems; (ii) derives indicators (environmental, economic and social); and (iii) determines the relationship among the indicators (e.g.,synergis- tic, antagonistic or neutral). Note that the system module is already con- structed in a transdisciplinary process,i.e.,with the participation of stake- holders.
+
+The normative module sets the criteria for defining sustainability ranges.
+
+It departs also from a viewpoint of the agent (e.g., policy-maker) but includes the perspective of sustainability sciences. For each indicator, a sustainability range is defined,i.e.,a minimum and maximum value is set according to the selected criteria.It has to be considered that the selected sustainability ranges depend on the preferences and values of the agents defining them.
+
+The integrative module,finally,integrates the sustainability ranges defined in the normative module with the results obtained in the system mod- ule. A consistency analysis (cf., Tietje, 2005) analyses whether the select- ed sustainability ranges are in agreement with the defined indicator sys- tem.The result is the Sustainability Solution Space (SSP). It shows within which ranges the values of the indicators can vary without hampering the sustainability of the whole system. Or putting it in other words: in which areas, measures have to be taken in order to improve the sustain- ability of the system. The construction of a sustainability space consists of the six steps shown in Table 1, (see also Binder and Wiek, 2001; Wiek and Binder, 2005).
+
+Table 1: Steps of SSP adapted to sustainability assessment of agriculture (after Wiek and Binder, 2005).
+
+Step Description Related methods and literature Prerequisite Analyzing the stakeholders Agent analysis: Wassermann and Faust, involved 1994; Conway, 2000; Salgnik and Heckadorn, 2004; Hermanns, 2005; Defining and balancing Binder, 2006 the goals of Consensus building: Cormick, 1996; different stakeholders Susskind et al., 1999 Module I: Systemic Module Step 1 Characterizing the region Grosskurth & Rotmans, 2005 to be assessed Sustainable Agriculture – From Common Principles to Common Practice 38

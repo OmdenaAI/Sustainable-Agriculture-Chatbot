@@ -1,0 +1,41 @@
+--- Atefi, A., Ge, Y., Pitla, S. & Schnable, J. Robotic Technologies for High-Throughput Plant ---
+
+63.
+
+Atefi, A., Ge, Y., Pitla, S. & Schnable, J. Robotic Technologies for High-Throughput Plant Phenotyping: Contemporary Reviews and Future Perspectives. Front. Plant Sci. 12, (2021). 64.
+
+Ruckelshausen, A. et al. BoniRob: an autonomous field robot platform for individual plant phenotyping. in Precision agriculture ’09 841–847 (Wageningen Academic, 2009). doi:10.3920/9789086866649_101. 65.
+
+Wu, C., Zeng, R., Pan, J., Wang, C. C. L. & Liu, Y.-J. Plant Phenotyping by Deep-Learning- Based Planner for Multi-Robots. IEEE Robot. Autom. Lett. 4, 3113–3120 (2019). 66.
+
+Qiao, Y., Valente, J., Su, D., Zhang, Z. & He, D. Editorial: AI, sensors and robotics in plant phenotyping and precision agriculture. Front. Plant Sci. 13, (2022). 67.
+
+Jain, P. et al. A minimally disruptive method for measuring water potential in planta using hydrogel nanoreporters. Proc. Natl. Acad. Sci. 118, e2008276118 (2021). 68.
+
+Jain, P. et al. Localized measurements of water potential reveal large loss of conductance in living tissues of maize leaves. Plant Physiol. 194, 2288–2300 (2024). 69.
+
+Jain, P. et al. New approaches to dissect leaf hydraulics reveal large gradients in living tissues of tomato leaves. New Phytol. 242, 453–465 (2024). 70.
+
+Mishra, A. K., Tramacere, F. & Mazzolai, B. From plant root’s sloughing and radial expansion mechanisms to a soft probe for soil exploration. in 2018 IEEE International Conference on Soft Robotics (RoboSoft) 71–76 (2018). doi:10.1109/ROBOSOFT.2018.8404899. 71.
+
+Mishra, A. K., Tramacere, F., Guarino, R., Pugno, N. M. & Mazzolai, B. A study on plant root apex morphology as a model for soft robots moving in soil. PLOS ONE 13, e0197411 (2018). 72.
+
+Bender, S. F., Wagg, C. & van der Heijden, M. G. A. An Underground Revolution: Biodiversity and Soil Ecological Engineering for Agricultural Sustainability. Trends Ecol. Evol. 31, 440–452 (2016). 73.
+
+Poirier, Y. & Bucher, M. Phosphate Transport and Homeostasis in Arabidopsis. Arab. Book 2002, (2002). 74.
+
+Briat, J.-F., Rouached, H., Tissot, N., Gaymard, F. & Dubos, C. Integration of P, S, Fe, and Zn nutrition signals in Arabidopsis thaliana: potential involvement of PHOSPHATE STARVATION RESPONSE 1 (PHR1). Front. Plant Sci. 6, (2015). 75.
+
+Venkiteshwaran, K., McNamara, P. J. & Mayer, B. K. Meta-analysis of non-reactive phosphorus in water, wastewater, and sludge, and strategies to convert it for enhanced phosphorus removal and recovery. Sci. Total Environ. 644, 661–674 (2018). 76.
+
+Mallick, S. P., Hossain, M. S., Takshi, A., Call, D. F. & Mayer, B. K. The challenge of non- reactive phosphorus: Mechanisms of treatment and improved recoverability using electrooxidation. J.
+
+Environ. Chem. Eng. 11, 110295 (2023). 77.
+
+Ryan, D. R. et al. Electrochemical technologies for per- and polyfluoroalkyl substances mitigation in drinking water and water treatment residuals. AWWA Water Sci. 3, e1249 (2021). 78.
+
+Mallick, S. P., Ryan, D. R., Venkiteshwaran, K., McNamara, P. J. & Mayer, B. K. Electro- oxidation to convert dissolved organic nitrogen and soluble non-reactive phosphorus to more readily removable and recoverable forms. Chemosphere 279, 130876 (2021). 79.
+
+Dueholm, M. K. D. et al. MiDAS 4: A global catalogue of full-length 16S rRNA gene sequences and taxonomy for studies of bacterial communities in wastewater treatment plants. Nat. Commun. 13, 1908 (2022). 80.
+
+Kristiansen, R. et al. A metabolic model for members of the genus Tetrasphaera involved in enhanced biological phosphorus removal. ISME J. 7, 543–554 (2013).

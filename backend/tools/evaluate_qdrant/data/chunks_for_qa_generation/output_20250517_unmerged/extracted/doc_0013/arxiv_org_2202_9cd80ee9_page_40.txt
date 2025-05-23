@@ -1,0 +1,11 @@
+--- (I) L_Flavonoid ~ L_Aminoacid ---
+
+Regression models (I) L_Flavonoid ~ L_Aminoacid (II) L_DPPH ~ L_Flavonoid (III) L_Flavonoid + R_Carotenoid + L_DPPH ~ Compost (I) Estimate std.
+
+Error t value Pr ( > |t|) (III) Estimate std.
+
+Error t value Pr ( > |t|) (Intercept) -8.274 3.747 -2.208 0.05825 # (Intercept) 235.87 12.8 18.425 7.75E-08 *** L_Aminoacid 22.876 6.428 3.559 0.00742 ** Compost -89.86 18.1 -4.963 0.0011 ** Residual standard error: 1.617 on 8 degrees of freedom Residual standard error: 28.63 on 8 degrees of freedom Multiple R-squared: 0.6128, Adjusted R-squared: 0.5645 Multiple R-squared: 0.7549, Adjusted R-squared: 0.7242 F-statistic: 12.66 on 1 and 8 DF, p-value: 0.007416 F-statistic: 24.63 on 1 and 8 DF p-value: 0.001102 (II) Estimate std.
+
+Error t value Pr ( > |t|) (Intercept) 111.043 30.242 3.672 0.00629 ** L_Flavonoid 15.056 5.543 2.716 0.02641 * Residual standard error: 0.004346 on 7 degrees of freedom Multiple R-squared: 0.4798, Adjusted R-squared: 0.4147 F-statistic: 7.377 on 1 and 8 DF, p-value: 0.02641 Table S4 A list of models targeted by causal mediation analysis for Fig. 4a and their statistical values.
+
+The non-parametric bootstrap confidence intervals and Quasi-Bayesian confidence intervals were not calculable. The coefficients and the related calculated data in the regression model are shown on the left. The values mediated among the regression models are shown on the right. The number in “Stimulations shows bootstrapping frequency. The abbreviations in the table indicate the following: T, treat; M, mediator; ACME, average causal mediation (indirect) effect; ADE, average direct effect; Total Effect, mediation (indirect) and direct effect; Prop.Mediated, proportion of mediated effect; #, p <0.1.

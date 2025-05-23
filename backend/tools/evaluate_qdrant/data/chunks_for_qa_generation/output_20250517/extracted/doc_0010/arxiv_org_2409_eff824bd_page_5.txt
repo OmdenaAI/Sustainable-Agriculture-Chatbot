@@ -1,0 +1,46 @@
+--- Page 5 ---
+
+In addition to engineering plants for below ground reporting, we are also exploring ways to harness the
+native microbiomes in the rhizosphere for improved crop management. Growing evidence points to the
+essential role of the rhizomicrobiome in facilitating plant nutrient uptake and acquisition by modulating
+soil nutrient availability, stimulating plant growth, and activating defense mechanisms.30,31 Therefore, an
+improved understanding of plant–microbe-soil interactions, and the ability to control it by designing and
+leveraging heritability beneficial interactions could drastically reduce our dependence on external inputs
+such as synthetic fertilizers and increase resilience and sustainability. Current main-stream omics-centric
+approaches for investigating the rhizomicrobiome have led to rich phylogenetic and genomic information.32
+However, these approaches lack the resolution to understand the species-specific molecular underpinnings
+necessary to engineer the inputs/outputs due to the hyper complexity of the largely unculturable
+rhizomicrobiome, inaccessibility of the rhizosphere obscuring direct observation, and spatiotemporal
+heterogeneity in soils and gene expression.33–35 Emerging single cell technologies, such as Single Cell
+Raman MicroSpectroscopy (SCRS), can begin to overcome these limitations in environmental systems due
+to the high resolution, in situ, non-destructive, and physical separation capabilities enabling downstream
+conventional “-omics” to provide for a multi-scale, molecular perspective of microbial systems.36–40
+Relying on single cell efforts to probe the rhizomicrobiome, we have made key strides in revealing the
+genotypes and phenotypes of the rhizomicrobiome communities associated with specific plant genotypes,
+as well as with plant root metabolites and exudates. For example, despite growing evidence for the
+important roles of nutrients and carbon accumulating organisms, such as polyphosphate accumulating
+organisms (PAOs), in the soil environment relevant to plant health, our understanding of the roles of PAOs
+and polyP in plant-microbe interactions is scarce.41–44 For the first time, through cross-disciplinary
+collaboration, we are revealing the abundant PAO community in the rhizosphere, and identifying plant
+communication pathways that enrich PAOs.45
+
+A challenge for modifying native plant signaling pathways in crop species is that most of our understanding
+of the networks that underlie signaling pathways comes from the small, weedy, genetic model organism
+Arabidopsis thaliana. Studies in A. thaliana have propelled our knowledge of plant genomes, development
+and function, but how can we translate these findings to crop species for which, in some cases, have a last
+shared a common ancestor with A. thaliana ~150 million years before present? To bridge this gap, we view
+each network or pathway through the lens of evolution (Fig. 3 - left). This workflow, in brief, requires 1)
+the inference of phylogeny for each component of the signaling transduction cascade / network, 2)
+reconciling the recovered gene trees with the accepted organismal relationships (termed gene tree - species
+tree reconciliation) and 3) integrating data on function and expression with the reconciled trees to provide
+insight on the extent of conservation (a form of evolutionary systems biology46). Importantly, this exercise
+permits both the identification of specific components of the signaling cascade to target for engineering
+(highly conserved components) and those that vary among organisms and thus represent opportunities to
+modify outputs when these components are introduced outside their native species. Using this approach,
+we are building our toolkit of evolutionary related signaling systems that can be deployed across species to
+achieve orthogonal signaling.
+
+Optimizing novel biomaterials for improved phosphorus fertilization
+An estimated 40% of the world’s arable land is phosphorus limited.47 Inorganic orthophosphate is available
+to plants but, in many soils, phosphate is either complexed with other molecules or is present in otherwise
+insoluble species, making most soil phosphorus largely biounavailable.47,48 Thus, phosphorus fertilizers are

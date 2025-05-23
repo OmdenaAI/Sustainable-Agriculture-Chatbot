@@ -1,0 +1,93 @@
+--- aminoadipate; S_N, nicotinamide; S_M, ---
+
+Figure and Table legends
+Fig. 1 (a) Cultivation schedule. (b) Evaluated growth
+indices of carrots. (c) Photograph of harvested carrots.
+(d) The procedure for color assessment. (e) Values of
+RGB pixel indices in the tested carrots. (f) Results of
+taste evaluation. The asterisks show as follows: *,
+p<0.05; **, p<0.01.
+
+Fig. 2. The antioxidant activity in the leaves and roots of
+carrots and heatmaps of correlation between the
+categories belonging to metabolite candidates. (a)
+DPPH (2,2-diphenyl-1-picrylhydrazyl) activities in the
+leaf and root of the carrot (n=5). The “Control” and
+“Compost” show the data under normal conditions
+(control group) and compost-amended conditions
+(compost group), respectively. (b)(c)(d) Metabolic
+differences in the leaf, root, and soil. Heatmaps show
+the relative abundances of the metabolites in each
+cluster: the control (blue) and test groups (compost-
+amended group)(red).The representative metabolites in
+the leaf and the root in each group are shown
+(comparison of the categories belonging to metabolites
+with p < 0.1 as significant values). The metabolites in the
+soil are shown (comparison of the categories belonging
+to metabolites with p < 0.2 as significant values).
+Significan t values were shown as follows: *, p<0.05;
+and **, p<0.01.
+
+Fig. 3. (a) UniFrac graph (unweighted and weighted)
+showing β-diversity in the control and test groups. The
+estimation plot of the bacterial population in the soil of
+the control and test groups. Relative abundances of the
+(b) phyla and (c) genera (p <0.1; >0.1% as the maximum
+of bacterial population).
+
+Fig. 4. The relationship of the leaf and root metabolite
+candidates associated with compost amendment was
+visualized by structural equation modeling in the
+regression groups selected in Tables S1 and S2.
+Standardized β coefficients are reported. The green and
+red colors show positive and negative interactions,
+respectively. (a) shows the sempath linked with amino
+acids, carotenoids, flavonoids, DPPH activity, and
+compost. (b) shows the sempath linked with apigenin 7-
+O-neohesperidoside,
+kaempferol-Gal-Rha,
+and
+quercetin Glc as flavonoids in the leaf and L-2-
+aminoadipate and phenylalanine in the root and
+compost. (c) shows the sempah linked with soil
+metabolites,
+Paenibacillus,
+and
+compost.The
+abbreviations are as follows: Cmp, compost; L_AA, total
+amino acid contents in the leaf; L_Fav, total flavonoid
+contents in the leaf; L_DPP, DPPH activities in the leaf;
+R_Car, total carotenoid contents in the root; L_Apig,
+apigenin 7-O-neohesperidoside in the leaf; L_Kae,
+kaempferol-Gal-Rha in the leaf; L_Que, quercerin Glc in
+the leaf; R_L2A, L-2-aminoadipate in the root; R_Phe,
+phenylalanine in the root; Pnb, Paenibacillus; S_A, L-2
+aminoadipate; S_N, nicotinamide; S_M, S-methyl L-
+cysteine. The fit indices are shown in the path as follows:
+Chiq, chi-square χ2; p value, p values (chi-square); CFI,
+comparative fit index; TLI, Tucker–Lewis index; RMSEA,
+root mean square error of approximation; SRMR,
+standardized root mean residual; GFI, goodness-of-fit
+index; AGFI, adjusted goodness-of-fit index.
+
+Fig. 5. Electron micrograph and phylogenetic relationship
+of isolated Paenibacillus strains in this study. (a)
+Scanning electron microscopy image of vegetative typed-
+Paenibacillus macerans HMSSN-036 stain. (b) Scanning
+electron microscopy image of spore typed-Paenibacillus
+macerans HMSSN-036 stain. (c) Scanning electron
+microscopy image of vegetative typed-Paenibacillus sp.
+HMSSN-139 stain. (d) Scanning electron microscopy
+image of spore typed-Paenibacillus sp. HMSSN-139
+strain. (e) Whole-genome phylogenetic analysis of
+isolated Paenibacillus strains was performed. A
+phylogenetic tree was constructed by neighbor-joining
+method. The isolated Paenibacillus strains are marked in
+red.
+
+Fig. 6. A putative model consequential in this study.
+
+Table 1. Functional genes identified based on the
+genomic data of Paenibacillus sp. isolated from the
+thermophile-fermented compost (see the supplementary
+information).

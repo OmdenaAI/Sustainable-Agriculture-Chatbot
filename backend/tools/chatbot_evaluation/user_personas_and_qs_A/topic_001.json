@@ -1,0 +1,30 @@
+{
+    "topic": "Integrated Pest Management (IPM) as a Sustainable Approach to Agriculture",
+    "link": "https://tracextech.com/integrated-pest-management-for-sustainable-agriculture/",
+    "conversation": {
+        "kickoff": "Lately I’ve been seeing bugs eating up my tomato plants—what’s a good way to get rid of them without using too many chemicals?",
+        "follow_up": [
+            {
+                "question": "How do I monitor pest levels without special equipment?",
+                "answer": "Use simple tools like visual inspection, trap crops, pheromone traps, and scouting. Regular observation helps detect pests early and guides timely intervention."
+            },
+            {
+                "question": "What are examples of biological pest control that really work on farms?",
+                "answer": "Encourage natural predators like ladybugs or parasitic wasps. Techniques include releasing beneficial insects or enhancing habitats to support them."
+            },
+            {
+                "question": "Are there any cultural methods I can use to prevent future outbreaks?",
+                "answer": "Yes—crop rotation, planting resistant varieties, proper irrigation, sanitation, and soil cultivation reduce pest-friendly conditions."
+            },
+            {
+                "question": "How do I decide when chemical treatment is absolutely necessary?",
+                "answer": "Only after monitoring confirms pest levels above economic thresholds. Then use the least toxic, targeted pesticide option."
+            },
+            {
+                "question":"Can crop rotation really reduce pest pressure over time?",
+                "answer": "Yes, it disrupts pest life cycles and reduces buildup of pest populations by removing their consistent food source."
+            }
+        ]
+    }	
+    	
+}

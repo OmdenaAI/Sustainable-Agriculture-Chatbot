@@ -1,0 +1,3 @@
+--- Page 24 ---
+
+Fig. 5. Automated soft robotic leaf gripper for measurement of water status in plants using a water potential nano-reporter infiltrated in the leaves, and a soil robot for automated and non-invasive below-ground phenotyping of soil microbiome and root structure.

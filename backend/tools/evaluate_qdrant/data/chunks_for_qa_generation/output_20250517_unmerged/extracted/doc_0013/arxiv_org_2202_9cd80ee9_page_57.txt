@@ -1,0 +1,56 @@
+--- Clara, California, USA; ---
+
+9
+
+The bag was then joined to a transparent sampling bag, and the aluminum bag was collected
+the next day (Condition I). After storage of these pots at 4°C for 1 month, the air inside
+was released, the bag was closed, and the stopper was closed; 2 h later, a new aluminum
+bag used for recovery was connected (Condition II). Measurement of the gas concentration
+in these aluminum bags was performed using a Picarro G5131-i analyzer (Picarro, Santa
+Clara, California, USA; https://www.sanyo-si.com/products/maker/picarro/, owned and
+supported by Sanyo Trading Co., Ltd., Japan) according to a previously reported protocol93-
+95.
+
+Meta-sequence analysis of fungal communities in the soil
+The fungal communities in PDA-containing soil with the fungal solution (soil prepared
+for the experiment described in “Measurement of N2O from soil”) were determined based
+on the DNA sequence information as previously described 96. In brief, DNA from soils
+without (n=1) and with compost (n=1) selected randomly was extracted, and the fungal
+ITS1 region was amplified from each replicate with the ITS universal primer sets for fungal
+organisms established by GENEWIZ. The forward primer contained the sequence
+“GTGAATCATCGARTC”
+and
+the
+reverse
+primers
+contained
+the
+sequence
+“TCCTCCGCTTATTGAT”. DNA sequencing was also conducted by GENEWIZ. Inc.,
+Japan. Taxonomic assignments and estimation of relative abundances from sequencing
+data were performed using the analysis pipeline of the QIIME software package
+(https://docs.qiime2.org/). All 16S rRNA gene datasets were deposited in the GenBank
+Sequence Read Archive database as described in Data availability.
+
+Causal Mediation Analysis (CMA)
+Individual causal mediation relationships were calculated using the R software package
+"mediation" 97 based on the tutorial website (https://rpubs.com/Momen/485122). In brief,
+the R software packages "mediation", "tidyverse", "knitr", and "caret" were used as
+previously described 76. Each regression value in the SEMs was calculated by the 'lm'
+function. In the case of the significant values, the values of the relationships between
+components as mediators and outcomes were assessed using the 'mediate' function. As
+previously described, the estimated average causal mediation (indirect) effect (ACME),
+average direct effect (ADE), and proportion of total effect via mediation (Prop. Mediated)
+were calculated by quasi-Bayesian confidence intervals and nonparametric bootstrap
+intervals with 1000 stimulations ('sims=1000') as the numbers of calculations.
+
+BayesLiNGAM
+The BayesLiNGAM method 98, which is a Bayesian score-based approach, was applied
+for the causal structural inference among components in optimal SEMs as previously
+described. The BayesLiNGAM method was established by the "fastICA" package
+(https://cran.r-project.org/web/packages/fastICA) of R software. Based on the website
+information
+(https://www.cs.helsinki.fi/group/neuroinf/lingam/bayeslingam/),
+the
+percentage data calculated by BayesLiNGAM were visualized by the R package "igraph"
+as previously described 76.

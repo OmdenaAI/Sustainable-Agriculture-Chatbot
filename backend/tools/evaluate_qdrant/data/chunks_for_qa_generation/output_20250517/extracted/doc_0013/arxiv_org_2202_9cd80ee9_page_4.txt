@@ -1,0 +1,163 @@
+--- significant values (Tables S4, S5, and S6). These ---
+
+the relationships differed from the statistically significant
+differences in the individual factors (Fig. S8). They also
+contained relatively low concentrations of metabolites
+and minor bacteria. Based on the classified data,
+structural equation analysis was carried out to
+understand the basic structure of the skeleton in this
+complex system.
+The structural equation calculates the combination
+showing the optimum value. Among the calculated
+models for DPPH as an indicator of antioxidant activity,
+the multiple regression model with amino acids,
+flavonoids, and carotenoids (Figs. 4a and S9a) had the
+highest optimal fit index values (Table S1). Therefore,
+the structural equation for flavonoids was calculated
+with phenylalanine, a flavonoid precursor, focusing on
+the factors that actually changed in the above
+observations.
+As
+a
+result,
+apigenin
+7-O-
+neohesperidoside,
+kaempferol-Gal-Rha,
+and
+quercetin_Glc, as leaf flavonoids, root L-2-aminoadipate,
+and phenylalanine formulated the optimal structural
+equation (Figs. 4b and S9b) rather than the other inferior
+models (Table S2). These estimations suggested that
+compost amendments are structurally involved as a
+group in the concentration of flavonoids, amino acids,
+and carotenoids in carrots, as well as in the antioxidant
+activity of carrots.
+Next, the relationships between the changes observed
+in the compost-treated soil were constructed by
+modeling structural equations. The soil bacterial
+candidates
+and
+soil
+metabolites
+that
+showed
+representative changes by compost amendment were
+selected in the above experiment. The relationship of
+the soil factors associated with compost amendments
+was visualized as optimal SEM (Figs. 4c and S9c): an
+optimal model that included the genus Paenibacillus,
+DL-2-aminoadipate, nicotinamide, and S-methyl L-
+cysteine showed good fit indices compared to those of
+the other models (Table S3). Furthermore, causal
+mediation analysis revealed that a single mediation
+(indirect) effect (ACME) was not calculable or without
+significant values (Tables S4, S5, and S6). These
+calculated results estimated a strong relationship as
+each
+group.
+Therefore,
+the
+causal
+interactive
+relationships within each optimal model of the leaf, root,
+and soil were investigated based on a calculation by
+BayesLiNGAM (Figs. S10). The highest causal
+interactive relationships (top six) were mainly shown
+from compost but not always. This may mean that the
+compost supports it while the physiological responses of
+the carrot and/or the soil themselves are prioritized.
+These results pointed to the importance of the optimal
+model as a whole group, as well as the optimal model
+group estimated for the leaf and root.
+Therefore, nitrogen compounds were involved in these
+structural equations for leaves, roots, and soil. Based on
+these observations, the genus Paenibacillus derived
+from compost was explored, followed by a search for its
+function within the compost itself.
+
+Genome profiles associated with plant growth
+promotion
+As described above, the SEM results suggested that the
+genus Paenibacillus may be a necessary component of
+compost for the promotion of plant growth. Therefore, we
+isolated compost-derived colonies that tested positive for
+a nitrogen fixation gene and were able to select two
+strains that had a nitrogen fixation reaction from
+compost-cultured colonies. The compost-derived strains
+Paenibacillus
+macerans
+HMSSN-036
+and
+Paenibacillus sp. HMSSN-139 were identified, and their
+genomes were analyzed: the former, a strain closely
+related to Paenibacillus macerans (identity 99.0%); the
+latter, a candidate as a new species belonging to
+Paenibacillus. In Figs. 5a-d, electron micrographs of
+these strains showed the spore- and vegetative-forms.
+The molecular phylogenetic tree of these isolates is
+shown in Fig. 5e. Phylogenetic analysis with mash
+distance
+(Fig.
+S11)
+showed
+that
+the
+isolated
+Paenibacillus
+strains
+were
+classified
+into
+weak
+sequences for P. curdianolyticus and P. kobensis
+detected by meta-sequence analysis of the 16S bacterial
+rRNA gene sequence: Their population was not detected
+in the control and 0.022± 0.011% in the test group
+(p=0.116). These observations indicated that the isolated
+Paenibacillus strains did not necessarily coincide with the
+sequence of Paenibacillus species increasing in the
+compost-amended soil. Still, it is interesting that the
+same Paenibacillus increased in the soil. Furthermore,
+genome analyses showed the presence of the genes for
+nitrogen
+fixation,
+auxin
+production,
+phosphate
+solubilization, and siderophore reactions such as PGPR
+(Tables 1 and S7-S10). Based on genomic information,
+biological assays were performing for auxin production,
+siderophore reaction, and phosphate solubilization and
+all of these assays were demonstrated to be positive (Fig.
+S12). Therefore, the genes detected in isolated
+Paenibacillus strains could be functional for nitrogen
+fixation, auxin production, siderophore reaction, and
+phosphate solubilization in the bacterium.
+These
+results
+suggest
+that
+compost-derived
+Paenibacillus strains may exhibit PGPR effects.
+
+Evaluation of the effects of compost itself on the
+promotion of plant growth
+The nitrogen cycle function of compost with nitrogen-
+fixing Paenibacillus was then evaluated with in vitro soil
+models. Two functional evaluations of nitrogen fixation
+and reduction of nitrous oxide generation were
+conducted.
+First, as shown in Fig. S12a, the nitrogen fixation
+capacity was evaluated in soil with the stable nitrogen
+isotope 15N added. The Arabidopsis thaliana model plant
+was cultured to assess the effects on nitrogen fixation,
+and a growth promotion effect, although not significant,
+was observed (Fig. S12b). Under such conditions,
+nitrogen fixation rates of approximately 20% were
+possible in the plant and soil. Based on these
+observations, it is possible that the soil modulates
+nitrogen fixation in the field after exposure to compost.
+The results of the elemental analysis of the soil
+immediately after the cultivation of the carrot-grown soil
+in this field test changed significantly, although it was

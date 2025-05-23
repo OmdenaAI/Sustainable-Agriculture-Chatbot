@@ -1,0 +1,95 @@
+--- and Sustainable Public Procurement ---
+
+32 | Smart Prosperity Institute
+place in many Canadian provinces). Another option could be to
+introduce labelling for food packaging materials to enable better
+post-consumption management.
+A popular downstream regulation cited in the literature is the
+introduction of organic landfill bans. In addition to supporting
+waste management, this regulation could also support climate
+mitigation objectives by eliminating methane emissions that
+would otherwise have been created from landfilled food waste.
+Also, this diverted food waste could be used as feedstock for
+bioenergy facilities thereby reducing the need for fossil fuel-
+derived energy. Additionally, food waste could be diverted to
+composting facilities to produce soil amendment that can return
+fertility to degraded soils and reduce the need for chemical
+fertilizers. Ideally, a ban on organics should be a coordinated
+policy initiative across jurisdictions and take into consideration
+rural-urban contextual differences.163
+
+Pricing
+Pricing instruments, such as taxes and user fees, stimulate
+market demand for circular innovation by establishing a price
+for environmental damage. Because they allow the firms and
+households impacted the flexibility to take actions that best suit
+their situation, pricing instruments are considered to be more
+cost-effective than regulation.164 They are especially attractive
+tools because they simultaneously improve environmental
+performance and generate government revenue that can be re-
+invested to help compensate producers, firm and households
+for the increased costs, or build the knowledge, skills and
+infrastructure required to address a given type of environmental
+damage.165
+Such instruments could be applied at various stages of the supply
+chain. At the farm level, regenerative agricultural practices can
+be promoted by taxing harmful products like synthetic pesticides
+and fertilizers that contribute to greenhouse gas emissions,
+harm wildlife, and pollute the air and water. Alternatively, taxes
+could directly target environmental externalities from food
+production, processing and transportation. For instance, taxing
+soil phosphorus content that exceeds a certain threshold rather
+than taxing phosphorous fertilizers.166
+Another example is a tax incentive for manufacturers, retailers and
+others in the food industry to donate nutritious food to registered
+charities supporting local communities. Such a tax credit or
+deduction could offset the costs of operational changes required
+to separate nutritious food from food that should be discarded,
+as well as the costs associated with transporting this food to
+registered charities.167 This could be supplemented by support to
+build capacity and/or infrastructure in these charities to efficiently
+handle food donations.
+More downstream, municipal landfill tipping fees can be used to
+send the right market signals, especially when working in tandem
+with individual producer responsibility. This could involve
+introducing new tipping fees (in municipalities where these
+currently do not exist), or increasing fees to account for the full
+environmental cost of waste disposal (e.g. methane emissions,
+risk of leaching Into the environment, etc.). While setting tipping
+fees, efforts should be made to harmonize these fees between
+neighbouring jurisdictions to deter the practice of waste exports
+to jurisdictions where the fees are lower. Tipping fees could also
+be differentiated for different materials like organics to specifically
+incentivize their diversion from landfill. In addition to municipal
+tipping fees, provincial governments could also implement
+tipping-fee surcharges that can help generate revenue to fund
+other waste management projects throughout the province.168
+Box 17
+UK’s landfill tax on
+biodegradable waste 169
+In 1996, the U.K. introduced a national landfill tax
+on biodegradable waste (e.g. organics) and inactive
+wastes (e.g. concrete). The tax applies to all landfills-
+public and private- and is levied on top of local
+tipping fees. Over time it has increased from $17 per
+tonne in 1999 to $150 in 2017. It has been shown
+to lower quantities of landfill waste and increase
+diversion rates significantly.
+Procurement
+Government procurement is considered a powerful public
+policy tool to encourage circular economy practices. Circular
+procurement, and the closely related practices of Green Public
+Procurement* and Sustainable Public Procurement**, emphasize
+the need for purchasing decisions to contribute to closed energy
+and material loops within supply chains. This practice has a dual
+benefit—it allows governments to lead by example, and offers a
+test-bed for new innovations, which helps with their commercial
+growth and with attracting private investment.170
+Large government institutions that provide meals, like schools,
+hospitals and prisons, are major purchasers of food. By
+introducing circular principles in their purchasing policies and
+practices, they can not only achieve significant food waste
+* Green Public Procurement (GPP) is a process by which public authorities seek to purchase goods, services and works with a reduced environmental impact throughout
+their life-cycle compared to goods, services and works with the same primary function which would otherwise be procured.
+** Sustainable Public Procurement (SPP) is a process by which public authorities seek to achieve the appropriate balance between the three pillars of sustainable devel
+opment - economic, social and environmental - when procuring goods, services or works at all stages of the project.

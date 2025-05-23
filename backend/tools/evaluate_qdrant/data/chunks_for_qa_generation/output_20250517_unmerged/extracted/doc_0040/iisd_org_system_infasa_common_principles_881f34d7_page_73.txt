@@ -1,0 +1,9 @@
+--- LEGEND: AC–Annual crops; AG–Annual grassland; BF–Bamboo forest; BL–Bare land; ---
+
+approach was used for all the other indicator suites. The categorization system for all the indicator suites is shown in Table 2 showing specific land attributes that compose them. The indicators were evaluated for their usefulness in the assessment using the evaluation guidelines for ecological indicators (USEPA, 2000) and on the assumption that there is a significant inter-dependence relationship among them (Arshad and Martin, 2002).
+
+Table 1: Land cover quality indicator classification.
+
+Land cover Attribute range attribute Very low Low Moderate High Very high 1 2 3 4 5 % Land cover < 10% 10– 25% 25–50% > 50% – Drought Tolerance BL AC PC DF TF AG MF PG DAL CF SG BF Fire risk MF AC PC TF AG DAL BL PG SG BF CF Vegetation Type BL AC PC DF CF AG PG MF TF SG BF DAL LEGEND: AC–Annual crops; AG–Annual grassland; BF–Bamboo forest; BL–Bare land; CF–Coniferous forests; DAL–Derived agricultural land; DF–Deciduous forests; MF–Mangrove forests; PC–Perennial crops; PG–Perennial grassland; SG–Savana grassland; TF–Tropical forests Table 2: Categories of indicator suites.
+
+Indicator suite Component attributes (Indicators) Soils and • Soil depth, • Soil texture, • Soil drainage, • Slope, topography • Erosion status Water resources • Water resource variability (Type), • Water resource utilization, • Water resource hazards, • Water resource quality problems, • Water resource productivity Vegetation and • Vegetation type, • Percentage land cover, land cover • Drought tolerance, • Fire risk Sustainable Agriculture – From Common Principles to Common Practice 60

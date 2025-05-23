@@ -1,0 +1,13 @@
+--- This case study was submitted by Alexandra Rieder, milk procurement manager, Nestlé Suisse SA and Jan Grenz, lecturer on ---
+
+56 on the 147 farms, to test the scalability of the project. So far, the possibilities to scale up the project seem promising.
+
+The countrywide implementation of the project would result in a significant reduction of overall GHG emissions from the Swiss agriculture sector within a couple of years, and hence strongly support efforts towards SDG 13 (Take urgent action to combat climate change and its impacts).
+
+The success of the project is the result of farmers’ high rate of implementation of the four climate-smart agricultural practices. This high rate can in turn be attributed to the participatory approach that was used to identify and define those practices. Thanks to this participative approach, farmers feel treated fairly and are actively engaged in the project. Capacity development and face-to-face dialogue between farmers, industry representatives and scientists were consistent factors throughout the project, and helped build mutual trust and understanding.
+
+Calculating robust GHG balances based on a limited set of input data (for efficiency reasons) turned out to be challenging. The refinement of the herd-level GHG calculator continues to stimulate the exchange of knowledge between scientists, industry representatives and farmers. The automatization and simplification of the collection of input data is another area that requires further refinement if the project is to be upscaled to a wider level.
+
+The learnings from this project have influenced climate-focused agricultural policymaking in Switzerland. Increasing the number of lactations per cow and improving cows’ lifetime performance are now heavily discussed topics; they are considered as potential measures to reduce the GHG emissions from Swiss agriculture. The new Swiss agricultural policy package, planned for 2022, is foreseen to include financial incentives for farmers to increase their cows’ number of lactations; this would encourage them to keep older cows. Increasing cows’ numbers of lactations over a longer lifespan is only possible if farmers adopt good animal welfare practices.
+
+This case study was submitted by Alexandra Rieder, milk procurement manager, Nestlé Suisse SA and Jan Grenz, lecturer on sustainability, Bern University of Applied Sciences, School of Agricultural, Forest and Food Sciences. For research information, please email rise.hafl@bfh.ch. For press requests only, please email presse@ch.nestle.com.

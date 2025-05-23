@@ -1,0 +1,7 @@
+--- Page 153 ---
+
+Figure 7: RISE polygon of farm No. 8 assuming a minimum salary of US$800/year (allowing a life with basic demands).
+
+Figure 8: RISE polygon of farm No. 8 assuming a minimum salary of US$270/year (only allowing for bare survival).
+
+Energy (EN) 100 80 60 40 20 0 -20 -40 -60 -80 -100 Water (WR) Soil (SO) Biodiversity (BD) N&P emission potential (EP) Plant protection (PP) Waste (WS) Economic stability (ES) Economic efficiency (EE) Local economy (LE) Working conditions (WC) Social security (SS) Energy (EN) 100 80 60 40 20 0 -20 -40 -60 -80 -100 Water (WR) Soil (SO) Biodiversity (BD) N&P emission potential (EP) Plant protection (PP) Waste (WS) Economic stability (ES) Economic efficiency (EE) Local economy (LE) Working conditions (WC) Social security (SS) Sustainable Agriculture – From Common Principles to Common Practice 140

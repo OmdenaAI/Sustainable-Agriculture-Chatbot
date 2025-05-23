@@ -1,0 +1,9 @@
+--- Page 46 ---
+
+Table S10 Other functional gene candidates identified based on genomic data of Paenibacillus sp. HMSSN-139.. The list shows some selected gene candidates asociated with nitrogen cycle, phosphate solubilization, and siderophore reaction, amino acid synthesis-related and auxin-related function.
+
+Contig No.
+
+KEGG no.
+
+Annotation Information of annotation Identity (%) 5 K05337 ferredoxin >ref|WP_009222802.1| MULTISPECIES: ferredoxin [Paenibacillus] 97 21 - nitrogen fixation protein >ref|WP_036623754.1| hypothetical protein [Paenibacillus macerans] 54 21 K02586 nitrogenase molybdenum-iron protein alpha chain [EC:1.18.6.1] >ref|WP_036623759.1| nitrogenase molybdenum-iron protein subunit alpha [Paenibacillus macerans] 88 21 K02591 nitrogenase molybdenum-iron protein beta chain [EC:1.18.6.1] >ref|WP_036623758.1| nitrogenase molybdenum-iron protein subunit beta [Paenibacillus macerans] 85 34 K07088 auxin efflux carrier >ref|WP_009226239.1| permease [Paenibacillus sp. oral taxon 786] 95.8 15 K01609 indole-3-glycerol phosphate synthase [EC:4.1.1.48] >gb|EES72334.1| indole-3-glycerol phosphate synthase [Paenibacillus sp. oral taxon 786 str. D14] 90.3 12 K03293 amino acid transporter, AAT family >ref|WP_028539670.1| GABA permease (4-amino butyrate transport carrier) [Paenibacillus sp. J14] 90.6 55 K00823 4-aminobutyrate aminotransferase [EC:2.6.1.19] >ref|WP_036644459.1| aminotransferase class III [Paenibacillus sp. oral taxon 786] 77 5 K01649 2-isopropylmalate synthase [EC:2.3.3.13] >ref|WP_009222800.1| MULTISPECIES: 2-isopropylmalate synthase/homocitrate synthase [Paenibacillus] 95.1 2 K03711 Fur family transcriptional regulator, ferric uptake regulator >ref|WP_036621828.1| Fur family transcriptional regulator [Paenibacillus macerans] 96 11 K03306 inorganic phosphate transporter, PiT family >ref|WP_036625809.1| inorganic phosphate transporter [Paenibacillus macerans] 93

@@ -1,0 +1,49 @@
+--- Plant, Cell and Environment ---
+
+11
+
+85
+Tanaka, Y. & Yano, K. Nitrogen delivery to maize via mycorrhizal hyphae depends on the form of N supplied.
+Plant, Cell and Environment 28, 1247–1254 (2005).
+86
+Satoh, R. & Suzuki, Y. Carbon and Nitrogen stable analysis by EA IRMS. Res Org Geochem 26, 21-29 (2010).
+87
+Simsek, A., Bilsel, M. & Goren, A. C. 13C/12C pattern of honey from Turkey and determination of adulteration
+in commercially available honey samples using EA-IRMS. Food Chemistry 130, 1115-1121,
+doi:10.1016/j.foodchem.2011.08.017 (2012).
+88
+Nakashita, R. et al. Stable carbon, nitrogen, and oxygen isotope analysis as a potential tool for verifying
+geographical origin of beef. Anal Chim Acta 617, 148-152, doi:10.1016/j.aca.2008.03.048 (2008).
+89
+He, F. et al. Authentication of Processed Epimedii folium by EA-IRMS. J Anal Methods Chem 2020, 8920380,
+doi:10.1155/2020/8920380 (2020).
+90
+Malik, D. K. & Sindhu, S. S. Production of indole acetic acid by Pseudomonas sp.: effect of coinoculation with
+Mesorhizobium sp. Cicer on nodulation and plant growth of chickpea (Cicer arietinum). Physiol Mol Biol Plants
+17, 25-32, doi:10.1007/s12298-010-0041-7 (2011).
+91
+Nautiyal, C. S. An efficient microbiological growth medium for screening phosphate solubilizing
+microorganisms. FEMS Microbiology Letters 170, 265-270 (1999).
+92
+Srimathi, K. & Suji, H. A. Siderophores Detection by using Blue Agar CAS Assay Methods. International Journal
+of Scientific Research in Biological Sciences 5, 180-185 (2018).
+93
+Winther, M. et al. Continuous measurements of nitrous oxide isotopomers during incubation experiments.
+Biogeosciences 15, 767-780, doi:10.5194/bg-15-767-2018 (2018).
+94
+Lee, A., Winther, M., Priemé, A., Blunier, T. & Christensen, S. Hot spots of N2O emission move with the
+seasonally mobile oxic-anoxic interface in drained organic soils. Soil Biology and Biochemistry 115, 178-186,
+doi:10.1016/j.soilbio.2017.08.025 (2017).
+95
+Arcand, M. M. & Congreves, K. A. Elucidating microbial carbon utilization and nitrous oxide dynamics with
+13C-substrates and N2O isotopomers in contrasting horticultural soils. Applied Soil Ecology 147,
+doi:10.1016/j.apsoil.2019.103401 (2020).
+96
+Pauvert, C. et al. Bioinformatics matters: The accuracy of plant and soil fungal community data is highly
+dependent on the metabarcoding pipeline. Fungal Ecology 41, 23-33, doi:10.1016/j.funeco.2019.03.005 (2019).
+97
+Tingley, D., Yamamoto, T., Hirose, K., Keele, L. & Imai, K. mediation: R Package for Causal Mediation Analysis.
+Journal of Statistical Software 59, 1-38 (2014).
+98
+Hoyer, P. O. & Hyttinen, A. Bayesian Discovery of Linear Acyclic Causal Models. arXiv.org, arXiv:1205.2641,
+doi:https://arxiv.org/abs/1205.2641 (2009).

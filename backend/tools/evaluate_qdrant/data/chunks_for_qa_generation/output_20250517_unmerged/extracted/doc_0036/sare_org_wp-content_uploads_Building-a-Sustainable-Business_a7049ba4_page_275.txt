@@ -1,0 +1,23 @@
+--- Net Farm Income: ---
+
+of profitability shows the operating efficiency of the business. Low expenses relative to the value of farm production result in a healthy operating profit margin.
+
+Net Farm Income: Calculated as (gross cash farm revenue) – (total cash farm expense) + (inventory changes) + (depreciation and other capital adjustments, including gains/losses from the sale of capital assets). This measure represents profitability or the farm’s return to labor, management and equity.
+
+Repayment capacity Term Debt Coverage Ratio: Calculated as [(net farm operating income) + (net nonfarm income) + (depreciation) + (scheduled interest on term debt and capital leases) – (family living and taxes paid)] / (scheduled principal and interest payments on term debt and capital leases). This measure of repayment capacity tells whether the business produced enough cash to cover all intermediate and long-term debt payments.
+
+Capital Replacement Margin: Calculated as the value of (net farm income) + (net nonfarm income) + depreciation – (family living expenses, taxes paid, scheduled payments on term debt). This measure describes the amount of money left over after all operating expenses, taxes, family living costs, and scheduled debt payments have been made.
+
+Efficiency Asset Turnover Rate: Calculated as the (gross farm revenue) / (average farm assets).
+
+This measures the efficiency of using capital. A high level of production in proportion to the level of capital investment yields a high (or efficient) asset turnover rate.
+
+Operating Expense Ratio: Calculated as the value of [(total farm operating expenses)– (depreciation) – (farm interest)] / (gross farm revenue). This measure reflects the proportion of farm revenues used to pay operating expenses, not including principal or interest.
+
+Interest Expense Ratio: Calculated as (farm interest) / (gross farm revenue). This measure of financial efficiency shows how much of gross farm revenue is used to pay for borrowed capital.
+
+Depreciation Expense Ratio: Calculated as (depreciation and other capital adjustments) / (gross farm revenue). This measure indicates what proportion of farm revenue is needed to maintain the capital used by your business.
+
+Net Farm Income from Operations Ratio: Calculated as (net farm income from operations) / (gross farm revenue). This measure of financial efficiency compares profit to gross farm revenue. It shows how much is left after all farm expenses, except for the return to unpaid operator and family labor, management and capital, are paid.
+
+Appendices 274 BUILDING A SUSTAINABLE BUSINESS

@@ -1,0 +1,45 @@
+--- Page 9 ---
+
+legacy phosphorus.48,73,74 Similarly, phosphorus is present as different species in aquatic systems. The
+soluble, reactive phosphorus fraction (orthophosphate) is directly available for biological uptake.
+Orthophosphate is also more readily recoverable using phosphorus treatment technologies applied in water
+and wastewater treatment systems, whereas the non-reactive phosphorus fraction is less studied. However,
+consideration of this fraction, which can comprise the majority of phosphorus in some water matrices75,76,
+is important for sustainable phosphorus management. Collaborations between biologists and engineers
+within the STEPS Center can advance efforts to manage and utilize these ‘lost’ phosphorus fractions more
+efficiently. For example, different physical, chemical and biological approaches can be used to facilitate
+phosphorus transformations to the target form.75
+
+In nature, phosphorus transformations occur at varying rates. Engineered systems can accelerate such
+processes to facilitate efficient phosphorus removal, recovery and reuse in agriculture. For example,
+wastewater treatment facilities create conditions to remove phosphorus either chemically or biologically.
+Chemical transformation often involves adding iron or aluminum salts to precipitate phosphorus, where
+soluble phosphate (e.g., PO43-) is transformed into a solid form (e.g., AlPO4(s)). Phosphorus transformation
+can also derive from physical-chemical processes, including oxidation processes. Redox reactions involve
+the transfer of electrons between chemical species. In water, phosphorus is typically present in the +5
+valence state such that phosphorus bonds are not specifically targeted by oxidation. However, when
+phosphorus is incorporated in complex organic material, advanced oxidation processes may facilitate
+phosphorus recovery by partially oxidizing the phosphorus-containing materials into molecules more
+susceptible to hydrolytic conversion to phosphate or completely oxidizing the organic to yield phosphate.75
+A wide array of advanced oxidation processes have been tested as a means of breaking down complex or
+recalcitrant organics in water. These processes feature the generation of powerful oxidizing radical species
+such as hydroxyl radicals (OH⋅) capable of mineralizing organics to simple components such as PO43-, water
+and carbon dioxide.
+Electrochemical processes are a type of advanced oxidation processes that use direct current to generate
+chemical reactions in-situ by transferring electrons from an anode to a cathode (Fig. 6a). This negates the
+need for transportation and storage of auxiliary chemicals. In electrooxidation, non-active electrode
+materials such as boron-doped diamond or Ti4O7 are often used to yield oxidation processes via direct
+oxidation on the electrode surface or indirect oxidation by hydroxyl radicals or other oxidants generated in-
+situ.77 Mallick et al. observed that electrooxidation featuring direct electron transfer was able to transform
+soluble non-reactive phosphorus to reactive forms, although the presence of organics in the water matrix
+interfered with process efficiency.76 The soluble reactive phosphorus compounds containing organic
+phosphoester P-O-C bonds were more susceptible to oxidation compared to inorganic anhydride P-O-P
+bonds.78 Notably, complete conversion of non-reactive phosphorus to orthophosphate required high
+electrooxidation energy inputs such that incomplete conversion, when advanced oxidation is already in
+place as part of the water treatment regime, may be the most relevant means of implementation.
+
+An example of biological transformation involves Polyphosphate-Accumulating Organisms (PAOs) in a
+process known as enhanced biological phosphorus removal (EBPR). PAOs take up soluble phosphate and
+transform it into intracellular chains of phosphate that are called polyphosphate (poly-P) (Fig. 6b). PAOs
+are unique because they can hyperaccumulate phosphorus to levels exceeding 15% of a cell’s total dry
+biomass. In water resource recovery facilities (WRRFs), the most common PAOs are Candidatus

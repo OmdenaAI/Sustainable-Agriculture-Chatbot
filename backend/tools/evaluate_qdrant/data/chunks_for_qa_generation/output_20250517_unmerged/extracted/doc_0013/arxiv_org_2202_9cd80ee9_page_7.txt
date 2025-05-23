@@ -1,0 +1,13 @@
+--- DNA extraction and the NGS experiment: F.A., W.S., ---
+
+Author contributions Conceived and designed the experiments:
+
+H.M., K.I., and M.H.; performed subculturing and sampling: H.M. and K.I.; performed DNA extraction and the NGS experiment: F.A., W.S., M.M., C.S., and T.K.; analyzed the data: N.T., W.S., T.N., A.T., C.I., T.K., A.K., and H.S.; contributed reagents/materials/analysis tools: H.M., K.I., W.S., A.T., T.K., H.S., M.H., A.K., H.O., J.K., and H.K.; wrote the paper: H.M. and J.K.; revised the manuscript: H.M., H.S., S.M., M.H., M.H., H.O., J.K., and H.K.
+
+Data availability Raw files of the bacterial V1–V2 16S rRNA data are deposited in the DNA Data Bank of Japan (DDBJ) under NCBI Bio-Project accession numbers PRJDB11391 (PSUB014602) (BioSample accession numbers: SAMD00291237-SAMD00291242). Raw files of the bacterial genome data are also deposited in DDBJ under NCBI Bio-Project accession number PRJDB11391 (PSUB014602) (BioSample accession numbers:
+
+SAMD00422992-SAMD00422993). Raw files of the fungal ITS data are deposited in DDBJ under the NCBI Bio-Project accession number PRJDB13243 (PSUB01706) (BioSample accession numbers:
+
+SAMD00448670-SAMD00448671).
+
+Competing interests The authors declare no competing interests.

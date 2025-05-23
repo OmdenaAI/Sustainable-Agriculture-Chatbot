@@ -1,0 +1,73 @@
+--- J Gen Appl Microbiol ---
+
+10
+
+References
+
+65
+Niisawa, C. et al. Microbial analysis of a composted product of marine animal resources and isolation of bacteria
+antagonistic to a plant pathogen from the compost. J Gen Appl Microbiol 54, 149-158, doi:10.2323/jgam.54.149
+(2008).
+66
+Ishikawa, K. et al. Denitrification in soil amended with thermophile-fermented compost suppresses nitrate
+accumulation in plants. Appl Microbiol Biotechnol 97, 1349-1359, doi:10.1007/s00253-012-4004-5 (2013).
+67
+Miyamoto, H. et al. Thermophile-fermented compost as a possible scavenging feed additive to prevent
+peroxidation. J Biosci Bioeng 116, 203-208, doi:10.1016/j.jbiosc.2013.01.024 (2013).
+68
+Sawada, Y. et al. A novel method for single-grain-based metabolic profiling of Arabidopsis seed. Metabolomics
+13, doi:10.1007/s11306-017-1211-1 (2017).
+69
+Uchida, K. et al. Identification of a Unique Type of Isoflavone O-Methyltransferase, GmIOMT1, Based on
+Multi-Omics Analysis of Soybean under Biotic Stress. Plant Cell Physiol 61, 1974-1985, doi:10.1093/pcp/pcaa112
+(2020).
+70
+Kim, S. W. et al. Robustness of gut microbiota of healthy adults in response to probiotic intervention revealed
+by high-throughput pyrosequencing. DNA Res 20, 241-253, doi:10.1093/dnares/dst006 (2013).
+71
+Ondov, B. D. et al. Mash: fast genome and metagenome distance estimation using MinHash. Genome Biol 17,
+132, doi:10.1186/s13059-016-0997-x (2016).
+72
+Atarashi, K. et al. Ectopic colonization of oral bacteria in the intestine drives TH1 cell induction and
+inflammation. Science 358, 359-365, doi:10.1126/science.aan4526 (2017).
+73
+Shiokawa, Y., Misawa, T., Date, Y. & Kikuchi, J. Application of Market Basket Analysis for the Visualization of
+Transaction Data Based on Human Lifestyle and Spectroscopic Measurements. Analytical Chemistry 88, 2714-
+2719, doi:10.1021/acs.analchem.5b04182 (2016).
+74
+Shiokawa, Y., Date, Y. & Kikuchi, J. Application of kernel principal component analysis and computational
+machine learning to exploration of metabolites strongly associated with diet. Sci Rep 8, 3426,
+doi:10.1038/s41598-018-20121-w (2018).
+75
+Wei, F., Sakata, K., Asakura, T., Date, Y. & Kikuchi, J. Systemic Homeostasis in Metabolome, Ionome, and
+Microbiome of Wild Yellowfin Goby in Estuarine Ecosystem. Sci Rep 8, 3478, doi:10.1038/s41598-018-20120-x
+(2018).
+76
+Miyamoto, H. et al. A potential network structure of symbiotic bacteria involved in carbon and nitrogen
+metabolism of wood-utilizing insect larvae. Sci Total Environ, 155520, doi:10.1016/j.scitotenv.2022.155520
+(2022).
+77
+Rosseel, Y. lavaan: An R Package for Structural Equation. Journal of Statistical Software 48, 1-36 (2012).
+78
+Rosseel, Y. et al. Latent Variable Analysis. R package version0.6-9 (2021).
+79
+Hooper, D., Coughlan, J. & Mullen, M. R. Structural equation modelling: guidelines for determining model fit.
+Electron J Business Res Methods 6, 53-60 (2008).
+80
+Epskamp, S., Stuber, S., Nak, J., Veenman, M. & Jorgensen, T. D. Path Diagrams and Visual Analysis of Various
+SEM Packages' Output R package version1.1.2 (2019).
+81
+Mehta, M. P., Butterfield, D. A. & Baross, J. A. Phylogenetic diversity of nitrogenase (nifH) genes in deep-sea
+and hydrothermal vent environments of the Juan de Fuca Ridge. Appl Environ Microbiol 69, 960-970,
+doi:10.1128/AEM.69.2.960-970.2003 (2003).
+82
+Ogata, Y. et al. Complete Genome Sequence of Phascolarctobacterium faecium JCM 30894, a Succinate-
+Utilizing Bacterium Isolated from Human Feces. Microbiol Resour Announc 8, doi:10.1128/MRA.01487-18
+(2019).
+83
+Ichinose, S., Tagami, M., Muneta, T., Mukohyama, H. & Sekiya, I. Comparative sequential morphological
+analyses during in vitro chondrogenesis and osteogenesis of mesenchymal stem cells embedded in collagen gels.
+Med Mol Morphol 46, 24-33, doi:10.1007/s00795-012-0005-9 (2013).
+84
+Nishida, A. et al. Bacillus hisashii sp. nov., isolated from the caeca of gnotobiotic mice fed with thermophile-
+fermented compost. Int J Syst Evol Microbiol 65, 3944-3949, doi:10.1099/ijsem.0.000516 (2015).

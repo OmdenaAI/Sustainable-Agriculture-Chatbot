@@ -1,0 +1,11 @@
+--- policy model, the Canadian Regional Agricultural Model (CRAM), to agri- ---
+
+Abstract Farmers, governments and other stakeholders in Canada’s agricultural industry have become increasingly aware of the need to integrate envi- ronmental factors into their decision-making processes.Decision-makers at all levels share a common need for objective information on the cur- rent environmental performance of the agricultural sector, to determine whether this performance is satisfactory and how it is likely to behave in response to the decisions they make.
+
+Agriculture and Agri-Food Canada (AAFC) has developed a set of agri- environmental indicators (AEIs) specific to the agriculture and agri-food sector to assess how well agriculture and agri-food systems manage and conserve natural resources and how compatible they are with the natu- ral systems and processes in the broader environment.These AEIs are a practical means of assessing environmental sustainability by combining current scientific knowledge and understanding with available informa- tion on resources and agricultural practices.
+
+Understanding, and communicating how changes to agricultural policies and programs will impact the sector’s future economic and environ- mental outcomes is critical for the policy development and evaluation process. Achieving this insight necessitates linking science to analytical policy tools.Agriculture and Agri-Food Canada has used a multi-discipli- nary approach to develop an integrated modelling capacity by linking a policy model, the Canadian Regional Agricultural Model (CRAM), to agri- environmental indicators. In recent years, this science-based analytical approach has proven very useful for agricultural policy analysis, for example to assess possible greenhouse gas (GHG) mitigation strategies and to support the selection of quantitative environmental performance targets for a major federal/provincial agreement.
+
+Keywords: Agriculture and Agri-Food Canada, agri-environmental indi- cators, environmental performance, reporting, integrated modelling, Canadian Regional Agricultural Model,environmental sustainability,ana- lytical policy tools.
+
+Sustainable Agriculture – From Common Principles to Common Practice 172

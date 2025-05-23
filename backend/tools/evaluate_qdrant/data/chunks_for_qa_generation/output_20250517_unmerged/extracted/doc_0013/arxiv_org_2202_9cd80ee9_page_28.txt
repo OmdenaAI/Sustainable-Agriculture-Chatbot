@@ -1,0 +1,3 @@
+--- Page 28 ---
+
+Thaumarchaeota_H Verrucomicrobia_H Gemmatimonadetes_H Planctomycetes_H Proteobacteria_H Firmicutes_H Paenibacillus_H Geobacillus_H Phycicoccus_H Legionella_H Ramlibacter_H Undefined_L Marmoricola_H L_3.Hydroxyanthranilate_L L_DPPH_L L-2-Aminoadipate_L L_Threo-3-Methylaspartate_L L_Methionine.sulfoxide_L R_Carotenoid_H R_DPPH_H R_Guanine_L Red_H T_rich_taste_H L_SPAD_H a c b d T_immaturity_L T_flavor_H Fig. S7 Association network in (a) appearance and taste, (b) leaves and root metabolites, (c) soil bacterial phyla and (d) genera (lift values > 2.0).

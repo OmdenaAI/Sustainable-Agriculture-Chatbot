@@ -1,0 +1,15 @@
+--- Page 99 ---
+
+Third Stage: Set out the initial hypotheses and choices for the construction of the indicators and their calculation method The question of a hypothesis and method of calculation Any method based on indicators implies an initial formulation of a hypothesis which will be tested,then the choice of a method of calcula- tion is determined and the determination of reference values made.
+
+These reference values or thresholds are necessary when developing a tool to assist in decision-making/action.
+
+In the IDEA method, the initial hypothesis postulates that it is possible to quantify the various components of a farming system by giving them a numerical score and then weighing and aggregating the information obtained to give the farm a score on each of the three scales being used to qualify sustainability:an agro-ecological scale,a socio-territorial scale and an economic scale.
+
+Concerning the calculation method, it is based on a points system with an upper limit.The three sustainability scales are of equal weight and go from 0 to 100 points.All the information is translated into basic sustainability units determining the score allocated to each indicator.Maximum scores are set for each indicator in order to set an upper limit on the total number of sus- tainability units.The score of a farm on each of the three sustainability scales is the cumulative number of basic sustainability units (or points) awarded for the different indicators in the scale in question.The higher the score,the more sustainable the farm is considered being on the scale in consideration.
+
+In the same way,each component is also limited to a ceiling value (generally 33 points).This calculation method allows farms a very large number of pos- sible technical combinations resulting in the same degree of sustainability.
+
+Indeed,even though certain principles are common to all sustainable farm- ing systems, we consider that there is not just one single model.The wide variety of contexts and production environments and the diverse production systems and technical combinations encountered mean that there are a very large number of possible ways of making progress.Certain technical or struc- tural weaknesses can therefore be partly made up for by options that are more compatible with the general organization of the production system.
+
+The question of aggregation to give a single global score to qualify sustainability Once the principle of awarding sustainability points is accepted, two questions are raised: on the one hand, that of the aggregation of these Sustainable Agriculture – From Common Principles to Common Practice 86

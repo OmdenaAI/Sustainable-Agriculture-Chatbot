@@ -1,0 +1,11 @@
+--- Page 47 ---
+
+Abstract This paper first analyzes potential shortcomings of current sustainability assessment approaches as found in literature.These shortcomings relate to: (i) integrating the multi-functionality of agriculture; (ii) selection of and linkages among the indicators at different scales; (iii) assessing sus- tainability from an integrated perspective; and (iv) the application of the obtained results. To overcome some of these problems we suggest developing a Sustainability Solution Space (SSP) in a transdisciplinary process. The SSP process consists of a prerequisite phase, a systemic module, a normative module and an integrative module. At each step, a transdisciplinary process can be envisioned. In the prerequisite phase, the goals for the case to be assessed are defined in a consensus-building process.The systemic module provides a sufficient system description by selecting indicators and analyzing inter-linkages among the indicators.
+
+The normative module aims at defining sustainability ranges for each of the selected indicators and thus, incorporates scientific judgments, as well as values and preferences of stakeholders. Finally, the integrative module combines the systemic and normative aspects and provides a Sustainability Solution Space for the agricultural sector of a defined region. The transdisciplinary process ensures that the knowledge and values of the regional stakeholders are included. This is particular rele- vant for the selection and assessment of socio-economic indicators.
+
+These indicators might significantly vary in their assessment regarding sustainability across cultures, so that comparability and benchmarking might be restricted to culturally homogeneous groups. This indicates that also during the interpretation of the results and the development of improvement strategies,stakeholders ought to be involved.A transdisci- plinary process, thus, is likely to improve the soundness of the sustain- ability assessment and to support the implementation of the elaborated strategies.
+
+Keywords: Sustainability assessment, agricultural system, transdisciplinary processes.
+
+Sustainable Agriculture – From Common Principles to Common Practice 34

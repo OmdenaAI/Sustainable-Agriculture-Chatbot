@@ -1,0 +1,49 @@
+--- ROS, Calcium, and Electric Signals: Key Mediators of Rapid Systemic Signaling ---
+
+22.
+
+Gilroy, S. et al. ROS, Calcium, and Electric Signals: Key Mediators of Rapid Systemic Signaling in Plants. Plant Physiol. 171, 1606–1615 (2016). 23.
+
+Johns, S., Hagihara, T., Toyota, M. & Gilroy, S. The fast and the furious: rapid long-range signaling in plants. Plant Physiol. 185, 694–706 (2021). 24.
+
+Brophy, J. A. N. & Voigt, C. A. Principles of genetic circuit design. Nat. Methods 11, 508–520 (2014). 25.
+
+Xia, P.-F., Ling, H., Foo, J. L. & Chang, M. W. Synthetic genetic circuits for programmable biological functionalities. Biotechnol. Adv. 37, 107393 (2019). 26.
+
+Bittihn, P., Din, M. O., Tsimring, L. S. & Hasty, J. Rational engineering of synthetic microbial systems: from single cells to consortia. Curr. Opin. Microbiol. 45, 92–99 (2018). 27.
+
+Christie, J. M. & Zurbriggen, M. D. Optogenetics in plants. New Phytol. 229, 3108–3115 (2021). 28.
+
+Andres, J., Blomeier, T. & Zurbriggen, M. D. Synthetic Switches and Regulatory Circuits in Plants. Plant Physiol. 179, 862–884 (2019). 29.
+
+Lindner, F. & Diepold, A. Optogenetics in bacteria – applications and opportunities. FEMS Microbiol. Rev. 46, fuab055 (2022). 30.
+
+Berendsen, R. L., Pieterse, C. M. J. & Bakker, P. A. H. M. The rhizosphere microbiome and plant health. Trends Plant Sci. 17, 478–486 (2012). 31.
+
+Chaparro, J. M., Badri, D. V. & Vivanco, J. M. Rhizosphere microbiome assemblage is affected by plant development. ISME J. 8, 790–803 (2014). 32.
+
+White, R. A. et al. The state of rhizospheric science in the era of multi-omics: A practical guide to omics technologies. Rhizosphere 3, 212–221 (2017). 33.
+
+Bandara, C. D. et al. Microbial Identification, High-Resolution Microscopy and Spectrometry of the Rhizosphere in Its Native Spatial Context. Front. Plant Sci. 12, (2021). 34.
+
+Prosser, J. I. Dispersing misconceptions and identifying opportunities for the use of ‘omics’ in soil microbial ecology. Nat. Rev. Microbiol. 13, 439–446 (2015). 35.
+
+Biswas, R. & Sarkar, A. ‘Omics’ Tools in Soil Microbiology: The State of the Art. in Advances in Soil Microbiology: Recent Trends and Future Prospects: Volume 1: Soil-Microbe Interaction (eds.
+
+Adhya, T. K., Lal, B., Mohapatra, B., Paul, D. & Das, S.) 35–64 (Springer, Singapore, 2018). doi:10.1007/978-981-10-6178-3_3. 36.
+
+Hatzenpichler, R., Krukenberg, V., Spietz, R. L. & Jay, Z. J. Next-generation physiology approaches to study microbiome function at single cell level. Nat. Rev. Microbiol. 18, 241–256 (2020). 37.
+
+Wang, D. et al. Advances in single cell Raman spectroscopy technologies for biological and environmental applications. Curr. Opin. Biotechnol. 64, 218–229 (2020). 38.
+
+Li, Y. et al. Toward Better Understanding of EBPR Systems via Linking Raman-Based Phenotypic Profiling with Phylogenetic Diversity. Environ. Sci. Technol. 52, 8596–8606 (2018). 39.
+
+Majed, N., Matthäus, C., Diem, M. & Gu, A. Z. Evaluation of intracellular polyphosphate dynamics in enhanced biological phosphorus removal process using Raman microscopy. Environ. Sci.
+
+Technol. 43, 5436–5442 (2009). 40.
+
+Wang, D. et al. Intracellular polyphosphate length characterization in polyphosphate accumulating microorganisms (PAOs): Implications in PAO phenotypic diversity and enhanced biological phosphorus removal performance. Water Res. 206, 117726 (2021). 41.
+
+Akbari, A. et al. Unrevealed roles of polyphosphate-accumulating microorganisms. Microb.
+
+Biotechnol. 14, 82–87 (2021).

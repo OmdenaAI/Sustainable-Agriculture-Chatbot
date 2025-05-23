@@ -1,0 +1,46 @@
+--- Page 10 ---
+
+Accumulibacter, Candidatus Phosphoribacter (previously Tetrasphaera), and Dechloromonas.79 EBPR
+depends on cycling between anaerobic and aerobic conditions to enrich PAOs. Under anaerobic conditions,
+PAOs consume carbon substrates such as volatile fatty acids, glucose or amino acids and store them as
+polyhydroxyalkanoates (PHA), glycogen or free amino acids.80–83 Polyphosphate is a source of energy used
+to synthesize these carbon storage molecules, and its catabolism results in release of inorganic
+orthophosphate (Pi) from the cells. Under aerobic conditions, stored carbon is consumed to produce energy
+for cell growth and reproduction. In the process, polyphosphate stores are replenished, resulting in a net
+removal of phosphorus from the wastewater. After settling, collecting, and treating the microbial biomass
+(called biosolids in the wastewater industry) that is rich in phosphorus, it is often applied to agricultural
+lands. The forms of phosphorus, such as poly-P, are more bioavailable to the soil and plants than is
+chemically precipitated phosphorus. The intracellular poly-P is slowly degraded and released to the soil and
+plants (Fig. 6b). Digesting the settled biomass in anaerobic digesters releases the poly-P as orthophosphate,
+which can then be converted into field-ready fertilizers such as struvite at WRRFs. To the best of our
+knowledge, outside of the wastewater treatment field, there are no other applications of PAOs to remove
+phosphorus from aqueous matrices.
+
+PAOs may play a role in P transformations in natural environments, including agricultural environments
+and those adjacent to agricultural settings.41 Biologically-derived poly-P is ubiquitous in nature, though the
+contribution of specific PAOs in P cycling in natural environments is not well understood.41,84 However,
+there is evidence of PAO-mediated phosphorus cycling in these environments. Saia et al. conducted ex-situ
+experiments on native stream biofilms, demonstrating characteristic phosphorus uptake and release
+capabilities by these microbial communities.85 Coupled with evidence of intracellularly-stored poly-P, this
+study demonstrated that poly-P accumulators in freshwater environments may contribute to phosphorus
+cycling, particularly during diel oxygenic conditions. Furthermore, Taylor et al. demonstrated that stream
+biofilms in nutrient-depleted sites stored more intracellular poly-P than those in nutrient-rich sites.86 This
+study suggested that microbial communities in environments with higher legacy phosphorus store less poly-
+P. PAOs identified in EBPR have also been identified in sediments. Watson et al. detected Ca.
+Accumulibacter in Columbia River estuary sediments that exhibited an increase in poly-P during the day.87
+Understanding the roles of PAOs for phosphorus transformations in natural environments and specifically
+how PAOs contribute to phosphorus cycling in agricultural soils is an opportunity for future research. By
+advancing understanding of both biological and physical-chemical phosphorus transformation processes,
+biologists and engineers can work together to better harness these powerful systems to improve phosphorus
+management by transforming phosphorus into forms that are more conducive to removal (to enhance
+protection of environmental waters from eutrophication), recovery (to encourage a circular phosphorus
+economy), and reuse (to support global food production).
+
+Integrating stakeholder perceptions and needs into research and innovation for phosphorus
+sustainability
+Developing sustainable solutions for phosphorus management requires new technological innovations and
+improved management practices, as well as a deeper understanding and integration of stakeholder needs
+and priorities. By integrating stakeholder needs and priorities within research and innovation cycles, the
+proportion of technologies, management practices and innovations (e.g. new crop varieties, smart fertilizers,
+removal/recovery systems) that will ultimately be adopted by end-users increases substantially. In addition,
+better understanding and incorporating stakeholder needs and priorities within early phases of research and

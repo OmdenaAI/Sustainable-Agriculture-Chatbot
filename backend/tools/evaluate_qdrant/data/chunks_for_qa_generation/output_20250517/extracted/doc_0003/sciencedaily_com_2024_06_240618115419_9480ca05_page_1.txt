@@ -1,0 +1,19 @@
+--- Advanced artificial intelligence: A revolution for sustainable agriculture ---
+
+Advanced artificial intelligence: A revolution for sustainable agriculture The rise of advanced artificial intelligence (edge AI) could well mark the beginning of a new era for sustainable agriculture. A recent study proposes a roadmap for integrating this technology into farming practices. The aim? To improve the efficiency, quality and safety of agricultural production, while addressing a range of environmental, social and economic challenges.
+
+One of the main objectives of sustainable agricultural practices is to efficiently feed a growing world population. Digital technology, such as artificial intelligence (AI), can bring substantial benefits to agriculture by improving farming practices that can increase the efficiency, yield, quality and safety of agricultural production. Edge AI refers to the implementation of artificial intelligence in an advanced computing environment. "This technology enables calculations to be carried out close to where the data is collected, rather than in a centralized cloud computing facility or off-site datacenter," explains Moussa El Jarroudi, researcher in Crop Environment and Epidemiology at the University of Liège (Belgium). This means devices can make smarter decisions faster, without connecting to the cloud or off-site datacenters." In a new study published in the scientific journal Nature Sustainability, a scientific team led by Moussa El Jarroudi, demonstrates how to overcome these challenges and how AI can be practically integrated into agricultural systems to meet the growing needs of sustainable food production. "Deploying AI in agriculture is not without its challenges. It requires innovative solutions and the right infrastructure. Experts like Professor Said Hamdioui of Delft University of Technology have developed low-energy systems capable of operating autonomously." Although challenges remain, particularly in the context of climate change, the prospects opened up by these advances are promising.
+
+The University of Liège played a crucial role in this study, contributing cutting-edge resources and expertise in the fields of artificial intelligence and sustainable agriculture. ULiège researchers have developed innovative edge AI solutions and conducted in-depth analyses of their potential impact on agricultural practices.
+
+A new era for agriculture "The results of our study are part of a growing trend to integrate advanced technologies into agriculture to achieve sustainability goals," resumes Benoît Mercatoris, co-author of the study and agronomy researcher at ULiège. The adoption of edge AI can transform agricultural practices by increasing resource efficiency, improving crop quality and reducing environmental impacts. This technology is positioning itself as an essential pillar for the future of sustainable agriculture." The applications are vast: improving crop management with real-time data, optimizing the use of resources such as water and fertilizers, reducing post-harvest losses and increasing food safety, or enhancing monitoring and response capabilities to changing weather conditions. This study paves the way for smarter, more environmentally-friendly agriculture, thanks to edge AI. A technological revolution that could well transform the way we produce and consume.
+
+Story Source:
+
+Materials provided by University of Liège . Note: Content may be edited for style and length.
+
+Journal Reference :
+
+Cite This Page :
+
+Explore More

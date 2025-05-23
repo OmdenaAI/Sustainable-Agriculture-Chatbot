@@ -1,0 +1,52 @@
+--- Carrot seeds (Takii Seeds Phytorich Series, Kyo Kurenai, Takii Seeds Co., Ltd.) were sown ---
+
+2
+
+Cultivation and harvest survey
+Carrot seeds (Takii Seeds Phytorich Series, Kyo Kurenai, Takii Seeds Co., Ltd.) were sown
+in two rows located 5 cm apart on the cultivation area (0.6 m x 3 m = 18 m2), and the rows
+were covered with nonwoven fabric after sowing. A slow-release 7-9-7 fertilizer (Sumika
+Agrotech Co., Ltd.) (120 g/m²), PK 4-15-30-1 (Sumitomo Chemical Co., Ltd.) (40 g/m²),
+and bitter lime (Sumika Agrotech Co., Ltd.) (100 g/m²) were applied as the basal fertilizer
+three days before sowing, and additional nitrate-phosphorus-potassium fertilizer (Sumika
+Agrotech Co., Ltd.) was applied at 50 g/0.75 m² 45 days after sowing. In the compost zone,
+thermophile-fermented compost powder (Miroku Co., Ltd., and Keiyo Gas Energy
+Solution Co., Ltd., Japan) 65 was applied at 15 g/m² simultaneously with the basal fertilizer.
+The chemical properties were as follows66: total C (carbon), 38.6 ± 1.9%; total N (nitrogen),
+3.6 ± 0.5%; total P (phosphorus), 2.0 ± 0.5%; total K (potassium), 1.0 ± 0.1%; total Ca
+(calcium), 1.0 ± 0.1%; total Mg (magnesium), 0.7 ± 0.2%; and H2O (moisture), 16.0 ±
+1.7%. The plants were harvested twice, in November and February, and their stem and leaf
+weight, root weight, root diameter, and root length were measured.
+
+RGB color image analysis
+The background color of photographs was changed to black for the image analysis of
+carrots with Adobe Photoshop software (https://www.adobe.com) and Spyder
+(https://www.python.ambitious-engineer.com/archives/2105) software in Python 3.8
+(https://www.python.org). After first changing the background white (red = 255, green =
+255, blue = 255) using Photoshop, the white background color was converted to black (red
+= 0, green = 0, blue =0) by using Spyder. Next, after applying the OpenCV library, the
+RGB color matrix values of the targeted portion (Fig. 1d) were calculated and extracted
+using the functions “imread” and “imwrite” for reading and writing images. The averages
+of the calculated values were used as the data of each carrot in the RGB color image
+analysis.
+
+Taste survey
+The harvested carrot roots were randomly sampled and finely ground in a food processor,
+and the obtained juice was used for the survey. The samples were subjected to taste
+evaluation via a nondouble-blinded method according to the following indices: Sweet,
+sweetness; Rich taste, intensity of taste; Immaturity, green odor peculiar to carrots; Flavor,
+fragrance (scent) of the roots of the carrots.
+
+Analysis of carotenoids
+In brief, carotenoid extraction was performed with the exception of some minor
+modifications
+according
+to
+the
+official
+protocol
+(https://www.mext.go.jp/a_menu/syokuhinseibun/1368931.htm). First, an accurately
+weighed edible sample (1.00 g) of each carrot was chopped into a few pieces, and the
+pooled samples were placed in a plastic tube (50 mL). Then, 1.0 mL of a 1% (w/v) sodium
+chloride (NaCl) solution and 15 mL of 3% (w/v) pyrogallol/EtOH were added to the tube,
+and the sample was well mixed using a Polytron homogenizer (Kinematica, Luzern,

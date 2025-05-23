@@ -1,0 +1,9 @@
+--- Source: Adapted from OECD (1997) ---
+
+nomic, social and environmental factors that determine the environ- mental outcomes from farming, as illustrated by the DSR model. The OECD works seeks to explore the environmental pathways outlined in the DSR model across OECD countries over the period 1990–2004 for primary agriculture.
+
+Not all the DSR pathways identified in Figure 1 are covered in the OECD work. In particular, the impact of policies, market developments and structural changes on the environmental performance of agriculture are outside the scope of OECD work. Moreover, the work does not examine the impacts of changes in environmental conditions on agriculture (e.g., native and non-native wild species, droughts and floods, climate change); the impact of genetically modified organisms on the environ- ment; or the impact of using farm chemicals on human health and wel- fare.For full coverage of the development of OECD work on AEIs,readers should refer to the publications starting in 1997,which include concepts behind the indicators and details of the DSR framework.
+
+Figure 1: The driving force-state-response framework: Coverage of indica- tors.
+
+Source: Adapted from OECD (1997) Ecosystem Environmental Economic and social Farm inputs and outputs Consumer reactions Agro-food chain Responses Driving forces State Farmer behaviour Government policies Health and welfare Natural resources Farm management Agricultural production Land use Nutrient use Pesticide use Energy consumption Water use Pesticide risks Soil quality Water quality Air quality Biodiversity Sustainable Agriculture – From Common Principles to Common Practice 193

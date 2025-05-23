@@ -1,0 +1,11 @@
+--- Group on Earth Observations (GEO) ---
+
+5.2. Observing community Group on Earth Observations (GEO) GEO is an international partnership leading a worldwide effort to build a Global Earth Observation System of Systems (GEOSS) over the next 10 years. GEOSS will work with and build upon existing national, regional, and international systems to provide comprehensive, coordinated Earth observations from thousands of instruments worldwide; transforming the data they collect into vital information for society.
+
+Global Monitoring for Environment and Security (GMES) and for Food Security (GMFS) GEMS represents in simple terms a concerted effort to bring data and information providers together with users, so they can better under- stand each other and agree on how to make environmental and securi- ty-related information available to the people who need it. A challenge for GMES is to gather relevant data and provide innovative,cost-effective, sustainable and user-friendly services,which will enable decision-makers to better anticipate and integrate crisis situations into the management of environment and security.
+
+GMFS aims to:provide earth observation-based services; and encourage partnerships in monitoring Global Food Security and related environ- mental processes.The latter is completed by bringing data and informa- tion providers together,in order to assist stakeholders,nations and inter- national organizations in improving their implementation of sustainable development policies.
+
+Terrestrial Ecosystem Monitoring Sites (TEMS) TEMS is an international directory of sites (ca. 2050) and networks (40) that carry out long-term terrestrial monitoring (ca.120 standardized vari- ables) and research activities.The database provides information on the “who, what and where”that can be useful to both the scientific commu- nity and policy-makers.TEMS also provides a mature framework for qual- itative change assessment, scientific datasets registration and sharing as well as satellite sensors ground validation.
+
+Sustainable Agriculture – From Common Principles to Common Practice 231

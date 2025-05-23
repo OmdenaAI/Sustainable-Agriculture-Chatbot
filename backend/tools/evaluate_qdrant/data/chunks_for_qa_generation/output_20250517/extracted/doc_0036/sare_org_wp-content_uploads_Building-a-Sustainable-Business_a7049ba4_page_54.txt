@@ -1,0 +1,105 @@
+--- Comparison of Financial Results Based on ---
+
+on a cash rather than accrual basis. Most farmers find ways of continuously
+pushing income forward, consistently building inventories and underrecognizing
+income on their tax statements. So, by using the traditional method of many
+financial institutions of laying several Schedule F’s side by side, you are likely
+to underestimate the financial progress you have been making. On the other
+hand, you could be overestimating performance if assets are being used up and
+not replaced.
+Looking ahead, the Minars’ Worksheet
+2.12: Income Statement (Figure 23) offers
+a real-life example of how tax information
+can underestimate financial performance.
+For 2000, they reported a net farm income
+of $28,147 on their Schedule F, but their net
+farm income calculated on an accrual basis
+was $65,083 (Numbers have been changed to
+protect confidentiality). So cash vs. accrual
+information is one of the first adjustments to
+consider when you begin to evaluate your past
+financial performance and consider accounting
+alternatives.
+Another concern is market vs. cost asset
+valuation. Agricultural lenders have
+traditionally evaluated farm financial
+performance based on the market value of
+farm assets. This gives the lender a basis
+for evaluating the risk faced by the lending
+institution and the collateral available
+in case a borrower defaults on a loan.
+Market valuation of assets provides the
+information demanded by external users
+of your financial information. What about
+your situation? Do market values give
+you the information you need for internal
+evaluation of progress? Using market
+values mixes net worth growth from farm
+earnings with growth from “paper changes” in the value of assets. So if you lay
+out your financial history using market values for assets, you can never be quite
+sure how profitable your farming operations have been, or even if your farm has
+been profitable at all.
+Figure 21 shows a comparison of the net worth picture for a hypothetical
+farm using cost vs. market values on assets. The cost column values assets at
+their original purchase cost minus depreciation. This results in a cost net worth,
+which reflects only what has been invested from outside the farm (contributed
+2
+TASK
+53
+BUILDING A SUSTAINABLE BUSINESS
+
+Schedule F
+Accrual
+Gross cash farm income
+$ 123,720
+$ 123,720
+Cash farm operating expenses
+–108,564
+–108,564
+Accrual adjustment
+Change in crop inventory
+
+16,298
+Change in livestock inventory
+
+–3,656
+Change in accounts receivable
+
+1,950
+Change in accounts payable
+
+2,450
+Total inventory change
+
+17,042
+Depreciation
+–6,745
+–6,745
+Net farm income
+8,411
+25,453
+Figure 20.
+Comparison of Financial Results Based on
+Tax and Accrual Information
+Figure 21.
+Comparison of Net Worth Based on Cost and Market
+Values for Assets
+Cost Valuation
+$ 267,438
+–105,367
+162,071
+
+Market Valuation
+$ 358,590
+–105,367
+
+253,223
+91,152
+.......
+Total assets
+Total liabilities
+Contributed capital and retained earnings (a)
+Net worth or owner’s equity
+(b)
+Market valuation equity
+(c) = (b – a)

@@ -1,0 +1,15 @@
+--- Driving Force Parameter ---
+
+sorted by their affiliation to the sustainability dimension, indicator and whether they are considered as a State or Driving force parameter.
+
+Besides providing an overview of the sustainability situation in the RISE polygon, the standard output given to farmers covers processed infor- mation on 26 pages.
+
+Table 1: Indicators and parameters used in RISE to evaluate the sustainability of agricultural production.
+
+Dimension Indicator State Parameter Driving Force Parameter (SP) (DP) Natural Energy SP1: Environmental DP1: Energy-input per resources effect of the used hectare of farmland energy carrier DP2: Energy-input per work force Natural Water SP1: Water quantity DP1: Water quantity and resources and availability: productivity:
+
+SP1a: Based on the DP1a: Water usage and farm manager’s point productivity for plant of view production SP1b: Based on the DP1b: Water usage for data of WaterGAP animal husbandry SP2: Water quality DP2: Risk factors for water and stability of the quality quality:
+
+DP2a: Water pollution by SP2a: Based on the manure farm manager’s DP2b: Water pollution by point of view silage leachate SP2b: Based on an DP2c: Waste water “objective” source production and treatment/disposal DP2d: Water protection by soil conservation/cultivation DP2e: Soil permeability (nutrients/pollutants) Natural Soil SP1: Soil pH, DP1: Proportion of farmland resources salinization, water treated with pesticides, logging, soil analyzes. acidifying fertilizers or SP2: Erosion index: fertilizers with heavy metals.
+
+SP2a: Visible erosion DP2: Intensity of soil tillage SP2b: Erosion risk DP3: Salinization due to irrigation without appropriate drainage DP4: Nutrient depletion Sustainable Agriculture – From Common Principles to Common Practice 129

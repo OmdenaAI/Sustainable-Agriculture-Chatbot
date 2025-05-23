@@ -1,0 +1,17 @@
+--- Degree of Sustainability ---
+
+Last but not least,RISE may serve as a valuable instrument in education and training. Based on its holistic approach, it can serve to raise the under- standing of the complexity of sustainability in its three dimensions. It may increase conscience and awareness of sustainability issues, and initiate a change of mindset with relevant actors in agricultural production.
+
+RISE methodology The RISE analysis depicts ecological, economic and social aspects of the sustainability of agricultural production on the basis of twelve indicators, which are calculated from more than 60 parameters.
+
+State and driving force Each indicator contains parameters that either outline the State (S) of the system or describe a pressure on or Driving force (D) within the system, driving it in a certain development direction. State parameters have a value between 0 (worst case) and 100 (best case). Driving force parame- ters are also computed on a scale between 0 and 100,but since they are valued as a negative pressure on the system,0 depicts the best case and 100 the worst (biggest pressure).
+
+Figure1: Methodology to calculate the degree of sustainability.
+
+The Degree of Sustainability (DS) is calculated as DS=S–D (Figure 1).
+
+Taking into account S-parameters as well as D-parameters not only Degree of Sustainability (DS) Difference between State and Driving Force Values from –100 to +100.
+
+E.g.: pesticides with a high risk potential (S) and monocultures (D) reduce the DS for the indicator “Plant Protection” State (S) Measured (sometimes estimated) value for individual indicators Best case: 100 points Worst case: 0 points Driving Force (D) Estimation of the pressure on the State Best case: 0 points Worst case: 100 points E.g.: • risk of active ingredients • pest management system • existing buffer zones, etc.
+
+E.g.: • kg active ingredient/ha • crop rotation Induced response Induced response + - Sustainable Agriculture – From Common Principles to Common Practice 126

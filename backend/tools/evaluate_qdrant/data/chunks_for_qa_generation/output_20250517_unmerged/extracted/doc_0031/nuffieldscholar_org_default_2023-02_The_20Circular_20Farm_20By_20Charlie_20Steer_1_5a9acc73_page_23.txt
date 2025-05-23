@@ -1,0 +1,48 @@
+--- Fair Oaks Farm ---
+
+The Circular Farm by Charlie Steer
+A Nuffield Farming Scholarships Trust report generously sponsored by NFU Mutual Charitable Trust
+
+| 17
+Chapter 3: The Circular Farm – creating and capitalising on systems
+
+The previous chapter gave an insight into the possibilities different technologies give as moving parts
+in the farming system. To capitalise on circular systems, the ability to identify all the
+interconnections on the farm is key. Management by design is most important. Adoption of this
+‘Systems Thinking’ is key - it is always better to manage by design than default.
+The following case studies demonstrate the possibilities for farming business when systems thinking
+is employed, and dynamic complexity is embraced.
+Fair Oaks Farm
+Fair Oaks in Indiana is a remarkable setup. The beating heart of Mike and Sue McCloskey, Fair Oaks is
+a 38,000-cow dairy business, apart from the scale, the business is truly multifaceted. Two aspects
+worth mentioning, firstly the public-facing nature of the business. The farm has been dubbed the
+‘Disneyland of agricultural tourism.’ It has a Marriot hotel, restaurant, cowfé, and three adventures
+in crops, dairy, and pigs attracting half a million visitors per annum. The second is milk branding
+selling milk to Coke-a-Cola who process into an ultra-filtered, lactose free, high protein, long life milk
+called ‘Fairlife.’ The products under the Fairlife brand are aimed at the health, environmental and
+animal welfare conscious consumer.
+Setting aside the fascinating story of the tourism and supply chain aspects of the business, the
+McCloskeys have developed a circular system with value added at each step.
+•
+Focus on soil and animal health to drive efficient production.
+•
+Anaerobic digestion to produce biogas and renewable electricity from manures.
+•
+A compressed natural gas filling station to enable a fleet of trucks to be run on carbon
+negative fuel.
+•
+A bio fertiliser plant in collaboration with Gary Zimmer’s company Midwestern Bio-ag
+producing a range of bio fertiliser products.
+The farm is spread over 25,000 acres, which is used to grow the feedstuffs for the diary, this cropped
+land is fertilised by the refined wastes from the livestock. The technology on display at Fair Oaks to
+add value from the back end of the cow to the field involves several different processes.
+1. The manure is fed directly into a plug flow anaerobic digester manufactured by US company
+DVO. The outputs from the digester are biogas, which is scrubbed to remove the carbon
+dioxide and hydrogen sulphide. A portion of this is burned in a gas engine to produce
+electricity to power and heat the farms. Any surplus is exported to the electricity grid. The
+remaining bio-methane is compressed to 275 bar (compressed using electricity from the gas
+engine). It is then used in what was one of the first dairy to bio-methane filling stations in
+the US opening in 2011. Adapted HGVs use the biomethane instead of diesel, saving up to
+100% of carbon emissions per km travelled.
+2. Cows are bedded on sand which requires separation from the digested manure using a sand
+separation system. An inclined auger in a trough, uses gravity to settle the sand to the

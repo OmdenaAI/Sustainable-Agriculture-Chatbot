@@ -1,0 +1,61 @@
+--- 3.3. Social Benefits ---
+
+14 | Smart Prosperity Institute
+Figure 9: Direct emissions for food-related industries by final demand, 2015 75
+Greenhouse Gases
+The agriculture and agri-food sector emits greenhouse gases at
+all stages of the supply chain.76 In 2019, the agriculture sector
+contributed to 8.1% of the total CO2e emitted in Canada.77 A
+majority of these emissions are generated during crop production
+and by livestock (Figure 9).78 Food waste emit 56.5 million tonnes
+of CO2e, of which 22.2 million tonnes is deemed potentially
+avoidable and 34.3 million tonnes as likely unavoidable.79 Sources
+of GHGs in agriculture and agri-food supply chain include burning
+of fossil fuels for machinery for primary production (tractors and
+vehicles), transportation (trucks, generators for climate control), and
+the generation of electricity for food processing (milling, baking,
+drying), storage (refrigeration), and retail (refrigeration, lighting).
+Additional emissions come from soils as a result of microbial activity
+that increases with fertilizer application, from ruminating livestock,
+and from the decomposition of organic waste.
+A more circular agriculture and agri-food system can reduce
+GHG emissions through various pathways. By encouraging the
+use of renewable energy, the circular economy can reduce the
+dependence on fossil fuels for various uses through the agriculture
+and agri-food economy. Regenerative agricultural practices such as
+no-till and cover cropping can reduce emissions from soil. Further,
+the use of production inputs made from waste material can reduce
+the overall energy required for production. Increasing process
+optimization during processing, manufacturing, transportation and
+distribution can also lead to energy efficiency. Finally, reducing
+food loss and waste can reduce methane emissions from organic
+waste decomposition in landfills.
+
+Land Use
+A potential impact of the Canadian government’s goal of
+increasing agricultural and agri-food exports is that more land
+may be converted to agriculture. In Canada, the total area of
+farms has been relatively consistent, declining slightly between
+1996 and 2016 from 168 million acres to 158 million acres.80
+This has been managed by increasing productivity. However,
+the increase in production to reach Canada’s export goal may
+well require converting new land for agriculture use. This would
+result in emissions of carbon stores and biodiversity losses.
+The application of circular practices at the primary production
+level can minimize this land-use effect. Researchers at
+Wageningen University in the Netherlands stress that applying
+circular economy principles to agricultural production can
+increase productivity and resilience, thereby reducing the
+amount of land needed to produce the same amount of food.81
+3.3. Social Benefits
+Social benefits that emerge from the implementation of circular
+practices in the agriculture and agri-food sector economy come
+indirectly out of enhanced environmental health, increased
+availability of food and the creation of jobs.
+Food and beverage manufacturing, 7%
+Crop production, 45%
+Animal production, 42%
+Food service and drinking places, 1%
+Fishing, hunting and trapping, 1%
+Farm products, and food and beverage wholesale
+and retail trade, 3%

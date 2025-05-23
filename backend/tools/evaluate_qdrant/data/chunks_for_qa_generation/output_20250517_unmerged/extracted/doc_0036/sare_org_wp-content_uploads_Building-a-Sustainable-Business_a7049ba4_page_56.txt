@@ -1,0 +1,21 @@
+--- on the Minars’ FINAN analysis ---
+
+solvency: the income statement, the cash flow statement, the balance sheet, and the statement of owner’s equity. We will discuss the income statement and balance sheet in detail, since these are probably the most important for farm business analysis.
+
+Income Statement. The income statement is a basic tool used to determine farm income for the past year; it shows whether or not your business has generated sufficient income to cover family living and tax expenses.
+
+Worksheet 2.12: Income Statement provides a basic structure for your income statement. Once again, the example provided here is based on the Minars’ FINAN analysis for 2000, although some numbers have been changed to protect their confidentiality.
+
+Use Worksheet 2.12 to develop historical net farm income statements from your available records.
+
+Begin by listing gross revenue from market livestock sales, crop sales, services, government payments, insurance claims, patronage dividends, etc. Be sure to include any gains or losses from the sale of culled breeding stock, as well as the change in the quantity of raised breeding stock. Developing an Income Statement (available from Oklahoma Cooperative Extension Service, see “Resources”) details how to calculate breeding stock gains and losses.
+
+Next, list all farm business expenses, including purchased livestock, changes in purchased feed inventories, accounts payable, non-current liabilities, and depreciation expenses. Your net farm income is equal to the value of gross farm revenue minus total farm expenses.
+
+Worksheet 2.12 Use this worksheet as a guide for constructing income statements for the past several years. Where possible, include itemized revenue and expense details. Suggested crop and livestock expense categories are listed on Worksheet 4.17.
+
+You may want to use a computerized package such as FINPACK to collect and process the information needed for your income statement.
+
+Income Statement For the period beginning and ending Gross farm income Total cash operating expenses – Inventory changes Crops and feed (ending – beginning) +/– Market livestock (ending – beginning) +/– Accounts receivable (ending – beginning) +/– Prepaid expenses and supplies (ending – beginning) +/– Accounts payable (beginning – ending) +/– Accrued interest (beginning - ending) +/– Total inventory change +/– Depreciation – Net farm income from operations = 1/1/2000 12/31/2000 27,427 12,821 1,181 -4,424 -69 — $ 319,132 271,715 36,936 19,270 $ 65,083 2 TASK 55 BUILDING A SUSTAINABLE BUSINESS Figure 23.
+
+Example from Cedar Summit Farm—Worksheet 2.12:  Income Statement SOME NUMBERS HAVE BEEN CHANGED TO PROTECT CONFIDENTIALITY. .......

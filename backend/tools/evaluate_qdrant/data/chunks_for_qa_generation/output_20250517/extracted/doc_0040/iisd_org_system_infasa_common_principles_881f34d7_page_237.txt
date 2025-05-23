@@ -1,0 +1,11 @@
+--- required. Indicators should be SMART: Specific, Measurable (preferably ---
+
+data collection;and limited geo-referencing of statistical data.Such con- straints result in most studies using largely the same data, reaching largely the same conclusions and therefore producing a slow rate of pol- icy adjustment and implementation.
+
+Confusion also exists between various set of indicators (Table 3).
+
+Obviously some indicators are common in order to create synergies and avoid the duplication of efforts. Therefore a judicious selection is required. Indicators should be SMART: Specific, Measurable (preferably cheaply), Achievable, Relevant, Time-bound, available or at least observ- able/obtainable, socially and politically acceptable.
+
+Table 3: Major list of indicators related to sustainable agriculture and development.
+
+Major list of indicators related to sustainable Total number agriculture and development of indicators Agriculture and the Environment in the EU-15 – the IRENA Indicator Report (2005) 35 European Environmental Indicators (EU) – core set of indicators (2005) 37 Organisation for Economic Co-operation and Development (OECD) – agri-environmental indicators (2001) 39 UN Indicators of Sustainable Development – additional indicators (2005) 45 UN Millennium Indicators Database (2005) 48 UN Indicators of Sustainable Development – core indicators (2005) 54 UN Water Corporate Database of key indicators (2006) 64 Land Degradation Assessment in Drylands (LADA) – indicators toolbox (2005) 84 World Bank Development Indicators on agriculture and development (2006) 98 Terrestrial Ecosystem Monitoring Sites (TEMS) – environmental indicators (2006) 120 European Environmental Indicators (EU) – other published indicators (2001 to 2004) 196 Sustainable Agriculture – From Common Principles to Common Practice 224

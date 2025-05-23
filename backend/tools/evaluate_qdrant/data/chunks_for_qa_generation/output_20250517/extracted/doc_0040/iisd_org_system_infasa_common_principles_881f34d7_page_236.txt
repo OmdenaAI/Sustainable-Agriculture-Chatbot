@@ -1,0 +1,35 @@
+--- difference between World Bank and ---
+
+Table 2: Technical and institutional constraints and solutions for indicators (LADA, 2006).
+
+Constraint Solution Obtain relevant, up-to-date and reliable baseline information on the state of ecosystems supported by hard data not only obtained by remote sensing, but also by ground surveys.
+
+Baseline information for most indicators does not exist or is outdated (80s).
+
+Therefore, projects often have to start from scratch. Most analyses use data from the same limited pool.
+
+Interpretation of cause-and-effect is often anecdotal and not mathematically correlated. Even if correlations are high, interpretations may differ. Excessive error in some key global data sets (e.g., land use).
+
+Use simple methods and the least possible number of indicators to set-up cost-effective systems. Enhance networking and develop partnerships across organizations, such as governmental bodies, national statistical offices and research communities.
+
+Increase the participation of NGOs and civil society in a more coherent manner to allow more reliable assessments.
+
+Geo-referencing of statistical data is limited and discrepancies occur between databases (e.g., 70 per cent difference between World Bank and FAO for annual industrial water withdrawals for Australia in 2000).
+
+Sub-national data are not available for socio-economic indicators, consequently up-and-down scaling becomes difficult, if not impossible.
+
+All levels of assessment investigation are important, but the national level is the core level at which decisions can most influence impacts and initiate remedial action at the institutional level. That is the level at which scientific results should be collated first.
+
+Ownership and access to the monitored information. Often copyright, sensitive and privacy issues arise and governments and private land owners are not at all eager to share and interpret the information collected.
+
+Local levels are important to providing valuable information, which leads to taking appropriate concrete actions with visible results and involves land users as well as direct decision-makers. Therefore local actors have to be involved in a participatory approach because follow-up and sustainable management cannot take place without them.
+
+Greater reliance on remote sensing to reduce costs to US$10 to 100 per site complemented with ground validation and field sampling analysis. Build on existing assessment systems and networks.
+
+Costs ranging from between 5,000 and 25,000€ per site per timed observation (e.g., forest soils monitoring in Europe).
+
+Declining or low national investment in agri-environmental data collection.
+
+Promote geo-spatial data, standardization and harmonization to ensure consistency, coherence and inter-operability of data.
+
+Technical Constraint Solution Institutional Sustainable Agriculture – From Common Principles to Common Practice 223

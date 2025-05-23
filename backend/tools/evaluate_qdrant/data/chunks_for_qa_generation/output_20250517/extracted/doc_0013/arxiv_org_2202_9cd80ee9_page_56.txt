@@ -1,0 +1,49 @@
+--- HCl solution (1 mM FeCl ---
+
+8
+
+using a procedure that was partly modified according to a previously described protocol 90
+as follows. Sixty milliliters of a mixture of King B broth (tryptone, 1.2 g; K2HPO4, 0.069
+g; MgSO4・7H2O, 0.09 g; glycerol, 0.9 g; L-tryptophan, 0.6 g) and Salkowski color
+developing solution (50 mL of 35% HClO4; 1 mL of 0.5 M FeCl3) was prepared. After 20
+µL of the colony solutions of isolated Paenibacillus strains was added to 15 mL of King B
+broth, the broths were incubated at 80 rpm and 25°C for 48 h. The broths without and with
+the colony treatment were centrifuged at 10000 rpm and 4°C for 10 min. Two milliliters of
+supernatant was mixed with 2 mL of the Salkowski color developing solution and 10 μL
+of phosphate and thereafter shielded from light and allowed to stand for 30 min at room
+temperature. The absorbance was measured at 530 nm. The CAS assay for siderophore
+detection was performed with a procedure partly modified according to a previously
+described protocol 92 as follows. The 10x MM9 solution (KH2PO4, 3 g; NaCl, 5 g; NH4Cl,
+10 g; D.W., 1 L), CAS solution (Mordant Blue 29, 605 mg; DW, 500 mL),
+cetyltrimethylammonium bromide (HDTMA) solution (HDTMA, 729 mg; D.W., 400 mL),
+FeCl3・HCl solution (1 mM FeCl3・6H2O, 10 mM HCl), and CAS assay agar (10 x MM9
+solution, 100 mL; NaOH, 6 g; PIPES, 30.24 g; agar, 15 g; D.W., 750 mL) were prepared.
+Subsequently, 100 mL of FeCl3・HCl solution was added to 500 mL of CAS solution, and
+400 mL of HDTMA solution was slowly mixed into the FeCl3・HCl and CAS solution. The
+mixture solution was used as the CAS-HDTMA solution. CAS assay agar was added to
+CAS-HDTMA solution and sterilized. At approximately 50°C, 10 mL of 20% glucose
+solution, 1 mL of 1 M MgCl2 solution, and 1 mL of 100 mM CaCl2 solution were mixed
+in an Erlenmeyer flask, and thereafter, 10 mL of CAS-HDTMA solution was slowly poured
+along the wall of the flask. The final solution was solidified on the plate for the CAS assay.
+The NBRIP medium for the phosphate solubilization assay was prepared according to a
+previously described protocol91. NBRIP cultivation agar medium (glucose, 10 g; Ca3(PO4)2,
+5 g; MgSO4·7H2O, 0.25 g; MgCl2·6H2O, 2.5 g; KCl, 0.2 g; (NH4)2SO4, 0.1 g; agar, 15 g)
+was prepared. The solution was sterilized and solidified on the plate for the phosphate
+solubilization assay.
+
+Measurement of N2O from soil
+Fungi derived from banana stalks were cultured on potato dextrose agar (PDA) as
+previously described 65. The fungi grown in two Petri dishes were dissolved in 15 mL of
+sterile water to prepare a fungal solution. Next, 10 mL of the fungal solution was diluted
+with 190 mL of sterile water. Subsequently, 1% PDA was added to 700 g of soil (Tanemaki
+Baido) (Takii Seed, Japan) to prepare PDA-containing soil. Finally, 200 mL of the fungal
+solution was added to the PDA-containing soil. PDA-containing soil without any fungal
+solution was also included as a negative control. The soils without and with compost were
+adjusted as follows: 1) 4 mL of distilled water was added, and 2) 4 mL of compost solution
+was added. A compost solution was prepared by adding 40 mL of sterile water to 4 g of
+thermophile compost powder, after which the mixture was filtered into a 50-mL Falcon
+tube with a 100 µm cell strainer (Falcon Co., Ltd., Japan). Pots containing soil were
+inserted into a transparent sampling bag with two on-off valves (5 L: No. 1-6664-14) (As
+One Co., Ltd., Japan), and the pots and the bag (the valve side is on the bottom) were placed
+on a small table at an angle of approximately 30 degrees for seven days. After seven days,
+a 1-L aluminum bag (AAK-1) (GL Sciences Co., Ltd., Japan) was filled with nitrogen gas.

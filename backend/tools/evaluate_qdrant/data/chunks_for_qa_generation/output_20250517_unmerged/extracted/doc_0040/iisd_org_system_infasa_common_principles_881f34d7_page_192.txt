@@ -1,0 +1,17 @@
+--- Page 192 ---
+
+from the calculations. Figure 1 shows a map of the 2,780 polygons that met this requirement, defining the extent of the agricultural area (approximately 67.5 m ha) covered by our agri-environmental indicators. 3.3. Understanding results We have attempted to develop a standard classification framework for all indicators (Table 1), which consists of a five-class rating system, in which each class has a general meaning in terms of environmental sustainabil- ity or a given implication from a policy perspective.The ideal approach for assessing the conditions and risks identified by the indicators is to compare the results with science-based reference thresholds (such as environmental quality standards). However, thresholds that would allow us to differentiate between the five classes are typically not available,and most of the indicator classes were established on the basis of expert knowledge, an approach that is subject to additional interpretation.
+
+AAFC is currently working in partnership with Environment Canada to develop a systematic approach to establishing reference thresholds.
+
+Map presentations of indicator results are used to provide the condition for a given indicator in a given year. In these map presentations, entire SLCs or other spatial polygons are assigned a value that applies to the agricultural portion of these polygons.
+
+Within each area there are,undoubtedly,zones of greater and lesser con- cern that the indicator averages out to a single value. The aggregated result may obscure the local reality,and because of this,as well as the var- ious limitations described above,the indicators cannot be interpreted as showing any specific on-site conditions (such as on an individual farm).
+
+The trends in an indicator over time are just as important as the current condition or status of the indicators.This aspect is generally presented in tabular format, setting out actual results for Canada and individual provinces.
+
+The indicators are sensitive to changing farm management practices and are able to show patterns of environmental risk and conditions that reflect the intensity of agricultural production in regions across Canada.
+
+They provide a trend line over time that indicates whether the agricul- ture sector is moving towards or away from environmental sustainability.
+
+In this regard, they can be used to point out areas in which further research and investigation are required before actions can be taken,and provide useful additional information to decision-makers for developing and evaluating agricultural policy. The agriculture sector’s interactions with the environment are, however, complex, and caution must be exer- Sustainable Agriculture – From Common Principles to Common Practice 179

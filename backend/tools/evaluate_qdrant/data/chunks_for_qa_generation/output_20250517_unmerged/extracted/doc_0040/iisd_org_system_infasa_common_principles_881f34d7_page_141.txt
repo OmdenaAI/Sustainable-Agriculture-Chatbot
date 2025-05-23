@@ -1,0 +1,9 @@
+--- Page 141 ---
+
+Figure 2: The RISE sustainability polygon.
+
+The RISE polygon (Figure 2) allows quick interpretation of the strengths (green area with DS>10) and weaknesses (red area where DS<-10) regarding the sustainability of the farm. Individual indicators are consid- ered sustainable if the degree of sustainability is above +10, the whole farm/system is considered sustainable if no indicator has a degree of sustainability below -10. An optimal situation regarding the sustainabili- ty of the farm is not achieved by individual maxima on single indicators but much more through a balanced bandwidth of all indicators (at the highest possible level).
+
+For every indicator, the state (current situation) and driving force (pres- sure on the system) are determined separately,each calculated from dif- ferent parameters. A total of more than 60 parameters (Table 1) are indi- vidually valued in the model output,allowing the farmer to identify quite accurately strengths with regard to sustainability and where to intervene to improve the situation on his enterprise.
+
+Once strengths and weaknesses for the 12 indicators are identified, they can be broken down into their S- and D-parameters in a next step to identify specific strengths and weaknesses in more detail. The different parameters considered during a RISE analysis are summarized in Table 1, Energy (EN) 100 80 60 40 20 0 -20 -40 -60 -80 -100 Water (WR) Soil (SO) Biodiversity (BD) N&P emission potential (EP) Plant protection (PP) Waste (WS) Economic stability (ES) Economic efficiency (EE) Local economy (LE) Working conditions (WC) Social security (SS) Driving force (D) State (S) Degree of sustainability (DS) Negative Positive Border area Degree of sustainability Sustainable Agriculture – From Common Principles to Common Practice 128

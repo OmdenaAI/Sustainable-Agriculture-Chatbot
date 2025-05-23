@@ -1,0 +1,35 @@
+--- The national Farm ---
+
+bringing in income from off the farm, cutting living expenses, or improving tax management.
+
+The national Farm Financial Standards Council (FFSC) has identified 16 measures, or “ratios”, around the five basic financial performance area measures (liquidity, solvency, profitability, repayment capacity and efficiency). Ratio analysis is a tool financial management experts and lenders use to judge the absolute and relative strength of a business. A full description of the FFSC’s “sweet sixteen” financial ratios and their calculations are listed in Appendix B.
+
+Space is not devoted here to do a complete ratio analysis because it requires very detailed farm records. If your records contain the information needed to calculate each of the financial ratios mentioned, we highly recommend doing so.
+
+This will help you pinpoint your business’ financial strengths and weaknesses. Using numbers from your Balance and Income Statements (Worksheets 2.12 and 2.13), you can calculate five of the sixteen ratios as illustrated in Figure 26 on Worksheet 2.15: Financial Ratios Based on the Balance Sheet and Income Statement.
+
+There are many other ways to measure financial performance.
+
+For small farms that are built around the use of family labor instead of vast amounts of capital, you might want to track labor and management earnings. This measure recognizes that net farm income for a family farm represents returns to unpaid labor, management and equity capital. To estimate labor and management returns, an Worksheet 2.15 Use information from your balance sheet and income statement to calculate the following ratios that measure liquidity, solvency, profitability, repayment capacity and efficiency.
+
+Financial Ratios Based on the Balance Sheet and Income Statement Current Ratio:
+
+This is a primary measure of liquidity used by most businesses.
+
+Current Assets (Balance Sheet) Current Liabilities (Balance Sheet) ÷ Current Ratio = A current ratio of 2:1, with two dollars of current assets for every dollar of current debt, is usually considered ade- quate. If your current ratio approaches 1:1, your ability to sustain your business during a financial downturn may be limited.
+
+Debt to Asset Ratio:
+
+This solvency measure is sometimes referred to as your percent in debt.
+
+Total Liabilities (Balance Sheet) Total Assets (Balance Sheet) ÷ Debt to Asset Ratio = When calculated based on the market value of your assets, a debt to asset ratio under 40% is usually considered comfortable; over 60% is usually considered vulnerable.
+
+Rate of Return on Assets:
+
+This profitability measure can be interpreted as the average interest rate being earned on the financial resources invested by you and lenders in your business.Adjust net farm income for the estimated opportunity cost of unpaid family labor to make your figures comparable to those for businesses that hire labor and management Net Farm Income (Income Statement) Interest Expense (Income Statement) + Opportunity Cost for Family Labor and Management (estimated) – Return on Assets = Total Farm Assets (Balance Sheet) ÷ Rate of Return on Assets = The amount you deduct for labor and management depends on your goals for how much income you feel you need from the farm. Since farming has not historically been a high return business, a rate of return greater than 5% (when assets are valued at market value) is usually considered adequate. Remember, though, if you are earning only 5% and paying interest at 10%, you may be headed for problems. You may be able to maintain this if your debt to asset ratio is low. But if you have substantial debt, you will need to set your profitability goals a bit higher.
+
+CONTINUED $ 113,305 31,619 3.58 254,019 1,276,273 19.9% 65,083 23,883 62,132 26,834 1,093,549 2.5% 2 TASK 58 BUILDING A SUSTAINABLE BUSINESS Figure 26.
+
+Example from Cedar Summit Farm— Worksheet 2.15:
+
+Financial Ratios Based on the Balance Sheet and Income Statement (sides 1 and 2) SOME NUMBERS HAVE BEEN CHANGED TO PROTECT CONFIDENTIALITY.

@@ -1,0 +1,46 @@
+--- This work was supported by the U.S. National Science Foundation (NSF) under awards CBET-2019435 ---
+
+Conclusion
+With a changing climate, a growing population, and decreasing availability of resources such as water,
+phosphorus and nitrogen, there is an urgent need to improve the productivity and sustainability of crop-
+based agriculture. Transdisciplinary research has emerged as a research model that can address the coupled
+scientific, technological and societal dimensions of this challenge in a manner that defines successful
+convergence research. In this review, we highlight several case studies concerning the implementation of
+transdisciplinary and convergence research, including research to develop reporter plants of below-ground
+nutrient and water availability as well as integration of plant-microbial interactions as efficient strategies
+for agricultural resource management. Moreover, plant-informed early optimization of new phosphorus
+fertilization technologies is in development to help reduce the overuse of applied phosphorus fertilizer by
+either improving soil phosphorus bioavailability or implementing more efficient nanofertilizer methods.
+Integrating nanotechnology with robotics, we show how we can accelerate advancements in breeding new
+cultivars. Finally, phosphorus recovery strategies are being developed using electrooxidation or
+polyphosphate-accumulating organism systems to help resolve the problem of phosphorus contamination
+of aquatic ecosystems. Each center has also identified stakeholder needs and barriers to adoption of research
+projects to help guide their respective institutions towards advancing work that can successfully advance
+their target societal goals.
+
+As transdisciplinary research is implemented in future applications, it will be important to consider a
+number of factors such as diversity in collaborations, cross-training among disciplines, and co-creation
+with stakeholders.7,96 Transdisciplinary convergence research efficiently facilitates innovation as each team
+can combine their expertise in new ways that, in isolation, they would not be able to implement in a timely
+manner, if at all. For example, endophenotyping enabled by nanoreporters and robotics relies on
+collaboration between engineers and plant biologists, while fertilizer biomaterial optimization relies on
+collaboration between chemists, materials scientists and plant biologists. Both of these developments
+provide new opportunities to engage stakeholders in the design of application-appropriate research
+questions and technologies. Seeking out opportunities to co-create in multidisciplinary teams will thus help
+bring innovative ideas to fruition without the need for an impossible task of one individual team building
+expertise in all disciplines. Furthermore, innovation and technology does not exist in a vacuum. Social
+factors such as stakeholder needs and perceptions, governmental regulations, economic factors,
+environmental risks and practicality of using the technology all need to be considered.7,8,97. To do this,
+stakeholder engagement and co-creation are key to guiding the focus of transdisciplinary research projects
+in real time. Accordingly, collaboration with researchers within the social sciences is necessary to produce
+meaningful innovations. Thus, transdisciplinary research implemented to its full potential brings efficiency
+and direction to research and innovation towards solving complex global challenges.
+
+Conflict of interests
+The authors declare no conflicts of interest.
+
+Acknowledgements
+This work was supported by the U.S. National Science Foundation (NSF) under awards CBET-2019435
+(STEPS) and DBI-2019674 (CROPPS). V.B. is supported by the Schmidt Science Fellows program and
+the Kavli Institute at Cornell (KIC) Postdoctoral Fellowship. I.M. is supported by the NSF Postdoctoral
+Research Fellowships in Plant Biology Program through award number IOS-2305774.

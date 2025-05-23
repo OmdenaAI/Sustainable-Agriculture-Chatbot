@@ -1,0 +1,46 @@
+--- Page 2 ---
+
+Abstract
+Feeding the growing human population sustainably amidst climate change is one of the most important
+challenges in the 21st century. Current practices often lead to the overuse of agronomic inputs, such as
+synthetic fertilizers and water, resulting in environmental contamination and diminishing returns on crop
+productivity. The complexity of agricultural systems, involving plant-environment interactions and human
+management, presents significant scientific and technical challenges for developing sustainable practices.
+Addressing these challenges necessitates transdisciplinary research, involving intense collaboration among
+fields such as plant science, engineering, computer science, and social sciences. Here, we present five case
+studies from two research centers demonstrating successful transdisciplinary approaches toward more
+sustainable water and fertilizer use. These case studies span multiple scales. Starting from whole-plant
+signaling, we explore how reporter plants can transform our understanding of plant communication and
+enable efficient application of water and fertilizers. We then show how new fertilizer technologies could
+increase the availability of phosphorus in the soil. To accelerate advancements in breeding new cultivars,
+we discuss robotic technologies for high-throughput plant screening in different environments at a
+population scale. At the ecosystem scale, we investigate phosphorus recovery from aquatic systems and
+methods to minimize phosphorus leaching. Finally, as agricultural outputs affect all people, we show how
+to integrate stakeholder perspectives and needs into the research. With these case studies, we hope to
+encourage the scientific community to adopt transdisciplinary research and promote cross-training among
+biologists, engineers, and social scientists to drive discovery and innovation in advancing sustainable
+agricultural systems.
+
+Introduction
+Feeding the growing human population in a sustainable way and in a changing climate is one of the most
+important challenges we face in the 21st century. Without substantial shifts in the agricultural practices on
+a global scale, we risk surpassing the planetary boundaries including freshwater use and biogeochemical
+flows of nitrogen (N) and phosphorus (P).1 Currently, the best croplands are already under cultivation and
+much of the remaining land is unsuitable for farming. In addition, most of this cropland is rain fed, making
+crops vulnerable to unpredictable weather patterns. Other key inputs controlling plant productivity, such as
+synthetic fertilizers are often overused, with only a fraction effectively reaching the plants, while the
+remainder is lost to the environment.2 Moreover, the rate of productivity improvement for many of our most
+important crops is slowing down.3 Ensuring a healthy future for the people and the planet requires a deeper
+understanding of crop-based agriculture systems and their response to the environment.
+
+Agriculture involves managing complex living systems embedded within complex ecological, societal, and
+economic systems that operate at multiple scales (Fig.1). At the farm level, management practices rely on
+predictive modeling, supported by measurements taken from soils and individual plants and the associated
+organisms that make up their microbiomes. Transitioning to a regional scale, effective coordination of
+shared resources such as land and water, alongside the development of policies, is essential to ensure
+sustainable production. On the global scale, concentrated efforts are necessary to address challenges
+including climate change and equitable food distribution, thereby ensuring food security worldwide.
+Changing agricultural practices would require an intense collaboration of all disciplines involved in these
+systems, including plant science, engineering, and computer science. Furthermore, given that agricultural
+outcomes impact everyone, this transdisciplinary effort must involve diverse fields of economics, policy,
+social sciences, and the engagement of various stakeholders including farmers and consumers.

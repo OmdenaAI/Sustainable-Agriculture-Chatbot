@@ -1,0 +1,35 @@
+--- Page 31 ---
+
+a
+b
+Fig. S10
+The top six causal structural groups for SEM (Fig. 4) estimated by
+BayesLiNGAM. The causal groups for (a) Fig. 4a, (b) Fig. 4b, and (c)
+Fig.4c are shown. The direction of causality and its probability are
+shown by the arrows and percentages, respectively. Each component
+name is representatively listed in the position that indicates the
+percentage of the top (upper left side), respectively. The arrangement
+of the component names was also fixed within the other categories.
+The abbreviations in the table indicate the following: L_, leaf
+metabolites or activities; R_, root metabolites; g_, genus; SMLC, S-
+Methyl L-cysteine.
+
+Compost
+Compost
+L_Aminoacid
+L_Flavonoid
+L_DPPH
+R_Carotenoid
+L_Apigenin_
+7_O_neohesperidoside
+L_Kaempferol
+L_Quercetin_Glc
+R_L_2_Aminoadipate
+R_Phenylalanine
+
+Compost
+g_Paenibacillus
+SMLC
+Aminoadipate
+Nicotinamide
+c

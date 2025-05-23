@@ -1,0 +1,13 @@
+--- The Environmental Performance ---
+
+(e.g., ammonia emissions); or the contribution to global pollu- tion is important (e.g., greenhouse gases); ● Agriculture’s contribution to specific environmental impacts is sometimes difficult to isolate, especially for areas such as soil and water quality, where the impact of other economic activi- ties is important (e.g., forestry) or the “natural”state of the envi- ronment itself contributes to pollutant loading (e.g., water may contain high levels of naturally occurring salts); ● Environmental improvement or deterioration is in most cases clearly revealed by the direction of change in the indicators (e.g., soil erosion, greenhouses gases). For some indicators, change can be ambiguous. For example, changes in farm prac- tices, such as no or minimum till agriculture, can lower soil ero- sion rates.However,this may also result in an increase in the use of herbicides, which could potentially deteriorate adjacent aquatic ecosystems; and ● Baselines, threshold levels or targets for indicators are generally not used to assess indicator trends in the report as these may vary between countries and regions due to difference in envi- ronmental and climatic conditions, as well as national regula- tions.But for some indicators,threshold levels are used to assess indicator change (e.g., drinking water standards) or targets compared against indicators trends (e.g., ammonia emissions and methyl bromide use).
+
+These limitations need to be viewed in a broader context, as in many cases they also apply to other indicators regularly used by policy-makers.
+
+For example, there can be wide variations around national averages of socio-economic indicators (e.g., employment); and methodological and data-deficiency problems are not uncommon (e.g., wealth distribution).
+
+Work on establishing agri-environmental indicators is relatively recent compared with the much longer history of developing economic indi- cators,such as gross domestic product.Measuring the linkages between the biophysical environment and human activities through indicators is often more complex than monitoring trends in socio-economic phe- nomena, given that many agri-environmental effects are not valued in markets, nor easily measured in physical terms (e.g., biodiversity).
+
+The latest OECD-wide evidence on the environmental performance of agriculture is available in the publication The Environmental Performance of Agriculture (OECD, forthcoming September 2007), and is summarized below:
+
+Sustainable Agriculture – From Common Principles to Common Practice 197

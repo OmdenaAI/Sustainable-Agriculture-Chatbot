@@ -1,0 +1,46 @@
+--- Page 8 ---
+
+Scalable field endophenotyping for high-throughput screening of plants
+To accelerate advancements in breeding new cultivars for increased yield, nutritional value, resource
+efficiency and resilience, it is necessary to develop technologies that enable high-throughput screening of
+plants and their associated organisms at molecular, tissue and whole-organism scales across time and space
+in the field. This process of measuring plant processes generates large datasets that have been useful in
+building genomic predictions for crop improvements.62 Most plant phenotyping tasks have historically
+required manual effort, demanding a tedious and skilled workforce for completion.63 Over the last decade,
+however, there has been a significant shift toward robotics and automation for high-throughput screening.64
+Efforts to estimate leaf area, color, shape, biomass, temperature, nutrient status and plant growth have seen
+the introduction of technologies such as ground-based robots, aerial drones and gantry systems. These
+systems are equipped with optical, hyperspectral and thermal imaging, as well as LIDAR and 3D scanning
+capabilities.63–66 However, critical processes within the plant system remain inaccessible to interrogation
+and modulation for in-situ and in-field, and across diverse genetic backgrounds. For instance, current
+phenotyping efforts predominantly focus on visualization, leaving internal traits, or endophenotypes,
+largely unexplored. Moreover, while there is considerable focus on above-ground plant parts, below-ground
+aspects receive less attention due to technological constraints. Additionally, the existing robotic solutions
+are often rigid, whereas the nature of plant handling demands a delicate and gentle approach. To address
+these challenges, engineers and computer scientists in CROPPS are developing tools for in-field and high
+throughput interactions with above- and below-ground components of plant systems, as shown in Fig. 5.
+
+Understanding water relations within plant tissue is necessary to enable improvement of crops function
+relative to resilience and sustainability of water use. Leaf water potential has been shown to impact
+vegetative growth and yield, particularly during extreme drought conditions, making it a promising trait for
+improving water-use efficiency in plants. Specifically, the water potential of the living tissue between the
+xylem and the stomata plays a critical role in plant function but has been largely inaccessible due to a lack
+of tools. Recently developed nano-reporter (AquaDust) enables in-situ and non-destructive measurement
+of water potential at this interface, providing unprecedented access to in-planta water status in a minimally
+invasive manner.67 The nano-reporter is infiltrated into the leaves and transduces the local water potential
+into a fluorescent spectral signal. AquaDust has been successfully used in maize68 and tomato69, showing
+its potential as an endophenotyping method for crop development and has informed modeling efforts aimed
+at understanding water transport in plants. To enable automated and high-throughput endophenotyping
+using AquaDust, we are currently developing a soft-robotic system capable of automated leaf infiltration.
+The system consists of a soft gripper capable of autonomously infiltrating leaves with liquid solutions by
+gently squeezing them. In addition to enabling intimate interaction with the canopy, we are exploring
+approaches to access below-ground phenotyping, which faces significant challenges, primarily due to the
+sensitive nature of the plant rhizosphere.70,71 Accessing this zone without disrupting the soil ecosystem
+proves difficult, with very few existing solutions for underground manipulation.72 To address this, we are
+developing scalable underground soft robots capable of accessing roots and the rhizosphere with minimal
+damage, thereby establishing a direct connection with roots and the microbiome.
+
+Phosphorus recovery from aquatic ecosystems
+Phosphorus can be present in many different forms (e.g., inorganic/organic, soluble/particulate) that dictate
+its behavior in water and soil matrices. In soils, many phosphorus species are present either as phosphate
+complexed with iron and other metal ions or are contained within organic molecules often referred to as

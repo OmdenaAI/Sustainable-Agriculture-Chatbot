@@ -1,0 +1,17 @@
+--- (known as FINLRB). It ---
+
+including depreciation and interest on the new investment under the “profit” or long-range income projection. In the cash flow projection depreciation was left out and instead the full value of debt repayment (principal and interest) is added. Dividing the additional income by the $28,750 of new capital, this investment is projected to generate a 21.2 percent annual return on investment.
+
+Worksheet 4.32: Partial Budget provides a partial budget format that will help you project the changes in both income and cash flow for relatively minor business changes in marketing, operations, human resources, or finance.
+
+Long-Range planning.
+
+The long-range planning approach suggested here is based on the FINPACK software long- range planning module (known as FINLRB). It is designed to project the average expected net farm income for each whole- farm strategy you are considering. Since, in an average year, there will be no inventory change, the format is reasonably simple. Total expenses (variable and fixed) are subtracted from total farm revenue to arrive at net farm income. Cash flow is considered separately and discussed later, when you are measuring liquidity.
+
+Worksheet 4.32 If appropriate, calculate and record the impact of each whole farm business strategy using the partial budget approach. Begin by estimating additional income (added inflows) and new expenses (additional outflows). Next, estimate any reduction in your annual expenses (reduced outflows) and income (reduced inflows) that will occur as a result of your proposed strategy or business change. Lastly, total up the positive impact of your business strategy (e) and the negative impact (f). What is the net effect on profit and cash flow? What is your return on assets?
+
+Whole Farm Strategy:
+
+Partial Budget Added Inflows Subtotal (a) = Reduced Outflows Subtotal (c) = Total (a + c) = (e) Profit Cash Flow Added Outflows Subtotal (b) = Reduced Inflows Subtotal (d) = Total (b + d) = (f) Net (e – f) = (g) Added Interest (h) = Total Investment (i) = Return on Assets [(g + h) / i] = Profit Cash Flow Hog finishing Cull breeding stock Feeder pigs $ 1,875 1,875 15,520 15,520 17,395 $ 1,875 1,875 15,520 15,520 17,395 Feed Veterinary Supplies Marketing Utilities Depreciation Interest Debt repayment Income taxes $ 8,187 1,250 500 150 200 1,000 1,739 13,026 0 13,026 4,369 1,739 28,750 21.2% $ 8,187 1,250 500 150 200 4,967 1,883 17,137 0 17,137 258 4 TASK 172 BUILDING A SUSTAINABLE BUSINESS Figure 89.
+
+Example from Hog Finishing Operation— Worksheet 4.32:  Partial Budget

@@ -1,0 +1,25 @@
+--- Page 21 ---
+
+Table contents Table S1 Statistical values of the structural equation model candidates for the metabolites of the leaf and root.
+
+Table S2 Statistical values of the structural equation model candidates for amino acids and flavonoids in Table S1.
+
+Table S3 Statistical values of the structural equation model candidates for the metabolites and bacteria of the soil.
+
+Table S4 A list of models targeted by causal mediation analysis for Fig. 3a and their statistical values.
+
+Table S5 A list of models targeted by causal mediation analysis for Fig. 3b and their statistical values.
+
+Table S6 A list of models targeted by causal mediation analysis for Fig. 4b and their statistical values.
+
+Table S7 Nif-related genes identified based on the genomic data of Paenibacillus macerans HMSSN-036.
+
+Table S8 Nif-related genes identified based on the genomic data of Paenibacillus sp. HMSSN-139.
+
+Table S9 Other functional genes identified based on genomic data of Paenibacillus macerans HMSSN-036.
+
+Table S10 Other functional genes identified based on the genomic data of Paenibacillus sp. HMSSN-139.
+
+Table S11 Physicochemical indicators in the soil after cultivation of carrots.
+
+Table S12 Statistical values of the structural equation model candidates for amino acids in Table S3.

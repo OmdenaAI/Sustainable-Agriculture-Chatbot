@@ -1,0 +1,52 @@
+--- Page 31 ---
+
+21
+Climate change is increasing the frequency and intensity of extreme events such as floods and droughts. While the impact
+of floods is immediately apparent, drought is a slow process with devastating impacts on food production and on food
+and nutrition security. Episodes of drought have increased in frequency and intensity over the past two decades in many
+regions around the world as a result of climate change; this trend is expected to continue. Rainfed agriculture is the most
+vulnerable to increasing climate variability. Irrigated agriculture is far less vulnerable to variations and changes in climate
+than rainfed agriculture, and societies that practice irrigated agriculture are generally more resilient (as long as a reliable
+water supply can be secured) (FAO, 2020b). Yields from agriculture with some type of water management can be three
+or more times higher than yields from strictly rainfed agriculture (Molden, 2007). Thus, sound water management is
+essential for building resilience against increased risks in food systems. Timely and reliable information on the condition
+of irrigated and rainfed food crops all over the world is essential to mitigate the impact of droughts.
+The data made available through WaPOR can be of great use to service providers who help farmers obtain consistent
+yields and improve their livelihoods, as well as to government agencies wishing to modernize irrigation systems or
+promote the efficient use of natural resources (FAO, 2021c).
+Description
+The data provided by WaPOR are of key importance to efforts to increase agricultural productivity while at the same
+time using water more efficiently, to address problems of land and water scarcity. The spatial satellite measurements of
+WaPOR offer unique insights into land and water productivity. In addition, the open source technologies developed in the
+context of WaPOR allow for the dynamic incorporation of technological advances (such as the growing constellation of the
+European Union’s Copernicus satellites) and the data they produce. While the WaPOR project focuses on the collection of
+data, it explicitly aims for these data to be used by a variety of stakeholders. Policymakers at the national level, for example,
+can use WaPOR data in evidence-based decision processes on issues such as water scarcity or water allocation strategies
+in a changing climate. Meanwhile, researchers can tap into the wealth of seamless spatial data and time series (covering
+the period from 2009 to date), while end users (including service providers and farming communities) benefit from the
+development of problem-focused applications. The WaPOR project recognizes that barriers to its actionability may exist
+for certain stakeholders. For example, farmers must be able and willing to adopt innovative practices based on information
+and communications technologies (ICT) such as those provided by WaPOR. The enabling environment for the uptake of
+the information and suggestions provided by WaPOR therefore determines the project’s ultimate success. This enabling
+environment is determined by existing policies and institutions and by the availability of financing for CSA practices.
+Outcomes
+The first phase of the WaPOR project (2015−2021) paved the way for the design of potentially highly impactful
+agricultural policies by generating:
+
+an operational methodology and an open access data portal that publishes data in near-real time (usually
+every ten days), at spatial resolutions ranging from 250 m to 30 m for selected pilot areas;12
+
+specific assessments, in five river basins, of the consequences and sustainability of possible increases in
+water productivity in agriculture, analysed based on a water accounting framework;13
+
+capacity development of stakeholders to increase water productivity sustainably, including the development
+of locally relevant ICT applications for farmers. These applications were developed in collaboration with
+stakeholders to address relevant issues and tailored to local contexts, with technology ranging from
+smartphone applications to simpler soil moisture sensors.14
+The current second phase of the project focuses on strengthening capacities to interpret data and develop demand-driven
+applications in target countries. The applications will be identified and developed in collaboration with different stakeholders.
+They will be aligned with national strategies on climate action, water and food security and agricultural development.
+12 See https://wapor.apps.fao.org/home/WAPOR_2/1.
+13 For more information, visit www.fao.org/in-action/remote-sensing-for-water-productivity/water-accounting/results.
+14 For more information, visit www.fao.org/in-action/remote-sensing-for-water-productivity/capacity-development/field-level-activities.
+This case study was submitted by the WaPOR team in FAO’s Land and Water Division. wapor@fao.org.

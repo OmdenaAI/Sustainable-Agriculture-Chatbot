@@ -1,0 +1,44 @@
+--- In 2017 ColegSirGâr at Gelli Aur College in Carmarthenshire launched its ambitious project to reduce ---
+
+The Circular Farm by Charlie Steer
+A Nuffield Farming Scholarships Trust report generously sponsored by NFU Mutual Charitable Trust
+
+| 12
+Project Slyri
+In 2017 ColegSirGâr at Gelli Aur College in Carmarthenshire launched its ambitious project to reduce
+diffuse pollution from slurries starting at the college’s 600-cow dairy unit. At the core of the project
+is water quality protection. In conjunction with Power & Water (UK-based water treatment
+technology company) they have developed a farm-scale slurry treatment process to reduce the
+storage volume of the slurry by 80% in turn increasing nutrient content and reducing volume to
+spread.
+Slurry from the college’s 600-cow, part grazed, part housed dairy is pumped into a conventional
+slurry store. From here three treatment processes are used.
+1. Solids Separation: Two separation systems were in place undergoing trials at the time of
+visiting. The more successful, but power hungry, of the two is a decanter centrifuge system
+removing 52% of the solids. Decanter centrifuges use centrifugal force (spinning around a
+horizontal axis) to spin solids from liquids. Solid laden liquid is pumped down the centre of a
+centrifuge ‘bowl’ a tube and spun to produce G-force. The spinning throws the solids away
+from the liquid through an orifice, where a screw conveyor removes the solid material. This
+solids removal at the front end of the system is critical to the flowing stages. Consistent dry
+matter and total suspended solids are key to the reliability of the system. Changing dry
+matters due to bedding, feed and rainfall onto yards were giving John Owen, Neil Nicholas,
+and the team at Gelli Aur College the biggest headaches.
+2. Flocculation and DAF: The next stage is flocculation of suspended solid material via
+“Soneco,” a patented electrode-based system for flocculation designed by Power & Water.
+This uses a consumable aluminium anode, creating positively charged aluminium ions that
+electrostatically bond to suspended solids, these precipitates the solids out of the solution
+and float to the surface where a series of paddle like flights on a driven chain skim the
+floating particles into a disk stack separator, where the flocculated cake is stacked with the
+solids from stage 1. The liquid passes to stage 3.
+3. Disk Stack Centrifuge: A Disk stack centrifuge again uses centrifugal force over a large
+surface area to spin solids out of liquids. The difference between a decanter and disk stack is
+the latter spins about a vertical axis. G-force spins the solid particles, from 0.1 to 150
+microns down the stacked separator conical disks. The particles spin to the edge of the
+separator ‘bowl’ where they are continuously removed. Varying the speed of spinning disks
+varies the level of separation. In common with all centrifuges, there is a large power
+demand: a key requirement to make a fully closed loop, is generating enough power on farm
+to run such equipment with a high-power demand.
+4. Advanced oxidation process (AOP): Uses oxidation reactions to remove any pathogens
+remaining in the slurry via hydroxyl free radicals. These are produced in another Soneco
+rector and can reduce the chemical oxidation demand and total organic carbon of the water
+down to levels suitable for discharge to the watercourse, or reuse on the farm.

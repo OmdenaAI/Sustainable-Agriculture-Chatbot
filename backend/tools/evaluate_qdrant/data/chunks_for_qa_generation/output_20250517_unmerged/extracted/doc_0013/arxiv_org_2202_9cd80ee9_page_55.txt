@@ -1,0 +1,50 @@
+--- O (0.02 g), Na ---
+
+7
+
+For the isolation of nitrogen-fixing bacteria from compost, succinate-BTB medium (pH
+6.8) was prepared as follows: succinic acid (11.6 g), Na2MoO4・2H2O (40 mg/mL),
+MgSO4・7H20 (0.2 g), NaCl (0.1 g), CaCl2・2H2O (0.02 g), Na2MoO4 ・2H2O (40 mg/m L)
+(50μL), MnSO4・H2O (20 mg/mL) (50 μL), biotin (0.2 L), Fe-EDTA MS (1 U) (9.6 mL)
+bromothymol blue (BTB) (0. 1g/20 mL of EtOH) (1.5mL), yeast extract (20mg), and agar
+(15 g). The mixture was sterilized after pH adjustment. Direct PCR with a nifH primer set
+was performed as previously described81. In 192 colonies grown in 140 Petri dishes, two
+strains, Paenibacillus macerans HMSSN-036 and Paenibacillus sp. HMSSN-139 was
+selected. The DNA samples from these isolates were extracted by Power Microbial DNA
+Isolation Kit (MO Bio Laboratories Co., Ltd., USA) and purified by a QIAquik PCR
+Purification Kit (QIAGEN Co., Ltd., USA). Genome sequencing was performed as
+previously described82 and deposited in the GenBank Sequence Read Archive database as
+described in Data availability. The isolated strains were observed using scanning electron
+microscopy with some modifications based on an experimental protocol for the spore
+forming bacteria as previously reported 83,84. In brief, the preparation of the sample was
+implemented as follows: the samples of the bacterial solutions cultured on the petri dish
+were fixed in phosphate-buffered 2% glutaraldehyde and subsequently post-fixed in 2%
+osmium tetra-oxide for 2 hours in the ice bath. Then, the specimens were dehydrated in
+graded ethanol and dried by CO2 critical point dry. Finally, dried specimens were coated
+by osmium plasma ion coater and were submitted to be observed by Scanning electron
+microscopy (JSM-7500F, JEOL).
+
+Stable isotope analysis for nitrogen fixation
+As previously described, a cultivation test with Arabidopsis thaliana ecotypes Landsberg
+and Columbia was performed as previously described 66. A commercial horticultural soil
+medium (Engei Baido; Kureha, Tokyo, Japan) (granules of diameter 2–3 mm) was used as
+the only soil for cultivation. The isotope test was performed according to the method
+described by Yano et al.85. The soil was mixed with compounds included in stable isotopes:
+2 kg of soil; 116.6 mg of K15NO3 (Shoko Science Co., Ltd., Japan); 150.15 mg of
+(15NH4)2SO4 (Shoko Science Co., Ltd., Japan). Approximately 25 to 30 seeds were sown
+in 180 g of the soil medium. The thermophile-fermented compost powder 65 was mixed
+well with the soil medium in the test group, and the soil was then watered. The pots were
+watered with distilled water ad libitum. The pots were transparently covered, incubated at
+4°C for 24 h and vernalized under continuous illumination with a light intensity greater
+than 3000 lux at 23°C. Most of the seeds germinated after three days. The cover was
+removed four days after germination, and three seedlings were selected from each pot.
+These seedlings were watered every two days with approximately 100 mL of distilled water
+per pot and were grown for 21 days. The grown seedlings and the soils were freeze-dried
+and used to determine isotope contents. The isotopic composition of nitrogen and the ratio
+of 15N and 14N were determined by using a Flash 2000-DELTAplus Advantage ConFlo III
+System (EA-IRMS; Thermo Fisher Scientific, USA; owned by Shoko Science Co., Ltd.,
+Japan) according to the conventional protocol 76,86-89.
+
+Biological assay for isolated Paenibacillus strains
+Biological assays of the production of auxin, the siderophore reaction, and phosphate
+solubilization were performed as previously reported 90-92. The auxin assay was performed

@@ -1,0 +1,13 @@
+--- Page 70 ---
+
+Figure 2: Climate diagram for Koru area.
+
+Materials and methods Delineation of farms and mapping The study used individual farm holdings as the basis of the assessment procedures.This was in agreement with the hierarchies and land manage- ment unit attributes proposed by Eswaran et al. (2000). The maps were based on survey maps obtained from the office of the Ministry of Agriculture and Rural Development and updated by participating farmers during consultative sessions in the field.The map that was eventually used for Koru area does not represent any administrative zone but is a con- glomeration of adjacent farm holdings for which adequate land-use infor- mation was available to enable meaningful farm sustainability indicator development and subsequent geo-processing.The maps were also com- pared with adjudication documents at the local cooperative society office.
+
+The maps were then digitized for use in ArcGIS at the scale of 1:50,000.
+
+Eswaran et al.(2000) propose scales of between 1:1,000 to 1:5,000 for farm level assessments and 1:25,000 to 1:250,000 for RMD assessment at catch- ment or focal area levels.The scale was chosen for farm unit specificity and to render the resulting overlay maps amenable to other basic agricultural extension activities and as well as other forms of agro-ecosystems model- ling. The farm units, which represent the farm recommendation units (FRUs),were then numbered sequentially to represent the order of assess- ment and for labelling household level resource management.For the cur- rent study site the labels “FRU001,”“FRU002,” … to “FRU256” were used.
+
+Figure 3 shows the delineated farm units in the area.
+
+Jan Mar May Jul Sept Nov 300 0 50 100 150 200 250 35 30 25 20 15 10 5 0 Precipitation and evapotranspiration (mm) Temperature Min temp Max-min temp Precipitation ETO ETO/2 Month Sustainable Agriculture – From Common Principles to Common Practice 57

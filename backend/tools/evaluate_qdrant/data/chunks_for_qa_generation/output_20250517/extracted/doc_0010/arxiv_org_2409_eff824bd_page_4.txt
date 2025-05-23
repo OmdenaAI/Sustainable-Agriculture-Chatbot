@@ -1,0 +1,44 @@
+--- . For example, CLE 25 ---
+
+the Centers’ research efforts. By showcasing our transdisciplinary endeavors, we hope to encourage the
+broad scientific community to join in this effort.
+
+Whole-plant reporting of below-ground resources for improved crop management
+Plants simultaneously exist in multiple distinct environments. For example, plant roots are embedded in
+terrestrial landscapes, and their shoots inhabit the air. To coordinate their physiology between these
+environments, plants have internal communication systems that enable whole-plant coordination and
+resource allocation.12,13 These signaling communications exist across scales: within cells14, between cells15,
+from root-to-shoot16, from leaf-to-leaf17, and between plants and their environment18. For example, CLE 25
+(CLAVATA3/EMBRYO-SURROUNDING REGION-RELATED 25 (CLE25) is a small peptide that
+moves through the xylem, from roots-to-shoots, to activate ABA-mediated drought stress responses in
+shoots.19 Another peptide involved in long-distance signals is CEP1 (C-TERMINALLY ENCODED
+PEPTIDE 1) that moves from roots-to-shoots to activate nutrient foraging in response to low nitrogen.20
+MicroRNA2111 is a shoot-to-root small RNA signal that functions in balancing nodulation with rhizobial
+symbionts.21 Plants also utilize rapid long-distance electrochemical (calcium ions and reactive oxygen
+species) and hydraulic signaling waves that are initiated in response to environmental stresses and then
+travel across the whole plant to induce stress resilience via systemic acquired acclimation.22,23 By leveraging
+such diverse native long-distance signaling pathways, as shown in Fig. 3, we can gain access to information
+from inaccessible parts, such as the roots, via reporters in accessible parts of the plant, such as the plant
+canopy. Using approaches from plant science, synthetic biology and evolutionary genomics, we are
+developing reporter plants that illuminate the hidden communication between plants and their environment
+in real-time. By facilitating such whole-plant coordination, these reporter plants aim to transform our
+fundamental understanding of plant communication, and enable timely and efficient application of
+resources (e.g., fertilizers, water).
+
+In addition to modifying native signaling networks to achieve these goals, researchers in the CROPPS are
+also building orthogonal sequences that can overcome the sometimes undesired off-target effects of simple
+switches based on native components. As such, synthetic approaches are being used in three major ways:
+1) synthetic reporters that indicate the activity of native or orthogonal pathways, 2) synthetic switches that
+toggle native or orthogonal pathways for a desired effect, and 3) a combination of synthetic inputs and
+outputs that form a closed genetic circuit, which has been a successful use of synthetic biology tools in
+microorganisms and plants.24–27 Together, such plant-compatible genetic circuits allow us to rebuild and
+engineer signaling pathways in the native plant host. Synthetic reporters can also be potentially multiplexed
+to allow a single plant to report on multiple environmental stresses or conditions, allowing for improved
+crop management strategies and assistance in molecular phenotype-based breeding efforts. Synthetic signal
+inputs can employ a combination of chemically induced genetic switches28 and state-of-the-art optogenetic
+switches. Counterintuitively, the latter are usually derived from plant signaling proteins (e.g.,
+photoreceptors) and were first used in in bacteria29. Only now are such optogenetic switches being
+introduced back into plants.27 As an example, one of the first technologies developed within CROPPS
+combines newly developed genetic parts (including optogenetic switches) and long-distance signaling
+machinery, allowing for whole plant programming of below-ground reporting of nitrogen signals and
+responses.

@@ -1,0 +1,15 @@
+--- Energy EN,Water WR,Waste WS and Soil SO: ---
+
+processor.Since tea growers provide the basic resource for the tea man- ufacturing unit it was considered important to analyze the sustainability of the prevailing tea production systems as well as possible future threats for these farms.The findings of the assessment,i.e.,potentials,crit- ical deficiencies and possible risks of the current production systems, were to be presented to and discussed with the farmers in order to develop ideas and encourage steps of action to improve the situation where necessary. Furthermore, the tea processor was particularly inter- ested in evaluating whether higher quantities of tea could be profitably produced without compromising ecological and social aspects of sus- tainability, because he was planning to expand the tea processing unit.
+
+It was further foreseen that, at a later stage, the changes in production practices would be monitored by using the RISE-tool, and the effective- ness of the measures taken could thereby be verified.
+
+The processor was interested in evaluating a small number of its roughly 500 tea producers with RISE. He preferred such a case study with farms that he thought to be typical rather than a study with a representative sample.
+
+Results The results of the 13 farms analyzed are displayed in Table 2 and a sum- marizing sustainability polygon is shown in Figure 3. The polygon depicts mean values of S, D and DS for each indicator of the 13 farms.
+
+Some indicators show high variation, others vary only slightly from farm to farm (Figure 4).
+
+Ecological indicators ● Energy EN,Water WR,Waste WS and Soil SO: in general a good per- formance was observed for these indicators. The outlier on the indicator “Energy”(EN) represents a farm that uses two tractors for the farming operation and oil for irrigation.The outliers in the indi- cator “Water”(WR) stand for two farms with irrigation from water sources that are unstable. The positive result for the indicator Waste WS is due to the small amount of waste produced at farm level.It consists of fertilizer bags and containers for pesticides.The disposal of litter on farm is problematic:In most cases farmers dig a hole to discard the waste or simply throw it in an unused well; water used for cleaning spraying implements is discarded on bare soil.Though the amount of produced waste is low,a risk of ground water contamination exists.
+
+Sustainable Agriculture – From Common Principles to Common Practice 133

@@ -1,0 +1,147 @@
+--- Carrot seeds (Takii Seeds Phytorich Series, Kyo ---
+
+Introduction
+Global food shortages are an urgent issue, and
+malnutrition remains a major cause of death in some
+areas. In addition, because deficiencies in trace
+components cause many diseases, it is necessary to
+develop innovative agricultural technologies to increase
+crop production and nutritional value 1-3.
+The planetary boundary framework 4 has emphasized
+the deterioration of biodiversity and available nitrogen
+and phosphorus. Traditionally, chemical fertilizers have
+been considered essential and distributed in agriculture,
+but this approach has increased the burden on
+ecosystems
+5,6. Furthermore, recent studies have
+shown that amino acids are more critical to plants than
+inorganic nitrogen 5. In this context, the importance of
+organic farming should be reconsidered 7,8. Recycling
+agriculture is essential to meet the goal of sustainable
+development
+by
+efficiently
+using
+nitrogen
+and
+phosphorus 8,9. However, there is a history of contention
+about how the quality of organic compost affects crops
+in many respects 10. Furthermore, the roles of compost
+in different stages of an ecosystem appear to depend on
+the environmental conditions 8,11,12. In general, the
+quality of composts seems to be unstable because
+several different types of raw materials are fermented
+under
+uncertain
+fermentation
+conditions
+within
+composts 13-15, e.g., the contents of fermentation
+bacteria and moisture and other conditions of the
+fermentation process may vary. Therefore, although
+there is an assumption of the effectiveness of compost
+in resource recycling, it contains uncertainty due to the
+unstable characteristics of compost fermentation.
+Studies on thermostable and thermophilic Bacillus
+species, which may be involved in stable composting
+and plant health contributors as plant growth-promoting
+bacteria (PGPB) candidates, have been reported16-18.
+Miyamoto, Kodama, and their joint research group have
+reported PGPB with antifungal activity 19 in a compost
+model: it was produced at high temperature (over 70 ℃
+as spontaneous fermentation) with marine animal
+resources (MAR compost) in a fed-batch system of
+bioreactors containing a thermophilic Bacillaceae as
+stable fermentation bacterial community19. Interestingly,
+the compost had a strain that played the role of PGPB
+with antifungal activity 19 and reduced the accumulation
+of plant nitrate by denitrifying activity in soils 20.
+Furthermore, oral administration of compost or its
+extract
+and
+the
+compost-derived
+thermophile
+Bacillaceae can improve the fecundity and quality of
+rodent animal models, fisheries and livestock animals 21-
+27. Under in vitro anaerobic conditions, Tashiro and
+Sakai et al. demonstrated that compost and its derived
+thermophilic Bacillus efficiently produced optically pure
+L-lactate (100% optical purity) from nonsterilized kitchen
+refuse
+28-31 or starch as a material
+30. These
+observations, including the findings of our research
+groups, suggest that Bacillaceae in compost may stably
+change the structure and function of symbiotic bacteria
+and their habitats.
+Here, we aim to assess compost-soil-plant interactions
+using carrots. This crop model allows easy analysis of
+portions above and below the ground after exposure to
+this thermophilic Bacillaceae-fermented compost and to
+explore the active bacterial groups. Multiple omics
+analysis has been used as an innovative method for
+various research objects 5,32. Using integrated analyses
+of multiple omics datasets, including plant and soil
+metabolome and microbiome (Fig. S1), we classified
+components linked to carrot productivity, color matrix,
+and taste indices. The covariance structural analysis with
+the classified components statistically estimated the
+multiple regression models between plant growth indices,
+plant and soil metabolites, and the soil microbiota. Based
+on the regression model, it was inferred that
+Paenibacillus strains as nitrogen-fixing bacteria are
+involved in the effect of compost. After these estimates,
+the isolation, genome analysis, and evaluation of the
+biological activity of compost-derived Paenibacillus
+strains were advanced. As a result, the possibility that the
+calculation hypothesis was properly taken into account
+was anticipated. Using these computational procedures
+to advance biochemical experiments has effectively
+assessed the complex relationship between soil, plants,
+and compost. The information from this study could
+provide an essential perspective for the construction of
+sustainable agricultural technologies in the future.
+
+Materials and Methods
+Carrot seeds (Takii Seeds Phytorich Series, Kyo
+Kurenai, Takii Seeds Co., Ltd.) were sown in two
+rows located 5 cm apart on the cultivation area, and
+the rows were covered with nonwoven fabric after
+sowing. The plants were harvested twice, in
+November and February, and their stem and leaf
+weight, root weight, root diameter, root length, color,
+taste, the metabolites, and anti-oxidant activities
+were measured. Soil was collected after harvesting,
+the metabolites and bacterial populations were
+investigated. On the basis of the omics data,
+correlation analyses, association analyses 33,34 were
+performed.
+Furthermore,
+covariance
+structure
+analysis/structural
+equation
+modeling
+(SEM),
+causal
+mediation
+analysis
+(CMA),
+and
+BayesLiNGAM were performed as previously
+described
+34. Based on the predicted model,
+functional bacterial candidates from compost were
+isolated, genomic analysis was performed, and
+biological activity was measured. The F test of the
+data was used to select parametric and non-
+parametric analyses. The unpaired t-test and
+Wilcoxon test were selected as appropriate
+methods depending on the data sets. Significance
+was declared when P < 0.05, and a trend was
+assumed at 0.05 ≤ P < 0.20. These calculated data
+were prepared using R software and Prism software
+(version 9.1.2) and were visualized using an
+estimation plot or entering replicates in a data graph.
+Data are presented as the means ± SEs. Detailed

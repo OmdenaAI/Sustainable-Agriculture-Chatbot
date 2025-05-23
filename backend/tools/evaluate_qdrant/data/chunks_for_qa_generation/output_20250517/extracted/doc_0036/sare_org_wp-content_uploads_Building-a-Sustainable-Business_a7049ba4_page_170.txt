@@ -1,0 +1,69 @@
+--- Break-even Volume = ---
+
+4
+TASK
+169
+BUILDING A SUSTAINABLE BUSINESS
+calculated by subtracting total expenses from gross returns.
+Worksheet 4.31: Enterprise Budget Break-even Analysis can
+be used to calculate enterprise returns.
+Break-evens. A break-even analysis is probably one of the most useful
+calculations that you will perform when considering alternative business
+strategies. Break-even numbers can be used to instantly identify those
+enterprises that don’t cover variable and fixed costs of production.
+If you intend to sign a market contract or lock in a future price for your
+product, crunch some numbers to determine what level of production is
+necessary at that price to break even. Make sure you can cover your variable
+and fixed costs of production. On the flip side, if your output or production
+volume is fixed, try calculating a break-even value to determine what product
+price is necessary to break even on production and marketing-related costs. If
+neither your price nor output is fixed, these calculations can be used to develop
+production and price floors for each enterprise—something that will be useful
+for future monitoring and decision-making.
+Calculating a break-even volume. Break-even volumes will tell you the
+minimum production volume necessary to cover your costs of production.
+You might consider this a lower size limit for your business. The break-even
+volume is calculated by dividing total annual fixed costs for the enterprise by
+the difference between your estimated market value and variable costs for
+each enterprise. Substitute the DIRTI costs of capital ownership (depreciation,
+interest, repairs, taxes, and insurance) for the actual cost when estimating
+the ownership costs of annual fixed expenses. Use the cost estimates that you
+developed in Worksheet 4.28 along with market values developed in Worksheet
+4.9 to calculate break-even volumes. Try experimenting with a range of market
+prices to see how they affect your break-even production levels.
+Calculating a break-even value. If your production volume is fixed—either
+because of production capacity or sales contracts—calculate a break-even value
+for your product; in other words, determine what market price is needed to
+cover your variable and fixed costs. Break-even values are calculated by dividing
+your total costs for the product or enterprise by the total quantity you expect to
+produce or sell. Again, your total costs are the sum of your direct and overhead
+expenses for the enterprise.
+Worksheet 4.31 will walk you through a break-even analysis. The
+Worksheet is not reproduced for the Minars’ bottled milk enterprise for
+confidentiality reasons. Instead, an example is presented in Figure 88 for
+an imaginary bed and breakfast business whose annual direct and overhead
+expenses average $800 and $4,000, respectively. Both a break-even volume
+Break-even Volume =
+
+overhead expenses
+market
+
+direct
+
+price
+–
+expenses
+
+unit
+
+unit
+Break-even Value =
+overhead +
+direct
+expenses expenses
+
+production
+
+volume
+[
+]
