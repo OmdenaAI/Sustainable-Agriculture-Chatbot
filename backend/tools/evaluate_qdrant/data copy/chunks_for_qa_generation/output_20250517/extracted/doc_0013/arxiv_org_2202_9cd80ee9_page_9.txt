@@ -1,0 +1,23 @@
+--- J Biosci Bioeng ---
+
+doi:10.1111/jam.12131 (2013). 24 Miyamoto, H. et al. Thermophile-fermented compost as a possible scavenging feed additive to prevent peroxidation. J Biosci Bioeng 116, 203-208, doi:10.1016/j.jbiosc.2013.01.024 (2013). 25 Nishida, A. et al. Bacillus hisashii sp. nov., isolated from the caeca of gnotobiotic mice fed with thermophile-fermented compost. Int J Syst Evol Microbiol 65, 3944-3949, doi:10.1099/ijsem.0.000516 (2015). 26 Ito, T. et al. Thermophile-fermented compost extract as a possible feed additive to enhance fecundity in the laying hen and pig: Modulation of gut metabolism. J Biosci Bioeng 121, 659- 664, doi:10.1016/j.jbiosc.2015.10.014 (2016). 27 Inabu, Y. et al. Development of a novel feeding method for Japanese black calves with thermophile probiotics at postweaning. J Appl Microbiol 132, 3870-3882, doi:10.1111/jam.15519 (2022). 28 Tashiro, Y. et al. A novel production process for optically pure L-lactic acid from kitchen refuse using a bacterial consortium at high temperatures. Bioresour Technol 146, 672-681, doi:10.1016/j.biortech.2013.07.102 (2013). 29 Tashiro, Y. et al. Novel pH control strategy for efficient production of optically active l-lactic acid from kitchen refuse using a mixed culture system.
+
+Bioresour Technol 216, 52-59, doi:10.1016/j.biortech.2016.05.031 (2016). 30 Poudel, P. et al. Direct starch fermentation to L- lactic acid by a newly isolated thermophilic strain, Bacillus sp. MC-07. J Ind Microbiol Biotechnol 42, 143-149, doi:10.1007/s10295- 014-1534-0 (2015). 31 Yue, S. et al. Meta-fermentation system with a mixed culture for the production of optically pure l-lactic acid can be reconstructed using the minimum isolates with a simplified pH control strategy.
+
+Biotechnol J, e2100277, doi:10.1002/biot.202100277 (2021). 32 Sawada, Y. & Hirai, M. Y. Integrated LC- MS/MS system for plant metabolomics.
+
+Comput Struct Biotechnol J 4, e201301011, doi:10.5936/csbj.201301011 (2013). 33 Shiokawa, Y., Date, Y. & Kikuchi, J.
+
+Application of kernel principal component analysis and computational machine learning to exploration of metabolites strongly associated with diet. Sci Rep 8, 3426, doi:10.1038/s41598- 018-20121-w (2018). 34 Miyamoto, H. et al. A potential network structure of symbiotic bacteria involved in carbon and nitrogen metabolism of wood- utilizing insect larvae. Sci Total Environ, 155520, doi:10.1016/j.scitotenv.2022.155520 (2022). 35 Creasy, L. L. The increase in phenylalanine ammonia-lyase activity in strawberry leaf disks and its correlation with flavonoid synthesis.
+
+Phytochemistry 7, 441-446 (1968). 36 Falcone Ferreyra, M. L., Rius, S. P. & Casati, P.
+
+Flavonoids: biosynthesis, biological functions, and biotechnological applications. Front Plant Sci 3, 222, doi:10.3389/fpls.2012.00222 (2012). 37 Xiaohong, Z., Guiliang, T. & GALILI., G. The catabolic function of the a-aminoadipic acid pathway in plants is associated with unidirectional activity of lysine–oxoglutarate reductase, but not saccharopine dehydrogenase.
+
+Biochem J. 351, 215-220 (2000). 38 Pernicova, I. & Korbonits, M. Metformin— mode of action and clinical implications for diabetes and cancer.
+
+Nature Reviews Endocrinology 10, 143–156 (2014). 39 Soukas, A. A., Hao, H. & Wu, L. Metformin as Anti-Aging Therapy: Is It for Everyone? Trends Endocrinol Metab 30, 745-755, doi:10.1016/j.tem.2019.07.015 (2019). 40 Eggen, T. & Lillo, C. Antidiabetic II drug metformin in plants: uptake and translocation to edible parts of cereals, oily seeds, beans, tomato, squash, carrots, and potatoes. J Agric Food Chem 60, 6929-6935, doi:10.1021/jf301267c (2012). 41 Bailey, C. J. & Day, C. Metformin: its botanical background. Practical Diabetes International 21, 115-117, doi:10.1002/pdi.606 (2004). 42 Gornik, H. L. & Creager, M. A. Arginine and Endothelial and Vascular Health. The Journal of Nutrition 134, 2880S-2887S (2004). 43 Song, H., Lu, Q., Hou, L. & Li, M. The genes crucial to carotenoid metabolism under elevated CO2 levels in carrot (Daucus carota L.). Sci Rep 11, 12073, doi:10.1038/s41598-021-91522-7 (2021). 44 Denisov, I. G., Makris, T. M., Sligar, S. G. & Schlichting, I. Structure and chemistry of cytochrome P450. Chem Rev 105, 2253-2277, doi:10.1021/cr0307143 (2005). 45 Sanai, S., Nakayama, M. & Ota, Y. Plant Growth-Regulating Activities of Nicotinamide. I.
+
+Effect of nicotinamide on growth of rice seedlings. Japanese Journal of Crop Science 46, 1-7 (1977). 46 Sanai, S. & Ota, Y. Plant Growth-Regulating Activities of Nicotinamide. II. Effect of nicotinamide on growth of several crops.
+
+Japanese Journal of Crop Science 46, 8-13 (1977). 47 Matsui, A., Yin, Y., Yamanaka, K., Iwasaki, M. & Ashihara, H. Metabolic fate of nicotinamide in

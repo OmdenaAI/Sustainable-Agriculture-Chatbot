@@ -1,0 +1,45 @@
+--- Page 12 ---
+
+for other researchers who aim to engage stakeholders in their work related to phosphorus sustainability
+(Grieger et al. - in preparation).
+
+Overall, these examples highlight how trans- and convergence research can be conducted in specific
+projects focused on an aspect of phosphorus sustainability, through the integration of natural sciences,
+environmental engineering and social sciences.
+
+Integrating stakeholder perceptions for nitrogen and water management
+The CROPPS center integrates stakeholder perspectives in the development of scalable field computing
+technologies intended to support nitrogen and water management. In addition to typical external
+engagements via surveys and other instruments, the center looks inward to the trajectory of its own
+innovations to ensure that they match day-to-day realities of rural environments where the technologies are
+imagined to be eventually deployed. Looking both early and inward in transdisciplinary research involving
+computing is important because prior literature indicates that computer systems developers inadvertently
+embed their own values into computing technologies - a term widely known as values in design.92–94 As a
+result, the team conducted a research study with two components:
+● A 24-month autobiographical study where researchers deployed experimental networking
+technologies for scalable field computing while critically reflecting on their day-to-day systems
+building to anticipate potential societal impacts of early technical design decisions
+● A set of seven semi-structured interviews with researchers and farmers involved in early phase
+adoption and adaptation of similar networked technologies for data-driven agriculture to understand
+their challenges, attitudes, and visions of the emerging technologies
+Key findings from the study include a one-hundred year gap between the seamless visions of researchers
+and the seamful realities under which the technologies are being built and expected to operate.95 For
+example, one participant described realities where “some of my neighbors farm like it is 1950”.
+Furthermore, as a result of the environments under which research is conducted (e.g., ample university IT
+support and research funding), researchers maintain faith in an eventual seamlessness of the technologies
+in the contexts where they will be deployed (i.e., rural farms).
+
+The century gap is crucial to acknowledge because it could affect consumer adoption of technologies built
+in the lab to address global challenges, but not grounded in the day-to-day realities of farms. More
+importantly, the findings raised three implications for the ongoing design, implementation, and evaluation
+of scalable field computing technologies within CROPPS:
+● Supporting the right to tinker with the technologies to fit the particular environment where they
+could be deployed
+● Documenting invisible work (e.g., hardware and cloud computing service choices) and their effects
+on the design decisions
+● Bridge the gulf to farms by recognizing farmers as natural tinkerers that have much insights to offer
+to technology designs and implementation
+As a result, the third implication has spurred further external research studies in CROPPS to guide internal
+vanguard research visions. Moreover, these findings formed part of a foundation for center-wide workshops
+to engage the center’s researchers in imagining alternative visions to the current trajectory of agricultural
+production and technological design.

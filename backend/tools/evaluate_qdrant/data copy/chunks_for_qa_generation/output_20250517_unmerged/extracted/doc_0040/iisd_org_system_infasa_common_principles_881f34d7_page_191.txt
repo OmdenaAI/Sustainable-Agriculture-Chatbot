@@ -1,0 +1,9 @@
+--- (Ecological Stratification Working Group, 1995). Polygon size varies, rang- ---
+
+the Soil Landscapes of Canada (SLC) map series. These maps portray generalized soil and landscape information at a scale of 1:1 million and are integrated into the National Ecological Framework for Canada (Ecological Stratification Working Group, 1995). Polygon size varies, rang- ing from about 10,000 ha to 1 million ha. Using these mapping units allows soil and landscape data to be integrated with farm management data for indicator calculations. Results can then be rolled up and report- ed at larger scales suitable for a national assessment.
+
+Figure 1: Extent of agricultural areas covered by agri-environmental indicators.
+
+Land use and farm management data are obtained from the Census of Agriculture, a survey by the Government of Canada, which is conducted every five years. Data from the Census is reallocated to the SLC polygon basis and may be supplemented by other custom data sets from provin- cial agencies,the private sector,remote sensing etc.as is appropriate and available.
+
+A common set of agricultural SLC polygons are used to calculate the agri-environmental indicators for Canada. In order to be included in the set, the polygons must have at least five per cent of their area reported as farmland. As a result of these requirements, many polygons in the fringe areas where agricultural activities are highly dispersed are excluded Sustainable Agriculture – From Common Principles to Common Practice 178

@@ -1,0 +1,11 @@
+--- Page 12 ---
+
+Left ：Control Right：Compost Left ：Control Right：Compost a c Index 1st Nov 2016 (n=15) 2nd Feb 2017 (n=11) Control Compost Control Compost Height (cm) 43.8 ± 4.4 46.5 ± 3.5 40.5 ± 3.0 43.4 ± 6.0 Root length (cm) 16.4 ± 1.5 19.1 ± 1.8 18.5 ± 2.0 21.4 ± 3.0 Root diameter (cm) 3.9 ± 0.5 4.0 ± 0.4 4.9 ± 0.5 5.4 ± 0.5 Stem & leaf weight (g) 35.0 ±14.0 34.0 ±11.0 18.0 ± 7.0 29.0 ± 13.0 Root weight (g) 117.0 ± 38.0 140.0 ± 41.0 201.0 ± 67.0 291.0 ± 97.0 Nov. 2016 Feb. 2017 0 20 40 60 80 100 120 140 160 180 200 Blue Green Red Control Test d Pixel index Compost Image J RGB extraction photograph Control Compost Targeted portion e Aug.
+
+Sowing Nov.
+
+Feb.
+
+Oct.
+
+Harvest (1st) Harvest (2nd) Thinning out Fig.1 f Index Nov. 2016 (n=4) Feb. 2017 (n=8) Control Compost Control Test Sweet 4 4 8 8 Rich taste 0 4 0 8 Immaturity 4 0 8 0 Flavor 0 4 0 8 * * * ** * * b

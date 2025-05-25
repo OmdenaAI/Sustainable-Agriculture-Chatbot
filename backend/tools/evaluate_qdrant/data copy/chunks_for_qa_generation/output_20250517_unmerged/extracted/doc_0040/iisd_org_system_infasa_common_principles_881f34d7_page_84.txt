@@ -1,0 +1,21 @@
+--- Arshad, M. A., Martin, S., 2002,“Identifying Limits for Soil Quality ---
+
+cific results can be achieved for land fertility status, nutrient status, mois- ture status and soil chemical and physical properties focal area develop- ment.These would couple well with ASA and extension impact maps for use in crop specific land suitability assessment, land-use and land-cover research and extension strategy formulation.All in all,these would factor into precision agriculture, which currently is not well implemented in Kenya, and point-based land management recommendations to aid agricultural extension activities and site-specific farmer decision-making in such fragmented-heterogeneous areas like Koru. The introduction of temporal analysis to the approach would offer more meaning to the cur- rent GIS approach. This would develop into a dynamic geographical information system (DGIS) for farm sustainability assessment based on spatial and temporal modelling and simulation in an endomorphic sys- tem to allow extended farm sustainability assessments and predictions.
+
+Acknowledgements We acknowledge the immense support given to us by the participating farmers who not only allowed us to use land-use data from their farms but also took an active part in providing and generating the data used in calibrating the farm sustainability assessment system. Logistical sup- port and data was provided by Ministry of Agriculture in Muhoroni Division (Menera).
+
+Bibliography Arshad, M. A., Martin, S., 2002,“Identifying Limits for Soil Quality Indicators in Agro-ecosystems,”Agriculture,Ecosystems and Environment.
+
+Vol. 88:153–160.
+
+Bland,W. L., 1999.“Towards Integrated Assessment in Agriculture,” Agricultural Systems.Vol. 60:157–167.
+
+Bojorquez-Tapia, L. A., S. Diaz-Mondragon and E. Ezcurra, 2001,“GIS- based Approach for Participatory Decision Making and Land Suitability Assessment,”International Journal of Geographical Information Science.
+
+Vol. 15:129–151.
+
+Bouma, J., 2002,“Land Quality Indicators of Sustainable Land Management Across Scales,”Agriculture,Ecosystems and Environment.
+
+Vol. 88:129–136.
+
+Sustainable Agriculture – From Common Principles to Common Practice 71

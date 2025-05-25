@@ -1,0 +1,15 @@
+--- Term Debt Coverage Ratio: ---
+
+Worksheet 2.15 Financial Ratios Based on the Balance Sheet and Income Statement Term Debt Coverage Ratio:
+
+This measure of repayment capacity indicates whether your business is generating enough income to make principal and interest payments on intermediate and long term debt.
+
+Gross Farm Income (Income Statement) Cash Operating Expenses (Income Statement) – Scheduled Interest Payments on Intermediate and Long-term Debt (Income Statement) + Family Living Expenses and Taxes (from the Earned Net Worth Change Worksheet) – Funds Available for Debt Payments = Intermediate and Long-term Debt Payments ÷ Term Debt Coverage Ratio = A term debt coverage ratio of over 150%, meaning that you are producing $1.50 of income that is available for debt repayment for each $1.00 of scheduled debt repayment, is usually considered adequate.
+
+Operating Expense Ratio:
+
+This measure of overall efficiency indicates the percentage of business revenues that are available for family living expenses, debt repayment and new investments.
+
+Cash Operating Expenses (Income Statement) Interest Expense (Income Statement) – Gross Farm Income (Income Statement) ÷ Operating Expense Ratio = While thumb rules for the ratios listed above can be used across farm types and across industries, operating expens- es will vary substantially from business to business and industry to industry. As a general guideline, most farm busi- ness strive to keep operating expenses under 70% of gross revenues. If you are operating a small farm that employs sustainable practices, your financial success probably depends on operating efficiency. In that case, you should proba- bly strive to keep operating expenses below 60% of revenues. If you are involved in a retail business, sales volume might be more important to your bottom line than operating expense levels if cost of goods sold is included. In that case, a much higher operating expense ratio might be expected. So, this ratio is useful for internal tracking of your business, but not very useful for comparisons with other businesses.
+
+CONTINUED 2 TASK 83 BUILDING A SUSTAINABLE BUSINESS

@@ -1,0 +1,3 @@
+--- Page 24 ---
+
+R_Amino acid R_DPPH R_Phenylpropanoid R_Other R_Carotenoid R_Flavonoid L_Other L_Phenylpropanoid L_DPPH L_Amino acid L_Flavonoid −1 0 1 Value Color Key R_Carotenoid R_Other R_Phenylpropanoid R_Amino acid R_Flavonoid R_DPPH L_Flavonoid L_Phenylpropanoid L_Amino acid L_Other L_DPPH −1 0 1 Value Color Key Fig. S3 Heatmaps of the correlations between the amino acid, carotenoid, flavonoid, and DPPH activity in the leaves and roots. The heatmaps based on data in (a) the control group and (b) the test group were shown. a b

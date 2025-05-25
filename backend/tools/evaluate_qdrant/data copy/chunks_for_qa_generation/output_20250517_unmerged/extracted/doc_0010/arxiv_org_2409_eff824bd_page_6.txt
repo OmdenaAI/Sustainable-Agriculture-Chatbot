@@ -1,0 +1,53 @@
+--- Page 6 ---
+
+necessary for agricultural productivity. Since crops have not been utilizing most of the applied fertilizers,
+it will be necessary to find strategies to either make soils less phosphate-limited or to more efficiently
+fertilize crops and reduce excess phosphorus leaching into the environment. Biomaterials, such as
+functionalized hydrogels and nanofertilizers are potential avenues to solve this problem, especially when
+co-created with biologists.
+
+Functional hydrogels can be designed to cleave soluble, bioavailable phosphates from complexes. STEPS
+researchers have synthesized an organophosphate-degrading functionalized hydrogel by crosslinking
+poly(maleic anhydride-co-methyl vinyl ether) (PMAMVE) with ethylene diamine and reacting the
+remaining maleic anhydride units with with hydroxylamine.49 This process forms hydroxamic acid
+functional groups within the PMAMVE gel. We evaluated the performance of the PMAMVE gels in
+decomposing dimethyl nitrophenyl phosphate (DMNP), an organophosphate molecule. The decomposition
+of DMNP in the maleic anhydride gels followed pseudo-first-order kinetics for all studied conditions. The
+spatial confinement of the hydroxamic acid groups inside the gel influenced the performance. The gels
+made of PMAMVE copolymers modified with hydroxamic acid offer a robust new system with high
+degradation efficiency, scalability and simple preparation. Current efforts toward creating materials that
+degrade organophosphates involve modifying the PMAMVE gels with deferoxamine (Desferal) and UiO-
+66 (Universitetet i Oslo) metal-organic framework. Once optimized by chemists and biologists in the
+STEPS Center, this hydrogel has the potential to improve phosphorus bioavailability of complexed
+phosphate that is already present in soils.
+
+A second avenue of designing novel fertilization methods involves nanofertilizers. Per IUPAC
+(International Union of Pure and Applied Chemistry), a nanoparticle is classified as a particle with a size
+less than 100 nanometers in any one of the threedimensions.50 Engineered nanoparticles often have new or
+novel physical or chemical properties compared to their bulk scale counterparts. There are essentially two
+main methods to synthesize them: top-down and bottom-up. The former involves grinding bulk material
+into the nanoparticle size while the latter synthesizes the material on the scale of nanometers using base or
+precursor materials. Top-down processes include different kinds of milling such as planetary or unitary ball
+mills. Bottom-up methods build from molecular or atomic clusters to nucleate and grow the desired
+nanoparticle. Bottom-up processes include chemical precipitation, sol-gel method co-precipitation,
+hydrothermal synthesis, microemulsion and electrochemical synthesis.51 To further enhance the properties
+of nanoparticles, they are often surface modified or functionalized, a process in which inorganic and organic
+molecules are added to its surface, depending on the covalent or polar nature of the nanoparticle.52,53
+
+In agriculture, functionalized nanoparticles are useful methods for obtaining controlled-release fertilizers.
+Nanoparticle controlled-release fertilizers exhibit better absorption and utilization of nutrients when
+compared to commercial fertilizers. Avila-Quezda et al. showed that nanofertilizers can reduce
+eutrophication due to loss of nutrients, exhibit a higher diffusion and solubility rate and have better
+controlled release properties when compared to commercially available controlled-release fertilizers.54
+
+Recent work in the field has found that macronutrients such as N, K, P, Ca, Mg, and S can be combined
+with nanomaterials to enable the delivery of a specific quantity of nutrients to crops.55 For example,
+Tarafdar
+et
+al.
+used
+phosphorus in tricalcium
+phosphate
+to
+synthesize
+fungal-mediated

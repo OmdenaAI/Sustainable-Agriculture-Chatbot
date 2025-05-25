@@ -1,7 +1,7 @@
 import json
 import argparse
 
-def compute_averages(jsonl_path="tools/insert_db/data/eval_rerank.jsonl"):
+def compute_averages(jsonl_path):
     # Metrics to average
     metrics = [
         "ncdg",
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--path",
         type=str,
-        default="tools/insert_db/data/eval_rerank.jsonl",
+        default="tools/evaluate_qdrant/data/eval_output/ws1-wosmallparagraphs_eval.jsonl",
         help="Path to the .jsonl file (default: tools/insert_db/data/eval_rerank.jsonl)"
     )
     args = parser.parse_args()

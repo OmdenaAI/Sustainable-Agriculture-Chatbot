@@ -1,0 +1,50 @@
+--- UPLC, MS: Xevo TQ-S, Waters). The sample introduction volume was 1 μL. The obtained ---
+
+4
+
+As previously described 67, a carrot sample was homogenized with ethanol under ice-cold
+conditions, and the mixture was centrifuged at 2000 × g for 10 min. The upper ethanol
+layer was evaporated, and the volume of the extract solution was adjusted. Thereafter, 1.0
+mL of distilled water, 1.0 mL of 50 mM Tris buffer solution (pH 7.4), and 1.0 mL of 0.1
+mM DPPH solution in ethanol were added to the sample solution in the assay tube. The
+mixture was incubated at 37℃ for 20 min, and the absorbance at 517 nm was measured
+with an iMark microplate reader (Bio–Rad Co., Ltd., USA). Antioxidant activity was
+calculated from a calibration curve prepared using a set of standard colors obtained by
+mixing alpha-tocopherol in ethanol solution. Each value was expressed as the alpha-
+tocopherol equivalent per gram of sample (nmol/g carrot).
+
+Metabolome analysis
+As previously described 68, the plants were lyophilized and crushed with beads, and a
+sample of precisely 4 mg (lyophilized weight) was weighed. Subsequently, 1.0 mL of
+extraction solvent (0.1% formic acid in 80% methanol, including lidocaine (8.4 nmol/L)
+and 10-camphor sulfonic acid (210 nmol/L) as the internal standard) was added to the
+sample, and the mixture was centrifuged (1,000 rpm (9,100 g), 1 min). Then, 25 µL of the
+supernatant of the extract was transferred to a 96-well plate; 225 µL of extraction solvent
+was added; the samples were shaken, stirred (1,100 rpm, 6 minutes), and centrifuged (2,000
+rpm, flashing); and 25 µL of the supernatant was transferred to a 96-well plate. Next, 250
+µL of ultrapure water was added to the dry solid (10 minutes), shaken and redissolved
+(1,100 rpm, 6 minutes), and centrifuged (2,000 rpm, flashing). Then, 120 µL of the
+supernatant was transferred to a 384-well plate with a filter and centrifuged (2,000 rpm, 5
+minutes). Next, plant (leaves and root) analysis was performed using a liquid
+chromatography (LC)-tandem quadrupole mass spectrometry (MS) system (LC: Acquity
+UPLC, MS: Xevo TQ-S, Waters). The sample introduction volume was 1 μL. The obtained
+raw data were selected according to certain conditions (peak area of plant sample > 3,000,
+peak area of extraction solvent > 1.000), and the data corrected based on the internal
+standards were used for analysis.
+Metabolome analysis of soils was performed as previously described 69. In brief, soil mixed
+with 10 ml of sterile water was filtered through a 5A filter (Advantec Co., Ltd.), and the
+filtrate was lyophilized and crushed with beads. An appropriate amount of extraction
+solvent was added according to the lyophilized weight. A sample of each mixture of 2.0
+mg dry weight was prepared in 1 mL volume. Finally, 1.0 mL of extraction solvent (0.1%
+formic acid in 80% methanol, including lidocaine (8.4 nmol/L) and 10-camphor sulfonic
+acid (210 nmol/L) as the internal standard) was added. The mixture was incubated for 2
+min, centrifuged (1,000 rpm (9,100 g), 1 min), and stored frozen at -30°C. The supernatant
+(25 µL) of the extract was transferred to a 96-well plate; 100 μL of the extraction solvent
+was added; the mixture was shaken, stirred (1,100 rpm, 6 minutes), and centrifuged (2,000
+rpm, flashing); and the supernatant (25 µL) was transferred to a 96-well plate. Next, 500
+µL of ultrapure water was added to the dry solid (15 min), and the mixture was shaken,
+redissolved (1,100 rpm, 6 min), and centrifuged (2,000 rpm, flashing). Then, 120 µL of the
+supernatant was transferred to a 384-well plate with a filter and centrifuged (2,000 rpm, 2
+minutes). Soil analysis was performed using an LC-MS system (LC: Nexera X2, MS:
+LCMS-8050, Shimadzu). The sample introduction volume was 1.5 µL. Peak checks were
+performed for all compounds. The raw data were corrected based on the internal standard,

@@ -1,0 +1,45 @@
+--- Africa, India, and Australia. ---
+
+The complexity of agricultural systems, including plants, their interaction with a local environment that
+spans from the atmosphere to below ground, and the human context in both management and consumption,
+presents numerous scientific and technical challenges in developing sustainable agricultural practices. The
+widespread use of synthetic fertilizers, primarily containing nitrogen and phosphorus, for decades has
+significantly boosted global food production capacity.4 However, a major challenge arises from inefficient
+application of fertilizers, which contaminates the environment via leaching, particularly in water bodies
+where it damages aquatic ecosystems.5 For example, crops utilize only around one-third of the nitrogen
+supplied through fertilization, with the remainder lost through leaching and gaseous emissions.2 Phosphorus
+fertilization has also exceeded crop phosphorus use with only 10-20% of phosphorus fertilizer being utilized
+by crops.6 As we lack tools capable of providing real-time information on the internal state of plants and
+fertilizer availability in the soil, we are unable to develop predictive models to guide farmers in effectively
+managing their fertilizer usage. Moreover, there is a need for significant investment in breeding strategies
+aimed at developing new varieties of plants with enhanced nitrogen, phosphorus and water use efficiency.
+
+The complexity and global prevalence of agricultural systems can be addressed most effectively using
+transdisciplinary research. Where interdisciplinary research integrates multiple disciplines to address
+outstanding research questions, the NSF defines convergence research as the integration of disciplines to
+address a specific problem, typically of societal importance. Here, we define transdisciplinary research that
+involves convergent and interdisciplinary methods to co-create knowledge related to societal problems
+among stakeholders and researchers.7,8 Transdisciplinary research is best suited to address this grand
+challenge since it has the most potential for creating knowledge and solutions that can be applied in social
+contexts, especially since its process relies on stakeholders and collaboration. In fact, transdisciplinary
+research has been used to address climate change challenges in regions around the world, including Europe,
+Africa, India, and Australia.9–11 Transdisciplinary research should thus be applied to other problems, such
+as grand challenges in securing sustainable agricultural systems that meet the growing demands of the
+future.
+
+Transdisciplinary research will be necessary to address global challenges and coordinate meaningful
+solutions in society. However, there is a need for more examples from biological and engineering
+applications of how transdisciplinary and convergence research can be implemented. Below, we present
+five case studies (Fig. 2) from two transdisciplinary and convergence research centers supported by the
+National Science Foundation as Science and Technology Centers (STCs), i.e., Science and Technologies
+for Phosphorus Sustainability (STEPS) Center, and Center for Research on Programmable Plant Systems
+(CROPPS), that contribute to our ongoing efforts in advancing sustainable and resilient agricultural
+systems. Collectively, our work spans across multiple scales. Starting on a whole-plant scale, we investigate
+how environmental inputs affect plant communication (signaling) and utilize synthetic biology approaches
+to harness this communication for reporting on resource availability. We then focus on the immediate plant
+environment (soil) and explore new fertilizer technologies to increase the availability of phosphorus in the
+soil. At a plant population scale, we develop tools for intimate interactions with plants to identify
+endophenotypes for improved breeding programs in the context of nitrogen and water use efficiency.
+Expanding to the ecosystem scale, we investigate phosphorus recovery from aquatic systems and develop
+water resource management strategies to mitigate the harmful effects of phosphorus leaching. Finally, we
+conduct research to understand stakeholder needs and priorities and incorporate these findings back into

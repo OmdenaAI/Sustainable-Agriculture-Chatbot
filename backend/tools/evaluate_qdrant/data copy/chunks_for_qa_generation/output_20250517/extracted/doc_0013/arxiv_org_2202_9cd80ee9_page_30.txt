@@ -1,0 +1,28 @@
+--- Page 30 ---
+
+!!
+
+"
+#
+$
+
+"%
+&'()(
+
+!
+!
+"!
+
+!"!
+
+#
+
+$$
+%
+Fig. S9
+The path of Fig. 4 calculated by the function sem. (a), (b), and (c) shows the path in Figs. 4a, 4b, and 5a, respectively. The value in the
+back of each “par=” shows the “startvalue” as the parameter (par) of the indicated each path. The number in back of each “par=” shows
+just a simple order of description.
+b
+a
+c

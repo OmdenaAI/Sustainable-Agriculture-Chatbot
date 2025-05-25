@@ -1,0 +1,167 @@
+--- Acidobacteria, Spirochaetes, and Deinococcus-Thermus ---
+
+testing methods not listed here are described in the
+Supplementary methods.
+
+Results
+Harvest survey
+The experiment in which the soil was fertilized with
+thermophile-fermented compost was planned as shown
+in Fig. 1a. The amendment with compost tended to
+increase the weight of the stems, leaves, and roots of
+carrots. This tendency showed marked increases
+dependent on the duration of the exposure to the
+compost (Figs. 1b and 1c). A significant difference was
+observed in February (Fig. 1c). Interestingly, the carrots
+fertilized with compost tended to turn red. Therefore, an
+analysis was performed using the RGB color matrix as
+an index according to the procedure shown in Fig. 1d.
+The study of the color matrix of randomly sampled
+carrots showed that the rate of red coloration was
+significantly
+increased
+by
+compost
+amendment
+(p=0.012) (Fig. 1e). Because carotenoids generally
+cause the red color of carrots, the carotenoid
+concentrations were examined. The results confirmed
+that the concentrations of α-carotene (p=0.0103 vs.
+control), beta-carotene (p=0.1188 vs. control), and
+lycopene (p=0.0146 vs. control) tended to increase (Fig.
+S2). Furthermore, a taste survey indicated apparent
+differences in flavor richness and immaturity. These
+differences were confirmed in the carrots harvested in
+February (Fig. 1f) and those harvested in November,
+which showed a slight effect on growth (Fig. 1b). These
+observations confirmed that the compost amendment
+improved the indices of carrot production and quality in
+this study.
+
+Metabolome analyses of carrot leaves and roots
+The application of thermophile-fermented compost
+increased the content of 2,2-diphenyl-1-picrylhydrazyl
+(DPPH) content by 40% (p=0.2612) in the roots. At the
+same time, it decreased the DPPH content by 40% in
+the leaves (p=0.0014) (Fig. 2a). On the basis of these
+evaluations, metabolome analyses of carrot leaves and
+roots were performed. Additionally, correlation analysis
+was performed on the basis of the whole analyzed data.
+As a result, the correlations of amino acids, flavonoids,
+and phenylpropanoids were different between the
+control and compost groups (Fig. S3).
+In detail, the levels of metabolic compound candidates
+changed as follows: the levels of 4-amino-butyric acid
+(GABA), as amino acid-related metabolites, increased
+significantly in the leaf after the compost exposure
+(p=0.0072), but methionine sulfoxide and methionine
+levels were decreased considerably (p=0.0007). The
+levels of the metabolites annotated as kaempferol-Gal-
+Rha,
+cyanidin
+3-O-Rut,
+apigenin
+7-O-
+neohespseridoside, and quercetin-Glc as flavonoids in
+the leaf were significantly decreased by exposure
+(p=0.0023;
+p=0.0031;
+p=0.0035;
+and
+p=0.0147,
+respectively) (Fig. 2b). For other categories, indole 3-
+carboxyaldehyde increased considerably by exposure
+(p=0.009)
+,
+but
+L-2-aminoadipate,
+malate,
+1,3-
+dimethylurate,
+methylmalonate,
+and
+phenyllactate
+decreased (p=0.0079; p=0.0106; p=0.0230; p=0.0410;
+and p=0.0461, respectively). In roots (Fig. 2c),
+tryptophan,
+phenylalanine,
+tyrosine,
+and
+L-2-
+aminoadipate levels, as amino acids and nitrogen
+metabolites, were significantly reduced by the exposure
+(p=0.0177;
+p=0.0952;
+p=0.0449;
+and
+p=0.0355,
+respectively), and arginine levels were significantly
+increased (p=0.0315). The correlation between these
+individual metabolites was also clearly different (Fig. S4).
+Thus, such an increase or decrease in common
+metabolites was not necessarily confirmed. However, at
+least the compost amendments significantly changed leaf
+and root metabolites, especially leaf flavonoids involved
+in antioxidant activity. It has become possible to classify
+characteristic metabolites in carrot leaves and roots
+depending on the cultivation conditions.
+
+Soil omics analysis
+To evaluate the relationships among leaves, roots, and
+soils, soil omics analyses were also performed. Due to
+the difference in the target and analysis conditions, the
+metabolome analysis was performed using a device
+different from the one used for the leaf and root. Of the
+amino acids and related compounds, S-methyl-L-
+cysteine had an increased tendency in the composting
+group, and the levels of nicotinamide tended to decrease
+(Fig. 2d).
+Subsequent analysis of the soil bacterial population
+suggested that the bacterial diversity differed between
+conditions with and without the application of compost
+(Fig. S5a and Fig.3a). There was little change in α-
+diversity (Fig. S5a). However, the beta diversity tended
+to change, although not significantly (Fig. 3a). Some
+changes in the bacterial populations were observed that
+were not always significant differences (Figs. 3b and
+S6a). Evaluation at the phylum level showed that the
+phylum Proteobacteria as a dominant bacterial group
+decreased significantly after the compost amendment.
+The
+levels
+of
+the
+phyla
+Gemmatimonadetes,
+Verrucomicrobia,
+Firmicutes,
+Elusimicrobia,
+and
+Thaumarchaeota tended to be high (Figs. 3b and S6a).
+On
+the
+contrary,
+the
+phyla
+Planctomycetes,
+Acidobacteria, Spirochaetes, and Deinococcus-Thermus
+tended to decrease. At the genus level (Figs. 3c and S6b),
+the abundance of the genus Marmoricola increased
+significantly. Furthermore, the genera Paenibacillus,
+Geobacillus,
+Panacagrimonas,
+Nocardiodes,
+and
+Phycicoccus tended to increase.
+Therefore, these observations suggested that the
+amendment of the compost caused changes in the
+bacterial populations of the soil and altered the
+metabolism of the soil.
+
+Association analyses and covariance structure
+analyses
+An association analysis was performed based on
+production indices, color matrix, and omics data, and
+factors strongly related to compost administration were
+selected (Fig. S7). The characteristics of leaf, root, and
+soil bacteria were also visualized, and the differences in

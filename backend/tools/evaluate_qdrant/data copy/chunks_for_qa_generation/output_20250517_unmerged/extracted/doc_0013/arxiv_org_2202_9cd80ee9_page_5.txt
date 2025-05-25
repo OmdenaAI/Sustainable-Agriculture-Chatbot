@@ -1,0 +1,135 @@
+--- estimated SEM candidates (Tables S2 and S3). L-2- ---
+
+tested after it was well mixed with the soil in the control
+and test areas prior. Total nitrogen tended to increase
+slightly, and the EC value related to the nitrate
+concentration was higher in the test area (Table S11).
+Next, a system was created to measure the amount of
+N2O generated from the soil (Fig. S12c). The results of
+the NGS analysis of the prepared soil indicated that it
+mainly contained Gibberella sp. (66.1%) and Fusarium
+sp. (28.7%) as fungi. The potato dextrose power, which
+can generally be used as a medium for fungi, was added
+to the soil for the test. The test results confirmed that the
+conditions with added compost showed markedly
+reduced N2O generation compared to that of the control
+group (soil only with fungi and PDA) (Fig. S12d). Since
+N2O content was approximately the same as those
+under the condition with no nutritional source of fungi as
+a reference test, it was suggested that the inhibitory
+effect was even greater. These results are based on the
+test laboratory level. In contrast, measuring nitrous
+oxide at the field level and exploring the mechanism of
+action of complex microorganisms is costly and time-
+consuming. At any point, the phenomena identified in
+this study are of social significance. On the contrary, the
+use of such a laboratory system suggests that it is
+possible to assess the potential for N2O generation in
+soil collected from the field in the laboratory without
+measuring the volume of N2O at the field level.
+Furthermore, it should be noted that the soil tested
+immediately after harvesting the carrot fields confirmed
+an increase in PAC and a decrease in iron concentration
+(Table S11). The field test results were consistent with
+the compost-derived Paenibacillus strains being positive
+for phosphate solubilization and siderophore reactions.
+Furthermore, the growth of carrots in this field
+experiment was not contradictory, even though the
+isolated Paenibacillus strains from the compost were
+positive for producing the plant hormone auxin.
+Thus, the function of the compost was verified in the field
+test and had similarities with the results of the in vitro
+test as complementary data.
+
+Discussion
+Here, we succeeded in deriving structural equations
+related to nitrogen metabolism in leaves, roots, and soil
+as the effect of thermophile-fermented compost. In the
+structural equation, it was assumed that Paenibacillus,
+a candidate for nitrogen fixation, might be involved, and
+we succeeded in isolating Paenibacillus strains derived
+from the compost. Furthermore, based on genomic
+analysis and evaluation of biological activity, the
+possibility of nitrogen circulation in plants and soil by the
+compost used here was confirmed.
+In plants, the structural equations of amino acids and
+flavonoids were inferred. The optimal compost-linked
+SEM linked with apigenin 7-O-neohesperidoside,
+kaempferol-Gal-Rha, and quercetin Glc as leaf
+flavonoids was consistent with that phenylalanine being
+the precursor of flavonoids 35,36. The model provided a
+new insight on using L-2-aminoadipate as a nitrogen
+compound. The 2-aminoadipate candidates commonly
+detected in leaves, roots, and soil were linked to the
+estimated SEM candidates (Tables S2 and S3). L-2-
+aminoadipate was significantly altered in both leaves and
+roots with the addition of compost, but DL-2-
+aminoadipate was not always changed in the soil.
+Furthermore, the difference in the L and DL types may
+depend on different equipment, and the cause was
+unclear. In any case, the estimated SEM candidates with
+2-aminoadipate had relatively suitable fit index values.
+Since 2-aminoadipate is associated with the activity of
+lysine–oxoglutarate reductase 37, the relationship with
+lysine was reassessed. 2-Aminoadipate was not only
+reduced in leaves and roots (Fig. S13a), but the
+proportion in leaves and roots increased conversely in
+the roots (Fig. S13b). Lysine tended to increase in roots
+(Fig. S13c), and the proportions in leaves and roots also
+tended to increase in roots (Fig. S13d). Root lysine was
+not adopted as a factor in the structural equation in Fig.
+4b because it was not significant (p <0.05, Fig. 2c) and
+did not have a high lift value in the association analysis
+(Fig. S7). However, the structural equation, including
+lysine, was calculated on the basis of the information on
+physiological function. As in results (Table S12), the
+model that included some regression model formulas
+showed the optimum value, along with the models with a
+metabolite annotated as metformin and arginine, rather
+than the model that contained lysine and aminoadipate.
+In particular, metformin and arginine also increased in the
+roots (Fig. 2c). Metformin is a component of therapeutic
+agents for the treatment of diabetes 38 and an anti-aging
+therapy candidate 39. Previous reports of plant-derived
+metformin are notable
+40,41. Arginine is potentially
+therapeutic for cardiovascular disorders
+42. These
+functional titers need to be recognized with more care
+that considers their physiological efficacy. However, it
+may make sense that nitrogen metabolites have been
+detected after compost amendment with nitrogen-fixing
+Paenibacillus.
+In the structural equation of leaves and roots, carotenoids
+appeared to be directly affected by compost, but the
+relationship
+between
+other
+metabolites
+was
+not
+statistically clarified. In particular, the soil sampled
+immediately after carrot cultivation showed reduced iron
+(Table S11), and compost-derived Paenibacillus may be
+involved in exhibiting a siderophore response to promote
+iron absorption. In addition, it was reported that the
+biosynthesis
+of
+carotenoids
+was
+controlled
+by
+cytochrome P450 43, which could have heme with iron as
+an essential component 44.
+In the structural equations between soil metabolites, soil
+bacteria, and compost, the decreasing trend of
+nicotinamide and the increasing trend of S-methyl L-
+cysteine deserve attention. Nicotinamide has been
+reported to be involved in plant growth 45-47, biological
+defense48, and antioxidant activity49. S-methyl L-cysteine
+sulfoxide, a derivative of S-methyl L-cysteine, is a
+repellent against plant parasitic nematodes 50, which
+reduce plant growth and productivity. S-methyl L-
+cysteine sulfoxide, a precursor of soil fumigant
+dimethyldisulide (DMDS) (Dangi et al., 2014), is
+produced by plants (Friedrich et al., 2022) and bacteria

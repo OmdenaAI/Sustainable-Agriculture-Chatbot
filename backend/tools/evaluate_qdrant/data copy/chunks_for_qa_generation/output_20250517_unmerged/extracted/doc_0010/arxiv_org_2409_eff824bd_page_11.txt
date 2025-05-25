@@ -1,0 +1,46 @@
+--- Page 11 ---
+
+innovation align with broader concepts of responsible innovation, that seek to better align scientific research
+and innovation efforts with societal needs and wants.88,89
+
+For these aforementioned reasons, the STEPS Center conducts research to identify the perceptions and
+needs of diverse stakeholders involved in phosphorus management and sustainability using a range of
+approaches. Among other examples, a survey was conducted to understand the perceptions, needs, and
+potential concerns of stakeholders for achieving phosphorus sustainability.89 Building on the survey results
+of the survey, a targeted set of interviews were conducted with key stakeholders involved in a subset of
+STEPS-funded projects that aimed to develop new technologies or strategies to improve sustainability of
+phosphorus management in specific contexts.90
+
+The research team developed the survey to investigate stakeholder views and needs for achieving
+phosphorus sustainability using the online platform Qualtrics. The survey was composed of 14 multiple-
+choice and open-ended questions, and was deployed to expert stakeholders in the U.S. and abroad in the
+fall of 2022 using email and posted on social media (LinkedIn) through the Sustainable Phosphorus
+Alliance, which is a STEPS partner. Based on responses of 96 survey participants, stakeholders largely
+considered phosphorus management to be unsustainable and they were concerned about our current ability
+to manage phosphorus in a sustainable way.89 These responses were based on the fact that phosphorus is
+mined from nonrenewable phosphate rock, there are significant challenges to phosphorus recovery and
+reuse, phosphorus management in agriculture is inefficient, and the environmental impacts associated with
+the inefficient management of phosphorus. This study also found that stakeholders reported a range of needs
+to achieve phosphorus sustainability, including better management practices, new technologies, new or
+better regulations, and ways in which to engage other stakeholders. While these findings are not entirely
+surprising for researchers and practitioners working in phosphorus sustainability fields, this study was the
+first to document stakeholder needs and priorities to achieve phosphorus sustainability using a structured
+and rigorous approach based in social sciences.89
+
+Next, the research team identified three case studies that represented promising technologies or new
+strategies to improve phosphorus sustainability across the STEPS Center to investigate stakeholder
+perceptions and needs in these contexts more deeply. The case studies selected were 1) urine diversion in
+buildings, 2) EBPR in wastewater treatment, and 3) isotope tracking in natural waters. A total of 37
+interviews were conducted with key stakeholders involved in these case studies in the spring of 2023 to
+better understand their perceptions, needs, and potential concerns for achieving phosphorus
+sustainability.90 Key findings from this work include the fact that stakeholders identified a common set of
+economic, regulatory and societal issues as main factors that affect the adoption of new scientific or
+technical solutions for phosphorus recovery. For example, the cost of water and phosphate rock were
+identified as primary drivers to the adoption of urine diversion in buildings, whereas technical
+improvements were a primary driver in the EBPR case. At the same time, barriers to technology adoption
+included technical, regulatory and economic challenges, such as societal push-back associated with
+negative perceptions of urine diverting toilets in the urine case or technical challenges to EBPR. Findings
+from this work are being integrated back into STEPS-funded research projects to improve not just technical
+aspects but also engagement efforts associated with these cases.91 Following these efforts, the research team
+is also developing collaborative working groups within specific STEPS projects to co-create solutions with
+stakeholders in specific contexts and settings, as well as developing best practices and guidance to follow

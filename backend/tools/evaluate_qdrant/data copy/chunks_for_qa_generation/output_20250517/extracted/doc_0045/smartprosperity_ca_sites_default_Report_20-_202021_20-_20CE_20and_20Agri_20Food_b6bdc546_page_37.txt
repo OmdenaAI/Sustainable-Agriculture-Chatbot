@@ -1,0 +1,95 @@
+--- 6.2. PULL Policies ---
+
+A Circular Agriculture and Agri-food Economy for Canada | 31
+Horizon 2020 Programme 155,156
+Horizon 2020 was Europe’s flagship research
+programme aimed at securing Europe’s global
+competitiveness through an emphasis on “excellent”
+science, industrial leadership and tackling societal
+challenges. A major focus area in Horizon 2020’s
+‘Climate Action, Environment, Resource Efficiency and
+Raw Materials Challenge’ was waste. Under this focus
+area was research and action on developing a system
+approach for the reduction, recycling and repurposing of
+food waste.
+A key research project funded by Horizon 2020 between
+2015-2019 was “REFRESH: Resource Efficient Food and
+dRink for the Entire Supply cHain”. REFRESH focused
+on the reduction of avoidable waste and improved
+valorisation of food resources. Backed by research to
+better understand the drivers of food waste, the project
+supported better decision-making by industry and
+individual consumers. The project took an innovative,
+systemic approach to curb food waste through a
+holistic ‘Framework for Action’. REFRESH built on and
+went beyond existing initiatives to develop, evaluate,
+and ensure the spread of social, technological, and
+organisational insights and practices related to food
+waste. This was underpinned by guidance to legislators
+and policy makers to help support effective governance
+to tackle food waste.
+6.2. PULL Policies
+Currently, there is little market stimulation to grow the demand
+for circular products and services, due to the environmental
+externalities described in the market barriers section. PULL
+policies aim to overcome these barriers by stimulating market
+demand for environmental solutions through tools such as
+regulations, pollution pricing, and procurement. While the
+primary goal of such policies is to solve an environmental
+problem, they also incentivize innovation. Further, if such
+innovation can bring down the cost of achieving environmental
+objectives, they also create competitive advantages. OECD
+research on this topic has found that environmental policies that
+drive innovation share key features including stringency, flexibility,
+predictability, incidence, and depth.157
+When designing such policies, it is equally important to
+ensure that they don’t unintentionally hinder innovation.
+Rigid compliance can discourage innovation approaches
+and practices, while prescriptive policies that focus on the
+lowest short-term cost can impede the development and/or
+implementation of solutions that might have lower costs (and
+environmental impacts) in the longer run.158 For instance, foods
+imported into Canada can run into issues if the label does not
+meet Canada’s legal requirements. In many cases, this results
+in foods being sent to landfill rather than being able to be sold
+or donated, even if the issue does not pertain to food safety.159
+Where such policies exist, they should be reviewed and updated.
+
+Regulations
+A regulatory approach is often used in the agriculture and agri-
+food sector. Where consumers are insensitive to price changes in
+the markets, regulations can be used to drive change in the status
+quo.
+In the earlier stages of the food supply chain, a recurring cluster
+of proposed regulations relate to date labelling. Date labels often
+cause consumers to avoid buying or consuming foods that are
+close to “best before”, “use by”, “sell by” and “expiry” dates. By
+creating regulations that require food processors to differentiate
+between expiry dates and “best before/use by/sell by” dates,
+governments can provide greater clarity about what these labels
+mean. They could also avoid confusion by improving the physical
+placement of the text, legibility, and consistency of formats. This
+in turn could reduce the unnecessary disposal of safe and healthy
+food, either by consumers or businesses who remove them
+prematurely from their shelves.160
+Box 15
+Box 16
+California’s Law on Food Data
+Labelling 161
+In 2017, the state of California in U.S.A passed a law to
+standardize date labels on food. The law encourages food
+manufacturers, processors, and retailers to use the terms
+“BEST if Used by” or BEST if Used or Frozen by” to indicate
+quality, and “USE by” or “USE by or Freeze by” to indicate
+safety.
+Regulations could also be used to tackle the ever-growing
+problem of packaging waste, including from the agriculture and
+agri-food sector. While food packaging plays an important role in
+helping to retain and optimize the value of food by extending its
+shelf life, it generates a significant amount of waste. To mitigate
+this waste, governments could create regulations that enable
+the development and use of more environmentally friendly
+packaging. They can also introduce the practice of Extended
+Producer Responsibility where those who manufacture and
+distribute the packaging are assigned full financial and physical
+responsibility for their packaging waste162 (versions of this are in

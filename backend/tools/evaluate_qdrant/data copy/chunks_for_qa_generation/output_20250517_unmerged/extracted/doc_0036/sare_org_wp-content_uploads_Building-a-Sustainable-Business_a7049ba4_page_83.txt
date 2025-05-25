@@ -1,0 +1,21 @@
+--- Debt to Asset Ratio: ---
+
+Worksheet 2.15 Use information from your balance sheet and income statement to calculate the following ratios that measure liquidity, solvency, profitability, repayment capacity and efficiency.
+
+Financial Ratios Based on the Balance Sheet and Income Statement Current Ratio:
+
+This is a primary measure of liquidity used by most businesses.
+
+Current Assets (Balance Sheet) Current Liabilities (Balance Sheet) ÷ Current Ratio = A current ratio of 2:1, with two dollars of current assets for every dollar of current debt, is usually considered ade- quate. If your current ratio approaches 1:1, your ability to sustain your business during a financial downturn may be limited.
+
+Debt to Asset Ratio:
+
+This solvency measure is sometimes referred to as your percent in debt.
+
+Total Liabilities (Balance Sheet) Total Assets (Balance Sheet) ÷ Debt to Asset Ratio = When calculated based on the market value of your assets, a debt to asset ratio under 40% is usually considered comfortable; over 60% is usually considered vulnerable.
+
+Rate of Return on Assets:
+
+This profitability measure can be interpreted as the average interest rate being earned on the financial resources invested by you and lenders in your business. Adjust net farm income for the estimated opportunity cost of unpaid family labor to make your figures comparable to those for businesses that hire labor and management Net Farm Income (Income Statement) Interest Expense (Income Statement) + Opportunity Cost for Family Labor and Management (estimated) – Return on Assets = Total Farm Assets (Balance Sheet) ÷ Rate of Return on Assets = The amount you deduct for labor and management depends on your goals for how much income you feel you need from the farm. Since farming has not historically been a high return business, a rate of return greater than 5% (when assets are valued at market value) is usually considered adequate. Remember, though, if you are earning only 5% and paying interest at 10%, you may be headed for problems.You may be able to maintain this if your debt to asset ratio is low. But if you have substantial debt, you will need to set your profitability goals a bit higher.
+
+CONTINUED 2 TASK 82 BUILDING A SUSTAINABLE BUSINESS

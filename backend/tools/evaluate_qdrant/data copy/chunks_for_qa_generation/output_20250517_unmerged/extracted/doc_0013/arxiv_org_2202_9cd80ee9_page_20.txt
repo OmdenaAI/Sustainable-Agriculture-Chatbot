@@ -1,0 +1,31 @@
+--- Page 20 ---
+
+Figure contents Fig. S1 Experimental scheme in this study.
+
+Fig. S2 The contents of primary carotenoids in the roots of carrots in the leaves and roots of carrots.
+
+Fig. S3 Heatmaps of correlations between the amino acid, carotenoid, flavonoid, DPPH activity in the leaves and roots.
+
+Fig. S4 Heatmaps of correlations between metabolites in the leaves and roots shown in Fig. 2.
+
+Fig. S5 Bacterial diversity in the soil after cultivation of carrot.
+
+Fig. S6 The population of phyla and genera in the soil of the control and compost groups.
+
+Fig. S7 Association networks in the leaves and root metabolites, and the soil bacteria by compost administration.
+
+Fig. S8 The relative area of metabolites used for optimal structural equations.
+
+Fig. S9 The path of Fig. 4 calculated by the function sem.
+
+Fig. S10 The top six causal structural groups for SEM (Fig. 4) estimated by BayesLiNGAM.
+
+Fig. S11 Phylogenetic relationship among Paenibacillus strains isolated in this study.
+
+Fig. S12 Biological assay for the isolated Paenibacillus strains.
+
+Fig. S13 The in vitro assay to evaluate (a)(b) nitrogen (N2) fixation and (c)(d) nitrous oxide (N2O) generation from from the soil.
+
+Fig. S14 Degree of detection in 2-aminoadipate and lysine leaves and roots and their ratio in root per leaf.
+
+Fig. S15 Photos of cucumber roots in a field where knot-damages to plant parasitic nematode has been observed

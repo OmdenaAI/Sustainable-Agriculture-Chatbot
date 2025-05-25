@@ -38,7 +38,7 @@ class Evaluator:
         self.qdrant_model = SentenceTransformer(self.qdrant_config["qdrant"]["embedding_model"])
         self.scorer = BERTScorer(lang="en")
 
-        self.qa_json_path = "tools/evaluate_qdrant/data/qa_datasets/generated_questions_farmer_persona.jsonl"
+        self.qa_json_path = "tools/evaluate_qdrant/data/qa_datasets/20250517_generated_questions_farmer_persona_chunk_ids_fixed.jsonl"
 
         self.qdrant_url = self.qdrant_config["qdrant"]["qdrant_url"]
         self.qdrant_collection = qdrant_collection
@@ -424,29 +424,49 @@ class Evaluator:
     
 
     def write_eval_to_file(self, output_eval: str):
+        # Step 1: Collect already evaluated chunk IDs
+        evaluated_chunk_ids = set()
+        if os.path.isfile(output_eval):
+            with open(output_eval, "r", encoding="utf-8") as f:
+                for line in f:
+                    try:
+                        entry = json.loads(line)
+                        chunk_id = entry.get("ground_truth_chunk_id")
+                        if chunk_id:
+                            evaluated_chunk_ids.add(chunk_id)
+                    except json.JSONDecodeError:
+                        continue
 
-        for i, qa_pair in tqdm(enumerate(self.qa_pairs, 1)):
+        # Step 2: Loop through qa_pairs and skip if already evaluated
+        for i, qa_pair in tqdm(enumerate(self.qa_pairs, 1), total=len(self.qa_pairs)):
+            chunk_id = qa_pair.get("chunk_id")
+            if not chunk_id or chunk_id in evaluated_chunk_ids:
+                continue
 
-            file_exists = os.path.isfile(output_eval)
             try:
                 row = self.evaluate_qa_pair(qa_pair)
-            # Write as JSONL
+
+                # Step 3: Append result to file
                 with open(output_eval, "a", encoding="utf-8") as f:
-                    if file_exists:
-                        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+                    f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+                # Optional: Keep memory set updated (useful for long runs)
+                evaluated_chunk_ids.add(chunk_id)
+
             except Exception as e:
                 self.logger.error(f"Error during query: {str(e)}")
                 raise
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run evaluation and write output to file.")
     parser.add_argument(
         "--output_path",
         type=str,
-        default="tools/evaluate_qdrant/data/eval_output/ws1_wosmallparagraphs_eval.jsonl",
+        default="tools/evaluate_qdrant/data/eval_output/ws1-wosmallparagraphs_eval.jsonl",
         help="Path to save the evaluation results."
     )
     args = parser.parse_args()
 
-    evaluator = Evaluator(qdrant_collection="ws1-wosmallparagraphs", reranking=False)
+    evaluator = Evaluator(qdrant_collection="ws1-wosmallparagraphs", extract_kw=False, reranking=False)
     evaluator.write_eval_to_file(args.output_path)

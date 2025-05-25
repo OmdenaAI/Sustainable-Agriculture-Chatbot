@@ -1,0 +1,17 @@
+--- Economic Efficiency (EE), Economic Security (ES) and Biodiversity (BD) ---
+
+Economic Efficiency (EE), Economic Security (ES) and Biodiversity (BD). The EE indicator shows a tendency for large farms to achieve a better efficiency.
+
+However, the massive variance indicates that good management of the farm is required to achieve a profitable farm operation.Also with regard to Economic Security (ES) the large farms seem to out perform small ones.
+
+Just the opposite is true for the indicator Biodiversity BD, where small farms yielded significantly better results than large ones.In general,the smaller the farm,the smaller (and therefore more diverse) the plots (cf.,Boller et al.,2004b).
+
+In addition,the bigger farms grow fewer shade trees.Since this is not an eco- nomic necessity, the situation on large farms could be improved through appropriate awareness-building and support in practical application.
+
+The ecological indicators Soil SO and Emission Potential EP tend to yield slightly inferior results for larger farms; this indicates that on bigger farms, the situation regarding environmental issues has to be observed more cau- tiously.
+
+In the domains of Energy, Water, Waste, Plant Protection, Local Economy, Working Conditions and Social Security, there appear to be no differences between smaller and bigger farms.
+
+Figure 10: Box-plots of the 12 indicators split according to farm size (left <10ha “small” vs. right >10 ha “large” farms). Statistically significant differences only on Biodiversity based on a Mann-Whitney U Test. Acronyms cf., Figure 3.
+
+EN EP SS 100 -100 -80 -40 20 40 60 Degree of sustainability -60 -20 80 0 WC LE EE ES WS PP BD SO WR Indicators Small farms Large farms Sustainable Agriculture – From Common Principles to Common Practice 142

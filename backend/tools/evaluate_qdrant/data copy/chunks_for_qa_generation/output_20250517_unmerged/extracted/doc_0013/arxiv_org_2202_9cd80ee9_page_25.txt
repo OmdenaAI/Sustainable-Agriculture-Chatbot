@@ -1,0 +1,5 @@
+--- Page 25 ---
+
+a b Fig. S4 Heatmaps of the correlations between metabolite candidates in the leaves and roots shown in Fig. 2. The heatmaps based on the data in (a) the control group and (b) the test group were shown.
+
+R_Metformin R_Arginine R_Lycopene R_L−2−Aminoadipate R_Phenylalanine R_Tyrosine R_Tryptophan L_Apigenin 7−O−neohesperidoside L_Aspartate L_Cyanidin 3−O−Rut L_Kaempferol Gal−Rha L_sn−Glycerol 3−phosphate L_Methionine L_Indole−3−carboxaldehyde L_Methionine sulfoxide L_Phenyllactate L_Malate L_1,3−Dimethylurate L_Glycyl−L−proline L_Quercetin−Glc L_L−2−Aminoadipate L_GABA L_Arginine L_Methylmalonate L_Succinate −1 0 1 Value Color Key R_Lycopene R_Tryptophan R_Phenylalanine R_Tyrosine R_L−2−Aminoadipate R_Arginine R_Metformin L_L−2−Aminoadipate L_Glycyl−L−proline L_Methionine L_GABA L_Quercetin−Glc L_1,3−Dimethylurate L_sn−Glycerol 3−phosphate L_Phenyllactate L_Arginine L_Apigenin 7−O−neohesperidoside L_Kaempferol Gal−Rha L_Cyanidin 3−O−Rut L_Indole−3−carboxaldehyde L_Methionine sulfoxide L_Aspartate L_Malate L_Succinate L_Methylmalonate −1 0 1 Value Color Key

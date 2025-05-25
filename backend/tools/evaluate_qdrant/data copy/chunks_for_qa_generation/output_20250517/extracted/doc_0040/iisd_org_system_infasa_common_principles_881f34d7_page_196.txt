@@ -1,0 +1,13 @@
+--- Page 196 ---
+
+4.1. Using indicators to help set policy targets The specification of common (i.e., Canada-wide) and measurable goals and targets for the APF was possible due to work previously completed on agri-environmental indicators and economic-environmental models.
+
+Essentially,the goals and targets selected were defined in a manner con- sistent with the definitions of the indicators themselves so that,in effect, the question for policy-makers became how far to “push”the indicators, in which direction and over what time period, and using which policy instruments?
+
+The challenge for governments was to set targets that represented meaningful environmental gains and were feasible to achieve (by 2008), with known technologies, and at acceptable costs to producers and/or the public.To help meet this challenge, AAFC began its analysis by con- sulting with scientists and analysts to select various farming practices related to nutrient management, soil management, grazing manage- ment, livestock feeding management and agro-forestry. Eight scenarios of environmentally beneficial management practices (BMPs) were cho- sen: ● nutrient management: better matching of nitrogen to crop requirements; ● increased use of zero tillage; ● decreased use of summer fallow; ● permanent soil cover (e.g., forage crops, pasture); ● increased forage in crop rotations; ● grazing management: complementary and rotational grazing; ● combined feeding strategies; and ● agro-forestry: increasing plantations on agricultural lands.
+
+Three different adoption rates for each of these practices were used to provide a range of impacts depending on the level of effort employed.
+
+Low effort assumes a moderate level of adoption of BMPs; medium assumes an intermediate adoption level;and high assumes an ambitious level of adoption. All adoption levels were technically feasible and were established using expert opinion.Obviously,the ambitious level provides the greatest environmental benefits, but is the most costly to imple- ment.
+
+The BMP’s outlined above were imputed into CRAM to determine the impact on land-use and livestock production activities. For example, the adoption of permanent cover beyond a baseline or business-as-usual Sustainable Agriculture – From Common Principles to Common Practice 183

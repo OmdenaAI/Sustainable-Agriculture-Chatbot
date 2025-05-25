@@ -1,0 +1,11 @@
+--- (I) L_Apigenin_7_O_neohesperidoside + R_Phenylalanine ~ R_2_Aminoadipate + Compost ---
+
+Regression models (I) L_Apigenin_7_O_neohesperidoside + R_Phenylalanine ~ R_2_Aminoadipate + Compost (II) R_2_Aminoadipate ~ Compost (III)L_Apigenin_7_O_neohesperidoside ~ L_Kaempferol + L_Quercetin_Glc (I) Estimate std.
+
+Error t value Pr ( > |t|) (III) Estimate std.
+
+Error t value Pr ( > |t|) (Intercept) 6.956 3.086 2.254 0.0588 # (Intercept) -1.7507 0.3591 -4.875 1.80E-03 ** R_2_Aminoadipate 3.284 2.601 1.263 0.2472 L_Kaempferol 3.2832 0.425 7.726 0.000114 *** Compost -3.551 1.359 -2.612 0.0348 * L_Quercetin_Glc -0.3031 0.8364 -0.362 0.727785 Residual standard error: 1.603 on 7 degrees of freedom Residual standard error: 0.2459 on 7 degrees of freedom Multiple R-squared: 0.7668, Adjusted R-squared: 0.7001 Multiple R-squared: 0.975, Adjusted R-squared: 0.9679 F-statistic: 11.51 on 2 and 7 DF, p-value: 0.006126 F-statistic:136.5 on 2 and 7 DF p-value: 2.469e-06 (II) Estimate std.
+
+Error t value Pr ( > |t|) (Intercept) 1.15388 0.09748 11.838 2.38E-06 *** Compost -0.34803 0.13785 -2.525 0.0355 * Residual standard error: 0.218 on 8 degrees of freedom Multiple R-squared: 0.4434, Adjusted R-squared: 0.3739 F-statistic: 6.374 on 1 and 8 DF, p-value: 0.03555 Table S5 A list of models targeted by causal mediation analysis for Fig. 4b and their statistical values.
+
+The non-parametric bootstrap confidence intervals and Quasi-Bayesian confidence intervals were not calculable. The coefficients and the related calculated data in the regression model are shown on the left. The values mediated among the regression models are shown on the right. The number in “Stimulations shows bootstrapping frequency. Th abbreviations in the table indicate the following: T, treat; M, mediator; ACME, average causal mediation (indirect) effect; ADE, average direct effect; Total Effect, mediation (indirect) and direct effect; Prop.Mediated, proportion of mediated effect; *, p<0.05; **, p<0.01; #, p <0.1.

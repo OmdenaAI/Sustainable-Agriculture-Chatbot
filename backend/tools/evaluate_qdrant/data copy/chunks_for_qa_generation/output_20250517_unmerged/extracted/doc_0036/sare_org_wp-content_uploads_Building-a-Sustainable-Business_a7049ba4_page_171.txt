@@ -1,0 +1,15 @@
+--- Whole Farm Evaluation for Profitability: Partial budgeting and long- ---
+
+and a break-even value are calculated to determine what level of sales and market price would be necessary for the business to cover its full operating costs. In the first example, where the owner expects to charge $75/room, he or she must sell a minimum of 62 rooms each year before breaking even on direct and overhead expenses. In the second example, where the owner’s sales volume is fixed at 80 rooms per year, he or she must charge a minimum of $60/room in order to cover costs.
+
+Once you’ve calculated one or more break-even numbers for each enterprise or product, compare these numbers against your sales projections (Worksheet 4.2) and your upper limit for production capacity (Worksheet 4.16) or your projected market price (Worksheet 4.6). Are your sales goals financially feasible? Can you produce the break-even volume? Will the market, based on your research, support your minimum break-even value?
+
+Worksheet 4.31 provides the skeleton of an enterprise budget. Use this Worksheet to calculate net returns and break-even numbers for each year during your transition period and for your long run or expected outlook.
+
+If your enterprise doesn’t break even, then you’ll need to take another look at the market or your cost structure. Is there a way to boost your projected market price or to cut input costs? If not—if you can’t break even on your costs—then your business idea for this enterprise is not financially feasible.
+
+Stop here, return to your vision and rethink your plan. Is there another way to reach your goals or are you willing to sacrifice income from this enterprise to achieve your vision? On the other hand, if calculations suggest that your enterprise will more than break even, you’re ready to perform a profitability assessment for the whole farm.
+
+Whole Farm Evaluation for Profitability: Partial budgeting and long- range planning. Even more important than the enterprise evaluation is the whole farm financial evaluation. This is where you pull everything together and evaluate whether or not, when all is said and done, the farm will make the profit that you and your family want. 4 TASK 170 BUILDING A SUSTAINABLE BUSINESS Break-even Volume Example Direct expenses/unit (a) = $10/room (including breakfast when occupied) Overhead expenses (b) = $4,000 Market price/unit (c) = $75/room Break-even output (b) / (c – a) = 4,000 / (75 – 10) = 62 rooms/year Break-even Value Example Average direct expenses (a) = $800 Average overhead expenses (b) = $4,000 Production volume (c) = 80 rooms Break-even value (a + b) / (c) = (4,000 + 800) / 80 = $60/room Figure 88.
+
+Example for Bed and Breakfast Enterprise— Break-even Analysis

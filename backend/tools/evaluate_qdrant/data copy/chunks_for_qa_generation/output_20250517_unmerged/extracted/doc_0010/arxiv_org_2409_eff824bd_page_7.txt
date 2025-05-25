@@ -1,0 +1,46 @@
+--- Page 7 ---
+
+phosphorus nanoparticles.56 This is an efficient way to maintain phosphorus in its usable form in the long-
+term as well as allow the mobilization of phosphorus for plants.55
+
+Moreover, Liu and Lal showed that treating soybean seeds with carboxymethyl cellulose-stabilized
+hydroxyapatite nanoparticles by ultrasonic dispersion resulted in the most effective fertilizer among those
+tested, mainly because phosphorus demand is high at the local level and thus enhanced delivery at the
+nanoscale and in proximity facilitates proper absorption.57 Interestingly, an important factor in nanoparticle
+controlled-release fertilizers is a uniform shape. When the particles are all consistent in both size and shape,
+the contact angle of the plant will not change when fertilizer is applied, ultimately leading to better
+absorption.58
+
+In designing a nanofertilizer, a key parameter to consider is the fertilizer delivery method. If the application
+of the nanoparticles is foliar, then they are absorbed by trichomes, stomata, stigma, and hydathodes.54 They
+are then transported through the phloem and xylem, where the nanoparticles enter the cells through
+endocytosis.54,59, It is currently understood that a target size for nanofertilizers of about a few tens of nm
+can lead to enhanced absorption by the plant.58 Nanofertilizers may also be designed to interact with or
+dissolve at the plant’s outer surface, which requires consideration of a host of additional factors such as soil
+characteristics and plant cell wall chemistry.59 Due to the physical, chemical and biological constraints of
+nanofertilizer development, materials scientists, biologists and social scientists within STEPS Center will
+optimize nanofertilizers to more efficiently and less wastefully deliver phosphate to plant cells. A wide
+array of factors must be considered, including economic, environmental and biochemical factors. For
+example, nanoparticle environmental and ecological persistence and impacts over short and long-term
+periods must be evaluated along with hazard assessments, risk analyses, predictions of large-scale economic
+benefits and costs and barriers to adoption in society54.
+
+Increased co-creation with the relevant stakeholders will address economic, regulatory and social barriers
+to functionalized nanoparticles and polymers in agriculture. Further collaborations between biologists,
+chemists, and engineers will also optimize these biomaterials for practical application in field settings.
+Rapid screening pipelines will aid in iterative testing, refining and co-creation of these biomaterials. 3D
+bioprinting has emerged as a technology that will enable rapid screening and testing of biomaterials such
+as hydrogels and nanoparticles. 3D bioprinting is an additive manufacturing technique in which protoplasts,
+or cells isolated by cell wall digestion, are extruded in a hydrogel with liquid media containing nutrients
+and hormones required to maintain cell viability for at least two weeks.60 In plants, 3D bioprinting has been
+optimized by researchers within the STEPS for Arabidopsis thaliana and soybean embryonic, shoot or root
+cells.61 Cells are extruded by the bioprinter reproducibly and at a high throughput, making it a suitable
+platform for screening cellular responses to each biomaterial (Fig. 4). Moreover, the 3D bioprinting
+techniques overcome current limitations of testing in protoplasts because protoplasts can be maintained for
+at least two weeks, allowing time for cell wall regrowth, cell division and longer-term studies than is
+typical.59 By using 3D bioprinting to test cell responses to each material, it will be easier and faster for
+Center researchers to optimize and refine each material for their compatibility with plant cells and improved
+cellular phosphorus content before testing and applying them to crops in field sites. It will also be possible
+to better refine each material by testing it with a complex combination of factors, such as pH levels, matrix
+types and mineral compositions, that are closer approximations or models of field environments while still
+maintaining rapid, high throughput.

@@ -1,0 +1,44 @@
+--- International Fertiliser Society: The Carbon ---
+
+The Circular Farm by Charlie Steer
+A Nuffield Farming Scholarships Trust report generously sponsored by NFU Mutual Charitable Trust
+
+| 14
+fertiliser. In some cases, 7,000kg of CO2-e (carbon dioxide equivalent) are emitted in the production
+of 1,000kg of ammonia nitrate fertiliser. (Source: International Fertiliser Society: The Carbon
+Footprint of Fertiliser Production: Regional Reference Values)
+There is huge scope for reductions in greenhouse gas emissions, as well as soil and water
+improvement by adopting circular techniques for the processing and application of ‘bio fertilisers.’
+In very simple terms the benefits are three-fold:
+1. Collection, processing, and use of organic waste results in reduced methane emissions,
+especially when used as feedstock for anaerobic digestion.
+2. Reduced emissions from the production of fertiliser. Fertiliser production from the
+Haber-Bosch process, which converts hydrogen and nitrogen to ammonia, relies on
+natural gas and high temperature. Rock-derived fertilisers require mining and
+processing. There is scope to decarbonise the production of ammonia using hydrogen,
+but this is not presently an option.
+3. Reduced emissions in application. Urea, the most widely used fertiliser globally, releases
+carbon dioxide on application. Urea also releases nitrogen oxides (a greenhouse gas 210
+time more potent than carbon dioxide) during the nitrification process in the soil.
+In addition to the greenhouse gas (GHG) savings, the processing of bio fertilisers addresses the
+issues of concentration of nutrient rich waste in certain areas. Creation of a bio fertiliser allows the
+efficient re-distribution of nutrient from areas of surplus to areas of deficit.
+CCm Technologies is a UK based clean tech company producing a climate positive fertiliser from
+organic waste streams. Chief executive Pawel Kisielewski and chief technical officer Peter Hammond
+explained how the process works.
+1. Organic waste input: High dry matter homologous organic waste, over 25% dry matter, is
+ideal feedstock for the process. Separated solids from slurry or digestate separation is a
+good starting point.
+2. Weighing and Blending: The organic waste material is weighed out and blended with
+additional inputs depending on the customer specification. This could be a manufactured
+input eg, DAP or another dry input.
+3. Carbon dioxide capture: CCm Technologies rely on the incorporation of carbon dioxide into
+the product, anhydrous ammonia is reacted with compressed carbon dioxide in a mixing
+vessel creating a nitrogen rich carbonate paste. This is pumped into a further mixing vessel
+where the organic waste stream and the carbonate paste are combined. Once mixed the
+product is pelletized in a pellet mill, identical to that found in feed mills to create a carbon
+neutral dry pelletised fertiliser.
+When thinking of a fertiliser plant most people think big industry, e.g., Yara’s 135 ha site in the
+Netherlands or the 50ha site at Ince on the Dee Estuary. CCm Technologies offer a different solution,
+the plant design is a modular 10,000 ton per annum units that are not dissimilar to a grain drier in
+appearance and operation. The picture below shows the prototype plant in Swindon.

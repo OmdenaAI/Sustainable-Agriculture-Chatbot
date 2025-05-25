@@ -1,0 +1,64 @@
+--- , Katsumi Shigeta ---
+
+Preprinted at arXiv:2201.03132 (https://arxiv.org/abs/2201.03132)
+After modified this preprint, published (31 March, 2023) at ISME Communications 3 Article number 28,
+https://doi.org/10.1038/s43705-023-00233-9 (please check the final published paper)
+
+Preprinted manuscript
+Agricultural quality matrix-based multiomics structural analysis of carrots in
+soils fertilized with thermophile-fermented compost
+
+Hirokuni Miyamoto*1,2,3,4, Katsumi Shigeta5, Wataru Suda2, Yasunori Ichihashi6, Naoto Nihei7, Makiko Matsuura1,3,
+Arisa Tsuboi4, Naoki Tominaga5, Masahiko Aono5, Muneo Sato8, Shunya Taguchi9, Teruno Nakaguma1,3,4, Naoko
+Tsuji3, Chitose Ishii2,3, Teruo Matsushita3,4, Chie Shindo2, Toshiaki Ito10, Tamotsu Kato2, Atsushi Kurotani8,11,
+Hideaki Shima8, Shigeharu Moriya12, Satoshi Wada12, Sankichi Horiuchi13, Takashi Satoh14, Kenichi Mori1,3,4,
+Takumi Nishiuchi15, Hisashi Miyamoto3,16, Hiroaki Kodama1, Masahira Hattori2,17,18, Hiroshi Ohno2, Jun Kikuchi*8,
+Masami Yokota Hirai*8
+
+Affiliations:
+1. Graduate School of Horticulture, Chiba University, Matsudo, Chiba 271-8501, Japan
+2. RIKEN Center for Integrative Medical Science, Yokohama, Kanagawa 230-0045, Japan
+3. Sermas Co., Ltd., Ichikawa, Chiba 272-0033, Japan
+4. Japan Eco-science (Nikkan Kagaku) Co. Ltd., Chiba, Chiba 260-0034, Japan
+5. Takii Seed Co.Ltd., Konan, Shiga 520-3231, Japan
+6. RIKEN BioResource Research Center, Tsukuba, Ibaraki 305-0074, Japan
+7. Faculty of Food and Agricultural Sciences, Fukushima University, Fukushima, Fukushima 960-1296, Japan
+8. RIKEN Center for Sustainable Resource Science, Yokohama, Kanagawa 230-0045, Japan
+9. Center for Frontier Medical Engineering, Chiba University, Chiba, Chiba 263-8522, Japan
+10. Keiyo Gas Energy Solution Co. Ltd., Ichikawa, Chiba 272-0033, Japan
+11.Research Center for Agricultural Information Technology, National Agriculture and Food Research Organization, Tsukuba, Ibaraki, 305-0856, Japan
+12. RIKEN, Center for Advanced Photonics, Wako, Saitama, 351-0198, Japan
+13. Division of Gastroenterology and Hepatology, The Jikei University School of Medicine, Kashiwa Hospital, Kashiwa, Chiba 277-8567, Japan
+14. Division of Hematology, Kitasato University School of Allied Health Sciences, Sagamihara, Kanagawa 252-0329, Japan
+15. Division of Integrated Omics research, Bioscience Core Facility, Research Center for Experimental Modeling of Human Disease, Kanazawa University,
+Kanazawa, Ishikawa, 920-8640, Japan
+16. Miroku Co.Ltd., Kitsuki, Oita 873-0021, Japan
+17. School of Advanced Science and Engineering, Waseda University, Tokyo169-8555, Japan
+18. School of Agricultural and Life Sciences, The University of Tokyo, Bunkyo, Tokyo 113-8657, Japan
+
+* Hirokuni Miyamoto Ph.D. Graduate School of Horticulture, Chiba University, RIKEN Center for Integrative Medical Science; Sermas Co., Ltd.; Japan
+Eco-science Co. Ltd.
+Email: hirokuni.miyamoto@riken.jp
+* Jun Kikuchi, Ph.D. RIKEN Center for Sustainable Resource Science
+Email: jun.kikuchi@riken.jp
+* Masami Yokata Hirai, Ph.D. RIKEN Center for Sustainable Resource Science
+Email: masami.hirai@riken.jp
+
+Abstract
+Compost is used worldwide as a soil conditioner for crops, but its functions have still been explored. Here, the omics
+profiles of carrots were investigated, as a root vegetable plant model, in a field amended with compost fermented
+with thermophilic Bacillaceae for growth and quality indices. Exposure to compost significantly increased the
+productivity, antioxidant activity, red color, and taste of the carrot root and altered the soil bacterial composition with
+the levels of characteristic metabolites of the leaf, root, and soil. Based on the data, structural equation modeling
+(SEM) estimated that L-2-aminoadipate, phenylalanine, flavonoids and / or carotenoids in plants were optimally
+linked by exposure to compost. The SEM of the soil estimated that the genus Paenibacillus, L-2-aminoadipate and
+nicotinamide, and S-methyl L-cysteine were optimally involved during exposure. These estimates did not show a
+contradiction between the whole genomic analysis of compost-derived Paenibacillus isolates and the bioactivity
+data, inferring the presence of a complex cascade of plant growth-promoting effects and modulation of the nitrogen
+cycle by compost itself. These observations have provided information on the qualitative indicators of compost in
+complex soil-plant interactions and offer a new perspective for chemically independent sustainable agriculture
+through the efficient use of natural nitrogen.
+
+Keywords: multiomics/ compost-soil-plant interaction/sustainable organic farming
+
+Abbreviations: SEM, structural equation modeling; SDGs, sustainable development goals

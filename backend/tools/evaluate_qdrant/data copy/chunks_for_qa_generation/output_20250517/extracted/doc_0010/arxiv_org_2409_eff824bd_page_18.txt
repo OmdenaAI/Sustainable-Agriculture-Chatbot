@@ -1,0 +1,45 @@
+--- McDaniel, E. A. ---
+
+81.
+
+McDaniel, E. A. et al. Metabolic Differentiation of Co-occurring Accumulibacter Clades Revealed through Genome-Resolved Metatranscriptomics. mSystems 6, 10.1128/msystems.00474-21 (2021). 82.
+
+Petriglieri, F. et al. “Candidatus Dechloromonas phosphoritropha” and “Ca. D. phosphorivorans”, novel polyphosphate accumulating organisms abundant in wastewater treatment systems. ISME J. 15, 3605–3614 (2021). 83.
+
+Singleton, C. M. et al. The novel genus, ‘Candidatus Phosphoribacter’, previously identified as Tetrasphaera, is the dominant polyphosphate accumulating lineage in EBPR wastewater treatment plants worldwide. ISME J. 16, 1605–1616 (2022). 84.
+
+Saia, S. M., Carrick, H. J., Buda, A. R., Regan, J. M. & Walter, M. T. Critical Review of Polyphosphate and Polyphosphate Accumulating Organisms for Agricultural Water Quality Management.
+
+Environ. Sci. Technol. 55, 2722–2742 (2021). 85.
+
+Saia, S. M. et al. Evidence for polyphosphate accumulating organism (PAO)-mediated phosphorus cycling in stream biofilms under alternating aerobic/anaerobic conditions. Freshw. Sci. 36, 284–296 (2017). 86.
+
+Taylor, S. et al. Polyphosphate Accumulation Tracks Incremental P-Enrichment in a Temperate Watershed (Pennsylvania, United States) as an Indicator of Stream Ecosystem Legacy P. Front. Environ.
+
+Sci. 10, (2022). 87.
+
+Watson, S. J., Needoba, J. A. & Peterson, T. D. Widespread detection of Candidatus Accumulibacter phosphatis, a polyphosphate-accumulating organism, in sediments of the Columbia River estuary. Environ. Microbiol. 21, 1369–1382 (2019). 88.
+
+Stilgoe, J., Owen, R. & Macnaghten, P. Developing a framework for responsible innovation. Res.
+
+Policy 42, 1568–1580 (2013). 89.
+
+Grieger, K., Merck, A. & Kuzma, J. Formulating best practices for responsible innovation of nano-agrifoods through stakeholder insights and reflection. J. Responsible Technol. 10, 100030 (2022). 90.
+
+Merck, A. W. et al. Stakeholder Views of Science and Technologies for Phosphorus Sustainability: A Comparative Analysis of Three Case Studies in Phosphorus Recovery in the U.S. Soc.
+
+Nat. Resour. 0, 1–18. 91.
+
+Crane, L. et al. Benchmarks for urine volume generation and phosphorus mass recovery in commercial and institutional buildings. Water Res. X 23, 100227 (2024). 92.
+
+Shilton, K. Technology Development with an Agenda: Interventions to Emphasize Values in Design. Proc. Annu. Meet. Am. Soc. Inf. Sci. Technol. ASIST 47, 1 (2010). 93.
+
+Nathan, L. P., Friedman, B., Klasnja, P., Kane, S. K. & Miller, J. K. Envisioning systemic effects on persons and society throughout interactive system design. in Proceedings of the 7th ACM conference on Designing interactive systems 1–10 (Association for Computing Machinery, New York, NY, USA, 2008). doi:10.1145/1394445.1394446. 94.
+
+Nissenbaum, H. How computer systems embody values. Computer 34, 120–119 (2001). 95.
+
+Rubambiza, G., Sengers, P. & Weatherspoon, H. Seamless Visions, Seamful Realities:
+
+Anticipating Rural Infrastructural Fragility in Early Design of Digital Agriculture. in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems 1–15 (Association for Computing Machinery, New York, NY, USA, 2022). doi:10.1145/3491102.3517579. 96.
+
+Global Sustainability: Cultural Perspectives and Challenges for Transdisciplinary Integrated Research. (Springer International Publishing, Cham, 2015). doi:10.1007/978-3-319-16477-9.

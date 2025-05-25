@@ -1,0 +1,50 @@
+--- Atlas with Noverlap in Gephi 0.9.2. ---
+
+6
+
+confidence (x ⇒ y) = P(x ∩ y)/P(x)
+“confidence” is P(xy)/P(x), conditional probability (P) of occurrence of y after x has
+occurred.
+lift (x ⇒ y) = P(x ∩ y)/P(x) P(y)
+“lift” is P(xy)/P(x)P(y), measure of association/independence
+A value of > 1 represents a positive association (if the value indicates independence, a
+value of < 1 represents a negative association).
+Here, association rules were determined by using criterion values of support, confidence,
+and lift (“support = 0.2, confidence = 0.6, maxlen = 2” and “lift > 1.5”). The data combined
+with all information such as growth, color, taste, metabolites, and bacterial phyla and
+genera obtained with or without compost addition were used in the analysis. In this study,
+crop growth, color analysis, questionnaire survey, metabolome, and microbial analyses are
+performed for each categorized layer, which is suitable for association analysis as described
+above. To avoid the differences dependent upon the layers, omics data for the analysis were
+calculated based on the median value (M) within the data and sorted as 0 (< M) and 1 (>
+M). The growth, color, and taste data are evaluated at a different time from the samples
+targeted for omics analysis. Additionally, the frequency with the number of samples is
+different. Therefore, when there was a significant difference in each analysis, the data were
+set as 0 (low level) and 1 (high level). Therefore, potentially associated components were
+explored via this analysis. The packages “arules”and "aruleViz" in R software
+(https://cran.r-project.org) were applied. The systemic network was rendered by Force
+Atlas with Noverlap in Gephi 0.9.2.
+
+Covariance Structure Analysis
+Covariance structure analysis/structural equation modeling (SEM) for confirmatory factor
+analysis (CFA) was conducted using the R software package “lavaan” 76-78. The analysis
+codes refer to the website (https://lavaan.ugent.be). As a hypothesis for CFA, the groups
+selected via correlation, principal component, and association analyses were utilized as
+component candidates for the latent construct of metabolites and microbiota. The measured
+values of the metabolites and the relative abundance of the bacterial population were used
+for the statistical procedure. The treatments with and without compost amendment were
+set as 0 and 1, respectively. The model hypotheses were statistically estimated via
+maximum likelihood (ML) parameter estimation with bootstrapping (n = 1000) using the
+functions ‘ lavaan’ and ‘sem’. The “Number of successful bootstrap draws” in the table
+indicates the number of successful draws after calculation for standard error (1000
+estimates as requested bootstrap draws). The model fit was assessed according to the chi-
+squared p value (p>0.05, nonsignificant), comparative fit index (CFI) (>0.9), Tucker–
+Lewis index (TLI) (>0.9), goodness-of-fit index (GFI) (>0.95), adjusted goodness-of-fit
+index (AGFI) (>0.95), root mean square error of approximation (RSMEA) (<0.05), and
+standardized root mean residual (SRMR) (< 0.08) as indices of good model fit 79. The path
+diagrams of the good model were visualized using the package “semPlot” of R software 80.
+The analyses of the estimate values were performed concerning (https://www.pu-
+hiroshima.ac.jp/p/ttetsuji/R/[83]lavaan2sem.html), and the paths were visualized using the
+R software packages “DiagrammeR”, “htmlwidgets”, and “webshot” of R software.
+
+Isolation of nifH-positive thermostable bacteria

@@ -1,0 +1,11 @@
+--- Enterprise Budget Break-even Analysis ---
+
+Worksheet 4.31 Calculate your break-even value or volume for each enterprise or product. If you plan to look at break-even volumes, use the cost estimates that you developed in Worksheet 4.30 along with market values developed in Worksheet 4.6. Try experimenting with a range of market prices to see how they affect your break-even volume.Then, compare your break-even volume to the sales volume projections and output capacity estimates that you generated in Worksheets 4.2 and 4.16, respectively.
+
+Likewise, when calculating break-even values, look back at Worksheets 4.4 and 4.6—can you break even and still remain com- petitive? Is your break-even value below the projected market price that you identified in Planning Task Four?
+
+Enterprise Break-even Volume or Product: _________________________________ Annual overhead costs (a) = _______________________ Direct costs/unit (b) = _______________________ Estimated market value/unit (c) = _______________________ Break-even value (a) / (c – b) = _______________________ Estimated sales volume = _______________________ (Worksheet 4.2) Upper limit or output capacity = _______________________ (Worksheet 4.12) How does our break-even volume for this product compare to our projected sales volume and production capacity estimates? Can you break even?
+
+Break-even Volume Enterprise or Product _________________________________ Average overhead expenses (a) = _______________________ Average direct expenses (b) = _______________________ Production volume (c) = _______________________ Break-even value (a+b) / (c) = _______________________ Estimated sales volume = _______________________ (Worksheet 4.2) Upper limit or output capacity = _______________________ (Worksheet 4.12) How does our break-even value for this product compare to our projected sales volume and production capacity estimates? Can you break even?
+
+Enterprise Budget Break-even Analysis 4 TASK 221 BUILDING A SUSTAINABLE BUSINESS

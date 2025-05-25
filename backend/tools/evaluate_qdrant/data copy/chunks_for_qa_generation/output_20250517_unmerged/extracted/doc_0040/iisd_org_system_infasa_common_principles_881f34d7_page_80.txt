@@ -1,0 +1,9 @@
+--- Page 80 ---
+
+Figure 7: Farm attribute quality prediction maps. there is no apparent link between the farm sustainability classes and the sizes of land holdings. In a settlement area like Koru the initial land sizes were almost the same (20 ha) per household. The sizes have over the years decreased due to increasing land subdivision through the sale of portions of land and other socio-cultural obligations (Ochola et al.,2000).
+
+Land size obviously does not influence sustainable land management.
+
+Sustainable land management is heavily reliant on land management strategies and less on land size. The various actual farm sustainability classes seem to be evenly distributed among all land-holding brackets.
+
+There is a significant variation in the statistical quality control of land and land resources attributes in Koru. Figure 9 shows an example of X-bar and R-charts from the analysis. While the R-chart indicates significant variations in actual farm sustainability, the X-bar chart shows that the mean index for actual farm sustainability is under control among the farm units. The farm sustainability and the quality of land attributes are close to or between the lower control limit (LCL) and the upper control limit (UCL). Also, land husbandry, socio-economic factors and environ- mental hazards are well in the control range.Thus a few limiting factors might be decisive in determining agricultural sustainability. These are indicators of poor land management,which must be removed to secure sustainability.From a land-management point of view,the charts together with the maps (actual polygon feature maps—Figure 6, and the predic- tion maps—Figure 7), provide information about the geographical dis- Sustainable Agriculture – From Common Principles to Common Practice 67

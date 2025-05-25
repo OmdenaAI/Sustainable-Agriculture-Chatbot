@@ -1,10 +1,5 @@
 import os
 import json
-from openai import OpenAI
-from tqdm import tqdm
-from dotenv import load_dotenv
-import os
-import json
 import argparse
 from tqdm import tqdm
 from dotenv import load_dotenv
@@ -41,8 +36,24 @@ def generate_question_and_answer(client, text):
 
     return question, answer
 
+def load_seen_chunk_ids(output_path):
+    seen_chunk_ids = set()
+    if os.path.exists(output_path):
+        with open(output_path, "r") as f:
+            for line in f:
+                try:
+                    entry = json.loads(line)
+                    if "chunk_id" in entry:
+                        seen_chunk_ids.add(entry["chunk_id"])
+                except json.JSONDecodeError:
+                    continue
+    return seen_chunk_ids
+
 def main(root_dir, output_path):
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+    # Load chunk_ids we've already processed
+    seen_chunk_ids = load_seen_chunk_ids(output_path)
 
     client = OpenAI(
         api_key=os.getenv("GROQ_API_KEY"),
@@ -62,7 +73,14 @@ def main(root_dir, output_path):
                 print(f"Error reading JSON in {chunk_file}")
                 continue
 
+        if len(chunks) > 500:
+            chunks = chunks[::10]  # Every 10th chunk
+
         for chunk in tqdm(chunks, desc=f"Processing {folder_name}"):
+            chunk_id = chunk.get("chunk_id")
+            if not chunk_id or chunk_id in seen_chunk_ids:
+                continue  # Skip already processed
+
             text = chunk.get("text", "").strip()
             if not text:
                 continue
@@ -71,7 +89,7 @@ def main(root_dir, output_path):
                 question, answer = generate_question_and_answer(client, text)
                 if question and answer:
                     entry = {
-                        "chunk_id": chunk.get("chunk_id"),
+                        "chunk_id": chunk_id,
                         "doc_id": chunk.get("doc_id"),
                         "source": chunk.get("source_url"),
                         "question": question,
@@ -81,8 +99,10 @@ def main(root_dir, output_path):
 
                     with open(output_path, "a") as out_file:
                         out_file.write(json.dumps(entry) + "\n")
+
+                    seen_chunk_ids.add(chunk_id)  # Avoid reprocessing in same run
             except Exception as e:
-                print(f"Failed to generate QA for chunk {chunk.get('chunk_id')}: {e}")
+                print(f"Failed to generate QA for chunk {chunk_id}: {e}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate farmer-style QA pairs from paragraph chunks.")
@@ -100,5 +120,4 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     main(args.root, args.output)
-
 

@@ -1,0 +1,101 @@
+--- a format recommended by Dr. David Kohl of Virginia Tech University. ---
+
+Risk: Will this new strategy affect the risks faced by the
+farm business and family?
+Like it or not, despite all of your planning, certain aspects of your business
+are not in your control. Crop yields are subject to weather and disease condi
+tions and other unknowns. Therefore, it’s a good idea to analyze business
+performance under a range of uncertainties. One way to do this is to project
+your income and cash flow under the best and worst case scenarios—varying those
+elements of your business that seem the most vulnerable to uncertainty.
+Mabel Brelje, the organic grain farmer, projected income for the four crops
+in her rotation under best and worst case scenarios. She varied market prices
+and yields based on her own experience and on conversations with other organic
+producers. Figure 92 shows how her income for each enterprise will vary with
+yields (her high and low yield estimates from Worksheet 4.16). Mabel planned
+for the worst-case yield scenario in her analysis, since she was relatively new to
+organic production. She also looked for market price contracts, where possible,
+to secure a profitable market price.
+Another way to judge the feasibility of your plan under conditions of
+uncertainty is to shock the plan. See how sensitive it is to fluctuations in market
+prices, interest rates, and expenses. Worksheet 4.36 (Risk Analysis) provides
+a format recommended by Dr. David Kohl of Virginia Tech University.68 His
+approach is to ask what will happen to the financial results if you experience: a
+five percent reduction in prices; a five percent increase in expenses; or a three
+percent increase in interest rates?
+Figure 93 shows the Risk Analysis Worksheet 4.36 for our example hog
+enterprise. Note that the base plan and alternative strategy do not cash flow
+with any of the proposed changes in market price and input expense conditions.
+The owners of this business would need to consider which plan is more likely
+
+Yield/Acre
+Avg. Projected
+Gross
+Input
+Net
+
+Market Price/
+Income/Acre
+Cost/Acre
+Profit/Acre
+
+Unit
+Best Case Yield
+Alfalfa
+6 tons
+90
+540
+142
+398
+Soybeans
+55 bushels
+10
+550
+68
+482
+Wheat
+50 bushels
+3.5
+175
+73
+102
+Corn
+150 bushels
+3
+450
+94
+356
+Worst Case Yield
+Alfalfa
+3 tons
+90
+270
+142
+128
+Soybeans
+30 bushels
+10
+300
+68
+232
+Wheat
+30 bushels
+3.5
+105
+73
+32
+Corn
+100 bushels
+3
+300
+94
+206
+Figure 92.
+Income Sensitivity Analysis
+Prepared by Mabel Brelje
+4
+TASK
+176
+BUILDING A SUSTAINABLE BUSINESS
+68Presentation in Morris, MN: “Credit and
+Marketing in the New Era”, Kohl, 1998.

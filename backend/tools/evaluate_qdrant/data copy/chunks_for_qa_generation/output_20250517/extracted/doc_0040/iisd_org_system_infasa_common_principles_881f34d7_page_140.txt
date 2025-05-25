@@ -1,0 +1,11 @@
+--- Page 140 ---
+
+allows for a static picture of the current situation but also reveals devel- opment trends of the system.Thus the RISE evaluation provides both an analytical snapshot of the farm situation while also describing some of the dynamics, which change the system over time. Assessing Driving forces makes it possible to understand and visualize trends and threats that may be decisive for an operational sustainability concept.
+
+The principle of the RISE model is based on the DSR framework (Driving force-State-Response) for sustainable development of the UN (UN,2001).
+
+The concept of the DSR model, originally developed to group mainly diagnostic indicators, is the basis for RISE but had to be tailored for the requirements expected of a management tool (also taking into account the fact that the allocation of State or Driving force parameters found in literature are not always consistent (cf., Daniel et al., 2003; Sanvido et al., 2004). Because RISE is focusing on sustainability-relevant practices, it is often management practices that are assessed rather than the results hereof (e.g.,the quantity of applied pesticides instead of their content in the groundwater).However,the most significant difference between the RISE methodology and the DSR framework is the absence of response indicators and the computation of the degree of sustainability for each individual RISE indicator from the S- and D-parameters assessed.
+
+The indicators and parameters The output of the RISE model is designed in a way that the farmer can easily determine where problems exist and,thus,where interventions might lead to improvements.The sustainability polygon depicts twelve indicators covering ecological (natural resources, management), economic and social aspects fundamental to the sustainability of agricultural production:
+
+Management Economy Natural resources Social situation • Energy • Water • Soil • Biodiversity • Emission potential (N&P) • Plant protection • Waste • Economic stability • Economic efficiency • Local economy • Working conditions • Social security Sustainable Agriculture – From Common Principles to Common Practice 127

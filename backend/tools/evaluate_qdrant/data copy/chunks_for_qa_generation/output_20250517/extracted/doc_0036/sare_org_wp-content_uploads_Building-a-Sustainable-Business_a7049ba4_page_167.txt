@@ -1,0 +1,85 @@
+--- Evaluate Strategic Alternatives ---
+
+Evaluate Strategic Alternatives
+You know what you’re going to market, who’s going to buy it and why,
+how you’re going to produce it, and where your finances will come from. The
+next question is, will your business actually make it? Will you accomplish your
+personal and environmental goals, cover costs, generate the income needed to
+cover family living expenses, service debt, and build equity in the long run?
+The evaluation process can be as sophisticated and comprehensive as you
+like, and there are a wide range of helpful tools available. This Guide presents
+just a few tools here to help you study whether your whole farm strategy is
+financially feasible.
+4
+TASK
+166
+BUILDING A SUSTAINABLE BUSINESS
+Direct expenses. Direct or variable expenses typically
+include annual crop inputs (such as seed, soil amendments
+and crop insurance) and livestock inputs (feed, pasture
+maintenance, veterinary expenses) as well as any hired
+labor, utilities, fuel, interest on operating (12-month) loans,
+and equipment repairs. In addition, your estimate of variable
+costs should include product-specific marketing expenses.
+Direct input expense estimates are available for a
+wide range of traditional Upper Midwest crop and
+livestock enterprises from the Center for Farm Financial
+Management’s website, or for other crops from the USDA
+National Agricultural Statistics Service’s Agricultural Prices
+publication (see “Resources”). However, if you plan to
+produce a specialty crop, use an alternative livestock
+management systems or offer a highly specialized service,
+you may have to do a little more digging to develop
+realistic cost estimates. Talk with other farmers, Extension
+educators and farm business management consultants,
+as well as equipment and input dealers to begin putting
+together cost estimates for organic seed, livestock fencing
+and watering systems, and other inputs for which price
+histories do not exist.
+Overhead expenses. Overhead or fixed expenses include
+permanent hired labor (including your own labor and that
+of other family members), machinery and building leases,
+farm insurance, dues and professional fees, utilities, and
+advertising.
+When estimating the value of machinery and equipment,
+be sure to include capital ownership costs such as
+depreciation, interest, repairs, taxes and insurance
+estimates rather than the cost of capital itself. Your
+interest, repairs, taxes, and insurance rates will vary
+considerably. However, depreciation is fairly standard and
+can be easily calculated.
+Calculating Depreciation. Straight-line depreciation, in
+which an asset is depreciated annually in equal amounts
+over the asset’s projected life, is commonly used for farm
+machinery and equipment. The straight-line depreciation
+formula, listed below, can be used when estimating the
+depreciation value of machinery and equipment for your
+overhead cost analysis. In the example below, taken from
+Barry, et al., a new tractor worth $30,000 is depreciated
+equally over ten years.65 The tractor’s salvage value at the
+end of the ten-year period is $2,000. Using the straight-
+line calculation, a depreciation charge of $2,800 should be
+added to the interest, repair, tax, and insurance costs of
+the tractor for annual enterprise accounting purposes.
+Depreciation Formula:
+Depreciation Example:
+D = (OC – SV) / N
+D = (30,000 – 2,000) / 10
+
+D = $2,800
+Where:
+OC = original cost
+OC = cost of new tractor,
+
+$30,000
+SV = salvage value
+SV = value of tractor after
+
+10 years, $2,000
+N = asset’s expected life N = book life of tractor,
+
+10 years
+Figure 86.
+Allocating Whole Farm Expenses
+65Financial Management in Agriculture,
+7th Edition, Barry, et al., 2002.

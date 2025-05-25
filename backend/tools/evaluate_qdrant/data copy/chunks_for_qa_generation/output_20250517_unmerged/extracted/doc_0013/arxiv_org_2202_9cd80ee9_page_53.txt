@@ -1,0 +1,50 @@
+--- DNA Mini Kit (QIAGEN Co., Ltd., USA). ---
+
+5
+
+and the updated data were used for the analysis. These data were visualized by heatmapping
+and subjected to association analysis and SEM analysis, as described later.
+
+DNA extraction from soil
+The soil was collected after harvesting, and 5 g of each soil sample was added to a 15 mL
+tube. Five milliliters of sterile water were added, the soil was well suspended by vortexing,
+and the filtrate was filtered through filter paper (Advantech 5C) (Advantech Co., Ltd.,
+USA) and collected in a new 15 mL tube. DNA was extracted with a QIAGEN Power Soil
+DNA Mini Kit (QIAGEN Co., Ltd., USA).
+
+Meta sequence analysis of bacterial 16S rRNA gene sequences
+As previously reported 70, the V1-2 region of the bacterial 16S rRNA gene (27fmod-338r)
+was sequenced according to a previous report70. The amplified fragments were sequenced
+on an Illumina MiSeq system following the manufacturer’s instructions. The paired-end
+reads were merged using the fastq-join program based on overlapping sequences. Reads
+showing an average quality value of <25 and inexact matches to both universal primers
+were filtered out. Filter-passed reads were used for further analysis after trimming both
+primer sequences. The quality filter-passed reads of each sample were rearranged in
+descending order according to the corresponding quality values and then clustered into
+OTUs with a 97% pairwise identity cutoff using the UCLUST program, version 5.2.32
+(https://www.drive5.com). The taxonomic assignment of each OTU was performed based
+on similarity searches against the Ribosomal Database Project (RDP) and the National
+Center for Biotechnology Information (NCBI) genome database using the GLSEARCH
+program. α-diversity indices of community richness (Chao1) and diversity (Shannon and
+Simpson) were calculated, and β-diversity indices were estimated via UniFrac analysis
+with weighted and unweighted principal coordinate analysis (PCoA). All 16S rRNA gene
+datasets were deposited in the GenBank Sequence Read Archive database as described in
+Data availability. Phylogenetic trees were constructed on the basis of the mash distance
+using neighbor-joining method as previously described71,72.
+
+Association analyses
+Association analysis is a technically established, elementary method of unsupervised
+learning that is also used for market research as a type of market basket analysis and is
+applied to achieve an understanding beyond the logic of numbers using relative numbers
+73-76. It is easy to apply when missing values are a characteristic of association analysis.
+Therefore, it may be a suitable approach when conditions are set such that the identity for
+classification is different for each categorized layer, for example, when metabolomic data
+and microbial population are analyzed. It can identify and classify associated components
+by subjecting them to conditions in which it is challenging to make horizontal comparisons.
+To predict the components associated with compost, an association analysis was performed
+as previously reported73-76. In brief, association analysis is an elementary way to infer an
+effect (“target”) from a cause (“source”). In this case, the “source” and “target” are
+represented as x and y, respectively, and the calculation factors for probability (P) are
+defined as follows:
+support (x ⇒ y) = P(x ∩ y)
+“support” is P(xy), joint probability (P) of co-occurrence

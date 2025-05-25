@@ -1,0 +1,49 @@
+--- Wako Pure Chemical Ind. Ltd. (Tokyo, Japan). High-performance liquid chromatography ---
+
+3
+
+Switzerland) for approximately 1 min. Next, the sample tube washed the homogenizer
+blade with 5 mL of 3% (w/v) pyrogallol/EtOH. After adding 2.0 mL of a 60% (w/v)
+potassium hydroxide (KOH) solution to the tube, the mixture was heated at 70°C for 30
+min to achieve saponification. After cooling at room temperature, the mixture was divided
+into two plastic centrifuge tubes (50 mL). Then, 22.5 mL of a 1% (w/v) NaCl solution and
+15 mL of hexane/ethyl acetate (9/1) were added to each tube, and carotenoids were
+extracted by shaking for 10 min. After centrifugation at 3500 rpm for 10 min, the upper
+layer was collected. Subsequently, 15 mL of hexane/ethyl acetate (9/1) was added to the
+tube containing the lower layer, and the extraction procedure (i.e., shaking and
+centrifugation) was performed again. The combined upper layer containing carotenoids
+was poured into a round-bottom flask, and the solvent was removed by evaporation using
+a rotary evaporator. Next, hexane/ethyl acetate (9/1) was added to dissolve the residue, and
+the mixture was transferred to a 10 ml measuring flask. The sample volume was then
+appropriately adjusted by adding hexane/ethyl acetate (9/1). The carrot extract solutions
+were stored at -80°C until HPLC analysis.
+Lycopene, alpha-carotene, beta-carotene, and canthaxanthin standards for HPLC analysis
+originally produced by CaroteNature GmbH (Bern, Switzerland) were purchased from
+Wako Pure Chemical Ind. Ltd. (Tokyo, Japan). High-performance liquid chromatography
+(HPLC)-grade ethanol (EtOH), methanol (MeOH), and chloroform were provided by
+Wako Pure Chemical Ind. Ltd. (Tokyo, Japan). The other reagents and solvents used for
+carotenoid extraction and HPLC analysis were of analytical grade.
+An aliquot (1.0 mL) of the extracted sample solution was filtered through a GL
+Chromatographic Disc 4P, 0.45 μm (GL Sciences Inc., Tokyo, Japan), to remove very
+small dust particles and insoluble matter, and the filtrate was dried using a centrifugal
+concentrator. The residue was resolved in 1000 μL of chloroform, and an aliquot (500 μL)
+was dried using a centrifugal concentrator. Thereafter, the residue was redissolved in 100
+μL of chloroform, and an aliquot (90 μL) was mixed with 10 μL of canthaxanthin (0.1
+mg/mL), employed as the internal standard material for the present HPLC procedure to
+avoid any change in solvent volume during autosampler injection, and allow it to be
+corrected.
+The HPLC equipment consisted of a HITACHI-HPLC system (Hitachi High-Tech
+Corporation, Tokyo, Japan) containing a pump, UV–VIS detector, column oven, and
+autosampler for sample injection. The employed HPLC procedure was similar to protocols
+described in the application sheets (LT028 and LT073) of GL Sciences Inc. (Tokyo, Japan).
+Analyses were performed in an Inertsil ODS-3 column (3 μm, 2.1 mm × 100 mm, GL
+Sciences Inc., Tokyo, Japan) with the mobile phase described below applied at a 0.2
+mL/min flow rate. The mobile phase was a mixture of MeOH and EtOH (45/55). The
+column oven temperature, UV–VIS detector wavelength, and injection volume were 50°C,
+455 nm, and 10 μL, respectively. Under these HPLC analysis conditions, the carotenoid
+peaks of the carrot samples were well separated. The amount of each carotenoid (i.e.,
+lycopene, alpha-carotene, or beta-carotene) was calculated from the difference in the peak
+area ratios of an extract sample and a standard sample. The data were corrected based on
+the recovery of canthaxanthin (the internal standard).
+
+DPPH radical-scavenging assay

@@ -1,0 +1,9 @@
+--- Page 100 ---
+
+points within a single component and then between the different com- ponents of the scale and, on the other, that of aggregation between the three scales of sustainability. From a scientific point of view, this raises issues on two levels: ● on the conceptual level, what is the meaning of a single sus- tainability score pooling the three scales (dimensions) of sus- tainable agriculture? The response depends to a large extent on the philosophical debate as to the meaning to be attributed to sustainable agriculture; and ● on the methodological level, how can we go about combining the points within a given component and then within the same scale? The response on this level can be instrumental in developing pertinent methods (simple models, multi-criteria methods, etc.).
+
+These questions are complex by their very nature and worth presenting in their own right. The purpose of this paper, however, is not to answer them on the theoretical level.Thus, regarding the first point, we refer to the debate on the concept of sustainability initiated by Hansen (1996) and,on the latter point,to the various methodological studies of Mitchell et al. (1995), Cornelissen et al. (2001) and Bockstaller and Girardin (2003) on the aggregation and then validation of composite indicators.
+
+Figure 2: The IDEA rule on attribution of the final farm sustainability score.
+
+Source: Vilain et al., 2003 In the IDEA method, when it comes to the question of global scores aggregating the three scales,the authors allocate the lowest value of the three scales as the final numerical sustainability value, thus applying the Agro-ecological scale Socio-territorial scale Economic scale 80 0 10 30 50 60 70 Farm value 20 40 Limit of sustainability Sustainable Agriculture – From Common Principles to Common Practice 87

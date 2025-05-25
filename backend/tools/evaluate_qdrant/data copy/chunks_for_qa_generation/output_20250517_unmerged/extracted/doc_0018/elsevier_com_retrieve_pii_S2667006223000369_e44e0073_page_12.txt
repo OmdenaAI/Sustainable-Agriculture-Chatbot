@@ -1,0 +1,101 @@
+--- The contribution of M.W. was funded by the German Federal Min­ ---
+
+Soil Security 13 (2023) 100119 12 whereas sensor systems and apps or digital tools were of minor impor tance. Overall, there were few differences between the perceptions of farmers and agricultural institutionalists. Both groups pointed out the need for improved communication between politics, science, and prac tice so agriculture can respond more quickly to changing environmental conditions in the future. However, soil fertility is a complex issue that must be addressed using an agronomic systems approach considering the interaction effects of environmental (soil × climate) and manage ment factors. This can best be assessed using long-term field experiments at multiple sites combined with agroecosystem modelling approaches, such as process-based soil models considering abiotic and biotic factors.
+
+Although environmental impacts are uncontrollable, appropriate man agement measures can be used with the aim of promoting soil fertility over the medium to long term. Nevertheless, the concrete establishment of these measures in farming practice is a difficult task due to, i.a., various site conditions, farm structures, and financial constraints.
+
+Therefore, further research, knowledge transfer, and specific funding instruments (political support and incentives) are needed. It is necessary to expand technical advice to farmers by establishing on-farm research networks and demonstration trials and providing opportunities for in ternal exchange between farmers accordingly. Establishing more on- farm experimental networks with appropriate and site-adapted man agement strategies could help better identify their potential for future use. Decision-support tools could also make an important contribution.
+
+In addition, more research should be carried out on smart technologies and digital tools that can be used by farmers to measure soil fertility based on reference values. This could make it easier for farmers to make the right decisions with respect to the aim of promoting soil fertility.
+
+Author contributions J.M. and M.W. conceived and designed the study; J.M. and M.W. performed the study; J.M. and M.K.W. analysed the data; M.K.W., J.M., and M.W. discussed the results; and J.M. and M.K.W. wrote the original manuscript draft; J.M., M.W., and M.K.W. contributed to the final manuscript version (review and editing). All authors have read and agreed to the published version of the manuscript.
+
+Funding The contribution of M.W. was funded by the German Federal Min istry of Education and Research (BMBF) under the grant scheme BonaRes – Soil as a Sustainable Resource for the Bioeconomy, number 031B0511C.
+
+Data availability statement Not applicable.
+
+Declaration of Competing Interest The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Data availability The authors do not have permission to share data.
+
+Supplementary materials Supplementary material associated with this article can be found, in the online version, at doi:10.1016/j.soisec.2023.100119.
+
+References Abhilash, P.C., Dubey, R.K., Tripathi, V., Gupta, V.K., Singh, H.B., 2016. Plant growth- promoting microorganisms for environmental sustainability. Trends Biotechnol. 34 (11), 847–850.
+
+Abid, M., Schilling, J., Scheffran, J., Zulfiqar, F., 2016. Climate change vulnerability, adaptation and risk perceptions at farm level in Punjab, Pakistan. Sci. Total Environ. 547, 447–460.
+
+Altieri, M.A., Nicholls, C.I., Henao, A., Lana, M.A., 2015. Agroecology and the design of climate change-resilient farming systems. Agron. Sustain. Dev. 35 (3), 869–890.
+
+Angers, E.A., Caron, J., 1998. Plant-induced changes in soil structure processes.
+
+Biogeochemie 42, 55–72.
+
+Büchi, L., Wendling, M., Amoss´e, C., Necpalova, M., Charles, R., 2018. Importance of cover crops in alleviating negative effects of reduced soil tillage and promoting soil fertility in a winter wheat cropping system. Agric. Ecosyst. Environ. 256, 92–104.
+
+Bayu, T., Li, F., 2020. Review on contribution of integrated soil fertility management for climate change mitigation and agricultural sustainability. Cogent Environ. Sci. , 6 (1).
+
+BGR, 2013. Soil Quality Rating for Cropland in Germany. German Federal Institute for Geoscience and Natural Resources.
+
+Bodner, G., Loiskandl, W., Kaul, H.P., 2007. Cover crop evapotranspiration under semi- arid conditions using FAO dual crop coefficient method with water stress compensation. Agric. Water Manage. 93 (3), 85–98.
+
+Borase, D.N., Nath, C.P., Hazra, K.K., Senthilkumar, M., Singh, S.S., Praharaj, C.S., Singh, U., Kumar, N., 2020. Long-term impact of diversified crop rotations and nutrient management practices on soil microbial functions and soil enzymes activity.
+
+Ecol. Indic. 114.
+
+Bossolani, J.W., Crusciol, C.A.C., Portugal, J.R., Moretti, L.G., Garcia, A., Rodrigues, V.
+
+A., da Fonseca, M.d.C., Bernart, L., Vilela, R.G., Mendonça, L.P., dos Reis, A.R., 2021.
+
+Long-term liming improves soil fertility and soybean root growth, reflecting improvements in leaf gas exchange and grain yield. Eur. J. Agron. 128.
+
+Busari, M.A., Kukal, S.S., Kaur, A., Bhatt, R., Dulazi, A.A., 2015. Conservation tillage impacts on soil, crop and the environment. Int. Soil Water Conserv. Res. 3 (2), 119–129.
+
+Chauhan, R.P., 2014. Role of earthworms in soil fertility and factors affecting their population dynamics: a review. Int. J. Res. 1 (6), 642–649.
+
+Couper, M., 2000. Web surveys: a review of issues and approaches. Public Opin. Q. 64 (4), 464–494.
+
+Crane, T.A., Roncoli, C., Hoogenboom, G., 2011. Adaptation to climate change and climate variability: the importance of understanding agriculture as performance.
+
+Wageningen J. Life Sci. 57 (3–4), 179–185.
+
+Destatis, 2022. German Agricultural Holdings with Catch Crop Cultivation in Time Comparison. German Federal Statistical Office, Wiesbaden.
+
+Ebrahimi, E., Manschadi, A.M., Neugschwandtner, R.W., Eitzinger, J., Thaler, S., Kaul, H.
+
+P., 2016. Assessing the impact of climate change on crop management in winter wheat – a case study for Eastern Austria. J. Agric. Sci. 154 (7), 1153–1170.
+
+El Chami, D., Daccache, A., El Moujabber, M., 2020. How can sustainable agriculture increase climate resilience? A systematic review. Sustainability 12 (8).
+
+Ellis, B., Foth, H., 1997. Soil Fertility, 2nd ed. CRC Press, Boca Raton, p. 304.
+
+Estrada-Herrera, I.R., Hidalgo-Moreno, C., Guzm´an-Plazola, R., Almaraz Su´arez, J.J., 2017. Soil quality indicators to evaluate soil fertility. Agrociencia 51 (8), 813–831.
+
+Fahad, S., Chavan, S.B., Chichaghare, A.R., Uthappa, A.R., Kumar, M., Kakade, V., Pradhan, A., Jinger, D., Rawale, G., Yadav, D.K., Kumar, V., Farooq, T.H., Ali, B., Sawant, A.V., Saud, S., Chen, S., Poczai, P., 2022. Agroforestry systems for soil health improvement and maintenance. Sustainability 14 (22).
+
+Faye, B., Webber, H., Gaiser, T., Müller, C., Zhang, Y., Stella, T., Latka, C., Reckling, M., Heckelei, T., Helming, K., Ewert, F., 2023. Climate change impacts on European arable crop yields: sensitivity to assumptions about rotations and residue management. Eur. J. Agron. 142.
+
+Franzoni, G., Cocetta, G., Prinsi, B., Ferrante, A., Espen, L., 2022. Biostimulants on crops: their impact under abiotic stress conditions. Horticulturae 8 (3).
+
+Furey, G.N., Tilman, D., 2021. Plant biodiversity and the regeneration of soil fertility.
+
+Proc. Natl. Acad. Sci. USA. (49), 118.
+
+Genesis Agricultural holdings and Utilised Agricultural Area by Size of the Utilised Agricultural Area, 2021. Wiebaden.
+
+Gentsch, N., Boy, J., Batalla, J.D.K., Heuermann, D., von Wir´en, N., Schweneker, D., Feuerstein, U., Groß, J., Bauer, B., Reinhold-Hurek, B., Hurek, T., C´espedes, F.C., Guggenberger, G., 2020. Catch crop diversity increases rhizosphere carbon input and soil microbial biomass. Biol. Fert. Soils 56 (7), 943–957.
+
+German Meteorological Service, German Climate Atlas, Federal Ministry for Digital and Transport Germany, 2021. Offenbach.
+
+Giller, K.E., Andersson, J.A., Corbeels, M., Kirkegaard, J., Mortensen, D., Erenstein, O., Vanlauwe, B., 2015. Beyond conservation agriculture. Front. Plant Sci. 6, 870.
+
+Gosling, S.D., Vazire, S., Srivastava, S., John, O.P., 2004. Should we trust web-based studies? A comparative analysis of six preconceptions about internet questionnaires.
+
+Am. Psychol. 59 (2), 93–104.
+
+Han, J., Dong, Y., Zhang, M., 2021. Chemical fertilizer reduction with organic fertilizer effectively improve soil fertility and microbial community from newly cultivated land in the Loess Plateau of China. Appl. Soil Ecol. 165.
+
+Hartemink, A., 2006. Soil fertility decline: definitions and assessment. In: Lal, R. (Ed.), Encyclopedia of Soil Science. Taylor and Francis, New York, pp. 1618–1621. Vol. 2.
+
+Haynes, R.J., Naidu, R., 1998. Influence of lime, fertilizer and manure applications on soil organic matter content and soil physical conditions. Nutr. Cycl. Agroecosys. 51, 123–137.
+
+Herencia, J.F., Ruiz-Porras, J.C., Melero, S., Garcia-Galavis, P.A., Morillo, E., Maqueda, C., 2007. Comparison between organic and mineral fertilization for soil M.K. Wolf et al.
