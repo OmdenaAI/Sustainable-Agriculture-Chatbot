@@ -10,9 +10,9 @@ from tenacity import retry, wait_exponential, stop_after_attempt
 
 
 class QdrantManager:
-    def __init__(self, config: dict, logger: logging.Logger):
+    def __init__(self, config: dict, collection_name: str, logger: logging.Logger):
         self.config = config
-        self.collection = config["qdrant_collection"]
+        self.collection = collection_name
         self.embedding_model = config["embedding_model"]
         self.embedding_dimension = config["embedding_dimension"]
         self.logger = logger
@@ -25,7 +25,7 @@ class QdrantManager:
     def connect_to_qdrant(self):
         url = self.config["qdrant_url"]
         api_key = os.getenv("QDRANT_API_KEY")
-        self.client = QdrantClient(url=url, api_key=api_key)
+        self.client = QdrantClient(url=url, api_key=api_key, timeout=60)
         self.logger.info("Connected to Qdrant successfully")
 
     def create_collection(self):
@@ -76,7 +76,7 @@ class QdrantManager:
         }
 
         try:
-            self.logger.info("Processing document chunks for Qdrant")
+            self.logger.info(f"Processing document chunks for Qdrant collection: {self.collection}")
             points = []
 
             for chunk in document:

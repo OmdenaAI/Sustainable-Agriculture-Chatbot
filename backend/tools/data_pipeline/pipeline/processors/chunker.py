@@ -38,6 +38,36 @@ class Chunker:
         """
         return self.config_manager.is_tool_enabled("chunker")
     
+    def can_process(self, path: str) -> bool:
+        """
+        Check if the path contains the required files for processing:
+        - Exactly one .json file
+        - One or more .txt files
+        
+        Args:
+            path: Path to check
+            
+        Returns:
+            True if path contains required files, False otherwise
+        """
+        result = True
+        path = Path(path)
+        
+        if not path.exists():
+            result = False
+        else:
+            # Count .json files
+            json_files = list(path.glob("*.json"))
+            if len(json_files) != 1:
+                result = False
+                
+            # Check for at least one .txt file
+            txt_files = list(path.glob("*.txt"))
+            if len(txt_files) < 1:
+                result = False
+                
+        return result
+    
     @task(name="chunk-document")
     def process(self, input_dir: Path) -> Optional[Path]:
         """
@@ -86,21 +116,14 @@ class Chunker:
                     "--output", container_output_path
                 ]
                 
-                # Add chunk size if specified
-                chunk_size = self.config.get("chunk_size")
-                print(f"chunk_size: {chunk_size}")
-                if chunk_size:
-                    args.extend(["--chunk_size", str(chunk_size)])
-                    
-                # Add chunk overlap if specified
-                overlap_percentage = self.config.get("overlap_percentage")
-                if overlap_percentage:
-                    args.extend(["--overlap_percentage", str(overlap_percentage)])
-                
-                # Add chunker technique if specified
-                chunker_technique = self.config.get("chunker_technique")
-                if chunker_technique:
-                    args.extend(["--chunker_technique", str(chunker_technique)])
+                # Add merge_paragraphs if specified and True
+                if self.config.get("merge_paragraphs") is True:
+                    args.extend(["--merge_paragraphs"])
+
+                # Add config if specified
+                config_path = self.config_manager.get_config_path("chunker")
+                if config_path:
+                    args.extend(["--config", config_path])
                 
                 # Execute the chunker
                 result = self.tool_executor.execute_tool(

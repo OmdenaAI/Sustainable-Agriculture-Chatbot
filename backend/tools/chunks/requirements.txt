@@ -2,3 +2,4 @@ openai
 groq
 python-dotenv
 jsonschema
+pyyaml

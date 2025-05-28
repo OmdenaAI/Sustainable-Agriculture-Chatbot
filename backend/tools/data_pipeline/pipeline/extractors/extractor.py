@@ -152,4 +152,4 @@ class Extractor:
         else:
             self.logger.info(f"Extractor is disabled, skipping: {url_or_path}")
         
-        return output_dir 
+        return output_dir

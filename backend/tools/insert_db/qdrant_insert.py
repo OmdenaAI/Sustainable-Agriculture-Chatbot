@@ -108,7 +108,7 @@ def process_chunked_data(args):
     try:
         # Load configuration
         config = load_config_and_env(config_path=args.config, load_env=args.load_env)
-        qdrant_manager = QdrantManager(config["qdrant"], logger)
+        qdrant_manager = QdrantManager(config["qdrant"], args.collection_name, logger)
 
         # Validate input directory
         input_dir = Path(args.input)
@@ -154,6 +154,7 @@ if __name__ == "__main__":
     parser.add_argument("--input", required=True, help="Input directory containing chunked data JSON file")
     parser.add_argument("--config", default="config/config.yaml", help="Path to config YAML")
     parser.add_argument("--result-file", default=None, help="Path to write results JSON for Prefect integration")
+    parser.add_argument("--collection-name", required=True, help="Collection name")
     parser.add_argument("--load-env", default=False, help="Load environment variables when not using docker")
 
     try:

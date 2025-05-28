@@ -7,12 +7,16 @@ import jsonschema
 from jsonschema import validate
 from pathlib import Path
 import logging
+
 class OverlapParagraphChunks(AbstractChunker):
-    def __init__(self, logger: logging.Logger, chunk_size: int = 1024, overlap_percentage: int = 20):
+    def __init__(self, logger: logging.Logger, chunk_size: int = 1024, overlap_percentage: int = 20, min_chunk_size: int = 100, max_lookahead: int = 3, min_words_to_include: int = 15):
         self.logger = logger
         self.chunk_size = chunk_size
         self.overlap_percentage = overlap_percentage
         self.overlap_words = int(chunk_size * self.overlap_percentage / 100)
+        self.min_chunk_size = min_chunk_size
+        self.max_lookahead = max_lookahead
+        self.min_words_to_include = min_words_to_include
         self.schema = self._load_schema(Path("schemas/sustainable_agriculture.schema.json"))
 
     def _load_schema(self, schema_path: Path):
@@ -54,17 +58,63 @@ class OverlapParagraphChunks(AbstractChunker):
         
         return chunk
 
-    def generate_chunks(self, text: str, metadata: dict = None) -> List[dict]:
+    def _merge_paragraphs(self, paragraphs: List[str], start_idx: int) -> Tuple[str, int]:
+        """Attempt to merge paragraphs starting from start_idx to meet min_chunk_size.
+        Returns the merged text and the number of paragraphs merged.
+        
+        """
+        current_text = paragraphs[start_idx]
+        paragraphs_merged = 1  # Start with 1 as we always include the first paragraph
+        best_merged_text = current_text  # Keep track of the best merge we've found
+        
+        # Look ahead up to max_lookahead paragraphs
+        for i in range(1, min(self.max_lookahead, len(paragraphs) - start_idx)):
+            next_paragraph = paragraphs[start_idx + i]
+            
+            # Try merging with the next paragraph
+            merged_text = current_text + "\n\n" + next_paragraph
+            words = merged_text.split()
+            
+            # If we meet min_chunk_size, this is our best option so far
+            if len(words) >= self.min_chunk_size:
+                best_merged_text = merged_text
+                paragraphs_merged = i + 1
+                break
+                
+            # If we don't meet min_chunk_size, keep track of this merge
+            # but continue looking for a better one
+            current_text = merged_text
+            best_merged_text = merged_text  # Update best merge with current attempt
+            
+        return best_merged_text, paragraphs_merged
+
+    def generate_chunks(self, text: str, metadata: dict, merge_paragraphs: bool = False) -> List[dict]:
         """Generate overlapping chunks from a text based on the chunker-size and metadata
            chunker-size depends on the number of words for a given embedding model
         """
         chunks = []
         paragraphs = text.split('\n\n')
         final_text_to_overlap = ""
+        i = 0
         
-        for paragraph in paragraphs:
+        skipped_chunks = 0
+
+        while i < len(paragraphs):
             paragraph_id = str(uuid4())  # Generate unique ID for this paragraph
-            paragraph_text = final_text_to_overlap + paragraph
+            
+            # Check if we need to merge paragraphs
+            current_paragraph = paragraphs[i]
+            words = current_paragraph.split()
+            
+            if (len(words) < self.min_chunk_size) and (merge_paragraphs):
+                # Try to merge with subsequent paragraphs
+                merged_text, paragraphs_merged = self._merge_paragraphs(paragraphs, i)
+                paragraph_text = final_text_to_overlap + merged_text
+                i += paragraphs_merged
+            else:
+                paragraph_text = final_text_to_overlap + current_paragraph
+                i += 1
+                
             words = paragraph_text.split()
             
             # Check if paragraph needs to be split
@@ -79,8 +129,14 @@ class OverlapParagraphChunks(AbstractChunker):
                 })
 
                 chunk = self._create_chunk(chunk_text, len(chunks), chunk_schema)               
-                chunks.append(chunk)
                 final_text_to_overlap = ""
+
+                # Only append if the chunk has a reasonable size to include in the final text
+                if (len(words) > self.min_words_to_include):
+                    chunks.append(chunk)
+                else:
+                    #self.logger.debug(f'Skipping chunk "{chunk["text"].replace('\n', ' ')}" with {len(words)} words')
+                    skipped_chunks += 1
             else:
                 # Paragraph needs to be split
                 step = self.chunk_size - self.overlap_words
@@ -99,7 +155,7 @@ class OverlapParagraphChunks(AbstractChunker):
                     chunks.append(chunk)
                     final_text_to_overlap = ' '.join(chunk_text.split()[-self.overlap_words:])
                     split_count += 1
-        
-        return chunks, final_text_to_overlap
+
+        return chunks, final_text_to_overlap, skipped_chunks
     
 

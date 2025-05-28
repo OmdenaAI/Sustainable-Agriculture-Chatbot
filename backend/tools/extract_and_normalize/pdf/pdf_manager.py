@@ -23,7 +23,7 @@ class PdfManager:
         self.elsevier = False
 
         # Get actual url if its an arxiv url
-        self.url = self._get_url(url)
+        self.url, self.domain = self._get_url(url)
         self.headless_domains = self.config.get("pdf_extractor", {}).get("headless_domains", [])
         
 
@@ -64,7 +64,7 @@ class PdfManager:
                 self.logger.error(f"Error fetching arXiv paper {arxiv_id}: {str(e)}")
                 raise
 
-        return result
+        return result, domain
     
     def is_url(self):
         parsed = urlparse(self.url)
@@ -218,19 +218,29 @@ class PdfManager:
             # Is this a url or a local file?    
             if self.is_url():
                 # Does the url require a headless browser?
-                if self.url in self.headless_domains and self.url.endswith("/pdf"):
+                if self.domain in self.headless_domains and self.url.endswith("/pdf"):
                     self.logger.info(f"Downloading PDF using a headless browser from URL: {self.url}")
-                    metadata_title, sections = self.download_mdpi_pdf()
+                    metadata_title, sections = self.download_headless_pdf()
                 elif self.elsevier:
                     self.logger.info(f"Downloading PDF from elsevier URL: {self.url}")
                     metadata_title, sections = self._download_elsevier_pdf()
                 else:
                     self.logger.info(f"Downloading PDF from URL: {self.url}")
+
+                    # First try with no header if that fails, add a referer header to avoid being blocked by the server
                     response = requests.get(self.url)
+
                     if response.status_code != 200:
-                        self.logger.error(f"Failed to download PDF: HTTP {response.status_code}")
-                        raise ConnectionError("PDF download failed")
-                
+                        self.logger.info(f"Could not download PDF with no header: HTTP {response.status_code}")
+
+                        # Add a referer header to avoid being blocked by the server
+                        headers = { "User-Agent": "Mozilla/5.0", "Referer": self.url }
+                        response = requests.get(self.url, headers=headers)
+
+                        if response.status_code != 200:
+                            self.logger.error(f"Failed to download PDF: HTTP {response.status_code}")
+                            raise ConnectionError("PDF download failed")
+                                    
                     # Use tempfile to create a temporary file that auto-deletes when closed
                     with tempfile.NamedTemporaryFile(suffix='.pdf', delete=True) as temp_pdf:
                         # Write PDF content to the temporary file

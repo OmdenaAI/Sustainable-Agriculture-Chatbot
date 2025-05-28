@@ -6,6 +6,7 @@ import jsonschema
 from jsonschema import validate
 from pathlib import Path
 import logging
+
 class OverlapChunks(AbstractChunker):
     def __init__(self, logger: logging.Logger, chunk_size: int = 1024, overlap_percentage: int = 20):
         self.logger = logger

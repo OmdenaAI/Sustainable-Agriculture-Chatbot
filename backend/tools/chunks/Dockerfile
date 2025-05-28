@@ -3,6 +3,7 @@ FROM python:3.10-slim
 RUN mkdir -p /app
 WORKDIR /app
 COPY . /app
+COPY config/ ./config/
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 

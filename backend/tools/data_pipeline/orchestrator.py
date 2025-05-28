@@ -68,7 +68,6 @@ def main_pipeline(csv_path: str, config_path: str):
                 extracted_paths.append(extracted_path)
             else:
                 logger.warning(f"Extractor cannot process URL: {url}")
-                extracted_paths.append(None)
     else:
         logger.info("Skipping extraction phase (disabled in config).")
 
@@ -79,8 +78,11 @@ def main_pipeline(csv_path: str, config_path: str):
     if chunker_enabled and extracted_paths:
         logger.info("Starting chunking phase...")
         for extracted_path in extracted_paths:
-            chunked_path = chunker.process(Path(extracted_path))
-            chunked_paths.append(chunked_path)
+            if chunker.can_process(extracted_path):
+                chunked_path = chunker.process(Path(extracted_path))
+                chunked_paths.append(chunked_path)
+            else:
+                logger.warning(f"Chunker cannot process extracted path: {extracted_path}")
     else:
         if not chunker_enabled:
             logger.info("Skipping chunking phase (disabled in config).")
@@ -105,7 +107,7 @@ def main_pipeline(csv_path: str, config_path: str):
     # Summarize results
     successful_extractions = sum(1 for path in extracted_paths if path is not None)
     successful_chunks = sum(1 for path in chunked_paths if path is not None)
-    successful_db_inserts = sum(1 for result in db_results if result is not None)
+    successful_db_inserts = sum(1 for result in db_results if result is not None and result.get("status") == "success")
     
     # Comprehensive pipeline completion log message
     completion_msg = []

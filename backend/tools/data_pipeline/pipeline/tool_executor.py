@@ -34,7 +34,7 @@ class ToolExecutor:
         extra_volumes: Optional[List[str]] = None,
         env_vars: Optional[Dict[str, str]] = None,
         tool_name: str = "docker-tool",
-        timeout: int = 600,
+        timeout: int = 1200,
         doc_id: Optional[str] = None
     ) -> Dict[str, Any]:
         """
@@ -98,7 +98,7 @@ class ToolExecutor:
         cmd.extend(args)
         
         # Log the command
-        self.logger.info(f"Executing {tool_name} with Docker: {' '.join(cmd)}")
+        self.logger.info(f"Executing {tool_name} with Docker: {' '.join(cmd)} timeout: {timeout}")
         
         # Execute the Docker command
         start_time = time.time()

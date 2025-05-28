@@ -73,10 +73,12 @@ class InsertDB:
                 "--input", container_input_path,
             ]
             
-            # Add database connection parameters if specified
-            db_params = self.config.get("db_params", {})
-            for key, value in db_params.items():
-                args.extend([f"--{key.replace('_', '-')}", str(value)])
+            # Add merge_paragraphs if specified and True
+            collection_name = self.config.get("collection_name", None)
+            if collection_name:
+                args.extend(["--collection-name", collection_name])
+            else:
+                raise ValueError("collection_name must be set")
             
             # Add config if specified
             config_path = self.config_manager.get_config_path("insert_db")
@@ -107,6 +109,7 @@ class InsertDB:
                 }
             else:
                 self.logger.error(f"Failed to insert document {doc_id} into database. Error: {execution_result.get('error', 'Unknown error')}")
+                result = execution_result
         else:
             # Log the reason why processing was skipped
             if not self.is_enabled():

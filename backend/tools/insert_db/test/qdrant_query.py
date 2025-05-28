@@ -4,6 +4,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 import logging
 from qdrant_client import QdrantClient
+from qdrant_client.http import models as rest
 from qdrant_client.http import models
 from sentence_transformers import SentenceTransformer
 import jsonlines
@@ -163,6 +164,20 @@ def clear_collection(client: QdrantClient, collection_name: str) -> None:
         logger.error(f"Error clearing collection {collection_name}: {str(e)}")
         raise
 
+def points_count(client: QdrantClient, collection_name: str):
+    # Simply use the built-in count method
+    count_response = client.count(
+        collection_name=collection_name
+    )
+    print("Total points: in collection {}:{}".format(collection_name, count_response.count))
+
+def list_collections(client: QdrantClient):
+    # Fetch high-level info about all collections
+    collections_info = client.get_collections()
+
+    for coll in collections_info.collections:
+        print(f"- Name: {coll.name}")
+
 def main():
     parser = argparse.ArgumentParser(description="Query Qdrant and evaluate against ground truth")
     parser.add_argument("--collection", default="ws1-test", help="Qdrant collection name")
@@ -177,12 +192,16 @@ def main():
         config = load_config(args.config)
         qdrant_config = config["qdrant"]
 
-        # Load QA pairs
-        qa_pairs = load_qa_pairs(args.input)
-        logger.info(f"Loaded {len(qa_pairs)} question-answer pairs")
-
         # Initialize Qdrant client
         client = connect_to_qdrant(qdrant_config)
+
+        list_collections(client)
+        points_count(client, args.collection)
+
+        # Load QA pairs
+        qa_pairs = load_qa_pairs(args.input)
+
+        logger.info(f"Loaded {len(qa_pairs)} question-answer pairs")
 
         # Uncomment for debugging to clear collection
         #clear_collection(client, args.collection)   
