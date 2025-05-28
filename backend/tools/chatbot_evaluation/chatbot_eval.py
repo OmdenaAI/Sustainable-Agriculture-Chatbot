@@ -1,9 +1,9 @@
 import json
 from deepeval import assert_test
 from deepeval.test_case import LLMTestCase
-from deepeval.metrics import FaithfulnessMetric, AnswerRelevancyMetric
+from deepeval.metrics import AnswerRelevancyMetric
 from models.custom_groq import GroqLLM
-
+from templates.custom_template import CustomAnswerRelevancyTemplate
 # Load your JSON file
 with open("results_user_personas_A/chatbot_test_results.json") as f:
     data = json.load(f)
@@ -11,7 +11,7 @@ with open("results_user_personas_A/chatbot_test_results.json") as f:
 tests = data["tests"]
 
 model = GroqLLM()
-metric = AnswerRelevancyMetric(model=model)
+metric = AnswerRelevancyMetric(model=model, evaluation_template=CustomAnswerRelevancyTemplate)
 for test in tests:
     test_case = LLMTestCase(
         input=test["input"],
