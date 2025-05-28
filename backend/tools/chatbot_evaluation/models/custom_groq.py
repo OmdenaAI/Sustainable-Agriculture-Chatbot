@@ -1,8 +1,6 @@
 from deepeval.models import DeepEvalBaseLLM
 import requests
 from app.core.config import Settings
-from deepeval.metrics.answer_relevancy.answer_relevancy import Statements
-from deepeval.metrics.answer_relevancy.schema import Verdicts,AnswerRelevancyVerdict, Reason
 from dotenv import load_dotenv
 from time import sleep
 
@@ -32,21 +30,36 @@ class GroqLLM(DeepEvalBaseLLM):
             }
         )
         if response.status_code == 429:
-            print("Rate limit exceeded. Waiting...")
+            print("Model rate limit exceeded. Waiting...")
             sleep(5)
             return self.generate(prompt)
 
         return response.json().get("choices", [{}])[0].get("message", {}).get("content", "")
 
-    async def a_generate(self, prompt: str, schema = str, **kwargs):
-        output_text = self.generate(prompt)
+    def parse_to_schema(self, output_text: str, schema: str, try_number=0, max_tries=5):
         if schema == str:
-            response = output_text
+            return output_text
         else:
             try:
-                response = schema.model_validate_json(output_text)
-            except:
-                raise TypeError("Json is not in the expected format")
+                return schema.model_validate_json(output_text)
+            except Exception as e:
+                print(f"Error parsing JSON, try {try_number + 1}")
+                if try_number < max_tries:
+                    prompt = f"""Make the following a valid JSON, only return a valid JSON.
+                    Wrong JSON:
+                    {output_text}
+                    Fixed JSON:
+                    """
+                    output_text = self.generate(prompt)
+                    return self.parse_to_schema(output_text, schema, try_number + 1, max_tries)
+                else:
+                    raise TypeError(f"Json is not in the expected format")
+                
+
+
+    async def a_generate(self, prompt: str, schema = str, **kwargs):
+        output_text = self.generate(prompt)
+        response = self.parse_to_schema(output_text, schema)
         return response
 
     def get_model_name(self):

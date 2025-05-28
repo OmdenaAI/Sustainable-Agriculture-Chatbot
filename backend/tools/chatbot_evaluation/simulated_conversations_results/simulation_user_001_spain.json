@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "input": "How do I monitor pest levels without special equipment?",
+      "expected_output": "Use simple tools like visual inspection, trap crops, pheromone traps, and scouting. Regular observation helps detect pests early and guides timely intervention.",
+      "model_response": "To monitor pest levels without special equipment, I observe my crops regularly, looking for signs of pests like holes in leaves or unusual growth. I also use simple traps like sticky tapes or buckets with soapy water to catch and identify pests. My family helps me scout the farm.",
+      "topic": "Integrated Pest Management (IPM) as a Sustainable Approach to Agriculture",
+      "kickoff_context": "Lately I\u2019ve been seeing bugs eating up my tomato plants\u2014what\u2019s a good way to get rid of them without using too many chemicals?"
+    },
+    {
+      "input": "What are examples of biological pest control that really work on farms?",
+      "expected_output": "Encourage natural predators like ladybugs or parasitic wasps. Techniques include releasing beneficial insects or enhancing habitats to support them.",
+      "model_response": "On our small farm in Spain, we're learning about IPM. Biological pest control works well for us. Examples include: \n\n1. Ladybugs for aphids.\n2. Lacewings for whiteflies.\n3. Parasitic wasps for caterpillars.\n4. Predatory mites for spider mites.\n5. Beneficial nematodes for soil pests.\n\nThese natural methods help us reduce chemicals and protect our crops.",
+      "topic": "Integrated Pest Management (IPM) as a Sustainable Approach to Agriculture",
+      "kickoff_context": "Lately I\u2019ve been seeing bugs eating up my tomato plants\u2014what\u2019s a good way to get rid of them without using too many chemicals?"
+    },
+    {
+      "input": "Are there any cultural methods I can use to prevent future outbreaks?",
+      "expected_output": "Yes\u2014crop rotation, planting resistant varieties, proper irrigation, sanitation, and soil cultivation reduce pest-friendly conditions.",
+      "model_response": "S\u00ed, hay m\u00e9todos culturales para prevenir futuros brotes. Puedes rotar cultivos, eliminar malezas y restos de cultivos, y usar variedades resistentes. Tambi\u00e9n, introduce insectos beneficiosos y aves que se alimentan de plagas. Mant\u00e9n buena higiene y monitorea tus cultivos regularmente.",
+      "topic": "Integrated Pest Management (IPM) as a Sustainable Approach to Agriculture",
+      "kickoff_context": "Lately I\u2019ve been seeing bugs eating up my tomato plants\u2014what\u2019s a good way to get rid of them without using too many chemicals?"
+    },
+    {
+      "input": "How do I decide when chemical treatment is absolutely necessary?",
+      "expected_output": "Only after monitoring confirms pest levels above economic thresholds. Then use the least toxic, targeted pesticide option.",
+      "model_response": "As a small-scale farmer in Spain, I decide chemical treatment is necessary when pests cause significant damage, threatening crop yields. I monitor crops regularly, and if I see many pests or damage, I consider chemical control as a last resort. I also think about the economic impact on my family farm. \n\nFirst, I try other methods like introducing beneficial insects or using physical barriers. If those don't work, and pests persist, I may use chemicals. I choose products with low toxicity and apply them in a targeted way to minimize harm to people, environment, and other animals. \n\nMy goal is to use chemicals only when absolutely needed, and to transition to more regenerative practices over time.",
+      "topic": "Integrated Pest Management (IPM) as a Sustainable Approach to Agriculture",
+      "kickoff_context": "Lately I\u2019ve been seeing bugs eating up my tomato plants\u2014what\u2019s a good way to get rid of them without using too many chemicals?"
+    },
+    {
+      "input": "Can crop rotation really reduce pest pressure over time?",
+      "expected_output": "Yes, it disrupts pest life cycles and reduces buildup of pest populations by removing their consistent food source.",
+      "model_response": "S\u00ed, crop rotation can reduce pest pressure. By changing crops, you break pests' life cycle. Different crops have different pests. Rotation disrupts their habitat, reducing infestation. We do this on our small farm in Spain, it helps. (Translated from Spanish) \n\nExample: rotating wheat with legumes, then vegetables. Pests don't find their favorite food, numbers decrease. Simple, low-cost, and effective for us. We're just starting, but it works!",
+      "topic": "Integrated Pest Management (IPM) as a Sustainable Approach to Agriculture",
+      "kickoff_context": "Lately I\u2019ve been seeing bugs eating up my tomato plants\u2014what\u2019s a good way to get rid of them without using too many chemicals?"
+    }
+  ]
+}

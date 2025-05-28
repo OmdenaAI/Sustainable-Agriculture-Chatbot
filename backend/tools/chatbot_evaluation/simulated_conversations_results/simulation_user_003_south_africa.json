@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "input": "The FAO talks a lot about soil organic carbon. What\u2019s a simple way for me to know if my soil has enough of it, and how can I build it without expensive products?",
+      "expected_output": "The FAO says that soil organic carbon is key for healthy, productive soils. On small farms, one simple sign is how well your soil holds water and if it forms small clumps when moist. To build organic carbon cheaply, it recommends using farm leftovers like plant residues, animal manure, and crop rotations with legumes. Even basic composting helps a lot over time.",
+      "model_response": "\"Soil organic carbon is crucial! A simple way to check its levels is through the 'squeeze test': wet a soil sample and squeeze it. If it crumbles, it's low; if it forms a ribbon, it's good! Build it by adding compost, manure, and cover crops. Use crop residues, too. These methods are affordable and organic.\"",
+      "topic": "Improving soil and climate resilience on small organic farms",
+      "kickoff_context": "Hi, I run a small organic farm with my family in South Africa. I\u2019ve been looking into regenerative agriculture but I don\u2019t have much external support. I want to apply some FAO parameters, especially the soil and climate parts. Could you help me understand how to start applying some of these ideas with what I already have?"
+    },
+    {
+      "input": "We already use compost and some mulch. What\u2019s one or two new practices from the FAO that could help with the dry seasons we face?",
+      "expected_output": "The FAO suggests cover cropping with drought-tolerant species and minimum tillage to keep moisture in the soil. Even leaving crop residues on the soil surface works like a blanket, helping protect against water loss. If you have space, planting hedgerows or trees for windbreaks also helps keep soil from drying out too fast.",
+      "model_response": "Given your organic farming approach and interest in regenerative practices, two FAO-recommended practices to enhance soil and climate resilience, especially during dry seasons, are:\n\n1. **Agroforestry**: Integrating trees into your farm can improve soil health, increase biodiversity, and mitigate climate change impacts. Trees help maintain soil moisture and provide shade.\n\n2. **Cover Cropping**: Planting cover crops during off-seasons protects and enhances soil health, increases water infiltration, and reduces erosion, helping your farm be more resilient during dry periods.",
+      "topic": "Improving soil and climate resilience on small organic farms",
+      "kickoff_context": "Hi, I run a small organic farm with my family in South Africa. I\u2019ve been looking into regenerative agriculture but I don\u2019t have much external support. I want to apply some FAO parameters, especially the soil and climate parts. Could you help me understand how to start applying some of these ideas with what I already have?"
+    },
+    {
+      "input": "It\u2019s hard to buy inputs. Does the FAO talk about farming with what we already have or producing inputs ourselves?",
+      "expected_output": "Yes, it does. The FAO supports using on-farm resources like compost, mulch, and manure. It also encourages simple methods like compost teas, vermicomposting (using worms), and using legume plants to fix nitrogen. These are low-cost ways to improve your soil over time without needing outside products.",
+      "model_response": "The FAO emphasizes using local and available resources. They promote practices like recycling farm waste, using cover crops, and making natural inputs like compost and manure. This approach helps smallholders like us be self-sufficient and reduce reliance on external inputs.",
+      "topic": "Improving soil and climate resilience on small organic farms",
+      "kickoff_context": "Hi, I run a small organic farm with my family in South Africa. I\u2019ve been looking into regenerative agriculture but I don\u2019t have much external support. I want to apply some FAO parameters, especially the soil and climate parts. Could you help me understand how to start applying some of these ideas with what I already have?"
+    },
+    {
+      "input": "Sometimes our land gets washed out when it rains too hard. Are there any low-cost ideas in the document for controlling erosion and keeping the soil in place?",
+      "expected_output": "Definitely. The FAO recommends contour farming, planting along the natural slope, and using grass strips or stone lines to slow down water. You can also plant cover crops or deep-rooted crops to hold the soil. These methods don\u2019t need much money, just planning and local materials like stones, branches, or grasses.",
+      "model_response": "Erosion's a big challenge! Yes, there are low-cost ideas. Try contour farming, planting vetiver or comfrey to hold soil, and mulching with organic materials. Also, use cover crops like clover or rye to protect soil. These methods help without breaking the bank!",
+      "topic": "Improving soil and climate resilience on small organic farms",
+      "kickoff_context": "Hi, I run a small organic farm with my family in South Africa. I\u2019ve been looking into regenerative agriculture but I don\u2019t have much external support. I want to apply some FAO parameters, especially the soil and climate parts. Could you help me understand how to start applying some of these ideas with what I already have?"
+    },
+    {
+      "input": "If I want to start learning and doing more regenerative farming, does the FAO talk about learning groups or people I could connect with?",
+      "expected_output": "Yes, the FAO mentions farmer field schools and local learning groups as great ways to share knowledge and get help. It encourages small farmers to work together and learn by doing. Even with limited support, starting a small group with nearby farmers or reaching out to local NGOs or extension officers can help you try new things step by step.",
+      "model_response": "The FAO has a network of  Learning Groups and organizations that support regenerative farming. You can explore the FAO's [Global Soil Partnership](https://www.fao.org/global-soil-partnership/en/) and [Save and Grow](https://www.fao.org/save-and-grow/en/) initiatives. Additionally, look into [Regenerative Agriculture](https://www.fao.org/regenerative-agriculture/en/)  for resources and potential connections. Locally, consider joining the [South African Organic Sector](https://www.organicsector.co.za/) for networking opportunities.",
+      "topic": "Improving soil and climate resilience on small organic farms",
+      "kickoff_context": "Hi, I run a small organic farm with my family in South Africa. I\u2019ve been looking into regenerative agriculture but I don\u2019t have much external support. I want to apply some FAO parameters, especially the soil and climate parts. Could you help me understand how to start applying some of these ideas with what I already have?"
+    }
+  ]
+}

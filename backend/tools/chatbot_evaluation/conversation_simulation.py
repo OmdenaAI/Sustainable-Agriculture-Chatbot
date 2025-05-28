@@ -1,18 +1,19 @@
 import json
 import requests
+import os
+
 
 API_URL = "http://localhost:8000/chat/"
-INPUT_JSON = "user_personas_and_qs_A/topic_001.json"         
-OUTPUT_JSON = "results_user_personas_A/chatbot_test_results.json"
+input_folder = "user_personas_and_qs/"         
+output_folder= "simulated_conversations_results/"
 
 def load_data(filepath):
     with open(filepath, "r") as f:
         return json.load(f)
 
-def query_chatbot(question):
+def query_chatbot(prompt):
     response = requests.post(API_URL, json={
-        "prompt": question,
-        # "history": []
+        "prompt": prompt,
     })
 
     if response.status_code == 200:
@@ -22,15 +23,20 @@ def query_chatbot(question):
 
 def run_evaluation(data):
     topic = data.get("topic", "")
+    profile = data.get("profile", "")
+    if isinstance(profile, dict):
+        user_profile = ", ".join(f"{key}: {value}" for key, value in profile.items())
+    else:
+        user_profile = str(profile)
     kickoff = data.get("conversation", {}).get("kickoff", "")
     follow_ups = data.get("conversation", {}).get("follow_up", [])
-
     results = []
 
     for item in follow_ups:
         question = item["question"]
         expected = item["answer"]
-        actual = query_chatbot(question)
+        prompt = f"Use the user profile: {user_profile} and the Topic: {topic} to answer the question {question}. Please provide anwsers up 300 characters."
+        actual = query_chatbot(prompt)
 
         results.append({
             "input": question,
@@ -43,10 +49,15 @@ def run_evaluation(data):
     return results
 
 if __name__ == "__main__":
-    input_data = load_data(INPUT_JSON)
-    evaluation_results = run_evaluation(input_data)
 
-    with open(OUTPUT_JSON, "w") as f:
-        json.dump({"tests": evaluation_results}, f, indent=2)
+    for file in os.listdir(input_folder):
+        if file.endswith(".json"):
+            input_file = f"{input_folder}/{file}"
+            output_file = f"{output_folder}simulation_{file}"
+            input_data = load_data(input_file)
+            evaluation_results = run_evaluation(input_data)
+            
+            with open(output_file, "w") as f:
+                json.dump({"tests": evaluation_results}, f, indent=2)
 
-    print(f"✅ Done. Results saved to: {OUTPUT_JSON}")
+            print(f"✅ Done. Results saved to: {output_file}")

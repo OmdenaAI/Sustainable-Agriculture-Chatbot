@@ -6,126 +6,120 @@ from deepeval.metrics.answer_relevancy.template import AnswerRelevancyTemplate
 class CustomAnswerRelevancyTemplate(AnswerRelevancyTemplate):
     @staticmethod
     def generate_statements(actual_output: str):
-        return f"""Given the response from a chatbot about regenerative agriculture, break it down into individual statements. Statements can include specific techniques (e.g., composting, rotational grazing), environmental principles, or benefits. Ambiguous phrases or general claims should also be included.
+        return f"""
+Given the text, break it down and generate a list of distinct statements it presents. 
+Each statement should convey a complete idea. Ambiguous phrases or even standalone words that resemble claims or ideas may also be considered statements.
 
-===== START OF EXAMPLE ======
-Example text: 
+Example:
+Example text:  
 To improve soil health, farmers should reduce tillage, plant cover crops, and use compost. Regenerative practices also promote biodiversity and help sequester carbon in the soil.
 
-Example JSON
+Expected JSON output:
 {{
-    "statements": [
-        "Farmers should reduce tillage.",
-        "Planting cover crops improves soil health.",
-        "Compost use is encouraged.",
-        "Regenerative practices promote biodiversity.",
-        "These practices help sequester carbon in the soil."
-    ]
+  "statements": [
+    "Farmers should reduce tillage.",
+    "Planting cover crops improves soil health.",
+    "Compost use is encouraged.",
+    "Regenerative practices promote biodiversity.",
+    "These practices help sequester carbon in the soil."
+  ]
 }}
+
 ===== END OF EXAMPLE ======
 
-        
 **
-IMPORTANT: Please only return JSON format with the "statements" key mapping to a list of strings. No words or explanation is needed.
+IMPORTANT: Return only valid JSON with the key "statements" mapping to a list of strings.
+No explanation or text outside the JSON is needed.
 **
 
-Text:
+Text:  
 {actual_output}
 
 JSON:
 """
 
+
+
     @staticmethod
     def generate_verdicts(input: str, statements: str):
-        return f"""For each statement from a chatbot response, decide whether it is relevant to the user input about regenerative agriculture. Consider ecological accuracy, relevance to the practice of regenerative agriculture, and the presence of greenwashing or vague claims.
-Please generate a list of JSON with two keys: `verdict` and `reason`.
-The 'verdict' key should STRICTLY be either a 'yes', 'idk' or 'no'.
-Verdict options:
-- 'yes': The statement is clearly relevant and accurate to address the original input.
-- 'no': The statement is not relevant or contradicts regenerative principles.
-- 'idk': The statement is vague, unrelated, or only indirectly supportive.
+        return f"""
+For the provided list of statements, assess whether each statement is relevant to **addressing the input question or request**, which is specifically about sustainable agriculture.
 
-Provide a reason ONLY if the verdict is 'no'.
+Please return your answer as a list of JSON objects under the key `verdicts`. Each object must include a `verdict` and, if applicable, a `reason`.
 
-===== START OF EXAMPLE ======
-Example Input:
-What are good ways to restore soil fertility using regenerative agriculture?
+- The `verdict` must be strictly one of the following:  
+  - "yes" — The statement directly contributes to answering the input in a meaningful and relevant way.  
+  - "idk" — The statement is potentially useful or indirectly related but does not clearly address the input.  
+  - "no" — The statement is unrelated or irrelevant.
 
-Example statements:
+- Include a `reason` **only if the verdict is "no"**, clearly explaining why the statement does not relate to the input.
+
+⚠️ IMPORTANT:  
+- Return only valid JSON.  
+- The number of `verdicts` **must exactly match** the number of statements provided.  
+- Do not add explanations outside the JSON output.
+
+Example Input:  
+What are good ways to restore soil fertility using regenerative agriculture and permaculture?
+
+Example Statements:  
 [
-    "Reducing tillage helps preserve soil structure.",
-    "Using synthetic fertilizers increases yield.",
-    "Applying compost improves organic matter in soil.",
-    "Installing solar panels is good for clean energy."
+  "Reducing tillage helps preserve soil structure.",
+  "Using synthetic fertilizers increases yield.",
+  "Applying compost improves organic matter in soil.",
+  "Installing solar panels is good for clean energy."
 ]
 
-Example JSON:
+Example JSON Response:  
 {{
-    "verdicts": [
-        {{
-            "verdict": "yes"
-        }},
-        {{
-            "verdict": "no",
-            "reason": "Synthetic fertilizers can harm soil biology and contradict regenerative practices."
-        }},
-        {{
-            "verdict": "yes"
-        }},
-        {{
-            "verdict": "idk"
-        }}
-    ]
+  "verdicts": [
+    {{ "verdict": "yes" }},
+    {{ "verdict": "no", "reason": "Synthetic fertilizers are generally avoided in regenerative practices." }},
+    {{ "verdict": "yes" }},
+    {{ "verdict": "idk" }}
+  ]
 }}
-===== END OF EXAMPLE ======
 
+Now complete the task using the actual input and statements provided below.
 
-**
-IMPORTANT: Only return JSON format with a 'verdicts' key mapping to a list of JSON objects.
-Since you are going to generate a verdict for each statement, the number of 'verdicts' SHOULD BE STRICTLY EQUAL to the number of `statements`.
-**
-        
-
-Input:
+Input:  
 {input}
 
-Statements:
+Statements:  
 {statements}
 
-JSON:
+JSON Response:
 """
+
 
     @staticmethod
     def generate_reason(
         irrelevant_statements: List[str], input: str, score: float
     ):
-        return f"""Given the answer relevancy score and list of irrelevant statements made in the actual output, and the input, provide a CONCISE and SHORT reason for the score. If the response was excellent, acknowledge its alignment with ecological practices. If there were irrelevant parts, highlight what could be improved.
-        The irrelevant statements represent things in the actual output that is irrelevant to addressing whatever is asked/talked about in the input.
-        If there is nothing irrelevant, just say something positive with an upbeat encouraging tone (but don't overdo it otherwise it gets annoying).
+        return f"""
+Given the **answer relevancy score**, the **list of reasons for irrelevant statements** in the actual output, and the **original input**, provide a **concise explanation** for why the score is appropriate.
 
+Your explanation should:
+- Justify **why the score is not higher**, referencing the irrelevant content.
+- Also explain **why it deserves the current score**, even if not perfect.
+- If there are **no irrelevant statements**, simply return a **positive and encouraging comment** (keep it professional and not overly enthusiastic).
 
+⚠️ IMPORTANT: Return only a valid JSON object with a single key `"reason"`.
 
-===== START OF EXAMPLE ======
 Example JSON:
 {{
-    "reason": "The score is 3.5 because the response included a useful explanation of cover cropping, but mentioned synthetic fertilizers which are typically avoided in regenerative practices."
+  "reason": "The score is 3.5 because the answer included strong points about compost and cover crops, but also mentioned synthetic fertilizers, which go against regenerative principles."
 }}
 
-===== END OF EXAMPLE ======
-
-
-**
-IMPORTANT: Please make sure to only return in JSON format, with the 'reason' key providing the reason.
-**
-
-Answer Relevancy Score:
+Answer Relevancy Score:  
 {score}
 
-Reasons why the score can't be higher based on irrelevant statements in the actual output:
+Reasons why the score can't be higher (irrelevant statements):  
 {irrelevant_statements}
 
-Input:
+Input:  
 {input}
 
 JSON:
 """
+
