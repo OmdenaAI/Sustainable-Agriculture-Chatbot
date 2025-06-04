@@ -1,4 +1,13 @@
 {
+    "profile_id": "user_001",
+    "profile":{
+      "location": "Spain",
+      "farming_style": "conventional transitioning to regenerative",
+      "family_farm": true,
+      "expertise_level": "beginner",
+      "economic_context": "small scale, low resources",
+      "vocabulary_level": "simple, practical"
+    },
     "topic": "Integrated Pest Management (IPM) as a Sustainable Approach to Agriculture",
     "link": "https://tracextech.com/integrated-pest-management-for-sustainable-agriculture/",
     "conversation": {
@@ -25,6 +34,5 @@
                 "answer": "Yes, it disrupts pest life cycles and reduces buildup of pest populations by removing their consistent food source."
             }
         ]
-    }	
-    	
+    }
 }
