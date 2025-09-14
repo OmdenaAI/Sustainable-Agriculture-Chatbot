@@ -1,6 +1,7 @@
 from common.document_utils import DocumentUtils
 from .generic_scraper import GenericScraper
 from common.metadata_generator import MetadataGenerator
+from common.schema_prompt_builder import SchemaPromptBuilder
 from urllib.parse import urlparse
 import re
 import hashlib
@@ -41,8 +42,10 @@ class HtmlTextManager:
                         "text": cleaned_text
                     })
 
-        # Create metadata generator and process the document text
-        metadata_gen = MetadataGenerator(self.config, self.doc_utils, logger=self.logger)
+        # Create schema prompt builder and metadata generator
+        schema_path = self.config.get("schema_path", "schemas/base_payload.schema.json")
+        prompt_builder = SchemaPromptBuilder(schema_path, self.logger)
+        metadata_gen = MetadataGenerator(self.config, self.doc_utils, self.logger, prompt_builder)
         metadata = metadata_gen.generate_metadata(self.url, full_text, llm_document_chunk_size)
 
         # Build the base payload with the generated metadata

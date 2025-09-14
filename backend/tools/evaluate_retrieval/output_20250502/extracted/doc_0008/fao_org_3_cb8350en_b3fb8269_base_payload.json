@@ -1,0 +1,29 @@
+{
+  "title": "Conservation Agriculture",
+  "source_url": "https://www.fao.org/3/cb8350en/cb8350en.pdf",
+  "date_published": "2016-01-01",
+  "language": "en",
+  "region_or_country": "global",
+  "document_type": "ngo_report",
+  "sustainability_dimensions": [
+    "environmental",
+    "social",
+    "economic"
+  ],
+  "key_topics": [
+    "sustainable agriculture",
+    "agricultural innovation",
+    "climate change mitigation",
+    "biodiversity conservation",
+    "soil health",
+    "regenerative agriculture"
+  ],
+  "contains_harmful_practices": false,
+  "intended_audience": [
+    "farmers",
+    "policymakers",
+    "researchers"
+  ],
+  "source_name": "fao.org",
+  "doc_id": "5b4192d5-cec1-5104-9234-1e7f88bbf5f0"
+}

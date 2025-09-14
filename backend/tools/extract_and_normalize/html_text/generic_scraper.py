@@ -334,37 +334,44 @@ class GenericScraper:
             else:
                 self.logger.warning(f"No title found using selector: {topic_config['title_selector']}")
 
-
     def _extract_content(self, soup, topic_config, extraction_config, result):
         """
-        Extracts main content using prioritized selectors.
-        Merges all matched blocks into a single container for parsing.
+        Extracts main content using prioritized selectors, validating size.
         """
         content_element = None
         content_selectors = topic_config.get("content_selectors", [])
+        min_content_length = self.config.get("html_parameters", {}).get("text_formatting", {}).get("min_content_length", 500)
+
         for selector in content_selectors:
             elements = soup.select(selector)
             content_blocks = [el for el in elements if el and el.get_text(strip=True)]
-            if content_blocks:
-                self.logger.info(f"Matched {len(content_blocks)} blocks using selector: {selector}")
-                content_html = "\n".join(str(el) for el in content_blocks)
-                content_element = BeautifulSoup(content_html, "html.parser")
+            if not content_blocks:
+                continue
+
+            self.logger.info(f"Matched {len(content_blocks)} blocks using selector: {selector}")
+            content_html = "\n".join(str(el) for el in content_blocks)
+            candidate_element = BeautifulSoup(content_html, "html.parser")
+
+            # Run standardized formatting and cleaning
+            candidate_text = self._process_element_text(candidate_element)
+
+            if len(candidate_text) >= min_content_length:
+                self.logger.info(f"Selector {selector} succeeded with {len(candidate_text)} characters.")
+                content_element = candidate_element
+                result["content"] = candidate_text
                 break
+            else:
+                self.logger.warning(f"Selector {selector} matched but content too small ({len(candidate_text)} chars). Trying next selector.")
 
         if content_element and extraction_config.get("text", True):
             # Remove unwanted visual clutter elements
             for unwanted in content_element.select("nav, footer, header, .sidebar, .social-share, .newsletter, .related-articles"):
                 unwanted.decompose()
             self.logger.info("Removed unwanted elements from content")
-
-            # Run standardized formatting and cleaning
-            result["content"] = self._process_element_text(content_element)
-            self.logger.info(f"Extracted main content: {len(result['content'])} characters")
         else:
-            self.logger.warning(f"No content found using selectors: {content_selectors}")
+            self.logger.warning(f"No sufficient content found using selectors: {content_selectors}")
 
         return content_element
-
 
     def _extract_subtopics(self, base_element, topic_config, text_config, result):
         """

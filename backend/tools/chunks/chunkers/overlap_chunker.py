@@ -5,9 +5,11 @@ import json
 import jsonschema
 from jsonschema import validate
 from pathlib import Path
+import logging
 
 class OverlapChunks(AbstractChunker):
-    def __init__(self, chunk_size: int = 1024, overlap_percentage: int = 20):
+    def __init__(self, logger: logging.Logger, chunk_size: int = 1024, overlap_percentage: int = 20):
+        self.logger = logger
         self.chunk_size = chunk_size
         self.overlap_percentage = overlap_percentage
         self.overlap_words = int(chunk_size * self.overlap_percentage / 100)
@@ -53,6 +55,7 @@ class OverlapChunks(AbstractChunker):
             try:
                 validate(instance=chunk, schema=self.schema)
             except jsonschema.exceptions.ValidationError as e:
+                self.logger.error(f"Validation failed for chunk {index}: {e.message}")
                 raise ValueError(f"Validation failed for chunk {index}: {e.message}")
             final_text_to_overlap = ' '.join(chunk_text.split()[-self.overlap_words:])
             
